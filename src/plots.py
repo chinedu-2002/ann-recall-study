@@ -39,25 +39,37 @@ def _style(ax):
     ax.tick_params(colors=INK2, labelsize=8)
 
 
-def frontier_panels(df, out_path, title, stacked=False, page_width=6.6):
+def frontier_panels(df, out_path, title, stacked=False, page_width=6.6, panel_h=2.85):
     """Recall-latency frontiers, one panel per dataset.
 
-    `stacked` lays the panels out vertically at true print width, so that when
-    the figure is embedded in the report at `page_width` inches nothing is scaled
-    down and the tick labels stay at their intended point size.
+    `stacked` lays the panels out vertically at true print width and "grid" uses
+    two columns, so the figure can be embedded at its intended size and nothing
+    is scaled down. The library defaults are called out in a single corner block
+    per panel rather than as labels beside each ring, because at panel widths
+    below about four inches per-point labels collide with the curves.
     """
     datasets = [d for d in DATASET_LABEL if d in set(df["dataset"])]
     n = len(datasets)
-    if stacked:
-        fig, axes = plt.subplots(n, 1, figsize=(page_width, 2.85 * n), squeeze=False)
+    if stacked == "grid":
+        rows = (n + 1) // 2
+        fig, axes = plt.subplots(rows, 2, figsize=(page_width, panel_h * rows), squeeze=False)
+        flat = [axes[r][c] for r in range(rows) for c in range(2)]
+        for extra in flat[n:]:
+            extra.remove()
+        flat = flat[:n]
+    elif stacked:
+        fig, axes = plt.subplots(n, 1, figsize=(page_width, panel_h * n), squeeze=False)
         flat = [axes[i][0] for i in range(n)]
     else:
         fig, axes = plt.subplots(1, n, figsize=(4.6 * n, 4.0), squeeze=False)
         flat = list(axes[0])
     fig.patch.set_facecolor("white")
+
+    handles = None
     for ax, ds in zip(flat, datasets):
         sub = df[df["dataset"] == ds]
         _style(ax)
+        notes = []
         for fam in ["HNSW", "IVF-Flat", "IVF-PQ"]:
             f = sub[sub["family"] == fam]
             if not len(f):
@@ -73,22 +85,30 @@ def frontier_panels(df, out_path, title, stacked=False, page_width=6.6):
                 r = d0.iloc[0]
                 ax.scatter([r["latency_ms"]], [r["recall"]], s=115, facecolors="none",
                            edgecolors=c, linewidths=2.0, zorder=5)
-                ax.annotate(f"{fam} default\nrecall {r['recall']:.3f}",
-                            (r["latency_ms"], r["recall"]),
-                            textcoords="offset points", xytext=LABEL_OFFSET[fam],
-                            fontsize=7.2, color=INK2, zorder=6,
-                            bbox=dict(boxstyle="round,pad=0.18", fc="white",
-                                      ec="none", alpha=0.82))
+                notes.append(f"{fam} default: recall {r['recall']:.3f}")
         ax.set_xscale("log")
         ax.set_xlabel("median query latency (ms, log scale)", fontsize=8.5, color=INK2)
         ax.set_ylabel("recall@10 (tie-aware)", fontsize=8.5, color=INK2)
         ax.set_title(DATASET_LABEL[ds], fontsize=9.5, color=INK, pad=8)
-        ax.set_ylim(-0.03, 1.04)
+        ax.set_ylim(-0.03, 1.08)
         ax.axhline(0.95, color=MUTED, linewidth=0.9, linestyle="--", zorder=1)
-        ax.text(ax.get_xlim()[0], 0.955, " recall 0.95", fontsize=7, color=INK2, va="bottom")
-    flat[0].legend(frameon=False, fontsize=8.5, loc="lower right", labelcolor=INK2)
-    fig.suptitle(title, fontsize=10.5, color=INK, y=0.997)
-    fig.tight_layout(rect=[0, 0, 1, 0.965])
+        ax.text(0.015, 0.895, "recall 0.95", transform=ax.transAxes, fontsize=7,
+                color=INK2, va="bottom", zorder=6)
+        # the frontier always rises left to right, so the lower-right corner of
+        # each panel is the reliably empty region for the callout block
+        ax.text(0.985, 0.04, "open rings = library default\n" + "\n".join(notes),
+                transform=ax.transAxes, ha="right", va="bottom", fontsize=7.2,
+                color=INK2, linespacing=1.45, zorder=6,
+                bbox=dict(boxstyle="round,pad=0.35", fc="white", ec=MUTED,
+                          linewidth=0.5, alpha=0.92))
+        if handles is None:
+            handles, _ = ax.get_legend_handles_labels()
+
+    fig.suptitle(title, fontsize=10.5, color=INK, y=0.995)
+    fig.legend(handles, ["HNSW", "IVF-Flat", "IVF-PQ"], loc="upper center",
+               bbox_to_anchor=(0.5, 0.962), ncol=3, frameon=False,
+               fontsize=9, labelcolor=INK2, handlelength=2.2, columnspacing=2.4)
+    fig.tight_layout(rect=[0, 0, 1, 0.925])
     fig.savefig(out_path, dpi=200, facecolor="white")
     plt.close(fig)
     return out_path

@@ -32,6 +32,8 @@ print(gap[[c for c in cols if c in gap.columns]].to_string(index=False))
 TITLE = "Recall-latency frontiers by index family (200k base vectors, k=10, single thread)"
 plots.frontier_panels(df, os.path.join(FIG, "fig1_recall_latency_frontiers.png"), TITLE)
 plots.frontier_panels(df, os.path.join(FIG, "fig1_stacked.png"), TITLE, stacked=True)
+plots.frontier_panels(df, os.path.join(FIG, "fig1_report.png"), TITLE, stacked="grid",
+                      page_width=6.35, panel_h=2.75)
 plots.default_gap_bars(gap, os.path.join(FIG, "fig2_default_gap.png"))
 
 chars_path = os.path.join(RES, "dataset_characteristics.json")
