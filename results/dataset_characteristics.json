@@ -1,0 +1,41 @@
+[
+  {
+    "n_base": 200000,
+    "ambient_dim": 128,
+    "metric": "euclidean",
+    "intrinsic_dim_mle": 19.905311584472656,
+    "lid_at_queries_mean": 23.94463539123535,
+    "lid_at_queries_std": 6.581567764282227,
+    "inertia_log_slope": -0.11504924837533181,
+    "inertia_ratio_8_to_128": 1.3770423354074675,
+    "dim_ratio": 0.15551024675369263,
+    "dataset": "sift-128-euclidean",
+    "seconds": 11.98
+  },
+  {
+    "n_base": 200000,
+    "ambient_dim": 100,
+    "metric": "angular",
+    "intrinsic_dim_mle": 36.37693786621094,
+    "lid_at_queries_mean": 43.11146545410156,
+    "lid_at_queries_std": 13.462034225463867,
+    "inertia_log_slope": -0.05137296013918456,
+    "inertia_ratio_8_to_128": 1.1531786544273934,
+    "dim_ratio": 0.3637693786621094,
+    "dataset": "glove-100-angular",
+    "seconds": 11.16
+  },
+  {
+    "n_base": 200000,
+    "ambient_dim": 256,
+    "metric": "angular",
+    "intrinsic_dim_mle": 45.96952438354492,
+    "lid_at_queries_mean": 53.462608337402344,
+    "lid_at_queries_std": 30.189998626708984,
+    "inertia_log_slope": -0.027502050112084137,
+    "inertia_ratio_8_to_128": 1.0793689027929858,
+    "dim_ratio": 0.17956845462322235,
+    "dataset": "nytimes-256-angular",
+    "seconds": 25.24
+  }
+]

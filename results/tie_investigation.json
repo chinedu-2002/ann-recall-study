@@ -1,0 +1,14 @@
+{
+  "sift-128-euclidean": {
+    "queries": 1000,
+    "top1_id_mismatches": 5,
+    "explained_by_exact_distance_tie": 5,
+    "max_distance_gap_among_mismatches": 0.0
+  },
+  "nytimes-256-angular": {
+    "queries": 1000,
+    "top1_id_mismatches": 102,
+    "explained_by_exact_distance_tie": 102,
+    "max_distance_gap_among_mismatches": 0.0
+  }
+}

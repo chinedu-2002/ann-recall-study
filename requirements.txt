@@ -1,0 +1,8 @@
+numpy
+scipy
+scikit-learn
+pandas
+matplotlib
+h5py
+faiss-cpu
+hnswlib

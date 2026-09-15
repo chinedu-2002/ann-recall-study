@@ -1,0 +1,621 @@
+=== sift-128-euclidean ===
+loaded sift-128-euclidean: base=(200000, 128) queries=(300, 128) metric=euclidean
+exact ground truth in 2.0s
+sift-128-euclidean HNSW {'M': 8, 'efConstruction': 100} qp=10 r0 rec=0.5927 med=0.033ms
+sift-128-euclidean HNSW {'M': 8, 'efConstruction': 100} qp=10 r1 rec=0.5927 med=0.035ms
+sift-128-euclidean HNSW {'M': 8, 'efConstruction': 100} qp=10 r2 rec=0.5927 med=0.033ms
+sift-128-euclidean HNSW {'M': 8, 'efConstruction': 100} qp=16 r0 rec=0.6890 med=0.042ms
+sift-128-euclidean HNSW {'M': 8, 'efConstruction': 100} qp=16 r1 rec=0.6890 med=0.043ms
+sift-128-euclidean HNSW {'M': 8, 'efConstruction': 100} qp=16 r2 rec=0.6890 med=0.043ms
+sift-128-euclidean HNSW {'M': 8, 'efConstruction': 100} qp=32 r0 rec=0.8200 med=0.069ms
+sift-128-euclidean HNSW {'M': 8, 'efConstruction': 100} qp=32 r1 rec=0.8200 med=0.069ms
+sift-128-euclidean HNSW {'M': 8, 'efConstruction': 100} qp=32 r2 rec=0.8200 med=0.068ms
+sift-128-euclidean HNSW {'M': 8, 'efConstruction': 100} qp=64 r0 rec=0.9180 med=0.122ms
+sift-128-euclidean HNSW {'M': 8, 'efConstruction': 100} qp=64 r1 rec=0.9180 med=0.122ms
+sift-128-euclidean HNSW {'M': 8, 'efConstruction': 100} qp=64 r2 rec=0.9180 med=0.121ms
+sift-128-euclidean HNSW {'M': 8, 'efConstruction': 100} qp=128 r0 rec=0.9730 med=0.227ms
+sift-128-euclidean HNSW {'M': 8, 'efConstruction': 100} qp=128 r1 rec=0.9730 med=0.230ms
+sift-128-euclidean HNSW {'M': 8, 'efConstruction': 100} qp=128 r2 rec=0.9730 med=0.234ms
+sift-128-euclidean HNSW {'M': 8, 'efConstruction': 100} qp=256 r0 rec=0.9877 med=0.416ms
+sift-128-euclidean HNSW {'M': 8, 'efConstruction': 100} qp=256 r1 rec=0.9877 med=0.418ms
+sift-128-euclidean HNSW {'M': 8, 'efConstruction': 100} qp=256 r2 rec=0.9877 med=0.424ms
+sift-128-euclidean HNSW {'M': 8, 'efConstruction': 100} qp=512 r0 rec=0.9973 med=0.794ms
+sift-128-euclidean HNSW {'M': 8, 'efConstruction': 100} qp=512 r1 rec=0.9973 med=0.803ms
+sift-128-euclidean HNSW {'M': 8, 'efConstruction': 100} qp=512 r2 rec=0.9973 med=0.795ms
+sift-128-euclidean HNSW {'M': 16, 'efConstruction': 200} qp=10 r0 rec=0.7307 med=0.046ms
+sift-128-euclidean HNSW {'M': 16, 'efConstruction': 200} qp=10 r1 rec=0.7307 med=0.044ms
+sift-128-euclidean HNSW {'M': 16, 'efConstruction': 200} qp=10 r2 rec=0.7307 med=0.043ms
+sift-128-euclidean HNSW {'M': 16, 'efConstruction': 200} qp=16 r0 rec=0.8280 med=0.060ms
+sift-128-euclidean HNSW {'M': 16, 'efConstruction': 200} qp=16 r1 rec=0.8280 med=0.059ms
+sift-128-euclidean HNSW {'M': 16, 'efConstruction': 200} qp=16 r2 rec=0.8280 med=0.063ms
+sift-128-euclidean HNSW {'M': 16, 'efConstruction': 200} qp=32 r0 rec=0.9253 med=0.107ms
+sift-128-euclidean HNSW {'M': 16, 'efConstruction': 200} qp=32 r1 rec=0.9253 med=0.105ms
+sift-128-euclidean HNSW {'M': 16, 'efConstruction': 200} qp=32 r2 rec=0.9253 med=0.105ms
+sift-128-euclidean HNSW {'M': 16, 'efConstruction': 200} qp=64 r0 rec=0.9787 med=0.184ms
+sift-128-euclidean HNSW {'M': 16, 'efConstruction': 200} qp=64 r1 rec=0.9787 med=0.186ms
+sift-128-euclidean HNSW {'M': 16, 'efConstruction': 200} qp=64 r2 rec=0.9787 med=0.183ms
+sift-128-euclidean HNSW {'M': 16, 'efConstruction': 200} qp=128 r0 rec=0.9967 med=0.332ms
+sift-128-euclidean HNSW {'M': 16, 'efConstruction': 200} qp=128 r1 rec=0.9967 med=0.337ms
+sift-128-euclidean HNSW {'M': 16, 'efConstruction': 200} qp=128 r2 rec=0.9967 med=0.340ms
+sift-128-euclidean HNSW {'M': 16, 'efConstruction': 200} qp=256 r0 rec=0.9990 med=0.600ms
+sift-128-euclidean HNSW {'M': 16, 'efConstruction': 200} qp=256 r1 rec=0.9990 med=0.607ms
+sift-128-euclidean HNSW {'M': 16, 'efConstruction': 200} qp=256 r2 rec=0.9990 med=0.621ms
+sift-128-euclidean HNSW {'M': 16, 'efConstruction': 200} qp=512 r0 rec=0.9993 med=1.104ms
+sift-128-euclidean HNSW {'M': 16, 'efConstruction': 200} qp=512 r1 rec=0.9993 med=1.103ms
+sift-128-euclidean HNSW {'M': 16, 'efConstruction': 200} qp=512 r2 rec=0.9993 med=1.106ms
+sift-128-euclidean HNSW {'M': 32, 'efConstruction': 200} qp=10 r0 rec=0.7980 med=0.059ms
+sift-128-euclidean HNSW {'M': 32, 'efConstruction': 200} qp=10 r1 rec=0.7980 med=0.059ms
+sift-128-euclidean HNSW {'M': 32, 'efConstruction': 200} qp=10 r2 rec=0.7980 med=0.059ms
+sift-128-euclidean HNSW {'M': 32, 'efConstruction': 200} qp=16 r0 rec=0.8763 med=0.083ms
+sift-128-euclidean HNSW {'M': 32, 'efConstruction': 200} qp=16 r1 rec=0.8763 med=0.086ms
+sift-128-euclidean HNSW {'M': 32, 'efConstruction': 200} qp=16 r2 rec=0.8763 med=0.085ms
+sift-128-euclidean HNSW {'M': 32, 'efConstruction': 200} qp=32 r0 rec=0.9623 med=0.144ms
+sift-128-euclidean HNSW {'M': 32, 'efConstruction': 200} qp=32 r1 rec=0.9623 med=0.142ms
+sift-128-euclidean HNSW {'M': 32, 'efConstruction': 200} qp=32 r2 rec=0.9623 med=0.146ms
+sift-128-euclidean HNSW {'M': 32, 'efConstruction': 200} qp=64 r0 rec=0.9923 med=0.260ms
+sift-128-euclidean HNSW {'M': 32, 'efConstruction': 200} qp=64 r1 rec=0.9923 med=0.263ms
+sift-128-euclidean HNSW {'M': 32, 'efConstruction': 200} qp=64 r2 rec=0.9923 med=0.259ms
+sift-128-euclidean HNSW {'M': 32, 'efConstruction': 200} qp=128 r0 rec=0.9993 med=0.453ms
+sift-128-euclidean HNSW {'M': 32, 'efConstruction': 200} qp=128 r1 rec=0.9993 med=0.458ms
+sift-128-euclidean HNSW {'M': 32, 'efConstruction': 200} qp=128 r2 rec=0.9993 med=0.454ms
+sift-128-euclidean HNSW {'M': 32, 'efConstruction': 200} qp=256 r0 rec=1.0000 med=0.806ms
+sift-128-euclidean HNSW {'M': 32, 'efConstruction': 200} qp=256 r1 rec=1.0000 med=0.795ms
+sift-128-euclidean HNSW {'M': 32, 'efConstruction': 200} qp=256 r2 rec=1.0000 med=0.816ms
+sift-128-euclidean HNSW {'M': 32, 'efConstruction': 200} qp=512 r0 rec=1.0000 med=1.447ms
+sift-128-euclidean HNSW {'M': 32, 'efConstruction': 200} qp=512 r1 rec=1.0000 med=1.452ms
+sift-128-euclidean HNSW {'M': 32, 'efConstruction': 200} qp=512 r2 rec=1.0000 med=1.464ms
+sift-128-euclidean HNSW {'M': 48, 'efConstruction': 400} qp=10 r0 rec=0.8340 med=0.071ms
+sift-128-euclidean HNSW {'M': 48, 'efConstruction': 400} qp=10 r1 rec=0.8340 med=0.071ms
+sift-128-euclidean HNSW {'M': 48, 'efConstruction': 400} qp=10 r2 rec=0.8340 med=0.071ms
+sift-128-euclidean HNSW {'M': 48, 'efConstruction': 400} qp=16 r0 rec=0.9070 med=0.097ms
+sift-128-euclidean HNSW {'M': 48, 'efConstruction': 400} qp=16 r1 rec=0.9070 med=0.101ms
+sift-128-euclidean HNSW {'M': 48, 'efConstruction': 400} qp=16 r2 rec=0.9070 med=0.099ms
+sift-128-euclidean HNSW {'M': 48, 'efConstruction': 400} qp=32 r0 rec=0.9763 med=0.168ms
+sift-128-euclidean HNSW {'M': 48, 'efConstruction': 400} qp=32 r1 rec=0.9763 med=0.178ms
+sift-128-euclidean HNSW {'M': 48, 'efConstruction': 400} qp=32 r2 rec=0.9763 med=0.178ms
+sift-128-euclidean HNSW {'M': 48, 'efConstruction': 400} qp=64 r0 rec=0.9957 med=0.326ms
+sift-128-euclidean HNSW {'M': 48, 'efConstruction': 400} qp=64 r1 rec=0.9957 med=0.302ms
+sift-128-euclidean HNSW {'M': 48, 'efConstruction': 400} qp=64 r2 rec=0.9957 med=0.312ms
+sift-128-euclidean HNSW {'M': 48, 'efConstruction': 400} qp=128 r0 rec=0.9997 med=0.528ms
+sift-128-euclidean HNSW {'M': 48, 'efConstruction': 400} qp=128 r1 rec=0.9997 med=0.568ms
+sift-128-euclidean HNSW {'M': 48, 'efConstruction': 400} qp=128 r2 rec=0.9997 med=0.547ms
+sift-128-euclidean HNSW {'M': 48, 'efConstruction': 400} qp=256 r0 rec=1.0000 med=0.927ms
+sift-128-euclidean HNSW {'M': 48, 'efConstruction': 400} qp=256 r1 rec=1.0000 med=0.963ms
+sift-128-euclidean HNSW {'M': 48, 'efConstruction': 400} qp=256 r2 rec=1.0000 med=0.927ms
+sift-128-euclidean HNSW {'M': 48, 'efConstruction': 400} qp=512 r0 rec=1.0000 med=1.661ms
+sift-128-euclidean HNSW {'M': 48, 'efConstruction': 400} qp=512 r1 rec=1.0000 med=1.661ms
+sift-128-euclidean HNSW {'M': 48, 'efConstruction': 400} qp=512 r2 rec=1.0000 med=1.645ms
+sift-128-euclidean IVF-Flat {'nlist': 100} qp=1 r0 rec=0.5280 med=0.126ms
+sift-128-euclidean IVF-Flat {'nlist': 100} qp=1 r1 rec=0.5280 med=0.131ms
+sift-128-euclidean IVF-Flat {'nlist': 100} qp=1 r2 rec=0.5280 med=0.126ms
+sift-128-euclidean IVF-Flat {'nlist': 100} qp=2 r0 rec=0.6947 med=0.232ms
+sift-128-euclidean IVF-Flat {'nlist': 100} qp=2 r1 rec=0.6947 med=0.238ms
+sift-128-euclidean IVF-Flat {'nlist': 100} qp=2 r2 rec=0.6947 med=0.243ms
+sift-128-euclidean IVF-Flat {'nlist': 100} qp=4 r0 rec=0.8677 med=0.459ms
+sift-128-euclidean IVF-Flat {'nlist': 100} qp=4 r1 rec=0.8677 med=0.468ms
+sift-128-euclidean IVF-Flat {'nlist': 100} qp=4 r2 rec=0.8677 med=0.475ms
+sift-128-euclidean IVF-Flat {'nlist': 100} qp=8 r0 rec=0.9660 med=0.885ms
+sift-128-euclidean IVF-Flat {'nlist': 100} qp=8 r1 rec=0.9660 med=0.886ms
+sift-128-euclidean IVF-Flat {'nlist': 100} qp=8 r2 rec=0.9660 med=0.896ms
+sift-128-euclidean IVF-Flat {'nlist': 100} qp=16 r0 rec=0.9957 med=1.713ms
+sift-128-euclidean IVF-Flat {'nlist': 100} qp=16 r1 rec=0.9957 med=1.735ms
+sift-128-euclidean IVF-Flat {'nlist': 100} qp=16 r2 rec=0.9957 med=1.705ms
+sift-128-euclidean IVF-Flat {'nlist': 100} qp=32 r0 rec=1.0000 med=3.407ms
+sift-128-euclidean IVF-Flat {'nlist': 100} qp=32 r1 rec=1.0000 med=3.357ms
+sift-128-euclidean IVF-Flat {'nlist': 100} qp=32 r2 rec=1.0000 med=3.374ms
+sift-128-euclidean IVF-Flat {'nlist': 100} qp=64 r0 rec=1.0000 med=6.507ms
+sift-128-euclidean IVF-Flat {'nlist': 100} qp=64 r1 rec=1.0000 med=6.534ms
+sift-128-euclidean IVF-Flat {'nlist': 100} qp=64 r2 rec=1.0000 med=6.629ms
+sift-128-euclidean IVF-Flat {'nlist': 100} qp=128 r0 rec=1.0000 med=10.708ms
+sift-128-euclidean IVF-Flat {'nlist': 100} qp=128 r1 rec=1.0000 med=11.130ms
+sift-128-euclidean IVF-Flat {'nlist': 100} qp=128 r2 rec=1.0000 med=10.988ms
+sift-128-euclidean IVF-Flat {'nlist': 1024} qp=1 r0 rec=0.3080 med=0.039ms
+sift-128-euclidean IVF-Flat {'nlist': 1024} qp=1 r1 rec=0.3080 med=0.038ms
+sift-128-euclidean IVF-Flat {'nlist': 1024} qp=1 r2 rec=0.3080 med=0.038ms
+sift-128-euclidean IVF-Flat {'nlist': 1024} qp=2 r0 rec=0.4470 med=0.051ms
+sift-128-euclidean IVF-Flat {'nlist': 1024} qp=2 r1 rec=0.4470 med=0.051ms
+sift-128-euclidean IVF-Flat {'nlist': 1024} qp=2 r2 rec=0.4470 med=0.053ms
+sift-128-euclidean IVF-Flat {'nlist': 1024} qp=4 r0 rec=0.6213 med=0.076ms
+sift-128-euclidean IVF-Flat {'nlist': 1024} qp=4 r1 rec=0.6213 med=0.077ms
+sift-128-euclidean IVF-Flat {'nlist': 1024} qp=4 r2 rec=0.6213 med=0.079ms
+sift-128-euclidean IVF-Flat {'nlist': 1024} qp=8 r0 rec=0.7730 med=0.125ms
+sift-128-euclidean IVF-Flat {'nlist': 1024} qp=8 r1 rec=0.7730 med=0.125ms
+sift-128-euclidean IVF-Flat {'nlist': 1024} qp=8 r2 rec=0.7730 med=0.127ms
+sift-128-euclidean IVF-Flat {'nlist': 1024} qp=16 r0 rec=0.8820 med=0.220ms
+sift-128-euclidean IVF-Flat {'nlist': 1024} qp=16 r1 rec=0.8820 med=0.217ms
+sift-128-euclidean IVF-Flat {'nlist': 1024} qp=16 r2 rec=0.8820 med=0.219ms
+sift-128-euclidean IVF-Flat {'nlist': 1024} qp=32 r0 rec=0.9670 med=0.399ms
+sift-128-euclidean IVF-Flat {'nlist': 1024} qp=32 r1 rec=0.9670 med=0.391ms
+sift-128-euclidean IVF-Flat {'nlist': 1024} qp=32 r2 rec=0.9670 med=0.387ms
+sift-128-euclidean IVF-Flat {'nlist': 1024} qp=64 r0 rec=0.9927 med=0.718ms
+sift-128-euclidean IVF-Flat {'nlist': 1024} qp=64 r1 rec=0.9927 med=0.707ms
+sift-128-euclidean IVF-Flat {'nlist': 1024} qp=64 r2 rec=0.9927 med=0.710ms
+sift-128-euclidean IVF-Flat {'nlist': 1024} qp=128 r0 rec=0.9993 med=1.388ms
+sift-128-euclidean IVF-Flat {'nlist': 1024} qp=128 r1 rec=0.9993 med=1.403ms
+sift-128-euclidean IVF-Flat {'nlist': 1024} qp=128 r2 rec=0.9993 med=1.391ms
+sift-128-euclidean IVF-Flat {'nlist': 4096} qp=1 r0 rec=0.2250 med=0.122ms
+sift-128-euclidean IVF-Flat {'nlist': 4096} qp=1 r1 rec=0.2250 med=0.130ms
+sift-128-euclidean IVF-Flat {'nlist': 4096} qp=1 r2 rec=0.2250 med=0.126ms
+sift-128-euclidean IVF-Flat {'nlist': 4096} qp=2 r0 rec=0.3400 med=0.135ms
+sift-128-euclidean IVF-Flat {'nlist': 4096} qp=2 r1 rec=0.3400 med=0.111ms
+sift-128-euclidean IVF-Flat {'nlist': 4096} qp=2 r2 rec=0.3400 med=0.116ms
+sift-128-euclidean IVF-Flat {'nlist': 4096} qp=4 r0 rec=0.4960 med=0.125ms
+sift-128-euclidean IVF-Flat {'nlist': 4096} qp=4 r1 rec=0.4960 med=0.123ms
+sift-128-euclidean IVF-Flat {'nlist': 4096} qp=4 r2 rec=0.4960 med=0.128ms
+sift-128-euclidean IVF-Flat {'nlist': 4096} qp=8 r0 rec=0.6427 med=0.129ms
+sift-128-euclidean IVF-Flat {'nlist': 4096} qp=8 r1 rec=0.6427 med=0.132ms
+sift-128-euclidean IVF-Flat {'nlist': 4096} qp=8 r2 rec=0.6427 med=0.132ms
+sift-128-euclidean IVF-Flat {'nlist': 4096} qp=16 r0 rec=0.7767 med=0.175ms
+sift-128-euclidean IVF-Flat {'nlist': 4096} qp=16 r1 rec=0.7767 med=0.161ms
+sift-128-euclidean IVF-Flat {'nlist': 4096} qp=16 r2 rec=0.7767 med=0.163ms
+sift-128-euclidean IVF-Flat {'nlist': 4096} qp=32 r0 rec=0.8860 med=0.226ms
+sift-128-euclidean IVF-Flat {'nlist': 4096} qp=32 r1 rec=0.8860 med=0.223ms
+sift-128-euclidean IVF-Flat {'nlist': 4096} qp=32 r2 rec=0.8860 med=0.219ms
+sift-128-euclidean IVF-Flat {'nlist': 4096} qp=64 r0 rec=0.9527 med=0.331ms
+sift-128-euclidean IVF-Flat {'nlist': 4096} qp=64 r1 rec=0.9527 med=0.333ms
+sift-128-euclidean IVF-Flat {'nlist': 4096} qp=64 r2 rec=0.9527 med=0.338ms
+sift-128-euclidean IVF-Flat {'nlist': 4096} qp=128 r0 rec=0.9883 med=0.553ms
+sift-128-euclidean IVF-Flat {'nlist': 4096} qp=128 r1 rec=0.9883 med=0.533ms
+sift-128-euclidean IVF-Flat {'nlist': 4096} qp=128 r2 rec=0.9883 med=0.561ms
+sift-128-euclidean IVF-PQ {'nlist': 1024, 'm': 8, 'nbits': 8} qp=1 r0 rec=0.2423 med=0.058ms
+sift-128-euclidean IVF-PQ {'nlist': 1024, 'm': 8, 'nbits': 8} qp=1 r1 rec=0.2423 med=0.052ms
+sift-128-euclidean IVF-PQ {'nlist': 1024, 'm': 8, 'nbits': 8} qp=1 r2 rec=0.2423 med=0.051ms
+sift-128-euclidean IVF-PQ {'nlist': 1024, 'm': 8, 'nbits': 8} qp=2 r0 rec=0.3190 med=0.067ms
+sift-128-euclidean IVF-PQ {'nlist': 1024, 'm': 8, 'nbits': 8} qp=2 r1 rec=0.3190 med=0.056ms
+sift-128-euclidean IVF-PQ {'nlist': 1024, 'm': 8, 'nbits': 8} qp=2 r2 rec=0.3190 med=0.056ms
+sift-128-euclidean IVF-PQ {'nlist': 1024, 'm': 8, 'nbits': 8} qp=4 r0 rec=0.3750 med=0.065ms
+sift-128-euclidean IVF-PQ {'nlist': 1024, 'm': 8, 'nbits': 8} qp=4 r1 rec=0.3750 med=0.065ms
+sift-128-euclidean IVF-PQ {'nlist': 1024, 'm': 8, 'nbits': 8} qp=4 r2 rec=0.3750 med=0.071ms
+sift-128-euclidean IVF-PQ {'nlist': 1024, 'm': 8, 'nbits': 8} qp=8 r0 rec=0.4100 med=0.081ms
+sift-128-euclidean IVF-PQ {'nlist': 1024, 'm': 8, 'nbits': 8} qp=8 r1 rec=0.4100 med=0.081ms
+sift-128-euclidean IVF-PQ {'nlist': 1024, 'm': 8, 'nbits': 8} qp=8 r2 rec=0.4100 med=0.082ms
+sift-128-euclidean IVF-PQ {'nlist': 1024, 'm': 8, 'nbits': 8} qp=16 r0 rec=0.4293 med=0.112ms
+sift-128-euclidean IVF-PQ {'nlist': 1024, 'm': 8, 'nbits': 8} qp=16 r1 rec=0.4293 med=0.113ms
+sift-128-euclidean IVF-PQ {'nlist': 1024, 'm': 8, 'nbits': 8} qp=16 r2 rec=0.4293 med=0.112ms
+sift-128-euclidean IVF-PQ {'nlist': 1024, 'm': 8, 'nbits': 8} qp=64 r0 rec=0.4350 med=0.309ms
+sift-128-euclidean IVF-PQ {'nlist': 1024, 'm': 8, 'nbits': 8} qp=64 r1 rec=0.4350 med=0.301ms
+sift-128-euclidean IVF-PQ {'nlist': 1024, 'm': 8, 'nbits': 8} qp=64 r2 rec=0.4350 med=0.310ms
+sift-128-euclidean IVF-PQ {'nlist': 1024, 'm': 8, 'nbits': 8} qp=128 r0 rec=0.4350 med=0.523ms
+sift-128-euclidean IVF-PQ {'nlist': 1024, 'm': 8, 'nbits': 8} qp=128 r1 rec=0.4350 med=0.526ms
+sift-128-euclidean IVF-PQ {'nlist': 1024, 'm': 8, 'nbits': 8} qp=128 r2 rec=0.4350 med=0.529ms
+sift-128-euclidean IVF-PQ {'nlist': 1024, 'm': 16, 'nbits': 8} qp=1 r0 rec=0.2797 med=0.042ms
+sift-128-euclidean IVF-PQ {'nlist': 1024, 'm': 16, 'nbits': 8} qp=1 r1 rec=0.2797 med=0.042ms
+sift-128-euclidean IVF-PQ {'nlist': 1024, 'm': 16, 'nbits': 8} qp=1 r2 rec=0.2797 med=0.041ms
+sift-128-euclidean IVF-PQ {'nlist': 1024, 'm': 16, 'nbits': 8} qp=2 r0 rec=0.3837 med=0.049ms
+sift-128-euclidean IVF-PQ {'nlist': 1024, 'm': 16, 'nbits': 8} qp=2 r1 rec=0.3837 med=0.049ms
+sift-128-euclidean IVF-PQ {'nlist': 1024, 'm': 16, 'nbits': 8} qp=2 r2 rec=0.3837 med=0.049ms
+sift-128-euclidean IVF-PQ {'nlist': 1024, 'm': 16, 'nbits': 8} qp=4 r0 rec=0.4817 med=0.064ms
+sift-128-euclidean IVF-PQ {'nlist': 1024, 'm': 16, 'nbits': 8} qp=4 r1 rec=0.4817 med=0.064ms
+sift-128-euclidean IVF-PQ {'nlist': 1024, 'm': 16, 'nbits': 8} qp=4 r2 rec=0.4817 med=0.064ms
+sift-128-euclidean IVF-PQ {'nlist': 1024, 'm': 16, 'nbits': 8} qp=8 r0 rec=0.5447 med=0.094ms
+sift-128-euclidean IVF-PQ {'nlist': 1024, 'm': 16, 'nbits': 8} qp=8 r1 rec=0.5447 med=0.095ms
+sift-128-euclidean IVF-PQ {'nlist': 1024, 'm': 16, 'nbits': 8} qp=8 r2 rec=0.5447 med=0.093ms
+sift-128-euclidean IVF-PQ {'nlist': 1024, 'm': 16, 'nbits': 8} qp=16 r0 rec=0.5817 med=0.150ms
+sift-128-euclidean IVF-PQ {'nlist': 1024, 'm': 16, 'nbits': 8} qp=16 r1 rec=0.5817 med=0.152ms
+sift-128-euclidean IVF-PQ {'nlist': 1024, 'm': 16, 'nbits': 8} qp=16 r2 rec=0.5817 med=0.149ms
+sift-128-euclidean IVF-PQ {'nlist': 1024, 'm': 16, 'nbits': 8} qp=64 r0 rec=0.6040 med=0.467ms
+sift-128-euclidean IVF-PQ {'nlist': 1024, 'm': 16, 'nbits': 8} qp=64 r1 rec=0.6040 med=0.467ms
+sift-128-euclidean IVF-PQ {'nlist': 1024, 'm': 16, 'nbits': 8} qp=64 r2 rec=0.6040 med=0.470ms
+sift-128-euclidean IVF-PQ {'nlist': 1024, 'm': 16, 'nbits': 8} qp=128 r0 rec=0.6040 med=0.869ms
+sift-128-euclidean IVF-PQ {'nlist': 1024, 'm': 16, 'nbits': 8} qp=128 r1 rec=0.6040 med=0.874ms
+sift-128-euclidean IVF-PQ {'nlist': 1024, 'm': 16, 'nbits': 8} qp=128 r2 rec=0.6040 med=0.900ms
+sift-128-euclidean IVF-PQ {'nlist': 4096, 'm': 16, 'nbits': 8} qp=1 r0 rec=0.2153 med=0.129ms
+sift-128-euclidean IVF-PQ {'nlist': 4096, 'm': 16, 'nbits': 8} qp=1 r1 rec=0.2153 med=0.127ms
+sift-128-euclidean IVF-PQ {'nlist': 4096, 'm': 16, 'nbits': 8} qp=1 r2 rec=0.2153 med=0.125ms
+sift-128-euclidean IVF-PQ {'nlist': 4096, 'm': 16, 'nbits': 8} qp=2 r0 rec=0.3143 med=0.130ms
+sift-128-euclidean IVF-PQ {'nlist': 4096, 'm': 16, 'nbits': 8} qp=2 r1 rec=0.3143 med=0.128ms
+sift-128-euclidean IVF-PQ {'nlist': 4096, 'm': 16, 'nbits': 8} qp=2 r2 rec=0.3143 med=0.129ms
+sift-128-euclidean IVF-PQ {'nlist': 4096, 'm': 16, 'nbits': 8} qp=4 r0 rec=0.4270 med=0.139ms
+sift-128-euclidean IVF-PQ {'nlist': 4096, 'm': 16, 'nbits': 8} qp=4 r1 rec=0.4270 med=0.140ms
+sift-128-euclidean IVF-PQ {'nlist': 4096, 'm': 16, 'nbits': 8} qp=4 r2 rec=0.4270 med=0.136ms
+sift-128-euclidean IVF-PQ {'nlist': 4096, 'm': 16, 'nbits': 8} qp=8 r0 rec=0.5097 med=0.155ms
+sift-128-euclidean IVF-PQ {'nlist': 4096, 'm': 16, 'nbits': 8} qp=8 r1 rec=0.5097 med=0.156ms
+sift-128-euclidean IVF-PQ {'nlist': 4096, 'm': 16, 'nbits': 8} qp=8 r2 rec=0.5097 med=0.156ms
+sift-128-euclidean IVF-PQ {'nlist': 4096, 'm': 16, 'nbits': 8} qp=16 r0 rec=0.5647 med=0.231ms
+sift-128-euclidean IVF-PQ {'nlist': 4096, 'm': 16, 'nbits': 8} qp=16 r1 rec=0.5647 med=0.200ms
+sift-128-euclidean IVF-PQ {'nlist': 4096, 'm': 16, 'nbits': 8} qp=16 r2 rec=0.5647 med=0.190ms
+sift-128-euclidean IVF-PQ {'nlist': 4096, 'm': 16, 'nbits': 8} qp=64 r0 rec=0.6103 med=0.377ms
+sift-128-euclidean IVF-PQ {'nlist': 4096, 'm': 16, 'nbits': 8} qp=64 r1 rec=0.6103 med=0.392ms
+sift-128-euclidean IVF-PQ {'nlist': 4096, 'm': 16, 'nbits': 8} qp=64 r2 rec=0.6103 med=0.383ms
+sift-128-euclidean IVF-PQ {'nlist': 4096, 'm': 16, 'nbits': 8} qp=128 r0 rec=0.6160 med=0.615ms
+sift-128-euclidean IVF-PQ {'nlist': 4096, 'm': 16, 'nbits': 8} qp=128 r1 rec=0.6160 med=0.596ms
+sift-128-euclidean IVF-PQ {'nlist': 4096, 'm': 16, 'nbits': 8} qp=128 r2 rec=0.6160 med=0.602ms
+=== glove-100-angular ===
+loaded glove-100-angular: base=(200000, 100) queries=(300, 100) metric=angular
+exact ground truth in 1.5s
+glove-100-angular HNSW {'M': 8, 'efConstruction': 100} qp=10 r0 rec=0.3387 med=0.024ms
+glove-100-angular HNSW {'M': 8, 'efConstruction': 100} qp=10 r1 rec=0.3387 med=0.024ms
+glove-100-angular HNSW {'M': 8, 'efConstruction': 100} qp=10 r2 rec=0.3387 med=0.024ms
+glove-100-angular HNSW {'M': 8, 'efConstruction': 100} qp=16 r0 rec=0.4283 med=0.034ms
+glove-100-angular HNSW {'M': 8, 'efConstruction': 100} qp=16 r1 rec=0.4283 med=0.032ms
+glove-100-angular HNSW {'M': 8, 'efConstruction': 100} qp=16 r2 rec=0.4283 med=0.034ms
+glove-100-angular HNSW {'M': 8, 'efConstruction': 100} qp=32 r0 rec=0.5653 med=0.059ms
+glove-100-angular HNSW {'M': 8, 'efConstruction': 100} qp=32 r1 rec=0.5653 med=0.061ms
+glove-100-angular HNSW {'M': 8, 'efConstruction': 100} qp=32 r2 rec=0.5653 med=0.056ms
+glove-100-angular HNSW {'M': 8, 'efConstruction': 100} qp=64 r0 rec=0.6667 med=0.113ms
+glove-100-angular HNSW {'M': 8, 'efConstruction': 100} qp=64 r1 rec=0.6667 med=0.107ms
+glove-100-angular HNSW {'M': 8, 'efConstruction': 100} qp=64 r2 rec=0.6667 med=0.102ms
+glove-100-angular HNSW {'M': 8, 'efConstruction': 100} qp=128 r0 rec=0.7670 med=0.183ms
+glove-100-angular HNSW {'M': 8, 'efConstruction': 100} qp=128 r1 rec=0.7670 med=0.182ms
+glove-100-angular HNSW {'M': 8, 'efConstruction': 100} qp=128 r2 rec=0.7670 med=0.192ms
+glove-100-angular HNSW {'M': 8, 'efConstruction': 100} qp=256 r0 rec=0.8317 med=0.350ms
+glove-100-angular HNSW {'M': 8, 'efConstruction': 100} qp=256 r1 rec=0.8317 med=0.362ms
+glove-100-angular HNSW {'M': 8, 'efConstruction': 100} qp=256 r2 rec=0.8317 med=0.368ms
+glove-100-angular HNSW {'M': 8, 'efConstruction': 100} qp=512 r0 rec=0.8890 med=0.702ms
+glove-100-angular HNSW {'M': 8, 'efConstruction': 100} qp=512 r1 rec=0.8890 med=0.691ms
+glove-100-angular HNSW {'M': 8, 'efConstruction': 100} qp=512 r2 rec=0.8890 med=0.707ms
+glove-100-angular HNSW {'M': 16, 'efConstruction': 200} qp=10 r0 rec=0.5150 med=0.043ms
+glove-100-angular HNSW {'M': 16, 'efConstruction': 200} qp=10 r1 rec=0.5150 med=0.041ms
+glove-100-angular HNSW {'M': 16, 'efConstruction': 200} qp=10 r2 rec=0.5150 med=0.039ms
+glove-100-angular HNSW {'M': 16, 'efConstruction': 200} qp=16 r0 rec=0.6083 med=0.058ms
+glove-100-angular HNSW {'M': 16, 'efConstruction': 200} qp=16 r1 rec=0.6083 med=0.056ms
+glove-100-angular HNSW {'M': 16, 'efConstruction': 200} qp=16 r2 rec=0.6083 med=0.056ms
+glove-100-angular HNSW {'M': 16, 'efConstruction': 200} qp=32 r0 rec=0.7123 med=0.098ms
+glove-100-angular HNSW {'M': 16, 'efConstruction': 200} qp=32 r1 rec=0.7123 med=0.096ms
+glove-100-angular HNSW {'M': 16, 'efConstruction': 200} qp=32 r2 rec=0.7123 med=0.094ms
+glove-100-angular HNSW {'M': 16, 'efConstruction': 200} qp=64 r0 rec=0.8150 med=0.183ms
+glove-100-angular HNSW {'M': 16, 'efConstruction': 200} qp=64 r1 rec=0.8150 med=0.179ms
+glove-100-angular HNSW {'M': 16, 'efConstruction': 200} qp=64 r2 rec=0.8150 med=0.186ms
+glove-100-angular HNSW {'M': 16, 'efConstruction': 200} qp=128 r0 rec=0.8793 med=0.344ms
+glove-100-angular HNSW {'M': 16, 'efConstruction': 200} qp=128 r1 rec=0.8793 med=0.326ms
+glove-100-angular HNSW {'M': 16, 'efConstruction': 200} qp=128 r2 rec=0.8793 med=0.309ms
+glove-100-angular HNSW {'M': 16, 'efConstruction': 200} qp=256 r0 rec=0.9230 med=0.593ms
+glove-100-angular HNSW {'M': 16, 'efConstruction': 200} qp=256 r1 rec=0.9230 med=0.597ms
+glove-100-angular HNSW {'M': 16, 'efConstruction': 200} qp=256 r2 rec=0.9230 med=0.614ms
+glove-100-angular HNSW {'M': 16, 'efConstruction': 200} qp=512 r0 rec=0.9617 med=1.157ms
+glove-100-angular HNSW {'M': 16, 'efConstruction': 200} qp=512 r1 rec=0.9617 med=1.165ms
+glove-100-angular HNSW {'M': 16, 'efConstruction': 200} qp=512 r2 rec=0.9617 med=1.143ms
+glove-100-angular HNSW {'M': 32, 'efConstruction': 200} qp=10 r0 rec=0.6070 med=0.073ms
+glove-100-angular HNSW {'M': 32, 'efConstruction': 200} qp=10 r1 rec=0.6070 med=0.072ms
+glove-100-angular HNSW {'M': 32, 'efConstruction': 200} qp=10 r2 rec=0.6070 med=0.074ms
+glove-100-angular HNSW {'M': 32, 'efConstruction': 200} qp=16 r0 rec=0.6840 med=0.100ms
+glove-100-angular HNSW {'M': 32, 'efConstruction': 200} qp=16 r1 rec=0.6840 med=0.103ms
+glove-100-angular HNSW {'M': 32, 'efConstruction': 200} qp=16 r2 rec=0.6840 med=0.099ms
+glove-100-angular HNSW {'M': 32, 'efConstruction': 200} qp=32 r0 rec=0.7910 med=0.163ms
+glove-100-angular HNSW {'M': 32, 'efConstruction': 200} qp=32 r1 rec=0.7910 med=0.161ms
+glove-100-angular HNSW {'M': 32, 'efConstruction': 200} qp=32 r2 rec=0.7910 med=0.159ms
+glove-100-angular HNSW {'M': 32, 'efConstruction': 200} qp=64 r0 rec=0.8670 med=0.288ms
+glove-100-angular HNSW {'M': 32, 'efConstruction': 200} qp=64 r1 rec=0.8670 med=0.296ms
+glove-100-angular HNSW {'M': 32, 'efConstruction': 200} qp=64 r2 rec=0.8670 med=0.288ms
+glove-100-angular HNSW {'M': 32, 'efConstruction': 200} qp=128 r0 rec=0.9310 med=0.537ms
+glove-100-angular HNSW {'M': 32, 'efConstruction': 200} qp=128 r1 rec=0.9310 med=0.530ms
+glove-100-angular HNSW {'M': 32, 'efConstruction': 200} qp=128 r2 rec=0.9310 med=0.519ms
+glove-100-angular HNSW {'M': 32, 'efConstruction': 200} qp=256 r0 rec=0.9707 med=1.049ms
+glove-100-angular HNSW {'M': 32, 'efConstruction': 200} qp=256 r1 rec=0.9707 med=0.996ms
+glove-100-angular HNSW {'M': 32, 'efConstruction': 200} qp=256 r2 rec=0.9707 med=0.977ms
+glove-100-angular HNSW {'M': 32, 'efConstruction': 200} qp=512 r0 rec=0.9913 med=1.839ms
+glove-100-angular HNSW {'M': 32, 'efConstruction': 200} qp=512 r1 rec=0.9913 med=1.884ms
+glove-100-angular HNSW {'M': 32, 'efConstruction': 200} qp=512 r2 rec=0.9913 med=1.872ms
+glove-100-angular HNSW {'M': 48, 'efConstruction': 400} qp=10 r0 rec=0.6403 med=0.089ms
+glove-100-angular HNSW {'M': 48, 'efConstruction': 400} qp=10 r1 rec=0.6403 med=0.089ms
+glove-100-angular HNSW {'M': 48, 'efConstruction': 400} qp=10 r2 rec=0.6403 med=0.096ms
+glove-100-angular HNSW {'M': 48, 'efConstruction': 400} qp=16 r0 rec=0.7217 med=0.131ms
+glove-100-angular HNSW {'M': 48, 'efConstruction': 400} qp=16 r1 rec=0.7217 med=0.132ms
+glove-100-angular HNSW {'M': 48, 'efConstruction': 400} qp=16 r2 rec=0.7217 med=0.131ms
+glove-100-angular HNSW {'M': 48, 'efConstruction': 400} qp=32 r0 rec=0.8197 med=0.214ms
+glove-100-angular HNSW {'M': 48, 'efConstruction': 400} qp=32 r1 rec=0.8197 med=0.219ms
+glove-100-angular HNSW {'M': 48, 'efConstruction': 400} qp=32 r2 rec=0.8197 med=0.214ms
+glove-100-angular HNSW {'M': 48, 'efConstruction': 400} qp=64 r0 rec=0.9030 med=0.381ms
+glove-100-angular HNSW {'M': 48, 'efConstruction': 400} qp=64 r1 rec=0.9030 med=0.376ms
+glove-100-angular HNSW {'M': 48, 'efConstruction': 400} qp=64 r2 rec=0.9030 med=0.385ms
+glove-100-angular HNSW {'M': 48, 'efConstruction': 400} qp=128 r0 rec=0.9590 med=0.724ms
+glove-100-angular HNSW {'M': 48, 'efConstruction': 400} qp=128 r1 rec=0.9590 med=0.723ms
+glove-100-angular HNSW {'M': 48, 'efConstruction': 400} qp=128 r2 rec=0.9590 med=0.713ms
+glove-100-angular HNSW {'M': 48, 'efConstruction': 400} qp=256 r0 rec=0.9843 med=1.327ms
+glove-100-angular HNSW {'M': 48, 'efConstruction': 400} qp=256 r1 rec=0.9843 med=1.345ms
+glove-100-angular HNSW {'M': 48, 'efConstruction': 400} qp=256 r2 rec=0.9843 med=1.332ms
+glove-100-angular HNSW {'M': 48, 'efConstruction': 400} qp=512 r0 rec=0.9973 med=2.646ms
+glove-100-angular HNSW {'M': 48, 'efConstruction': 400} qp=512 r1 rec=0.9973 med=2.614ms
+glove-100-angular HNSW {'M': 48, 'efConstruction': 400} qp=512 r2 rec=0.9973 med=2.491ms
+glove-100-angular IVF-Flat {'nlist': 100} qp=1 r0 rec=0.5007 med=0.104ms
+glove-100-angular IVF-Flat {'nlist': 100} qp=1 r1 rec=0.5007 med=0.109ms
+glove-100-angular IVF-Flat {'nlist': 100} qp=1 r2 rec=0.5007 med=0.106ms
+glove-100-angular IVF-Flat {'nlist': 100} qp=2 r0 rec=0.6507 med=0.196ms
+glove-100-angular IVF-Flat {'nlist': 100} qp=2 r1 rec=0.6507 med=0.189ms
+glove-100-angular IVF-Flat {'nlist': 100} qp=2 r2 rec=0.6507 med=0.193ms
+glove-100-angular IVF-Flat {'nlist': 100} qp=4 r0 rec=0.7773 med=0.371ms
+glove-100-angular IVF-Flat {'nlist': 100} qp=4 r1 rec=0.7773 med=0.363ms
+glove-100-angular IVF-Flat {'nlist': 100} qp=4 r2 rec=0.7773 med=0.366ms
+glove-100-angular IVF-Flat {'nlist': 100} qp=8 r0 rec=0.8697 med=0.704ms
+glove-100-angular IVF-Flat {'nlist': 100} qp=8 r1 rec=0.8697 med=0.702ms
+glove-100-angular IVF-Flat {'nlist': 100} qp=8 r2 rec=0.8697 med=0.707ms
+glove-100-angular IVF-Flat {'nlist': 100} qp=16 r0 rec=0.9323 med=1.314ms
+glove-100-angular IVF-Flat {'nlist': 100} qp=16 r1 rec=0.9323 med=1.307ms
+glove-100-angular IVF-Flat {'nlist': 100} qp=16 r2 rec=0.9323 med=1.296ms
+glove-100-angular IVF-Flat {'nlist': 100} qp=32 r0 rec=0.9803 med=2.562ms
+glove-100-angular IVF-Flat {'nlist': 100} qp=32 r1 rec=0.9803 med=2.590ms
+glove-100-angular IVF-Flat {'nlist': 100} qp=32 r2 rec=0.9803 med=2.637ms
+glove-100-angular IVF-Flat {'nlist': 100} qp=64 r0 rec=0.9967 med=5.263ms
+glove-100-angular IVF-Flat {'nlist': 100} qp=64 r1 rec=0.9967 med=5.202ms
+glove-100-angular IVF-Flat {'nlist': 100} qp=64 r2 rec=0.9967 med=5.207ms
+glove-100-angular IVF-Flat {'nlist': 100} qp=128 r0 rec=1.0000 med=7.624ms
+glove-100-angular IVF-Flat {'nlist': 100} qp=128 r1 rec=1.0000 med=8.014ms
+glove-100-angular IVF-Flat {'nlist': 100} qp=128 r2 rec=1.0000 med=7.818ms
+glove-100-angular IVF-Flat {'nlist': 1024} qp=1 r0 rec=0.3353 med=0.035ms
+glove-100-angular IVF-Flat {'nlist': 1024} qp=1 r1 rec=0.3353 med=0.035ms
+glove-100-angular IVF-Flat {'nlist': 1024} qp=1 r2 rec=0.3353 med=0.035ms
+glove-100-angular IVF-Flat {'nlist': 1024} qp=2 r0 rec=0.4577 med=0.044ms
+glove-100-angular IVF-Flat {'nlist': 1024} qp=2 r1 rec=0.4577 med=0.043ms
+glove-100-angular IVF-Flat {'nlist': 1024} qp=2 r2 rec=0.4577 med=0.043ms
+glove-100-angular IVF-Flat {'nlist': 1024} qp=4 r0 rec=0.5790 med=0.063ms
+glove-100-angular IVF-Flat {'nlist': 1024} qp=4 r1 rec=0.5790 med=0.062ms
+glove-100-angular IVF-Flat {'nlist': 1024} qp=4 r2 rec=0.5790 med=0.061ms
+glove-100-angular IVF-Flat {'nlist': 1024} qp=8 r0 rec=0.6810 med=0.098ms
+glove-100-angular IVF-Flat {'nlist': 1024} qp=8 r1 rec=0.6810 med=0.097ms
+glove-100-angular IVF-Flat {'nlist': 1024} qp=8 r2 rec=0.6810 med=0.100ms
+glove-100-angular IVF-Flat {'nlist': 1024} qp=16 r0 rec=0.7703 med=0.169ms
+glove-100-angular IVF-Flat {'nlist': 1024} qp=16 r1 rec=0.7703 med=0.172ms
+glove-100-angular IVF-Flat {'nlist': 1024} qp=16 r2 rec=0.7703 med=0.172ms
+glove-100-angular IVF-Flat {'nlist': 1024} qp=32 r0 rec=0.8457 med=0.307ms
+glove-100-angular IVF-Flat {'nlist': 1024} qp=32 r1 rec=0.8457 med=0.318ms
+glove-100-angular IVF-Flat {'nlist': 1024} qp=32 r2 rec=0.8457 med=0.313ms
+glove-100-angular IVF-Flat {'nlist': 1024} qp=64 r0 rec=0.9070 med=0.576ms
+glove-100-angular IVF-Flat {'nlist': 1024} qp=64 r1 rec=0.9070 med=0.580ms
+glove-100-angular IVF-Flat {'nlist': 1024} qp=64 r2 rec=0.9070 med=0.562ms
+glove-100-angular IVF-Flat {'nlist': 1024} qp=128 r0 rec=0.9573 med=1.071ms
+glove-100-angular IVF-Flat {'nlist': 1024} qp=128 r1 rec=0.9573 med=1.079ms
+glove-100-angular IVF-Flat {'nlist': 1024} qp=128 r2 rec=0.9573 med=1.079ms
+glove-100-angular IVF-Flat {'nlist': 4096} qp=1 r0 rec=0.2620 med=0.094ms
+glove-100-angular IVF-Flat {'nlist': 4096} qp=1 r1 rec=0.2620 med=0.098ms
+glove-100-angular IVF-Flat {'nlist': 4096} qp=1 r2 rec=0.2620 med=0.087ms
+glove-100-angular IVF-Flat {'nlist': 4096} qp=2 r0 rec=0.3747 med=0.090ms
+glove-100-angular IVF-Flat {'nlist': 4096} qp=2 r1 rec=0.3747 med=0.090ms
+glove-100-angular IVF-Flat {'nlist': 4096} qp=2 r2 rec=0.3747 med=0.091ms
+glove-100-angular IVF-Flat {'nlist': 4096} qp=4 r0 rec=0.4680 med=0.099ms
+glove-100-angular IVF-Flat {'nlist': 4096} qp=4 r1 rec=0.4680 med=0.098ms
+glove-100-angular IVF-Flat {'nlist': 4096} qp=4 r2 rec=0.4680 med=0.098ms
+glove-100-angular IVF-Flat {'nlist': 4096} qp=8 r0 rec=0.5790 med=0.113ms
+glove-100-angular IVF-Flat {'nlist': 4096} qp=8 r1 rec=0.5790 med=0.114ms
+glove-100-angular IVF-Flat {'nlist': 4096} qp=8 r2 rec=0.5790 med=0.117ms
+glove-100-angular IVF-Flat {'nlist': 4096} qp=16 r0 rec=0.6787 med=0.141ms
+glove-100-angular IVF-Flat {'nlist': 4096} qp=16 r1 rec=0.6787 med=0.143ms
+glove-100-angular IVF-Flat {'nlist': 4096} qp=16 r2 rec=0.6787 med=0.141ms
+glove-100-angular IVF-Flat {'nlist': 4096} qp=32 r0 rec=0.7597 med=0.194ms
+glove-100-angular IVF-Flat {'nlist': 4096} qp=32 r1 rec=0.7597 med=0.190ms
+glove-100-angular IVF-Flat {'nlist': 4096} qp=32 r2 rec=0.7597 med=0.198ms
+glove-100-angular IVF-Flat {'nlist': 4096} qp=64 r0 rec=0.8387 med=0.318ms
+glove-100-angular IVF-Flat {'nlist': 4096} qp=64 r1 rec=0.8387 med=0.299ms
+glove-100-angular IVF-Flat {'nlist': 4096} qp=64 r2 rec=0.8387 med=0.293ms
+glove-100-angular IVF-Flat {'nlist': 4096} qp=128 r0 rec=0.8907 med=0.487ms
+glove-100-angular IVF-Flat {'nlist': 4096} qp=128 r1 rec=0.8907 med=0.477ms
+glove-100-angular IVF-Flat {'nlist': 4096} qp=128 r2 rec=0.8907 med=0.473ms
+Traceback (most recent call last):
+  File "/home/claude/ann-recall-study/src/sweep.py", line 120, in <module>
+    main(a.dataset, a.n_base, a.n_query, a.families, a.k, out, a.repeats)
+  File "/home/claude/ann-recall-study/src/sweep.py", line 104, in main
+    run_family(dataset, base, q, metric, truth_ids, truth_d, k, fam, w, fh, repeats)
+  File "/home/claude/ann-recall-study/src/sweep.py", line 63, in run_family
+    ix = cls(dim, metric, **bp)
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/claude/ann-recall-study/src/indexes.py", line 113, in __init__
+    self.index = faiss.IndexIVFPQ(quant, dim, nlist, m, nbits, met)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/faiss/__init__.py", line 253, in replacement_init
+    original_init(self, *args)
+  File "/usr/local/lib/python3.11/dist-packages/faiss/swigfaiss.py", line 9391, in __init__
+    _swigfaiss.IndexIVFPQ_swiginit(self, _swigfaiss.new_IndexIVFPQ(*args))
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Error in void faiss::ProductQuantizer::set_derived_values() at /project/faiss/impl/ProductQuantizer.cpp:64: Error: '!(d % M == 0)' failed: The dimension of the vector (d) should be a multiple of the number of subquantizers (M)
+=== nytimes-256-angular ===
+loaded nytimes-256-angular: base=(200000, 256) queries=(300, 256) metric=angular
+exact ground truth in 3.1s
+nytimes-256-angular HNSW {'M': 8, 'efConstruction': 100} qp=10 r0 rec=0.3470 med=0.043ms
+nytimes-256-angular HNSW {'M': 8, 'efConstruction': 100} qp=10 r1 rec=0.3470 med=0.045ms
+nytimes-256-angular HNSW {'M': 8, 'efConstruction': 100} qp=10 r2 rec=0.3470 med=0.042ms
+nytimes-256-angular HNSW {'M': 8, 'efConstruction': 100} qp=16 r0 rec=0.4507 med=0.061ms
+nytimes-256-angular HNSW {'M': 8, 'efConstruction': 100} qp=16 r1 rec=0.4507 med=0.058ms
+nytimes-256-angular HNSW {'M': 8, 'efConstruction': 100} qp=16 r2 rec=0.4507 med=0.057ms
+nytimes-256-angular HNSW {'M': 8, 'efConstruction': 100} qp=32 r0 rec=0.5713 med=0.100ms
+nytimes-256-angular HNSW {'M': 8, 'efConstruction': 100} qp=32 r1 rec=0.5713 med=0.102ms
+nytimes-256-angular HNSW {'M': 8, 'efConstruction': 100} qp=32 r2 rec=0.5713 med=0.105ms
+nytimes-256-angular HNSW {'M': 8, 'efConstruction': 100} qp=64 r0 rec=0.6790 med=0.182ms
+nytimes-256-angular HNSW {'M': 8, 'efConstruction': 100} qp=64 r1 rec=0.6790 med=0.192ms
+nytimes-256-angular HNSW {'M': 8, 'efConstruction': 100} qp=64 r2 rec=0.6790 med=0.186ms
+nytimes-256-angular HNSW {'M': 8, 'efConstruction': 100} qp=128 r0 rec=0.7660 med=0.325ms
+nytimes-256-angular HNSW {'M': 8, 'efConstruction': 100} qp=128 r1 rec=0.7660 med=0.331ms
+nytimes-256-angular HNSW {'M': 8, 'efConstruction': 100} qp=128 r2 rec=0.7660 med=0.325ms
+nytimes-256-angular HNSW {'M': 8, 'efConstruction': 100} qp=256 r0 rec=0.8320 med=0.584ms
+nytimes-256-angular HNSW {'M': 8, 'efConstruction': 100} qp=256 r1 rec=0.8320 med=0.593ms
+nytimes-256-angular HNSW {'M': 8, 'efConstruction': 100} qp=256 r2 rec=0.8320 med=0.590ms
+nytimes-256-angular HNSW {'M': 8, 'efConstruction': 100} qp=512 r0 rec=0.8730 med=1.100ms
+nytimes-256-angular HNSW {'M': 8, 'efConstruction': 100} qp=512 r1 rec=0.8730 med=1.121ms
+nytimes-256-angular HNSW {'M': 8, 'efConstruction': 100} qp=512 r2 rec=0.8730 med=1.110ms
+nytimes-256-angular HNSW {'M': 16, 'efConstruction': 200} qp=10 r0 rec=0.6787 med=0.077ms
+nytimes-256-angular HNSW {'M': 16, 'efConstruction': 200} qp=10 r1 rec=0.6787 med=0.077ms
+nytimes-256-angular HNSW {'M': 16, 'efConstruction': 200} qp=10 r2 rec=0.6787 med=0.077ms
+nytimes-256-angular HNSW {'M': 16, 'efConstruction': 200} qp=16 r0 rec=0.7437 med=0.103ms
+nytimes-256-angular HNSW {'M': 16, 'efConstruction': 200} qp=16 r1 rec=0.7437 med=0.105ms
+nytimes-256-angular HNSW {'M': 16, 'efConstruction': 200} qp=16 r2 rec=0.7437 med=0.101ms
+nytimes-256-angular HNSW {'M': 16, 'efConstruction': 200} qp=32 r0 rec=0.8160 med=0.166ms
+nytimes-256-angular HNSW {'M': 16, 'efConstruction': 200} qp=32 r1 rec=0.8160 med=0.169ms
+nytimes-256-angular HNSW {'M': 16, 'efConstruction': 200} qp=32 r2 rec=0.8160 med=0.172ms
+nytimes-256-angular HNSW {'M': 16, 'efConstruction': 200} qp=64 r0 rec=0.8537 med=0.296ms
+nytimes-256-angular HNSW {'M': 16, 'efConstruction': 200} qp=64 r1 rec=0.8537 med=0.295ms
+nytimes-256-angular HNSW {'M': 16, 'efConstruction': 200} qp=64 r2 rec=0.8537 med=0.298ms
+nytimes-256-angular HNSW {'M': 16, 'efConstruction': 200} qp=128 r0 rec=0.8960 med=0.541ms
+nytimes-256-angular HNSW {'M': 16, 'efConstruction': 200} qp=128 r1 rec=0.8960 med=0.542ms
+nytimes-256-angular HNSW {'M': 16, 'efConstruction': 200} qp=128 r2 rec=0.8960 med=0.546ms
+nytimes-256-angular HNSW {'M': 16, 'efConstruction': 200} qp=256 r0 rec=0.9237 med=1.023ms
+nytimes-256-angular HNSW {'M': 16, 'efConstruction': 200} qp=256 r1 rec=0.9237 med=1.032ms
+nytimes-256-angular HNSW {'M': 16, 'efConstruction': 200} qp=256 r2 rec=0.9237 med=1.031ms
+nytimes-256-angular HNSW {'M': 16, 'efConstruction': 200} qp=512 r0 rec=0.9520 med=2.033ms
+nytimes-256-angular HNSW {'M': 16, 'efConstruction': 200} qp=512 r1 rec=0.9520 med=1.996ms
+nytimes-256-angular HNSW {'M': 16, 'efConstruction': 200} qp=512 r2 rec=0.9520 med=1.998ms
+nytimes-256-angular HNSW {'M': 32, 'efConstruction': 200} qp=10 r0 rec=0.7560 med=0.136ms
+nytimes-256-angular HNSW {'M': 32, 'efConstruction': 200} qp=10 r1 rec=0.7560 med=0.134ms
+nytimes-256-angular HNSW {'M': 32, 'efConstruction': 200} qp=10 r2 rec=0.7560 med=0.132ms
+nytimes-256-angular HNSW {'M': 32, 'efConstruction': 200} qp=16 r0 rec=0.8230 med=0.189ms
+nytimes-256-angular HNSW {'M': 32, 'efConstruction': 200} qp=16 r1 rec=0.8230 med=0.185ms
+nytimes-256-angular HNSW {'M': 32, 'efConstruction': 200} qp=16 r2 rec=0.8230 med=0.187ms
+nytimes-256-angular HNSW {'M': 32, 'efConstruction': 200} qp=32 r0 rec=0.8683 med=0.302ms
+nytimes-256-angular HNSW {'M': 32, 'efConstruction': 200} qp=32 r1 rec=0.8683 med=0.300ms
+nytimes-256-angular HNSW {'M': 32, 'efConstruction': 200} qp=32 r2 rec=0.8683 med=0.297ms
+nytimes-256-angular HNSW {'M': 32, 'efConstruction': 200} qp=64 r0 rec=0.9127 med=0.517ms
+nytimes-256-angular HNSW {'M': 32, 'efConstruction': 200} qp=64 r1 rec=0.9127 med=0.531ms
+nytimes-256-angular HNSW {'M': 32, 'efConstruction': 200} qp=64 r2 rec=0.9127 med=0.523ms
+nytimes-256-angular HNSW {'M': 32, 'efConstruction': 200} qp=128 r0 rec=0.9380 med=0.976ms
+nytimes-256-angular HNSW {'M': 32, 'efConstruction': 200} qp=128 r1 rec=0.9380 med=0.967ms
+nytimes-256-angular HNSW {'M': 32, 'efConstruction': 200} qp=128 r2 rec=0.9380 med=0.968ms
+nytimes-256-angular HNSW {'M': 32, 'efConstruction': 200} qp=256 r0 rec=0.9577 med=1.858ms
+nytimes-256-angular HNSW {'M': 32, 'efConstruction': 200} qp=256 r1 rec=0.9577 med=1.871ms
+nytimes-256-angular HNSW {'M': 32, 'efConstruction': 200} qp=256 r2 rec=0.9577 med=1.854ms
+nytimes-256-angular HNSW {'M': 32, 'efConstruction': 200} qp=512 r0 rec=0.9797 med=3.651ms
+nytimes-256-angular HNSW {'M': 32, 'efConstruction': 200} qp=512 r1 rec=0.9797 med=3.658ms
+nytimes-256-angular HNSW {'M': 32, 'efConstruction': 200} qp=512 r2 rec=0.9797 med=3.650ms
+nytimes-256-angular HNSW {'M': 48, 'efConstruction': 400} qp=10 r0 rec=0.8000 med=0.218ms
+nytimes-256-angular HNSW {'M': 48, 'efConstruction': 400} qp=10 r1 rec=0.8000 med=0.214ms
+nytimes-256-angular HNSW {'M': 48, 'efConstruction': 400} qp=10 r2 rec=0.8000 med=0.232ms
+nytimes-256-angular HNSW {'M': 48, 'efConstruction': 400} qp=16 r0 rec=0.8483 med=0.307ms
+nytimes-256-angular HNSW {'M': 48, 'efConstruction': 400} qp=16 r1 rec=0.8483 med=0.300ms
+nytimes-256-angular HNSW {'M': 48, 'efConstruction': 400} qp=16 r2 rec=0.8483 med=0.305ms
+nytimes-256-angular HNSW {'M': 48, 'efConstruction': 400} qp=32 r0 rec=0.8937 med=0.518ms
+nytimes-256-angular HNSW {'M': 48, 'efConstruction': 400} qp=32 r1 rec=0.8937 med=0.518ms
+nytimes-256-angular HNSW {'M': 48, 'efConstruction': 400} qp=32 r2 rec=0.8937 med=0.526ms
+nytimes-256-angular HNSW {'M': 48, 'efConstruction': 400} qp=64 r0 rec=0.9273 med=0.956ms
+nytimes-256-angular HNSW {'M': 48, 'efConstruction': 400} qp=64 r1 rec=0.9273 med=0.920ms
+nytimes-256-angular HNSW {'M': 48, 'efConstruction': 400} qp=64 r2 rec=0.9273 med=0.935ms
+nytimes-256-angular HNSW {'M': 48, 'efConstruction': 400} qp=128 r0 rec=0.9577 med=1.805ms
+nytimes-256-angular HNSW {'M': 48, 'efConstruction': 400} qp=128 r1 rec=0.9577 med=1.771ms
+nytimes-256-angular HNSW {'M': 48, 'efConstruction': 400} qp=128 r2 rec=0.9577 med=1.800ms
+nytimes-256-angular HNSW {'M': 48, 'efConstruction': 400} qp=256 r0 rec=0.9800 med=3.377ms
+nytimes-256-angular HNSW {'M': 48, 'efConstruction': 400} qp=256 r1 rec=0.9800 med=3.407ms
+nytimes-256-angular HNSW {'M': 48, 'efConstruction': 400} qp=256 r2 rec=0.9800 med=3.552ms
+nytimes-256-angular HNSW {'M': 48, 'efConstruction': 400} qp=512 r0 rec=0.9930 med=6.689ms
+nytimes-256-angular HNSW {'M': 48, 'efConstruction': 400} qp=512 r1 rec=0.9930 med=6.738ms
+nytimes-256-angular HNSW {'M': 48, 'efConstruction': 400} qp=512 r2 rec=0.9930 med=6.598ms
+nytimes-256-angular IVF-Flat {'nlist': 100} qp=1 r0 rec=0.4823 med=0.286ms
+nytimes-256-angular IVF-Flat {'nlist': 100} qp=1 r1 rec=0.4823 med=0.284ms
+nytimes-256-angular IVF-Flat {'nlist': 100} qp=1 r2 rec=0.4823 med=0.295ms
+nytimes-256-angular IVF-Flat {'nlist': 100} qp=2 r0 rec=0.5673 med=0.550ms
+nytimes-256-angular IVF-Flat {'nlist': 100} qp=2 r1 rec=0.5673 med=0.538ms
+nytimes-256-angular IVF-Flat {'nlist': 100} qp=2 r2 rec=0.5673 med=0.539ms
+nytimes-256-angular IVF-Flat {'nlist': 100} qp=4 r0 rec=0.6367 med=1.004ms
+nytimes-256-angular IVF-Flat {'nlist': 100} qp=4 r1 rec=0.6367 med=1.027ms
+nytimes-256-angular IVF-Flat {'nlist': 100} qp=4 r2 rec=0.6367 med=1.017ms
+nytimes-256-angular IVF-Flat {'nlist': 100} qp=8 r0 rec=0.7287 med=2.039ms
+nytimes-256-angular IVF-Flat {'nlist': 100} qp=8 r1 rec=0.7287 med=2.001ms
+nytimes-256-angular IVF-Flat {'nlist': 100} qp=8 r2 rec=0.7287 med=1.958ms
+nytimes-256-angular IVF-Flat {'nlist': 100} qp=16 r0 rec=0.8263 med=3.813ms
+nytimes-256-angular IVF-Flat {'nlist': 100} qp=16 r1 rec=0.8263 med=3.826ms
+nytimes-256-angular IVF-Flat {'nlist': 100} qp=16 r2 rec=0.8263 med=3.827ms
+nytimes-256-angular IVF-Flat {'nlist': 100} qp=32 r0 rec=0.9110 med=7.609ms
+nytimes-256-angular IVF-Flat {'nlist': 100} qp=32 r1 rec=0.9110 med=7.652ms
+nytimes-256-angular IVF-Flat {'nlist': 100} qp=32 r2 rec=0.9110 med=7.732ms
+nytimes-256-angular IVF-Flat {'nlist': 100} qp=64 r0 rec=0.9727 med=15.077ms
+nytimes-256-angular IVF-Flat {'nlist': 100} qp=64 r1 rec=0.9727 med=15.207ms
+nytimes-256-angular IVF-Flat {'nlist': 100} qp=64 r2 rec=0.9727 med=15.015ms
+nytimes-256-angular IVF-Flat {'nlist': 100} qp=128 r0 rec=1.0000 med=23.278ms
+nytimes-256-angular IVF-Flat {'nlist': 100} qp=128 r1 rec=1.0000 med=23.436ms
+nytimes-256-angular IVF-Flat {'nlist': 100} qp=128 r2 rec=1.0000 med=23.735ms
+nytimes-256-angular IVF-Flat {'nlist': 1024} qp=1 r0 rec=0.5923 med=0.095ms
+nytimes-256-angular IVF-Flat {'nlist': 1024} qp=1 r1 rec=0.5923 med=0.092ms
+nytimes-256-angular IVF-Flat {'nlist': 1024} qp=1 r2 rec=0.5923 med=0.080ms
+nytimes-256-angular IVF-Flat {'nlist': 1024} qp=2 r0 rec=0.6673 med=0.120ms
+nytimes-256-angular IVF-Flat {'nlist': 1024} qp=2 r1 rec=0.6673 med=0.128ms
+nytimes-256-angular IVF-Flat {'nlist': 1024} qp=2 r2 rec=0.6673 med=0.128ms
+nytimes-256-angular IVF-Flat {'nlist': 1024} qp=4 r0 rec=0.7243 med=0.190ms
+nytimes-256-angular IVF-Flat {'nlist': 1024} qp=4 r1 rec=0.7243 med=0.183ms
+nytimes-256-angular IVF-Flat {'nlist': 1024} qp=4 r2 rec=0.7243 med=0.181ms
+nytimes-256-angular IVF-Flat {'nlist': 1024} qp=8 r0 rec=0.7657 med=0.307ms
+nytimes-256-angular IVF-Flat {'nlist': 1024} qp=8 r1 rec=0.7657 med=0.286ms
+nytimes-256-angular IVF-Flat {'nlist': 1024} qp=8 r2 rec=0.7657 med=0.287ms
+nytimes-256-angular IVF-Flat {'nlist': 1024} qp=16 r0 rec=0.8013 med=0.519ms
+nytimes-256-angular IVF-Flat {'nlist': 1024} qp=16 r1 rec=0.8013 med=0.500ms
+nytimes-256-angular IVF-Flat {'nlist': 1024} qp=16 r2 rec=0.8013 med=0.530ms
+nytimes-256-angular IVF-Flat {'nlist': 1024} qp=32 r0 rec=0.8337 med=0.973ms
+nytimes-256-angular IVF-Flat {'nlist': 1024} qp=32 r1 rec=0.8337 med=0.955ms
+nytimes-256-angular IVF-Flat {'nlist': 1024} qp=32 r2 rec=0.8337 med=0.955ms
+nytimes-256-angular IVF-Flat {'nlist': 1024} qp=64 r0 rec=0.8703 med=1.706ms
+nytimes-256-angular IVF-Flat {'nlist': 1024} qp=64 r1 rec=0.8703 med=1.735ms
+nytimes-256-angular IVF-Flat {'nlist': 1024} qp=64 r2 rec=0.8703 med=1.695ms
+nytimes-256-angular IVF-Flat {'nlist': 1024} qp=128 r0 rec=0.9080 med=3.206ms
+nytimes-256-angular IVF-Flat {'nlist': 1024} qp=128 r1 rec=0.9080 med=3.242ms
+nytimes-256-angular IVF-Flat {'nlist': 1024} qp=128 r2 rec=0.9080 med=3.201ms
+nytimes-256-angular IVF-Flat {'nlist': 4096} qp=1 r0 rec=0.5207 med=0.210ms
+nytimes-256-angular IVF-Flat {'nlist': 4096} qp=1 r1 rec=0.5207 med=0.209ms
+nytimes-256-angular IVF-Flat {'nlist': 4096} qp=1 r2 rec=0.5207 med=0.209ms
+nytimes-256-angular IVF-Flat {'nlist': 4096} qp=2 r0 rec=0.6530 med=0.218ms
+nytimes-256-angular IVF-Flat {'nlist': 4096} qp=2 r1 rec=0.6530 med=0.216ms
+nytimes-256-angular IVF-Flat {'nlist': 4096} qp=2 r2 rec=0.6530 med=0.215ms
+nytimes-256-angular IVF-Flat {'nlist': 4096} qp=4 r0 rec=0.7263 med=0.237ms
+nytimes-256-angular IVF-Flat {'nlist': 4096} qp=4 r1 rec=0.7263 med=0.245ms
+nytimes-256-angular IVF-Flat {'nlist': 4096} qp=4 r2 rec=0.7263 med=0.251ms
+nytimes-256-angular IVF-Flat {'nlist': 4096} qp=8 r0 rec=0.7737 med=0.293ms
+nytimes-256-angular IVF-Flat {'nlist': 4096} qp=8 r1 rec=0.7737 med=0.290ms
+nytimes-256-angular IVF-Flat {'nlist': 4096} qp=8 r2 rec=0.7737 med=0.271ms
+nytimes-256-angular IVF-Flat {'nlist': 4096} qp=16 r0 rec=0.8070 med=0.334ms
+nytimes-256-angular IVF-Flat {'nlist': 4096} qp=16 r1 rec=0.8070 med=0.336ms
+nytimes-256-angular IVF-Flat {'nlist': 4096} qp=16 r2 rec=0.8070 med=0.334ms
+nytimes-256-angular IVF-Flat {'nlist': 4096} qp=32 r0 rec=0.8373 med=0.463ms
+nytimes-256-angular IVF-Flat {'nlist': 4096} qp=32 r1 rec=0.8373 med=0.468ms
+nytimes-256-angular IVF-Flat {'nlist': 4096} qp=32 r2 rec=0.8373 med=0.486ms
+nytimes-256-angular IVF-Flat {'nlist': 4096} qp=64 r0 rec=0.8643 med=0.742ms
+nytimes-256-angular IVF-Flat {'nlist': 4096} qp=64 r1 rec=0.8643 med=0.742ms
+nytimes-256-angular IVF-Flat {'nlist': 4096} qp=64 r2 rec=0.8643 med=0.701ms
+nytimes-256-angular IVF-Flat {'nlist': 4096} qp=128 r0 rec=0.8920 med=1.198ms
+nytimes-256-angular IVF-Flat {'nlist': 4096} qp=128 r1 rec=0.8920 med=1.195ms
+nytimes-256-angular IVF-Flat {'nlist': 4096} qp=128 r2 rec=0.8920 med=1.224ms
+nytimes-256-angular IVF-PQ {'nlist': 1024, 'm': 8, 'nbits': 8} qp=1 r0 rec=0.2907 med=0.075ms
+nytimes-256-angular IVF-PQ {'nlist': 1024, 'm': 8, 'nbits': 8} qp=1 r1 rec=0.2907 med=0.068ms
+nytimes-256-angular IVF-PQ {'nlist': 1024, 'm': 8, 'nbits': 8} qp=1 r2 rec=0.2907 med=0.067ms
+nytimes-256-angular IVF-PQ {'nlist': 1024, 'm': 8, 'nbits': 8} qp=2 r0 rec=0.2980 med=0.073ms
+nytimes-256-angular IVF-PQ {'nlist': 1024, 'm': 8, 'nbits': 8} qp=2 r1 rec=0.2980 med=0.072ms
+nytimes-256-angular IVF-PQ {'nlist': 1024, 'm': 8, 'nbits': 8} qp=2 r2 rec=0.2980 med=0.071ms
+nytimes-256-angular IVF-PQ {'nlist': 1024, 'm': 8, 'nbits': 8} qp=4 r0 rec=0.3077 med=0.079ms
+nytimes-256-angular IVF-PQ {'nlist': 1024, 'm': 8, 'nbits': 8} qp=4 r1 rec=0.3077 med=0.080ms
+nytimes-256-angular IVF-PQ {'nlist': 1024, 'm': 8, 'nbits': 8} qp=4 r2 rec=0.3077 med=0.083ms
+nytimes-256-angular IVF-PQ {'nlist': 1024, 'm': 8, 'nbits': 8} qp=8 r0 rec=0.3097 med=0.092ms
+nytimes-256-angular IVF-PQ {'nlist': 1024, 'm': 8, 'nbits': 8} qp=8 r1 rec=0.3097 med=0.092ms
+nytimes-256-angular IVF-PQ {'nlist': 1024, 'm': 8, 'nbits': 8} qp=8 r2 rec=0.3097 med=0.097ms
+nytimes-256-angular IVF-PQ {'nlist': 1024, 'm': 8, 'nbits': 8} qp=16 r0 rec=0.3107 med=0.119ms
+nytimes-256-angular IVF-PQ {'nlist': 1024, 'm': 8, 'nbits': 8} qp=16 r1 rec=0.3107 med=0.120ms
+nytimes-256-angular IVF-PQ {'nlist': 1024, 'm': 8, 'nbits': 8} qp=16 r2 rec=0.3107 med=0.117ms
+nytimes-256-angular IVF-PQ {'nlist': 1024, 'm': 8, 'nbits': 8} qp=64 r0 rec=0.3110 med=0.256ms
+nytimes-256-angular IVF-PQ {'nlist': 1024, 'm': 8, 'nbits': 8} qp=64 r1 rec=0.3110 med=0.265ms
+nytimes-256-angular IVF-PQ {'nlist': 1024, 'm': 8, 'nbits': 8} qp=64 r2 rec=0.3110 med=0.258ms
+nytimes-256-angular IVF-PQ {'nlist': 1024, 'm': 8, 'nbits': 8} qp=128 r0 rec=0.3107 med=0.451ms
+nytimes-256-angular IVF-PQ {'nlist': 1024, 'm': 8, 'nbits': 8} qp=128 r1 rec=0.3107 med=0.472ms
+nytimes-256-angular IVF-PQ {'nlist': 1024, 'm': 8, 'nbits': 8} qp=128 r2 rec=0.3107 med=0.487ms
+nytimes-256-angular IVF-PQ {'nlist': 1024, 'm': 16, 'nbits': 8} qp=1 r0 rec=0.3763 med=0.089ms
+nytimes-256-angular IVF-PQ {'nlist': 1024, 'm': 16, 'nbits': 8} qp=1 r1 rec=0.3763 med=0.087ms
+nytimes-256-angular IVF-PQ {'nlist': 1024, 'm': 16, 'nbits': 8} qp=1 r2 rec=0.3763 med=0.087ms
+nytimes-256-angular IVF-PQ {'nlist': 1024, 'm': 16, 'nbits': 8} qp=2 r0 rec=0.3910 med=0.096ms
+nytimes-256-angular IVF-PQ {'nlist': 1024, 'm': 16, 'nbits': 8} qp=2 r1 rec=0.3910 med=0.094ms
+nytimes-256-angular IVF-PQ {'nlist': 1024, 'm': 16, 'nbits': 8} qp=2 r2 rec=0.3910 med=0.093ms
+nytimes-256-angular IVF-PQ {'nlist': 1024, 'm': 16, 'nbits': 8} qp=4 r0 rec=0.4077 med=0.109ms
+nytimes-256-angular IVF-PQ {'nlist': 1024, 'm': 16, 'nbits': 8} qp=4 r1 rec=0.4077 med=0.112ms
+nytimes-256-angular IVF-PQ {'nlist': 1024, 'm': 16, 'nbits': 8} qp=4 r2 rec=0.4077 med=0.112ms
+nytimes-256-angular IVF-PQ {'nlist': 1024, 'm': 16, 'nbits': 8} qp=8 r0 rec=0.4153 med=0.128ms
+nytimes-256-angular IVF-PQ {'nlist': 1024, 'm': 16, 'nbits': 8} qp=8 r1 rec=0.4153 med=0.133ms
+nytimes-256-angular IVF-PQ {'nlist': 1024, 'm': 16, 'nbits': 8} qp=8 r2 rec=0.4153 med=0.135ms
+nytimes-256-angular IVF-PQ {'nlist': 1024, 'm': 16, 'nbits': 8} qp=16 r0 rec=0.4197 med=0.172ms
+nytimes-256-angular IVF-PQ {'nlist': 1024, 'm': 16, 'nbits': 8} qp=16 r1 rec=0.4197 med=0.179ms
+nytimes-256-angular IVF-PQ {'nlist': 1024, 'm': 16, 'nbits': 8} qp=16 r2 rec=0.4197 med=0.178ms
+nytimes-256-angular IVF-PQ {'nlist': 1024, 'm': 16, 'nbits': 8} qp=64 r0 rec=0.4263 med=0.422ms
+nytimes-256-angular IVF-PQ {'nlist': 1024, 'm': 16, 'nbits': 8} qp=64 r1 rec=0.4263 med=0.454ms
+nytimes-256-angular IVF-PQ {'nlist': 1024, 'm': 16, 'nbits': 8} qp=64 r2 rec=0.4263 med=0.442ms
+nytimes-256-angular IVF-PQ {'nlist': 1024, 'm': 16, 'nbits': 8} qp=128 r0 rec=0.4270 med=0.737ms
+nytimes-256-angular IVF-PQ {'nlist': 1024, 'm': 16, 'nbits': 8} qp=128 r1 rec=0.4270 med=0.728ms
+nytimes-256-angular IVF-PQ {'nlist': 1024, 'm': 16, 'nbits': 8} qp=128 r2 rec=0.4270 med=0.720ms
+nytimes-256-angular IVF-PQ {'nlist': 4096, 'm': 16, 'nbits': 8} qp=1 r0 rec=0.3947 med=0.234ms
+nytimes-256-angular IVF-PQ {'nlist': 4096, 'm': 16, 'nbits': 8} qp=1 r1 rec=0.3947 med=0.237ms
+nytimes-256-angular IVF-PQ {'nlist': 4096, 'm': 16, 'nbits': 8} qp=1 r2 rec=0.3947 med=0.236ms
+nytimes-256-angular IVF-PQ {'nlist': 4096, 'm': 16, 'nbits': 8} qp=2 r0 rec=0.4340 med=0.243ms
+nytimes-256-angular IVF-PQ {'nlist': 4096, 'm': 16, 'nbits': 8} qp=2 r1 rec=0.4340 med=0.228ms
+nytimes-256-angular IVF-PQ {'nlist': 4096, 'm': 16, 'nbits': 8} qp=2 r2 rec=0.4340 med=0.223ms
+nytimes-256-angular IVF-PQ {'nlist': 4096, 'm': 16, 'nbits': 8} qp=4 r0 rec=0.4510 med=0.227ms
+nytimes-256-angular IVF-PQ {'nlist': 4096, 'm': 16, 'nbits': 8} qp=4 r1 rec=0.4510 med=0.228ms
+nytimes-256-angular IVF-PQ {'nlist': 4096, 'm': 16, 'nbits': 8} qp=4 r2 rec=0.4510 med=0.226ms
+nytimes-256-angular IVF-PQ {'nlist': 4096, 'm': 16, 'nbits': 8} qp=8 r0 rec=0.4587 med=0.256ms
+nytimes-256-angular IVF-PQ {'nlist': 4096, 'm': 16, 'nbits': 8} qp=8 r1 rec=0.4587 med=0.246ms
+nytimes-256-angular IVF-PQ {'nlist': 4096, 'm': 16, 'nbits': 8} qp=8 r2 rec=0.4587 med=0.239ms
+nytimes-256-angular IVF-PQ {'nlist': 4096, 'm': 16, 'nbits': 8} qp=16 r0 rec=0.4633 med=0.264ms
+nytimes-256-angular IVF-PQ {'nlist': 4096, 'm': 16, 'nbits': 8} qp=16 r1 rec=0.4633 med=0.281ms
+nytimes-256-angular IVF-PQ {'nlist': 4096, 'm': 16, 'nbits': 8} qp=16 r2 rec=0.4633 med=0.297ms
+nytimes-256-angular IVF-PQ {'nlist': 4096, 'm': 16, 'nbits': 8} qp=64 r0 rec=0.4667 med=0.431ms
+nytimes-256-angular IVF-PQ {'nlist': 4096, 'm': 16, 'nbits': 8} qp=64 r1 rec=0.4667 med=0.410ms
+nytimes-256-angular IVF-PQ {'nlist': 4096, 'm': 16, 'nbits': 8} qp=64 r2 rec=0.4667 med=0.403ms
+nytimes-256-angular IVF-PQ {'nlist': 4096, 'm': 16, 'nbits': 8} qp=128 r0 rec=0.4680 med=0.579ms
+nytimes-256-angular IVF-PQ {'nlist': 4096, 'm': 16, 'nbits': 8} qp=128 r1 rec=0.4680 med=0.585ms
+nytimes-256-angular IVF-PQ {'nlist': 4096, 'm': 16, 'nbits': 8} qp=128 r2 rec=0.4680 med=0.570ms
+ALL SWEEPS DONE
