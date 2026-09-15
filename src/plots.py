@@ -39,12 +39,23 @@ def _style(ax):
     ax.tick_params(colors=INK2, labelsize=8)
 
 
-def frontier_panels(df, out_path, title):
+def frontier_panels(df, out_path, title, stacked=False, page_width=6.6):
+    """Recall-latency frontiers, one panel per dataset.
+
+    `stacked` lays the panels out vertically at true print width, so that when
+    the figure is embedded in the report at `page_width` inches nothing is scaled
+    down and the tick labels stay at their intended point size.
+    """
     datasets = [d for d in DATASET_LABEL if d in set(df["dataset"])]
     n = len(datasets)
-    fig, axes = plt.subplots(1, n, figsize=(4.6 * n, 4.0), squeeze=False)
+    if stacked:
+        fig, axes = plt.subplots(n, 1, figsize=(page_width, 2.85 * n), squeeze=False)
+        flat = [axes[i][0] for i in range(n)]
+    else:
+        fig, axes = plt.subplots(1, n, figsize=(4.6 * n, 4.0), squeeze=False)
+        flat = list(axes[0])
     fig.patch.set_facecolor("white")
-    for ax, ds in zip(axes[0], datasets):
+    for ax, ds in zip(flat, datasets):
         sub = df[df["dataset"] == ds]
         _style(ax)
         for fam in ["HNSW", "IVF-Flat", "IVF-PQ"]:
@@ -75,9 +86,9 @@ def frontier_panels(df, out_path, title):
         ax.set_ylim(-0.03, 1.04)
         ax.axhline(0.95, color=MUTED, linewidth=0.9, linestyle="--", zorder=1)
         ax.text(ax.get_xlim()[0], 0.955, " recall 0.95", fontsize=7, color=INK2, va="bottom")
-    axes[0][0].legend(frameon=False, fontsize=8.5, loc="lower right", labelcolor=INK2)
-    fig.suptitle(title, fontsize=11.5, color=INK, y=0.995)
-    fig.tight_layout(rect=[0, 0, 1, 0.96])
+    flat[0].legend(frameon=False, fontsize=8.5, loc="lower right", labelcolor=INK2)
+    fig.suptitle(title, fontsize=10.5, color=INK, y=0.997)
+    fig.tight_layout(rect=[0, 0, 1, 0.965])
     fig.savefig(out_path, dpi=200, facecolor="white")
     plt.close(fig)
     return out_path
@@ -89,7 +100,7 @@ def default_gap_bars(gap_df, out_path):
     d["label"] = d["dataset"].str.split("-").str[0] + "\n" + d["family"]
     d = d.sort_values(["family", "dataset"])
     x = np.arange(len(d))
-    fig, ax = plt.subplots(figsize=(1.15 * len(d) + 2.6, 4.0))
+    fig, ax = plt.subplots(figsize=(6.6, 3.5))
     fig.patch.set_facecolor("white")
     _style(ax)
     w = 0.38
