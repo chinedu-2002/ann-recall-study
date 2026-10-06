@@ -11,7 +11,8 @@ import datasets, characterize
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 rows = []
-for name in ["sift-128-euclidean", "glove-100-angular", "nytimes-256-angular"]:
+NAMES = sys.argv[1:] or (datasets.REAL_DATASETS + datasets.SYNTHETIC_DATASETS)
+for name in NAMES:
     base, q, metric, _ = datasets.load(name, n_base=200000, n_query=300)
     t0 = time.perf_counter()
     r = characterize.characterize(base, q, metric, n_sample=20000)

@@ -1,0 +1,211 @@
+dense sweeps available for 12 datasets
+
+=== oracle settings (smallest setting reaching target) ===
+family                        HNSW        IVF-Flat       
+target                        0.90   0.95     0.90   0.95
+dataset                                                  
+sift-128-euclidean            32.0   48.0     24.0   32.0
+glove-100-angular            192.0  512.0     64.0  128.0
+nytimes-256-angular          160.0  512.0    128.0  256.0
+fashion-mnist-784-euclidean   10.0   12.0      6.0    8.0
+mnist-784-euclidean           10.0   16.0      8.0   12.0
+glove-25-angular              24.0   40.0     16.0   32.0
+synthetic-id4-128             10.0   10.0      2.0    3.0
+synthetic-id8-128             10.0   10.0      6.0    8.0
+synthetic-id16-128            16.0   20.0     12.0   12.0
+synthetic-id24-128            24.0   32.0     12.0   16.0
+synthetic-id32-128            32.0   40.0     16.0   24.0
+synthetic-id48-128            32.0   48.0     16.0   24.0
+
+=== held-out summary, feature = LID, training = real+synthetic ===
+      training   family  target           method  n  hit_rate  mean_recall  min_recall  geo_latency_vs_oracle  mean_abs_log2_error
+real+synthetic     HNSW    0.90     constant-max  6  0.833333     0.965775     0.89033               3.302671             2.439517
+real+synthetic     HNSW    0.90  constant-median  6  0.500000     0.866333     0.66533               0.671116             1.446345
+real+synthetic     HNSW    0.90          default  6  0.333333     0.744388     0.50300               0.357205             1.867357
+real+synthetic     HNSW    0.90        heuristic  6  0.666667     0.926388     0.85133               1.179515             0.754345
+real+synthetic     HNSW    0.90 heuristic+margin  6  0.833333     0.948998     0.87433               1.573543             1.034023
+real+synthetic     HNSW    0.90           oracle  6  1.000000     0.917167     0.90333               1.000000             0.000000
+real+synthetic     HNSW    0.95     constant-max  6  1.000000     0.985388     0.95200               4.791168             2.918024
+real+synthetic     HNSW    0.95  constant-median  6  0.333333     0.892610     0.71033               0.535118             1.994297
+real+synthetic     HNSW    0.95          default  6  0.000000     0.744388     0.50300               0.221306             2.760047
+real+synthetic     HNSW    0.95        heuristic  6  0.666667     0.960943     0.92433               1.170449             0.720321
+real+synthetic     HNSW    0.95 heuristic+margin  6  0.833333     0.972558     0.93667               1.443922             0.858667
+real+synthetic     HNSW    0.95           oracle  6  1.000000     0.957667     0.95200               1.000000             0.000000
+real+synthetic IVF-Flat    0.90     constant-max  6  0.833333     0.970665     0.87033               3.520006             2.638346
+real+synthetic IVF-Flat    0.90  constant-median  6  0.333333     0.867165     0.73167               0.543527             1.610025
+real+synthetic IVF-Flat    0.90          default  6  0.000000     0.435000     0.30800               0.146824             4.528321
+real+synthetic IVF-Flat    0.90        heuristic  6  0.666667     0.931222     0.86933               1.190571             0.694988
+real+synthetic IVF-Flat    0.90 heuristic+margin  6  1.000000     0.953998     0.90367               1.508579             0.735840
+real+synthetic IVF-Flat    0.90           oracle  6  1.000000     0.921167     0.90367               1.000000             0.000000
+real+synthetic IVF-Flat    0.95     constant-max  6  0.833333     0.982333     0.90800               4.681352             2.902506
+real+synthetic IVF-Flat    0.95  constant-median  6  0.333333     0.890388     0.77033               0.496077             1.930827
+real+synthetic IVF-Flat    0.95          default  6  0.000000     0.435000     0.30800               0.096932             5.264160
+real+synthetic IVF-Flat    0.95        heuristic  6  0.666667     0.953998     0.90367               0.995956             0.471679
+real+synthetic IVF-Flat    0.95 heuristic+margin  6  0.833333     0.972945     0.93767               1.417364             0.694988
+real+synthetic IVF-Flat    0.95           oracle  6  1.000000     0.960832     0.95133               1.000000             0.000000
+
+=== feature ablation (heuristic only): mean |log2 error| and hit rate ===
+  family  target       feature  hit_rate  geo_latency_vs_oracle  mean_abs_log2_error
+    HNSW    0.90   ambient_dim  0.666667               0.707368             1.235840
+    HNSW    0.90 intrinsic_dim  0.666667               1.197597             0.798184
+    HNSW    0.90           lid  0.666667               1.179515             0.754345
+    HNSW    0.90          none  0.666667               0.780684             1.584691
+    HNSW    0.95   ambient_dim  0.666667               0.592117             1.682185
+    HNSW    0.95 intrinsic_dim  0.666667               1.170449             0.720321
+    HNSW    0.95           lid  0.666667               1.170449             0.720321
+    HNSW    0.95          none  0.500000               0.585750             1.974666
+IVF-Flat    0.90   ambient_dim  0.500000               0.672988             1.361654
+IVF-Flat    0.90 intrinsic_dim  0.666667               1.190571             0.694988
+IVF-Flat    0.90           lid  0.666667               1.190571             0.694988
+IVF-Flat    0.90          none  0.500000               0.649582             1.402506
+IVF-Flat    0.95   ambient_dim  0.500000               0.571523             1.305012
+IVF-Flat    0.95 intrinsic_dim  0.666667               1.042770             0.569173
+IVF-Flat    0.95           lid  0.666667               0.995956             0.471679
+IVF-Flat    0.95          none  0.333333               0.636453             1.540852
+
+=== training-set ablation (LID heuristic) ===
+      training   family  target  hit_rate  geo_latency_vs_oracle  mean_abs_log2_error
+     real only     HNSW    0.90  0.500000               1.153331             0.946345
+     real only     HNSW    0.95  0.666667               1.097610             0.833333
+     real only IVF-Flat    0.90  0.666667               1.169093             0.694988
+     real only IVF-Flat    0.95  0.833333               1.095609             0.500000
+real+synthetic     HNSW    0.90  0.666667               1.179515             0.754345
+real+synthetic     HNSW    0.95  0.666667               1.170449             0.720321
+real+synthetic IVF-Flat    0.90  0.666667               1.190571             0.694988
+real+synthetic IVF-Flat    0.95  0.666667               0.995956             0.471679
+
+=== per-dataset held-out detail (LID, real+synthetic, target 0.95) ===
+  family                     dataset           method  setting  raw_prediction  recall  latency_ms  latency_vs_oracle
+    HNSW          sift-128-euclidean        heuristic     48.0       45.052771 0.96133    0.119067           1.000000
+    HNSW          sift-128-euclidean heuristic+margin     80.0             NaN 0.98967    0.204200           1.715006
+    HNSW          sift-128-euclidean     constant-max    512.0             NaN 0.99933    0.930567           7.815510
+    HNSW          sift-128-euclidean  constant-median     32.0             NaN 0.92833    0.096800           0.812990
+    HNSW          sift-128-euclidean          default     10.0             NaN 0.72933    0.041367           0.347424
+    HNSW          sift-128-euclidean           oracle     48.0             NaN 0.96133    0.119067           1.000000
+    HNSW           glove-100-angular        heuristic    256.0      216.044370 0.92433    0.544867           0.572499
+    HNSW           glove-100-angular heuristic+margin    320.0             NaN 0.93667    0.649167           0.682089
+    HNSW           glove-100-angular     constant-max    512.0             NaN 0.96100    0.951733           1.000000
+    HNSW           glove-100-angular  constant-median     32.0             NaN 0.71033    0.083533           0.087770
+    HNSW           glove-100-angular          default     10.0             NaN 0.50300    0.036367           0.038211
+    HNSW           glove-100-angular           oracle    512.0             NaN 0.96100    0.951733           1.000000
+    HNSW         nytimes-256-angular        heuristic   1024.0     1196.417458 0.97367    3.588433           2.059950
+    HNSW         nytimes-256-angular heuristic+margin   1024.0             NaN 0.97367    3.588433           2.059950
+    HNSW         nytimes-256-angular     constant-max    512.0             NaN 0.95200    1.742000           1.000000
+    HNSW         nytimes-256-angular  constant-median     32.0             NaN 0.79867    0.156733           0.089973
+    HNSW         nytimes-256-angular          default     10.0             NaN 0.60433    0.062600           0.035936
+    HNSW         nytimes-256-angular           oracle    512.0             NaN 0.95200    1.742000           1.000000
+    HNSW fashion-mnist-784-euclidean        heuristic     32.0       26.716825 0.99433    0.183267           1.940699
+    HNSW fashion-mnist-784-euclidean heuristic+margin     40.0             NaN 0.99567    0.213500           2.260854
+    HNSW fashion-mnist-784-euclidean     constant-max    512.0             NaN 1.00000    1.235167          13.079774
+    HNSW fashion-mnist-784-euclidean  constant-median     40.0             NaN 0.99567    0.213500           2.260854
+    HNSW fashion-mnist-784-euclidean          default     10.0             NaN 0.93067    0.086300           0.913872
+    HNSW fashion-mnist-784-euclidean           oracle     12.0             NaN 0.95433    0.094433           1.000000
+    HNSW         mnist-784-euclidean        heuristic     24.0       21.931556 0.98067    0.164933           1.337297
+    HNSW         mnist-784-euclidean heuristic+margin     32.0             NaN 0.98700    0.205167           1.663514
+    HNSW         mnist-784-euclidean     constant-max    512.0             NaN 1.00000    1.538633          12.475405
+    HNSW         mnist-784-euclidean  constant-median     40.0             NaN 0.99133    0.237500           1.925676
+    HNSW         mnist-784-euclidean          default     10.0             NaN 0.92900    0.085733           0.695135
+    HNSW         mnist-784-euclidean           oracle     16.0             NaN 0.96467    0.123333           1.000000
+    HNSW            glove-25-angular        heuristic     32.0       25.149296 0.93133    0.066167           0.840034
+    HNSW            glove-25-angular heuristic+margin     40.0             NaN 0.95267    0.078767           1.000000
+    HNSW            glove-25-angular     constant-max    512.0             NaN 1.00000    0.747100           9.484977
+    HNSW            glove-25-angular  constant-median     32.0             NaN 0.93133    0.066167           0.840034
+    HNSW            glove-25-angular          default     10.0             NaN 0.77000    0.030533           0.387643
+    HNSW            glove-25-angular           oracle     40.0             NaN 0.95267    0.078767           1.000000
+IVF-Flat          sift-128-euclidean        heuristic     24.0       23.818401 0.93833    0.271400           0.743358
+IVF-Flat          sift-128-euclidean heuristic+margin     48.0             NaN 0.98600    0.488767           1.338720
+IVF-Flat          sift-128-euclidean     constant-max    256.0             NaN 1.00000    2.585600           7.081895
+IVF-Flat          sift-128-euclidean  constant-median     16.0             NaN 0.88200    0.192367           0.526888
+IVF-Flat          sift-128-euclidean          default      1.0             NaN 0.30800    0.030467           0.083447
+IVF-Flat          sift-128-euclidean           oracle     32.0             NaN 0.96700    0.365100           1.000000
+IVF-Flat           glove-100-angular        heuristic    128.0      125.466012 0.95733    1.078867           1.000000
+IVF-Flat           glove-100-angular heuristic+margin    192.0             NaN 0.97767    1.623233           1.504573
+IVF-Flat           glove-100-angular     constant-max    256.0             NaN 0.98600    2.090200           1.937403
+IVF-Flat           glove-100-angular  constant-median     16.0             NaN 0.77033    0.164867           0.152815
+IVF-Flat           glove-100-angular          default      1.0             NaN 0.33533    0.025267           0.023420
+IVF-Flat           glove-100-angular           oracle    128.0             NaN 0.95733    1.078867           1.000000
+IVF-Flat         nytimes-256-angular        heuristic    256.0      385.130932 0.95133    5.414767           1.000000
+IVF-Flat         nytimes-256-angular heuristic+margin    256.0             NaN 0.95133    5.414767           1.000000
+IVF-Flat         nytimes-256-angular     constant-max    128.0             NaN 0.90800    2.647533           0.488947
+IVF-Flat         nytimes-256-angular  constant-median     16.0             NaN 0.80133    0.433567           0.080071
+IVF-Flat         nytimes-256-angular          default      1.0             NaN 0.59233    0.071867           0.013272
+IVF-Flat         nytimes-256-angular           oracle    256.0             NaN 0.95133    5.414767           1.000000
+IVF-Flat fashion-mnist-784-euclidean        heuristic     16.0       15.022057 0.99133    0.522300           1.602147
+IVF-Flat fashion-mnist-784-euclidean heuristic+margin     24.0             NaN 0.99700    0.688033           2.110532
+IVF-Flat fashion-mnist-784-euclidean     constant-max    256.0             NaN 1.00000    5.594567          17.161247
+IVF-Flat fashion-mnist-784-euclidean  constant-median     24.0             NaN 0.99700    0.688033           2.110532
+IVF-Flat fashion-mnist-784-euclidean          default      1.0             NaN 0.49967    0.160667           0.492843
+IVF-Flat fashion-mnist-784-euclidean           oracle      8.0             NaN 0.96267    0.326000           1.000000
+IVF-Flat         mnist-784-euclidean        heuristic     16.0       12.347487 0.98200    0.444233           1.182835
+IVF-Flat         mnist-784-euclidean heuristic+margin     24.0             NaN 0.98800    0.593767           1.580989
+IVF-Flat         mnist-784-euclidean     constant-max    256.0             NaN 1.00000    5.128333          13.654921
+IVF-Flat         mnist-784-euclidean  constant-median     24.0             NaN 0.98800    0.593767           1.580989
+IVF-Flat         mnist-784-euclidean          default      1.0             NaN 0.46667    0.152133           0.405077
+IVF-Flat         mnist-784-euclidean           oracle     12.0             NaN 0.96533    0.375567           1.000000
+IVF-Flat            glove-25-angular        heuristic     16.0       13.804885 0.90367    0.070067           0.692815
+IVF-Flat            glove-25-angular heuristic+margin     24.0             NaN 0.93767    0.122000           1.206328
+IVF-Flat            glove-25-angular     constant-max    256.0             NaN 1.00000    0.677100           6.695122
+IVF-Flat            glove-25-angular  constant-median     16.0             NaN 0.90367    0.070067           0.692815
+IVF-Flat            glove-25-angular          default      1.0             NaN 0.40800    0.016200           0.160185
+IVF-Flat            glove-25-angular           oracle     32.0             NaN 0.96133    0.101133           1.000000
+
+fit on all datasets, HNSW, target 0.95: log2(setting) = 2.226 + 0.1368 * LID   (Pearson r = 0.963, n = 12)
+
+fit on all datasets, IVF-Flat, target 0.95: log2(setting) = 1.650 + 0.1236 * LID   (Pearson r = 0.959, n = 12)
+
+=== default gap across datasets (PR1 grid, k = 10) ===
+                    dataset   family  default_recall  default_recall_ci95  best_recall_at_default_latency  latency_ms_at_recall_0.95
+fashion-mnist-784-euclidean     HNSW         0.93033             0.012680                         0.93967                   0.114900
+fashion-mnist-784-euclidean IVF-Flat         0.69833             0.031636                         0.86967                   0.334567
+fashion-mnist-784-euclidean   IVF-PQ         0.38000             0.022077                         0.38000                        NaN
+          glove-100-angular     HNSW         0.51500                  NaN                         0.51500                   0.719900
+          glove-100-angular IVF-Flat         0.50067                  NaN                         0.68100                   1.076567
+          glove-100-angular   IVF-PQ         0.12800                  NaN                         0.12800                        NaN
+           glove-25-angular     HNSW         0.76300             0.024677                         0.76300                   0.094167
+           glove-25-angular IVF-Flat         0.56400             0.034685                         0.81133                   0.106300
+           glove-25-angular   IVF-PQ         0.24733             0.019859                         0.24733                        NaN
+        mnist-784-euclidean     HNSW         0.92933             0.013668                         0.93100                   0.119100
+        mnist-784-euclidean IVF-Flat         0.64233             0.032041                         0.81700                   0.472433
+        mnist-784-euclidean   IVF-PQ         0.39267             0.020946                         0.39267                        NaN
+        nytimes-256-angular     HNSW         0.67867                  NaN                         0.67867                   1.791833
+        nytimes-256-angular IVF-Flat         0.48233                  NaN                         0.77367                  15.099567
+        nytimes-256-angular   IVF-PQ         0.29067                  NaN                         0.29800                        NaN
+         sift-128-euclidean     HNSW         0.73067                  NaN                         0.73067                   0.143967
+         sift-128-euclidean IVF-Flat         0.52800                  NaN                         0.77300                   0.334100
+         sift-128-euclidean   IVF-PQ         0.24233                  NaN                         0.38367                        NaN
+mean default recall over 18 combinations: 0.5358  max: 0.9303
+
+=== HNSW default build at ef = 10 across k (95% CI over queries) ===
+            dataset   k  recall_at_ef10     ci95  latency_ms
+  glove-100-angular   1         0.58333 0.055882    0.035000
+  glove-100-angular  10         0.50300 0.038242    0.036367
+  glove-100-angular 100         0.73077 0.024349    0.230500
+nytimes-256-angular   1         0.67000 0.053299    0.062367
+nytimes-256-angular  10         0.60433 0.048030    0.062600
+nytimes-256-angular 100         0.73317 0.029666    0.371500
+ sift-128-euclidean   1         0.79000 0.046168    0.039000
+ sift-128-euclidean  10         0.72933 0.024540    0.041367
+ sift-128-euclidean 100         0.94967 0.005223    0.257867
+
+=== clamp check at k = 100: ef = 10 vs ef = 100 ===
+glove-100-angular        ef10 0.73077   ef100 0.73077   identical: True
+nytimes-256-angular      ef10 0.73317   ef100 0.73317   identical: True
+sift-128-euclidean       ef10 0.94967   ef100 0.94967   identical: True
+
+=== IVF-Flat default (nlist 100, nprobe 1) across k ===
+            dataset   k  recall  latency_ms
+  glove-100-angular   1 0.55333    0.102633
+  glove-100-angular 100 0.42763    0.124567
+nytimes-256-angular   1 0.61333    0.223167
+nytimes-256-angular 100 0.39413    0.252900
+ sift-128-euclidean   1 0.54333    0.107300
+ sift-128-euclidean 100 0.45750    0.128700
+
+=== full-size default gap ===
+           dataset   family  n_base  default_recall  default_recall_ci95  best_recall_at_default_latency  latency_ms_at_recall_0.95
+ glove-100-angular     HNSW 1183514         0.47767             0.041255                         0.47767                        NaN
+ glove-100-angular IVF-Flat 1183514         0.53500             0.037902                         0.81000                  18.083067
+sift-128-euclidean     HNSW 1000000         0.69633             0.026279                         0.69633                   0.214700
+sift-128-euclidean IVF-Flat 1000000         0.56000             0.033777                         0.82733                   0.991967
+
+figures written to /home/claude/ann-recall-study/figures

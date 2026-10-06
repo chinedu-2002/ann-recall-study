@@ -1,0 +1,112 @@
+dataset,n_base,dim,metric,family,build_params,query_param,k,is_default,recall_id,recall_tieaware,recall_q_std,n_query,latency_median_ms,latency_p95_ms,build_seconds,build_threads,memory_mb,repeat
+fashion-mnist-784-euclidean,60000,784,euclidean,HNSW,"{""M"": 16, ""efConstruction"": 200}",10,10,1,0.93033,0.93067,0.11211,300,0.0822,0.1398,17.76,2,196.32,0
+fashion-mnist-784-euclidean,60000,784,euclidean,HNSW,"{""M"": 16, ""efConstruction"": 200}",10,10,1,0.93033,0.93067,0.11211,300,0.0855,0.1438,17.76,2,196.32,1
+fashion-mnist-784-euclidean,60000,784,euclidean,HNSW,"{""M"": 16, ""efConstruction"": 200}",10,10,1,0.93033,0.93067,0.11211,300,0.0912,0.1536,17.76,2,196.32,2
+fashion-mnist-784-euclidean,60000,784,euclidean,HNSW,"{""M"": 16, ""efConstruction"": 200}",12,10,0,0.95433,0.95433,0.08586,300,0.0898,0.1397,17.76,2,196.32,0
+fashion-mnist-784-euclidean,60000,784,euclidean,HNSW,"{""M"": 16, ""efConstruction"": 200}",12,10,0,0.95433,0.95433,0.08586,300,0.0941,0.1428,17.76,2,196.32,1
+fashion-mnist-784-euclidean,60000,784,euclidean,HNSW,"{""M"": 16, ""efConstruction"": 200}",12,10,0,0.95433,0.95433,0.08586,300,0.0994,0.1554,17.76,2,196.32,2
+fashion-mnist-784-euclidean,60000,784,euclidean,HNSW,"{""M"": 16, ""efConstruction"": 200}",16,10,0,0.972,0.972,0.06903,300,0.1168,0.1783,17.76,2,196.32,0
+fashion-mnist-784-euclidean,60000,784,euclidean,HNSW,"{""M"": 16, ""efConstruction"": 200}",16,10,0,0.972,0.972,0.06903,300,0.1152,0.178,17.76,2,196.32,1
+fashion-mnist-784-euclidean,60000,784,euclidean,HNSW,"{""M"": 16, ""efConstruction"": 200}",16,10,0,0.972,0.972,0.06903,300,0.118,0.1674,17.76,2,196.32,2
+fashion-mnist-784-euclidean,60000,784,euclidean,HNSW,"{""M"": 16, ""efConstruction"": 200}",20,10,0,0.98167,0.98167,0.05392,300,0.1339,0.1947,17.76,2,196.32,0
+fashion-mnist-784-euclidean,60000,784,euclidean,HNSW,"{""M"": 16, ""efConstruction"": 200}",20,10,0,0.98167,0.98167,0.05392,300,0.134,0.2049,17.76,2,196.32,1
+fashion-mnist-784-euclidean,60000,784,euclidean,HNSW,"{""M"": 16, ""efConstruction"": 200}",20,10,0,0.98167,0.98167,0.05392,300,0.1349,0.2297,17.76,2,196.32,2
+fashion-mnist-784-euclidean,60000,784,euclidean,HNSW,"{""M"": 16, ""efConstruction"": 200}",24,10,0,0.99033,0.99033,0.03281,300,0.144,0.201,17.76,2,196.32,0
+fashion-mnist-784-euclidean,60000,784,euclidean,HNSW,"{""M"": 16, ""efConstruction"": 200}",24,10,0,0.99033,0.99033,0.03281,300,0.1507,0.2139,17.76,2,196.32,1
+fashion-mnist-784-euclidean,60000,784,euclidean,HNSW,"{""M"": 16, ""efConstruction"": 200}",24,10,0,0.99033,0.99033,0.03281,300,0.1466,0.1976,17.76,2,196.32,2
+fashion-mnist-784-euclidean,60000,784,euclidean,HNSW,"{""M"": 16, ""efConstruction"": 200}",32,10,0,0.99433,0.99433,0.02456,300,0.188,0.2667,17.76,2,196.32,0
+fashion-mnist-784-euclidean,60000,784,euclidean,HNSW,"{""M"": 16, ""efConstruction"": 200}",32,10,0,0.99433,0.99433,0.02456,300,0.1789,0.2407,17.76,2,196.32,1
+fashion-mnist-784-euclidean,60000,784,euclidean,HNSW,"{""M"": 16, ""efConstruction"": 200}",32,10,0,0.99433,0.99433,0.02456,300,0.1829,0.2515,17.76,2,196.32,2
+fashion-mnist-784-euclidean,60000,784,euclidean,HNSW,"{""M"": 16, ""efConstruction"": 200}",40,10,0,0.99567,0.99567,0.02197,300,0.211,0.2913,17.76,2,196.32,0
+fashion-mnist-784-euclidean,60000,784,euclidean,HNSW,"{""M"": 16, ""efConstruction"": 200}",40,10,0,0.99567,0.99567,0.02197,300,0.2154,0.2931,17.76,2,196.32,1
+fashion-mnist-784-euclidean,60000,784,euclidean,HNSW,"{""M"": 16, ""efConstruction"": 200}",40,10,0,0.99567,0.99567,0.02197,300,0.2141,0.2868,17.76,2,196.32,2
+fashion-mnist-784-euclidean,60000,784,euclidean,HNSW,"{""M"": 16, ""efConstruction"": 200}",48,10,0,0.99667,0.99667,0.01798,300,0.2407,0.3584,17.76,2,196.32,0
+fashion-mnist-784-euclidean,60000,784,euclidean,HNSW,"{""M"": 16, ""efConstruction"": 200}",48,10,0,0.99667,0.99667,0.01798,300,0.2417,0.3405,17.76,2,196.32,1
+fashion-mnist-784-euclidean,60000,784,euclidean,HNSW,"{""M"": 16, ""efConstruction"": 200}",48,10,0,0.99667,0.99667,0.01798,300,0.2411,0.3341,17.76,2,196.32,2
+fashion-mnist-784-euclidean,60000,784,euclidean,HNSW,"{""M"": 16, ""efConstruction"": 200}",64,10,0,0.99767,0.99767,0.01512,300,0.2889,0.4225,17.76,2,196.32,0
+fashion-mnist-784-euclidean,60000,784,euclidean,HNSW,"{""M"": 16, ""efConstruction"": 200}",64,10,0,0.99767,0.99767,0.01512,300,0.3348,0.4899,17.76,2,196.32,1
+fashion-mnist-784-euclidean,60000,784,euclidean,HNSW,"{""M"": 16, ""efConstruction"": 200}",64,10,0,0.99767,0.99767,0.01512,300,0.3499,0.4572,17.76,2,196.32,2
+fashion-mnist-784-euclidean,60000,784,euclidean,HNSW,"{""M"": 16, ""efConstruction"": 200}",80,10,0,0.99833,0.99833,0.01282,300,0.3605,0.5075,17.76,2,196.32,0
+fashion-mnist-784-euclidean,60000,784,euclidean,HNSW,"{""M"": 16, ""efConstruction"": 200}",80,10,0,0.99833,0.99833,0.01282,300,0.3438,0.4793,17.76,2,196.32,1
+fashion-mnist-784-euclidean,60000,784,euclidean,HNSW,"{""M"": 16, ""efConstruction"": 200}",80,10,0,0.99833,0.99833,0.01282,300,0.355,0.4659,17.76,2,196.32,2
+fashion-mnist-784-euclidean,60000,784,euclidean,HNSW,"{""M"": 16, ""efConstruction"": 200}",96,10,0,0.99833,0.99833,0.01282,300,0.3971,0.5291,17.76,2,196.32,0
+fashion-mnist-784-euclidean,60000,784,euclidean,HNSW,"{""M"": 16, ""efConstruction"": 200}",96,10,0,0.99833,0.99833,0.01282,300,0.402,0.5256,17.76,2,196.32,1
+fashion-mnist-784-euclidean,60000,784,euclidean,HNSW,"{""M"": 16, ""efConstruction"": 200}",96,10,0,0.99833,0.99833,0.01282,300,0.3777,0.5266,17.76,2,196.32,2
+fashion-mnist-784-euclidean,60000,784,euclidean,HNSW,"{""M"": 16, ""efConstruction"": 200}",128,10,0,0.999,0.999,0.00997,300,0.4846,0.6571,17.76,2,196.32,0
+fashion-mnist-784-euclidean,60000,784,euclidean,HNSW,"{""M"": 16, ""efConstruction"": 200}",128,10,0,0.999,0.999,0.00997,300,0.4743,0.6448,17.76,2,196.32,1
+fashion-mnist-784-euclidean,60000,784,euclidean,HNSW,"{""M"": 16, ""efConstruction"": 200}",128,10,0,0.999,0.999,0.00997,300,0.4649,0.6264,17.76,2,196.32,2
+fashion-mnist-784-euclidean,60000,784,euclidean,HNSW,"{""M"": 16, ""efConstruction"": 200}",160,10,0,0.999,0.999,0.00997,300,0.5732,0.8671,17.76,2,196.32,0
+fashion-mnist-784-euclidean,60000,784,euclidean,HNSW,"{""M"": 16, ""efConstruction"": 200}",160,10,0,0.999,0.999,0.00997,300,0.539,0.765,17.76,2,196.32,1
+fashion-mnist-784-euclidean,60000,784,euclidean,HNSW,"{""M"": 16, ""efConstruction"": 200}",160,10,0,0.999,0.999,0.00997,300,0.5225,0.7083,17.76,2,196.32,2
+fashion-mnist-784-euclidean,60000,784,euclidean,HNSW,"{""M"": 16, ""efConstruction"": 200}",192,10,0,0.999,0.999,0.00997,300,0.5889,0.8053,17.76,2,196.32,0
+fashion-mnist-784-euclidean,60000,784,euclidean,HNSW,"{""M"": 16, ""efConstruction"": 200}",192,10,0,0.999,0.999,0.00997,300,0.6044,0.8641,17.76,2,196.32,1
+fashion-mnist-784-euclidean,60000,784,euclidean,HNSW,"{""M"": 16, ""efConstruction"": 200}",192,10,0,0.999,0.999,0.00997,300,0.6011,0.8523,17.76,2,196.32,2
+fashion-mnist-784-euclidean,60000,784,euclidean,HNSW,"{""M"": 16, ""efConstruction"": 200}",256,10,0,0.999,0.999,0.00997,300,0.7763,1.0971,17.76,2,196.32,0
+fashion-mnist-784-euclidean,60000,784,euclidean,HNSW,"{""M"": 16, ""efConstruction"": 200}",256,10,0,0.999,0.999,0.00997,300,0.7924,1.0752,17.76,2,196.32,1
+fashion-mnist-784-euclidean,60000,784,euclidean,HNSW,"{""M"": 16, ""efConstruction"": 200}",256,10,0,0.999,0.999,0.00997,300,0.7568,1.027,17.76,2,196.32,2
+fashion-mnist-784-euclidean,60000,784,euclidean,HNSW,"{""M"": 16, ""efConstruction"": 200}",320,10,0,0.99933,0.99933,0.00815,300,0.9279,1.3504,17.76,2,196.32,0
+fashion-mnist-784-euclidean,60000,784,euclidean,HNSW,"{""M"": 16, ""efConstruction"": 200}",320,10,0,0.99933,0.99933,0.00815,300,0.8751,1.2382,17.76,2,196.32,1
+fashion-mnist-784-euclidean,60000,784,euclidean,HNSW,"{""M"": 16, ""efConstruction"": 200}",320,10,0,0.99933,0.99933,0.00815,300,0.8625,1.1889,17.76,2,196.32,2
+fashion-mnist-784-euclidean,60000,784,euclidean,HNSW,"{""M"": 16, ""efConstruction"": 200}",384,10,0,1.0,1.0,0.0,300,1.0594,1.5038,17.76,2,196.32,0
+fashion-mnist-784-euclidean,60000,784,euclidean,HNSW,"{""M"": 16, ""efConstruction"": 200}",384,10,0,1.0,1.0,0.0,300,1.009,1.4211,17.76,2,196.32,1
+fashion-mnist-784-euclidean,60000,784,euclidean,HNSW,"{""M"": 16, ""efConstruction"": 200}",384,10,0,1.0,1.0,0.0,300,1.021,1.4584,17.76,2,196.32,2
+fashion-mnist-784-euclidean,60000,784,euclidean,HNSW,"{""M"": 16, ""efConstruction"": 200}",512,10,0,1.0,1.0,0.0,300,1.2249,1.6727,17.76,2,196.32,0
+fashion-mnist-784-euclidean,60000,784,euclidean,HNSW,"{""M"": 16, ""efConstruction"": 200}",512,10,0,1.0,1.0,0.0,300,1.2632,1.7366,17.76,2,196.32,1
+fashion-mnist-784-euclidean,60000,784,euclidean,HNSW,"{""M"": 16, ""efConstruction"": 200}",512,10,0,1.0,1.0,0.0,300,1.2174,1.6427,17.76,2,196.32,2
+fashion-mnist-784-euclidean,60000,784,euclidean,HNSW,"{""M"": 16, ""efConstruction"": 200}",640,10,0,1.0,1.0,0.0,300,1.4338,1.9735,17.76,2,196.32,0
+fashion-mnist-784-euclidean,60000,784,euclidean,HNSW,"{""M"": 16, ""efConstruction"": 200}",640,10,0,1.0,1.0,0.0,300,1.4592,1.9675,17.76,2,196.32,1
+fashion-mnist-784-euclidean,60000,784,euclidean,HNSW,"{""M"": 16, ""efConstruction"": 200}",640,10,0,1.0,1.0,0.0,300,1.5336,2.2639,17.76,2,196.32,2
+fashion-mnist-784-euclidean,60000,784,euclidean,HNSW,"{""M"": 16, ""efConstruction"": 200}",768,10,0,1.0,1.0,0.0,300,1.8103,2.6366,17.76,2,196.32,0
+fashion-mnist-784-euclidean,60000,784,euclidean,HNSW,"{""M"": 16, ""efConstruction"": 200}",768,10,0,1.0,1.0,0.0,300,1.7191,2.3594,17.76,2,196.32,1
+fashion-mnist-784-euclidean,60000,784,euclidean,HNSW,"{""M"": 16, ""efConstruction"": 200}",768,10,0,1.0,1.0,0.0,300,1.6459,2.2833,17.76,2,196.32,2
+fashion-mnist-784-euclidean,60000,784,euclidean,HNSW,"{""M"": 16, ""efConstruction"": 200}",1024,10,0,1.0,1.0,0.0,300,2.0763,2.7348,17.76,2,196.32,0
+fashion-mnist-784-euclidean,60000,784,euclidean,HNSW,"{""M"": 16, ""efConstruction"": 200}",1024,10,0,1.0,1.0,0.0,300,2.1627,2.9126,17.76,2,196.32,1
+fashion-mnist-784-euclidean,60000,784,euclidean,HNSW,"{""M"": 16, ""efConstruction"": 200}",1024,10,0,1.0,1.0,0.0,300,2.1274,3.0547,17.76,2,196.32,2
+fashion-mnist-784-euclidean,60000,784,euclidean,IVF-Flat,"{""nlist"": 1024}",1,10,0,0.49967,0.49967,0.25818,300,0.1504,0.216,6.05,2,191.85,0
+fashion-mnist-784-euclidean,60000,784,euclidean,IVF-Flat,"{""nlist"": 1024}",1,10,0,0.49967,0.49967,0.25818,300,0.1664,0.2244,6.05,2,191.85,1
+fashion-mnist-784-euclidean,60000,784,euclidean,IVF-Flat,"{""nlist"": 1024}",1,10,0,0.49967,0.49967,0.25818,300,0.1652,0.2224,6.05,2,191.85,2
+fashion-mnist-784-euclidean,60000,784,euclidean,IVF-Flat,"{""nlist"": 1024}",2,10,0,0.68967,0.68967,0.22942,300,0.195,0.2598,6.05,2,191.85,0
+fashion-mnist-784-euclidean,60000,784,euclidean,IVF-Flat,"{""nlist"": 1024}",2,10,0,0.68967,0.68967,0.22942,300,0.1824,0.2419,6.05,2,191.85,1
+fashion-mnist-784-euclidean,60000,784,euclidean,IVF-Flat,"{""nlist"": 1024}",2,10,0,0.68967,0.68967,0.22942,300,0.182,0.2395,6.05,2,191.85,2
+fashion-mnist-784-euclidean,60000,784,euclidean,IVF-Flat,"{""nlist"": 1024}",3,10,0,0.80433,0.80433,0.18618,300,0.2087,0.2794,6.05,2,191.85,0
+fashion-mnist-784-euclidean,60000,784,euclidean,IVF-Flat,"{""nlist"": 1024}",3,10,0,0.80433,0.80433,0.18618,300,0.2082,0.2951,6.05,2,191.85,1
+fashion-mnist-784-euclidean,60000,784,euclidean,IVF-Flat,"{""nlist"": 1024}",3,10,0,0.80433,0.80433,0.18618,300,0.2079,0.2667,6.05,2,191.85,2
+fashion-mnist-784-euclidean,60000,784,euclidean,IVF-Flat,"{""nlist"": 1024}",4,10,0,0.86967,0.86967,0.16371,300,0.2313,0.2992,6.05,2,191.85,0
+fashion-mnist-784-euclidean,60000,784,euclidean,IVF-Flat,"{""nlist"": 1024}",4,10,0,0.86967,0.86967,0.16371,300,0.2321,0.3247,6.05,2,191.85,1
+fashion-mnist-784-euclidean,60000,784,euclidean,IVF-Flat,"{""nlist"": 1024}",4,10,0,0.86967,0.86967,0.16371,300,0.2554,0.3529,6.05,2,191.85,2
+fashion-mnist-784-euclidean,60000,784,euclidean,IVF-Flat,"{""nlist"": 1024}",6,10,0,0.936,0.936,0.11231,300,0.3094,0.3843,6.05,2,191.85,0
+fashion-mnist-784-euclidean,60000,784,euclidean,IVF-Flat,"{""nlist"": 1024}",6,10,0,0.936,0.936,0.11231,300,0.2862,0.3866,6.05,2,191.85,1
+fashion-mnist-784-euclidean,60000,784,euclidean,IVF-Flat,"{""nlist"": 1024}",6,10,0,0.936,0.936,0.11231,300,0.3067,0.4235,6.05,2,191.85,2
+fashion-mnist-784-euclidean,60000,784,euclidean,IVF-Flat,"{""nlist"": 1024}",8,10,0,0.96267,0.96267,0.081,300,0.3291,0.4194,6.05,2,191.85,0
+fashion-mnist-784-euclidean,60000,784,euclidean,IVF-Flat,"{""nlist"": 1024}",8,10,0,0.96267,0.96267,0.081,300,0.323,0.4804,6.05,2,191.85,1
+fashion-mnist-784-euclidean,60000,784,euclidean,IVF-Flat,"{""nlist"": 1024}",8,10,0,0.96267,0.96267,0.081,300,0.3259,0.5097,6.05,2,191.85,2
+fashion-mnist-784-euclidean,60000,784,euclidean,IVF-Flat,"{""nlist"": 1024}",12,10,0,0.98267,0.98267,0.05008,300,0.4659,0.6144,6.05,2,191.85,0
+fashion-mnist-784-euclidean,60000,784,euclidean,IVF-Flat,"{""nlist"": 1024}",12,10,0,0.98267,0.98267,0.05008,300,0.4393,0.5721,6.05,2,191.85,1
+fashion-mnist-784-euclidean,60000,784,euclidean,IVF-Flat,"{""nlist"": 1024}",12,10,0,0.98267,0.98267,0.05008,300,0.4111,0.5051,6.05,2,191.85,2
+fashion-mnist-784-euclidean,60000,784,euclidean,IVF-Flat,"{""nlist"": 1024}",16,10,0,0.99133,0.99133,0.0336,300,0.5102,0.6318,6.05,2,191.85,0
+fashion-mnist-784-euclidean,60000,784,euclidean,IVF-Flat,"{""nlist"": 1024}",16,10,0,0.99133,0.99133,0.0336,300,0.5251,0.6837,6.05,2,191.85,1
+fashion-mnist-784-euclidean,60000,784,euclidean,IVF-Flat,"{""nlist"": 1024}",16,10,0,0.99133,0.99133,0.0336,300,0.5316,0.6603,6.05,2,191.85,2
+fashion-mnist-784-euclidean,60000,784,euclidean,IVF-Flat,"{""nlist"": 1024}",24,10,0,0.997,0.997,0.01894,300,0.6948,0.8451,6.05,2,191.85,0
+fashion-mnist-784-euclidean,60000,784,euclidean,IVF-Flat,"{""nlist"": 1024}",24,10,0,0.997,0.997,0.01894,300,0.6834,0.8274,6.05,2,191.85,1
+fashion-mnist-784-euclidean,60000,784,euclidean,IVF-Flat,"{""nlist"": 1024}",24,10,0,0.997,0.997,0.01894,300,0.6859,0.8184,6.05,2,191.85,2
+fashion-mnist-784-euclidean,60000,784,euclidean,IVF-Flat,"{""nlist"": 1024}",32,10,0,0.99933,0.99933,0.00815,300,0.9014,1.1073,6.05,2,191.85,0
+fashion-mnist-784-euclidean,60000,784,euclidean,IVF-Flat,"{""nlist"": 1024}",32,10,0,0.99933,0.99933,0.00815,300,0.907,1.1053,6.05,2,191.85,1
+fashion-mnist-784-euclidean,60000,784,euclidean,IVF-Flat,"{""nlist"": 1024}",32,10,0,0.99933,0.99933,0.00815,300,0.8702,1.0716,6.05,2,191.85,2
+fashion-mnist-784-euclidean,60000,784,euclidean,IVF-Flat,"{""nlist"": 1024}",48,10,0,0.99967,0.99967,0.00577,300,1.2785,1.586,6.05,2,191.85,0
+fashion-mnist-784-euclidean,60000,784,euclidean,IVF-Flat,"{""nlist"": 1024}",48,10,0,0.99967,0.99967,0.00577,300,1.2944,1.5846,6.05,2,191.85,1
+fashion-mnist-784-euclidean,60000,784,euclidean,IVF-Flat,"{""nlist"": 1024}",48,10,0,0.99967,0.99967,0.00577,300,1.2832,1.7064,6.05,2,191.85,2
+fashion-mnist-784-euclidean,60000,784,euclidean,IVF-Flat,"{""nlist"": 1024}",64,10,0,1.0,1.0,0.0,300,1.5711,1.9901,6.05,2,191.85,0
+fashion-mnist-784-euclidean,60000,784,euclidean,IVF-Flat,"{""nlist"": 1024}",64,10,0,1.0,1.0,0.0,300,1.5583,2.0721,6.05,2,191.85,1
+fashion-mnist-784-euclidean,60000,784,euclidean,IVF-Flat,"{""nlist"": 1024}",64,10,0,1.0,1.0,0.0,300,1.6012,1.9967,6.05,2,191.85,2
+fashion-mnist-784-euclidean,60000,784,euclidean,IVF-Flat,"{""nlist"": 1024}",96,10,0,1.0,1.0,0.0,300,2.1356,2.4995,6.05,2,191.85,0
+fashion-mnist-784-euclidean,60000,784,euclidean,IVF-Flat,"{""nlist"": 1024}",96,10,0,1.0,1.0,0.0,300,2.2832,2.7014,6.05,2,191.85,1
+fashion-mnist-784-euclidean,60000,784,euclidean,IVF-Flat,"{""nlist"": 1024}",96,10,0,1.0,1.0,0.0,300,2.1205,2.4869,6.05,2,191.85,2
+fashion-mnist-784-euclidean,60000,784,euclidean,IVF-Flat,"{""nlist"": 1024}",128,10,0,1.0,1.0,0.0,300,2.7717,3.114,6.05,2,191.85,0
+fashion-mnist-784-euclidean,60000,784,euclidean,IVF-Flat,"{""nlist"": 1024}",128,10,0,1.0,1.0,0.0,300,2.7998,3.2928,6.05,2,191.85,1
+fashion-mnist-784-euclidean,60000,784,euclidean,IVF-Flat,"{""nlist"": 1024}",128,10,0,1.0,1.0,0.0,300,2.9954,3.7095,6.05,2,191.85,2
+fashion-mnist-784-euclidean,60000,784,euclidean,IVF-Flat,"{""nlist"": 1024}",192,10,0,1.0,1.0,0.0,300,4.1925,5.1533,6.05,2,191.85,0
+fashion-mnist-784-euclidean,60000,784,euclidean,IVF-Flat,"{""nlist"": 1024}",192,10,0,1.0,1.0,0.0,300,4.2275,4.8938,6.05,2,191.85,1
+fashion-mnist-784-euclidean,60000,784,euclidean,IVF-Flat,"{""nlist"": 1024}",192,10,0,1.0,1.0,0.0,300,4.2683,4.8858,6.05,2,191.85,2
+fashion-mnist-784-euclidean,60000,784,euclidean,IVF-Flat,"{""nlist"": 1024}",256,10,0,1.0,1.0,0.0,300,5.5021,6.2971,6.05,2,191.85,0
+fashion-mnist-784-euclidean,60000,784,euclidean,IVF-Flat,"{""nlist"": 1024}",256,10,0,1.0,1.0,0.0,300,5.6916,6.739,6.05,2,191.85,1
+fashion-mnist-784-euclidean,60000,784,euclidean,IVF-Flat,"{""nlist"": 1024}",256,10,0,1.0,1.0,0.0,300,5.59,6.4283,6.05,2,191.85,2

@@ -10,7 +10,8 @@
     "inertia_ratio_8_to_128": 1.3770423354074675,
     "dim_ratio": 0.15551024675369263,
     "dataset": "sift-128-euclidean",
-    "seconds": 11.98
+    "seconds": 12.87,
+    "hubness_skew_k10": 1.8400840242900505
   },
   {
     "n_base": 200000,
@@ -23,7 +24,8 @@
     "inertia_ratio_8_to_128": 1.1531786544273934,
     "dim_ratio": 0.3637693786621094,
     "dataset": "glove-100-angular",
-    "seconds": 11.16
+    "seconds": 9.75,
+    "hubness_skew_k10": 5.251983937576732
   },
   {
     "n_base": 200000,
@@ -36,6 +38,133 @@
     "inertia_ratio_8_to_128": 1.0793689027929858,
     "dim_ratio": 0.17956845462322235,
     "dataset": "nytimes-256-angular",
-    "seconds": 25.24
+    "seconds": 21.03,
+    "hubness_skew_k10": 2.459713356434404
+  },
+  {
+    "n_base": 60000,
+    "ambient_dim": 784,
+    "metric": "euclidean",
+    "intrinsic_dim_mle": 15.82058334350586,
+    "lid_at_queries_mean": 17.58000946044922,
+    "lid_at_queries_std": 6.6022233963012695,
+    "inertia_log_slope": -0.20203306464698678,
+    "inertia_ratio_8_to_128": 1.7664356667830405,
+    "dim_ratio": 0.02017931548916564,
+    "dataset": "fashion-mnist-784-euclidean",
+    "seconds": 54.52,
+    "hubness_skew_k10": 2.2427999051725704
+  },
+  {
+    "n_base": 60000,
+    "ambient_dim": 784,
+    "metric": "euclidean",
+    "intrinsic_dim_mle": 14.080540657043457,
+    "lid_at_queries_mean": 15.95186996459961,
+    "lid_at_queries_std": 4.502218723297119,
+    "inertia_log_slope": -0.14864968794072211,
+    "inertia_ratio_8_to_128": 1.5105896861020767,
+    "dim_ratio": 0.017959873287045226,
+    "dataset": "mnist-784-euclidean",
+    "seconds": 52.92,
+    "hubness_skew_k10": 0.9080563978110116
+  },
+  {
+    "n_base": 200000,
+    "ambient_dim": 25,
+    "metric": "angular",
+    "intrinsic_dim_mle": 15.693939208984375,
+    "lid_at_queries_mean": 18.188472747802734,
+    "lid_at_queries_std": 5.206507205963135,
+    "inertia_log_slope": -0.12548726346992178,
+    "inertia_ratio_8_to_128": 1.418613795606649,
+    "dim_ratio": 0.627757568359375,
+    "dataset": "glove-25-angular",
+    "seconds": 4.21,
+    "hubness_skew_k10": 1.7578630146825296
+  },
+  {
+    "n_base": 200000,
+    "ambient_dim": 128,
+    "metric": "euclidean",
+    "intrinsic_dim_mle": 4.283928871154785,
+    "lid_at_queries_mean": 4.9293951988220215,
+    "lid_at_queries_std": 0.9811486601829529,
+    "inertia_log_slope": -0.4874555232622404,
+    "inertia_ratio_8_to_128": 3.9584585674256583,
+    "dim_ratio": 0.03346819430589676,
+    "dataset": "synthetic-id4-128",
+    "seconds": 12.72,
+    "hubness_skew_k10": -0.022388903060802587
+  },
+  {
+    "n_base": 200000,
+    "ambient_dim": 128,
+    "metric": "euclidean",
+    "intrinsic_dim_mle": 7.608731746673584,
+    "lid_at_queries_mean": 9.07004165649414,
+    "lid_at_queries_std": 1.852029800415039,
+    "inertia_log_slope": -0.35456077531102886,
+    "inertia_ratio_8_to_128": 2.7673531504298556,
+    "dim_ratio": 0.059443216770887375,
+    "dataset": "synthetic-id8-128",
+    "seconds": 12.17,
+    "hubness_skew_k10": 0.6186255963611857
+  },
+  {
+    "n_base": 200000,
+    "ambient_dim": 128,
+    "metric": "euclidean",
+    "intrinsic_dim_mle": 12.971861839294434,
+    "lid_at_queries_mean": 15.382891654968262,
+    "lid_at_queries_std": 3.0210509300231934,
+    "inertia_log_slope": -0.3181488103508746,
+    "inertia_ratio_8_to_128": 2.4915926631644254,
+    "dim_ratio": 0.10134267061948776,
+    "dataset": "synthetic-id16-128",
+    "seconds": 11.04,
+    "hubness_skew_k10": 1.6321545323519078
+  },
+  {
+    "n_base": 200000,
+    "ambient_dim": 128,
+    "metric": "euclidean",
+    "intrinsic_dim_mle": 16.630287170410156,
+    "lid_at_queries_mean": 18.899703979492188,
+    "lid_at_queries_std": 3.3574044704437256,
+    "inertia_log_slope": -0.29543033151100306,
+    "inertia_ratio_8_to_128": 2.3715757570484133,
+    "dim_ratio": 0.12992411851882935,
+    "dataset": "synthetic-id24-128",
+    "seconds": 11.01,
+    "hubness_skew_k10": 2.2307330506001324
+  },
+  {
+    "n_base": 200000,
+    "ambient_dim": 128,
+    "metric": "euclidean",
+    "intrinsic_dim_mle": 19.20442771911621,
+    "lid_at_queries_mean": 21.722970962524414,
+    "lid_at_queries_std": 3.9153151512145996,
+    "inertia_log_slope": -0.323049930591253,
+    "inertia_ratio_8_to_128": 2.5793955169814073,
+    "dim_ratio": 0.1500345915555954,
+    "dataset": "synthetic-id32-128",
+    "seconds": 10.8,
+    "hubness_skew_k10": 2.5579239347776195
+  },
+  {
+    "n_base": 200000,
+    "ambient_dim": 128,
+    "metric": "euclidean",
+    "intrinsic_dim_mle": 22.777482986450195,
+    "lid_at_queries_mean": 25.713125228881836,
+    "lid_at_queries_std": 4.9608988761901855,
+    "inertia_log_slope": -0.31565031712240105,
+    "inertia_ratio_8_to_128": 2.479281673555238,
+    "dim_ratio": 0.17794908583164215,
+    "dataset": "synthetic-id48-128",
+    "seconds": 10.14,
+    "hubness_skew_k10": 2.8373879343949833
   }
 ]

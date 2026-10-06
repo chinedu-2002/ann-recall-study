@@ -1,0 +1,901 @@
+=== STAGE 1: dense sweeps for the heuristic (04:25) ===
+loaded sift-128-euclidean: base=(200000, 128) queries=(300, 128) metric=euclidean profile=dense
+exact ground truth in 1.5s
+sift-128-euclidean HNSW {'M': 16, 'efConstruction': 200} k=10 qp=10 rec=0.7293 med=0.041ms
+sift-128-euclidean HNSW {'M': 16, 'efConstruction': 200} k=10 qp=12 rec=0.7727 med=0.047ms
+sift-128-euclidean HNSW {'M': 16, 'efConstruction': 200} k=10 qp=16 rec=0.8293 med=0.053ms
+sift-128-euclidean HNSW {'M': 16, 'efConstruction': 200} k=10 qp=20 rec=0.8707 med=0.064ms
+sift-128-euclidean HNSW {'M': 16, 'efConstruction': 200} k=10 qp=24 rec=0.8920 med=0.079ms
+sift-128-euclidean HNSW {'M': 16, 'efConstruction': 200} k=10 qp=32 rec=0.9283 med=0.096ms
+sift-128-euclidean HNSW {'M': 16, 'efConstruction': 200} k=10 qp=40 rec=0.9487 med=0.119ms
+sift-128-euclidean HNSW {'M': 16, 'efConstruction': 200} k=10 qp=48 rec=0.9613 med=0.121ms
+sift-128-euclidean HNSW {'M': 16, 'efConstruction': 200} k=10 qp=64 rec=0.9800 med=0.151ms
+sift-128-euclidean HNSW {'M': 16, 'efConstruction': 200} k=10 qp=80 rec=0.9897 med=0.253ms
+sift-128-euclidean HNSW {'M': 16, 'efConstruction': 200} k=10 qp=96 rec=0.9947 med=0.293ms
+sift-128-euclidean HNSW {'M': 16, 'efConstruction': 200} k=10 qp=128 rec=0.9970 med=0.353ms
+sift-128-euclidean HNSW {'M': 16, 'efConstruction': 200} k=10 qp=160 rec=0.9980 med=0.341ms
+sift-128-euclidean HNSW {'M': 16, 'efConstruction': 200} k=10 qp=192 rec=0.9983 med=0.375ms
+sift-128-euclidean HNSW {'M': 16, 'efConstruction': 200} k=10 qp=256 rec=0.9990 med=0.479ms
+sift-128-euclidean HNSW {'M': 16, 'efConstruction': 200} k=10 qp=320 rec=0.9993 med=0.684ms
+sift-128-euclidean HNSW {'M': 16, 'efConstruction': 200} k=10 qp=384 rec=0.9993 med=0.750ms
+sift-128-euclidean HNSW {'M': 16, 'efConstruction': 200} k=10 qp=512 rec=0.9993 med=0.941ms
+sift-128-euclidean HNSW {'M': 16, 'efConstruction': 200} k=10 qp=640 rec=0.9997 med=1.153ms
+sift-128-euclidean HNSW {'M': 16, 'efConstruction': 200} k=10 qp=768 rec=1.0000 med=1.296ms
+sift-128-euclidean HNSW {'M': 16, 'efConstruction': 200} k=10 qp=1024 rec=1.0000 med=1.575ms
+sift-128-euclidean IVF-Flat {'nlist': 1024} k=10 qp=1 rec=0.3080 med=0.030ms
+sift-128-euclidean IVF-Flat {'nlist': 1024} k=10 qp=2 rec=0.4470 med=0.045ms
+sift-128-euclidean IVF-Flat {'nlist': 1024} k=10 qp=3 rec=0.5603 med=0.053ms
+sift-128-euclidean IVF-Flat {'nlist': 1024} k=10 qp=4 rec=0.6213 med=0.066ms
+sift-128-euclidean IVF-Flat {'nlist': 1024} k=10 qp=6 rec=0.7117 med=0.092ms
+sift-128-euclidean IVF-Flat {'nlist': 1024} k=10 qp=8 rec=0.7730 med=0.113ms
+sift-128-euclidean IVF-Flat {'nlist': 1024} k=10 qp=12 rec=0.8423 med=0.148ms
+sift-128-euclidean IVF-Flat {'nlist': 1024} k=10 qp=16 rec=0.8820 med=0.203ms
+sift-128-euclidean IVF-Flat {'nlist': 1024} k=10 qp=24 rec=0.9383 med=0.272ms
+sift-128-euclidean IVF-Flat {'nlist': 1024} k=10 qp=32 rec=0.9670 med=0.378ms
+sift-128-euclidean IVF-Flat {'nlist': 1024} k=10 qp=48 rec=0.9860 med=0.492ms
+sift-128-euclidean IVF-Flat {'nlist': 1024} k=10 qp=64 rec=0.9927 med=0.645ms
+sift-128-euclidean IVF-Flat {'nlist': 1024} k=10 qp=96 rec=0.9990 med=0.971ms
+sift-128-euclidean IVF-Flat {'nlist': 1024} k=10 qp=128 rec=0.9993 med=1.344ms
+sift-128-euclidean IVF-Flat {'nlist': 1024} k=10 qp=192 rec=1.0000 med=2.079ms
+sift-128-euclidean IVF-Flat {'nlist': 1024} k=10 qp=256 rec=1.0000 med=2.597ms
+loaded glove-100-angular: base=(200000, 100) queries=(300, 100) metric=angular profile=dense
+exact ground truth in 1.2s
+glove-100-angular HNSW {'M': 16, 'efConstruction': 200} k=10 qp=10 rec=0.5030 med=0.035ms
+glove-100-angular HNSW {'M': 16, 'efConstruction': 200} k=10 qp=12 rec=0.5363 med=0.040ms
+glove-100-angular HNSW {'M': 16, 'efConstruction': 200} k=10 qp=16 rec=0.5937 med=0.052ms
+glove-100-angular HNSW {'M': 16, 'efConstruction': 200} k=10 qp=20 rec=0.6300 med=0.058ms
+glove-100-angular HNSW {'M': 16, 'efConstruction': 200} k=10 qp=24 rec=0.6653 med=0.070ms
+glove-100-angular HNSW {'M': 16, 'efConstruction': 200} k=10 qp=32 rec=0.7103 med=0.086ms
+glove-100-angular HNSW {'M': 16, 'efConstruction': 200} k=10 qp=40 rec=0.7447 med=0.137ms
+glove-100-angular HNSW {'M': 16, 'efConstruction': 200} k=10 qp=48 rec=0.7720 med=0.122ms
+glove-100-angular HNSW {'M': 16, 'efConstruction': 200} k=10 qp=64 rec=0.8083 med=0.157ms
+glove-100-angular HNSW {'M': 16, 'efConstruction': 200} k=10 qp=80 rec=0.8340 med=0.200ms
+glove-100-angular HNSW {'M': 16, 'efConstruction': 200} k=10 qp=96 rec=0.8513 med=0.241ms
+glove-100-angular HNSW {'M': 16, 'efConstruction': 200} k=10 qp=128 rec=0.8743 med=0.430ms
+glove-100-angular HNSW {'M': 16, 'efConstruction': 200} k=10 qp=160 rec=0.8903 med=0.334ms
+glove-100-angular HNSW {'M': 16, 'efConstruction': 200} k=10 qp=192 rec=0.9033 med=0.398ms
+glove-100-angular HNSW {'M': 16, 'efConstruction': 200} k=10 qp=256 rec=0.9243 med=0.514ms
+glove-100-angular HNSW {'M': 16, 'efConstruction': 200} k=10 qp=320 rec=0.9367 med=0.638ms
+glove-100-angular HNSW {'M': 16, 'efConstruction': 200} k=10 qp=384 rec=0.9483 med=0.751ms
+glove-100-angular HNSW {'M': 16, 'efConstruction': 200} k=10 qp=512 rec=0.9610 med=0.933ms
+glove-100-angular HNSW {'M': 16, 'efConstruction': 200} k=10 qp=640 rec=0.9720 med=1.204ms
+glove-100-angular HNSW {'M': 16, 'efConstruction': 200} k=10 qp=768 rec=0.9790 med=1.453ms
+glove-100-angular HNSW {'M': 16, 'efConstruction': 200} k=10 qp=1024 rec=0.9843 med=1.922ms
+glove-100-angular IVF-Flat {'nlist': 1024} k=10 qp=1 rec=0.3353 med=0.025ms
+glove-100-angular IVF-Flat {'nlist': 1024} k=10 qp=2 rec=0.4577 med=0.036ms
+glove-100-angular IVF-Flat {'nlist': 1024} k=10 qp=3 rec=0.5293 med=0.045ms
+glove-100-angular IVF-Flat {'nlist': 1024} k=10 qp=4 rec=0.5790 med=0.049ms
+glove-100-angular IVF-Flat {'nlist': 1024} k=10 qp=6 rec=0.6427 med=0.089ms
+glove-100-angular IVF-Flat {'nlist': 1024} k=10 qp=8 rec=0.6810 med=0.087ms
+glove-100-angular IVF-Flat {'nlist': 1024} k=10 qp=12 rec=0.7317 med=0.120ms
+glove-100-angular IVF-Flat {'nlist': 1024} k=10 qp=16 rec=0.7703 med=0.164ms
+glove-100-angular IVF-Flat {'nlist': 1024} k=10 qp=24 rec=0.8160 med=0.233ms
+glove-100-angular IVF-Flat {'nlist': 1024} k=10 qp=32 rec=0.8457 med=0.274ms
+glove-100-angular IVF-Flat {'nlist': 1024} k=10 qp=48 rec=0.8857 med=0.397ms
+glove-100-angular IVF-Flat {'nlist': 1024} k=10 qp=64 rec=0.9070 med=0.542ms
+glove-100-angular IVF-Flat {'nlist': 1024} k=10 qp=96 rec=0.9367 med=0.834ms
+glove-100-angular IVF-Flat {'nlist': 1024} k=10 qp=128 rec=0.9573 med=1.095ms
+glove-100-angular IVF-Flat {'nlist': 1024} k=10 qp=192 rec=0.9777 med=1.632ms
+glove-100-angular IVF-Flat {'nlist': 1024} k=10 qp=256 rec=0.9860 med=2.068ms
+loaded nytimes-256-angular: base=(200000, 256) queries=(300, 256) metric=angular profile=dense
+exact ground truth in 3.1s
+nytimes-256-angular HNSW {'M': 16, 'efConstruction': 200} k=10 qp=10 rec=0.6043 med=0.064ms
+nytimes-256-angular HNSW {'M': 16, 'efConstruction': 200} k=10 qp=12 rec=0.6543 med=0.072ms
+nytimes-256-angular HNSW {'M': 16, 'efConstruction': 200} k=10 qp=16 rec=0.6937 med=0.090ms
+nytimes-256-angular HNSW {'M': 16, 'efConstruction': 200} k=10 qp=20 rec=0.7313 med=0.106ms
+nytimes-256-angular HNSW {'M': 16, 'efConstruction': 200} k=10 qp=24 rec=0.7630 med=0.133ms
+nytimes-256-angular HNSW {'M': 16, 'efConstruction': 200} k=10 qp=32 rec=0.7987 med=0.157ms
+nytimes-256-angular HNSW {'M': 16, 'efConstruction': 200} k=10 qp=40 rec=0.8127 med=0.179ms
+nytimes-256-angular HNSW {'M': 16, 'efConstruction': 200} k=10 qp=48 rec=0.8283 med=0.210ms
+nytimes-256-angular HNSW {'M': 16, 'efConstruction': 200} k=10 qp=64 rec=0.8523 med=0.323ms
+nytimes-256-angular HNSW {'M': 16, 'efConstruction': 200} k=10 qp=80 rec=0.8613 med=0.327ms
+nytimes-256-angular HNSW {'M': 16, 'efConstruction': 200} k=10 qp=96 rec=0.8767 med=0.371ms
+nytimes-256-angular HNSW {'M': 16, 'efConstruction': 200} k=10 qp=128 rec=0.8927 med=0.550ms
+nytimes-256-angular HNSW {'M': 16, 'efConstruction': 200} k=10 qp=160 rec=0.9050 med=0.597ms
+nytimes-256-angular HNSW {'M': 16, 'efConstruction': 200} k=10 qp=192 rec=0.9103 med=0.669ms
+nytimes-256-angular HNSW {'M': 16, 'efConstruction': 200} k=10 qp=256 rec=0.9207 med=0.909ms
+nytimes-256-angular HNSW {'M': 16, 'efConstruction': 200} k=10 qp=320 rec=0.9333 med=1.040ms
+nytimes-256-angular HNSW {'M': 16, 'efConstruction': 200} k=10 qp=384 rec=0.9397 med=1.275ms
+nytimes-256-angular HNSW {'M': 16, 'efConstruction': 200} k=10 qp=512 rec=0.9520 med=1.812ms
+nytimes-256-angular HNSW {'M': 16, 'efConstruction': 200} k=10 qp=640 rec=0.9610 med=2.175ms
+nytimes-256-angular HNSW {'M': 16, 'efConstruction': 200} k=10 qp=768 rec=0.9653 med=2.648ms
+nytimes-256-angular HNSW {'M': 16, 'efConstruction': 200} k=10 qp=1024 rec=0.9737 med=3.712ms
+nytimes-256-angular IVF-Flat {'nlist': 1024} k=10 qp=1 rec=0.5923 med=0.072ms
+nytimes-256-angular IVF-Flat {'nlist': 1024} k=10 qp=2 rec=0.6673 med=0.095ms
+nytimes-256-angular IVF-Flat {'nlist': 1024} k=10 qp=3 rec=0.7053 med=0.118ms
+nytimes-256-angular IVF-Flat {'nlist': 1024} k=10 qp=4 rec=0.7243 med=0.141ms
+nytimes-256-angular IVF-Flat {'nlist': 1024} k=10 qp=6 rec=0.7497 med=0.179ms
+nytimes-256-angular IVF-Flat {'nlist': 1024} k=10 qp=8 rec=0.7657 med=0.229ms
+nytimes-256-angular IVF-Flat {'nlist': 1024} k=10 qp=12 rec=0.7863 med=0.314ms
+nytimes-256-angular IVF-Flat {'nlist': 1024} k=10 qp=16 rec=0.8013 med=0.423ms
+nytimes-256-angular IVF-Flat {'nlist': 1024} k=10 qp=24 rec=0.8167 med=0.551ms
+nytimes-256-angular IVF-Flat {'nlist': 1024} k=10 qp=32 rec=0.8337 med=0.746ms
+nytimes-256-angular IVF-Flat {'nlist': 1024} k=10 qp=48 rec=0.8567 med=1.081ms
+nytimes-256-angular IVF-Flat {'nlist': 1024} k=10 qp=64 rec=0.8703 med=1.414ms
+nytimes-256-angular IVF-Flat {'nlist': 1024} k=10 qp=96 rec=0.8953 med=1.996ms
+nytimes-256-angular IVF-Flat {'nlist': 1024} k=10 qp=128 rec=0.9080 med=2.611ms
+nytimes-256-angular IVF-Flat {'nlist': 1024} k=10 qp=192 rec=0.9363 med=4.154ms
+nytimes-256-angular IVF-Flat {'nlist': 1024} k=10 qp=256 rec=0.9513 med=5.342ms
+loaded fashion-mnist-784-euclidean: base=(60000, 784) queries=(300, 784) metric=euclidean profile=dense
+exact ground truth in 0.3s
+fashion-mnist-784-euclidean HNSW {'M': 16, 'efConstruction': 200} k=10 qp=10 rec=0.9307 med=0.091ms
+fashion-mnist-784-euclidean HNSW {'M': 16, 'efConstruction': 200} k=10 qp=12 rec=0.9543 med=0.099ms
+fashion-mnist-784-euclidean HNSW {'M': 16, 'efConstruction': 200} k=10 qp=16 rec=0.9720 med=0.118ms
+fashion-mnist-784-euclidean HNSW {'M': 16, 'efConstruction': 200} k=10 qp=20 rec=0.9817 med=0.135ms
+fashion-mnist-784-euclidean HNSW {'M': 16, 'efConstruction': 200} k=10 qp=24 rec=0.9903 med=0.147ms
+fashion-mnist-784-euclidean HNSW {'M': 16, 'efConstruction': 200} k=10 qp=32 rec=0.9943 med=0.183ms
+fashion-mnist-784-euclidean HNSW {'M': 16, 'efConstruction': 200} k=10 qp=40 rec=0.9957 med=0.214ms
+fashion-mnist-784-euclidean HNSW {'M': 16, 'efConstruction': 200} k=10 qp=48 rec=0.9967 med=0.241ms
+fashion-mnist-784-euclidean HNSW {'M': 16, 'efConstruction': 200} k=10 qp=64 rec=0.9977 med=0.350ms
+fashion-mnist-784-euclidean HNSW {'M': 16, 'efConstruction': 200} k=10 qp=80 rec=0.9983 med=0.355ms
+fashion-mnist-784-euclidean HNSW {'M': 16, 'efConstruction': 200} k=10 qp=96 rec=0.9983 med=0.378ms
+fashion-mnist-784-euclidean HNSW {'M': 16, 'efConstruction': 200} k=10 qp=128 rec=0.9990 med=0.465ms
+fashion-mnist-784-euclidean HNSW {'M': 16, 'efConstruction': 200} k=10 qp=160 rec=0.9990 med=0.522ms
+fashion-mnist-784-euclidean HNSW {'M': 16, 'efConstruction': 200} k=10 qp=192 rec=0.9990 med=0.601ms
+fashion-mnist-784-euclidean HNSW {'M': 16, 'efConstruction': 200} k=10 qp=256 rec=0.9990 med=0.757ms
+fashion-mnist-784-euclidean HNSW {'M': 16, 'efConstruction': 200} k=10 qp=320 rec=0.9993 med=0.863ms
+fashion-mnist-784-euclidean HNSW {'M': 16, 'efConstruction': 200} k=10 qp=384 rec=1.0000 med=1.021ms
+fashion-mnist-784-euclidean HNSW {'M': 16, 'efConstruction': 200} k=10 qp=512 rec=1.0000 med=1.217ms
+fashion-mnist-784-euclidean HNSW {'M': 16, 'efConstruction': 200} k=10 qp=640 rec=1.0000 med=1.534ms
+fashion-mnist-784-euclidean HNSW {'M': 16, 'efConstruction': 200} k=10 qp=768 rec=1.0000 med=1.646ms
+fashion-mnist-784-euclidean HNSW {'M': 16, 'efConstruction': 200} k=10 qp=1024 rec=1.0000 med=2.127ms
+fashion-mnist-784-euclidean IVF-Flat {'nlist': 1024} k=10 qp=1 rec=0.4997 med=0.165ms
+fashion-mnist-784-euclidean IVF-Flat {'nlist': 1024} k=10 qp=2 rec=0.6897 med=0.182ms
+fashion-mnist-784-euclidean IVF-Flat {'nlist': 1024} k=10 qp=3 rec=0.8043 med=0.208ms
+fashion-mnist-784-euclidean IVF-Flat {'nlist': 1024} k=10 qp=4 rec=0.8697 med=0.255ms
+fashion-mnist-784-euclidean IVF-Flat {'nlist': 1024} k=10 qp=6 rec=0.9360 med=0.307ms
+fashion-mnist-784-euclidean IVF-Flat {'nlist': 1024} k=10 qp=8 rec=0.9627 med=0.326ms
+fashion-mnist-784-euclidean IVF-Flat {'nlist': 1024} k=10 qp=12 rec=0.9827 med=0.411ms
+fashion-mnist-784-euclidean IVF-Flat {'nlist': 1024} k=10 qp=16 rec=0.9913 med=0.532ms
+fashion-mnist-784-euclidean IVF-Flat {'nlist': 1024} k=10 qp=24 rec=0.9970 med=0.686ms
+fashion-mnist-784-euclidean IVF-Flat {'nlist': 1024} k=10 qp=32 rec=0.9993 med=0.870ms
+fashion-mnist-784-euclidean IVF-Flat {'nlist': 1024} k=10 qp=48 rec=0.9997 med=1.283ms
+fashion-mnist-784-euclidean IVF-Flat {'nlist': 1024} k=10 qp=64 rec=1.0000 med=1.601ms
+fashion-mnist-784-euclidean IVF-Flat {'nlist': 1024} k=10 qp=96 rec=1.0000 med=2.120ms
+fashion-mnist-784-euclidean IVF-Flat {'nlist': 1024} k=10 qp=128 rec=1.0000 med=2.995ms
+fashion-mnist-784-euclidean IVF-Flat {'nlist': 1024} k=10 qp=192 rec=1.0000 med=4.268ms
+fashion-mnist-784-euclidean IVF-Flat {'nlist': 1024} k=10 qp=256 rec=1.0000 med=5.590ms
+loaded mnist-784-euclidean: base=(60000, 784) queries=(300, 784) metric=euclidean profile=dense
+exact ground truth in 0.3s
+mnist-784-euclidean HNSW {'M': 16, 'efConstruction': 200} k=10 qp=10 rec=0.9290 med=0.085ms
+mnist-784-euclidean HNSW {'M': 16, 'efConstruction': 200} k=10 qp=12 rec=0.9433 med=0.105ms
+mnist-784-euclidean HNSW {'M': 16, 'efConstruction': 200} k=10 qp=16 rec=0.9647 med=0.128ms
+mnist-784-euclidean HNSW {'M': 16, 'efConstruction': 200} k=10 qp=20 rec=0.9740 med=0.162ms
+mnist-784-euclidean HNSW {'M': 16, 'efConstruction': 200} k=10 qp=24 rec=0.9807 med=0.170ms
+mnist-784-euclidean HNSW {'M': 16, 'efConstruction': 200} k=10 qp=32 rec=0.9870 med=0.200ms
+mnist-784-euclidean HNSW {'M': 16, 'efConstruction': 200} k=10 qp=40 rec=0.9913 med=0.231ms
+mnist-784-euclidean HNSW {'M': 16, 'efConstruction': 200} k=10 qp=48 rec=0.9953 med=0.266ms
+mnist-784-euclidean HNSW {'M': 16, 'efConstruction': 200} k=10 qp=64 rec=0.9977 med=0.319ms
+mnist-784-euclidean HNSW {'M': 16, 'efConstruction': 200} k=10 qp=80 rec=0.9977 med=0.376ms
+mnist-784-euclidean HNSW {'M': 16, 'efConstruction': 200} k=10 qp=96 rec=0.9983 med=0.436ms
+mnist-784-euclidean HNSW {'M': 16, 'efConstruction': 200} k=10 qp=128 rec=0.9987 med=0.532ms
+mnist-784-euclidean HNSW {'M': 16, 'efConstruction': 200} k=10 qp=160 rec=0.9993 med=0.666ms
+mnist-784-euclidean HNSW {'M': 16, 'efConstruction': 200} k=10 qp=192 rec=0.9993 med=0.762ms
+mnist-784-euclidean HNSW {'M': 16, 'efConstruction': 200} k=10 qp=256 rec=0.9997 med=0.904ms
+mnist-784-euclidean HNSW {'M': 16, 'efConstruction': 200} k=10 qp=320 rec=1.0000 med=1.159ms
+mnist-784-euclidean HNSW {'M': 16, 'efConstruction': 200} k=10 qp=384 rec=1.0000 med=1.380ms
+mnist-784-euclidean HNSW {'M': 16, 'efConstruction': 200} k=10 qp=512 rec=1.0000 med=1.501ms
+mnist-784-euclidean HNSW {'M': 16, 'efConstruction': 200} k=10 qp=640 rec=1.0000 med=1.893ms
+mnist-784-euclidean HNSW {'M': 16, 'efConstruction': 200} k=10 qp=768 rec=1.0000 med=2.131ms
+mnist-784-euclidean HNSW {'M': 16, 'efConstruction': 200} k=10 qp=1024 rec=1.0000 med=2.859ms
+mnist-784-euclidean IVF-Flat {'nlist': 1024} k=10 qp=1 rec=0.4667 med=0.158ms
+mnist-784-euclidean IVF-Flat {'nlist': 1024} k=10 qp=2 rec=0.6487 med=0.170ms
+mnist-784-euclidean IVF-Flat {'nlist': 1024} k=10 qp=3 rec=0.7610 med=0.234ms
+mnist-784-euclidean IVF-Flat {'nlist': 1024} k=10 qp=4 rec=0.8170 med=0.198ms
+mnist-784-euclidean IVF-Flat {'nlist': 1024} k=10 qp=6 rec=0.8857 med=0.233ms
+mnist-784-euclidean IVF-Flat {'nlist': 1024} k=10 qp=8 rec=0.9340 med=0.274ms
+mnist-784-euclidean IVF-Flat {'nlist': 1024} k=10 qp=12 rec=0.9653 med=0.350ms
+mnist-784-euclidean IVF-Flat {'nlist': 1024} k=10 qp=16 rec=0.9820 med=0.447ms
+mnist-784-euclidean IVF-Flat {'nlist': 1024} k=10 qp=24 rec=0.9880 med=0.578ms
+mnist-784-euclidean IVF-Flat {'nlist': 1024} k=10 qp=32 rec=0.9923 med=0.733ms
+mnist-784-euclidean IVF-Flat {'nlist': 1024} k=10 qp=48 rec=0.9967 med=0.990ms
+mnist-784-euclidean IVF-Flat {'nlist': 1024} k=10 qp=64 rec=0.9970 med=1.239ms
+mnist-784-euclidean IVF-Flat {'nlist': 1024} k=10 qp=96 rec=0.9990 med=1.753ms
+mnist-784-euclidean IVF-Flat {'nlist': 1024} k=10 qp=128 rec=0.9997 med=2.466ms
+mnist-784-euclidean IVF-Flat {'nlist': 1024} k=10 qp=192 rec=1.0000 med=3.828ms
+mnist-784-euclidean IVF-Flat {'nlist': 1024} k=10 qp=256 rec=1.0000 med=5.051ms
+loaded glove-25-angular: base=(200000, 25) queries=(300, 25) metric=angular profile=dense
+exact ground truth in 0.2s
+glove-25-angular HNSW {'M': 16, 'efConstruction': 200} k=10 qp=10 rec=0.7700 med=0.030ms
+glove-25-angular HNSW {'M': 16, 'efConstruction': 200} k=10 qp=12 rec=0.7980 med=0.032ms
+glove-25-angular HNSW {'M': 16, 'efConstruction': 200} k=10 qp=16 rec=0.8510 med=0.037ms
+glove-25-angular HNSW {'M': 16, 'efConstruction': 200} k=10 qp=20 rec=0.8833 med=0.047ms
+glove-25-angular HNSW {'M': 16, 'efConstruction': 200} k=10 qp=24 rec=0.9067 med=0.054ms
+glove-25-angular HNSW {'M': 16, 'efConstruction': 200} k=10 qp=32 rec=0.9313 med=0.065ms
+glove-25-angular HNSW {'M': 16, 'efConstruction': 200} k=10 qp=40 rec=0.9527 med=0.080ms
+glove-25-angular HNSW {'M': 16, 'efConstruction': 200} k=10 qp=48 rec=0.9610 med=0.095ms
+glove-25-angular HNSW {'M': 16, 'efConstruction': 200} k=10 qp=64 rec=0.9780 med=0.126ms
+glove-25-angular HNSW {'M': 16, 'efConstruction': 200} k=10 qp=80 rec=0.9853 med=0.151ms
+glove-25-angular HNSW {'M': 16, 'efConstruction': 200} k=10 qp=96 rec=0.9877 med=0.179ms
+glove-25-angular HNSW {'M': 16, 'efConstruction': 200} k=10 qp=128 rec=0.9937 med=0.219ms
+glove-25-angular HNSW {'M': 16, 'efConstruction': 200} k=10 qp=160 rec=0.9953 med=0.258ms
+glove-25-angular HNSW {'M': 16, 'efConstruction': 200} k=10 qp=192 rec=0.9973 med=0.353ms
+glove-25-angular HNSW {'M': 16, 'efConstruction': 200} k=10 qp=256 rec=0.9987 med=0.401ms
+glove-25-angular HNSW {'M': 16, 'efConstruction': 200} k=10 qp=320 rec=0.9990 med=0.485ms
+glove-25-angular HNSW {'M': 16, 'efConstruction': 200} k=10 qp=384 rec=1.0000 med=0.585ms
+glove-25-angular HNSW {'M': 16, 'efConstruction': 200} k=10 qp=512 rec=1.0000 med=0.796ms
+glove-25-angular HNSW {'M': 16, 'efConstruction': 200} k=10 qp=640 rec=1.0000 med=0.953ms
+glove-25-angular HNSW {'M': 16, 'efConstruction': 200} k=10 qp=768 rec=1.0000 med=1.087ms
+glove-25-angular HNSW {'M': 16, 'efConstruction': 200} k=10 qp=1024 rec=1.0000 med=1.377ms
+glove-25-angular IVF-Flat {'nlist': 1024} k=10 qp=1 rec=0.4080 med=0.016ms
+glove-25-angular IVF-Flat {'nlist': 1024} k=10 qp=2 rec=0.5530 med=0.020ms
+glove-25-angular IVF-Flat {'nlist': 1024} k=10 qp=3 rec=0.6337 med=0.022ms
+glove-25-angular IVF-Flat {'nlist': 1024} k=10 qp=4 rec=0.6930 med=0.024ms
+glove-25-angular IVF-Flat {'nlist': 1024} k=10 qp=6 rec=0.7593 med=0.030ms
+glove-25-angular IVF-Flat {'nlist': 1024} k=10 qp=8 rec=0.8113 med=0.033ms
+glove-25-angular IVF-Flat {'nlist': 1024} k=10 qp=12 rec=0.8693 med=0.044ms
+glove-25-angular IVF-Flat {'nlist': 1024} k=10 qp=16 rec=0.9037 med=0.101ms
+glove-25-angular IVF-Flat {'nlist': 1024} k=10 qp=24 rec=0.9377 med=0.081ms
+glove-25-angular IVF-Flat {'nlist': 1024} k=10 qp=32 rec=0.9613 med=0.091ms
+glove-25-angular IVF-Flat {'nlist': 1024} k=10 qp=48 rec=0.9790 med=0.234ms
+glove-25-angular IVF-Flat {'nlist': 1024} k=10 qp=64 rec=0.9857 med=0.182ms
+glove-25-angular IVF-Flat {'nlist': 1024} k=10 qp=96 rec=0.9947 med=0.446ms
+glove-25-angular IVF-Flat {'nlist': 1024} k=10 qp=128 rec=0.9973 med=0.310ms
+glove-25-angular IVF-Flat {'nlist': 1024} k=10 qp=192 rec=0.9987 med=0.474ms
+glove-25-angular IVF-Flat {'nlist': 1024} k=10 qp=256 rec=1.0000 med=0.821ms
+loaded synthetic-id4-128: base=(200000, 128) queries=(300, 128) metric=euclidean profile=dense
+exact ground truth in 1.6s
+synthetic-id4-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=10 rec=0.9967 med=0.020ms
+synthetic-id4-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=12 rec=0.9983 med=0.021ms
+synthetic-id4-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=16 rec=0.9997 med=0.024ms
+synthetic-id4-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=20 rec=1.0000 med=0.029ms
+synthetic-id4-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=24 rec=1.0000 med=0.032ms
+synthetic-id4-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=32 rec=1.0000 med=0.041ms
+synthetic-id4-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=40 rec=1.0000 med=0.045ms
+synthetic-id4-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=48 rec=1.0000 med=0.052ms
+synthetic-id4-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=64 rec=1.0000 med=0.065ms
+synthetic-id4-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=80 rec=1.0000 med=0.075ms
+synthetic-id4-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=96 rec=1.0000 med=0.104ms
+synthetic-id4-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=128 rec=1.0000 med=0.106ms
+synthetic-id4-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=160 rec=1.0000 med=0.127ms
+synthetic-id4-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=192 rec=1.0000 med=0.157ms
+synthetic-id4-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=256 rec=1.0000 med=0.201ms
+synthetic-id4-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=320 rec=1.0000 med=0.248ms
+synthetic-id4-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=384 rec=1.0000 med=0.312ms
+synthetic-id4-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=512 rec=1.0000 med=0.382ms
+synthetic-id4-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=640 rec=1.0000 med=0.453ms
+synthetic-id4-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=768 rec=1.0000 med=0.519ms
+synthetic-id4-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=1024 rec=1.0000 med=0.688ms
+synthetic-id4-128 IVF-Flat {'nlist': 1024} k=10 qp=1 rec=0.7277 med=0.028ms
+synthetic-id4-128 IVF-Flat {'nlist': 1024} k=10 qp=2 rec=0.9000 med=0.038ms
+synthetic-id4-128 IVF-Flat {'nlist': 1024} k=10 qp=3 rec=0.9670 med=0.049ms
+synthetic-id4-128 IVF-Flat {'nlist': 1024} k=10 qp=4 rec=0.9847 med=0.059ms
+synthetic-id4-128 IVF-Flat {'nlist': 1024} k=10 qp=6 rec=0.9983 med=0.094ms
+synthetic-id4-128 IVF-Flat {'nlist': 1024} k=10 qp=8 rec=0.9997 med=0.109ms
+synthetic-id4-128 IVF-Flat {'nlist': 1024} k=10 qp=12 rec=1.0000 med=0.146ms
+synthetic-id4-128 IVF-Flat {'nlist': 1024} k=10 qp=16 rec=1.0000 med=0.204ms
+synthetic-id4-128 IVF-Flat {'nlist': 1024} k=10 qp=24 rec=1.0000 med=0.292ms
+synthetic-id4-128 IVF-Flat {'nlist': 1024} k=10 qp=32 rec=1.0000 med=0.361ms
+synthetic-id4-128 IVF-Flat {'nlist': 1024} k=10 qp=48 rec=1.0000 med=0.533ms
+synthetic-id4-128 IVF-Flat {'nlist': 1024} k=10 qp=64 rec=1.0000 med=0.684ms
+synthetic-id4-128 IVF-Flat {'nlist': 1024} k=10 qp=96 rec=1.0000 med=0.976ms
+synthetic-id4-128 IVF-Flat {'nlist': 1024} k=10 qp=128 rec=1.0000 med=1.345ms
+synthetic-id4-128 IVF-Flat {'nlist': 1024} k=10 qp=192 rec=1.0000 med=2.039ms
+synthetic-id4-128 IVF-Flat {'nlist': 1024} k=10 qp=256 rec=1.0000 med=2.635ms
+loaded synthetic-id8-128: base=(200000, 128) queries=(300, 128) metric=euclidean profile=dense
+exact ground truth in 1.6s
+synthetic-id8-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=10 rec=0.9580 med=0.030ms
+synthetic-id8-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=12 rec=0.9713 med=0.044ms
+synthetic-id8-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=16 rec=0.9860 med=0.036ms
+synthetic-id8-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=20 rec=0.9923 med=0.044ms
+synthetic-id8-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=24 rec=0.9957 med=0.067ms
+synthetic-id8-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=32 rec=0.9983 med=0.057ms
+synthetic-id8-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=40 rec=0.9993 med=0.066ms
+synthetic-id8-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=48 rec=0.9997 med=0.075ms
+synthetic-id8-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=64 rec=1.0000 med=0.094ms
+synthetic-id8-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=80 rec=1.0000 med=0.172ms
+synthetic-id8-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=96 rec=1.0000 med=0.132ms
+synthetic-id8-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=128 rec=1.0000 med=0.163ms
+synthetic-id8-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=160 rec=1.0000 med=0.195ms
+synthetic-id8-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=192 rec=1.0000 med=0.252ms
+synthetic-id8-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=256 rec=1.0000 med=0.322ms
+synthetic-id8-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=320 rec=1.0000 med=0.387ms
+synthetic-id8-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=384 rec=1.0000 med=0.424ms
+synthetic-id8-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=512 rec=1.0000 med=0.528ms
+synthetic-id8-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=640 rec=1.0000 med=0.657ms
+synthetic-id8-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=768 rec=1.0000 med=0.742ms
+synthetic-id8-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=1024 rec=1.0000 med=0.918ms
+synthetic-id8-128 IVF-Flat {'nlist': 1024} k=10 qp=1 rec=0.4993 med=0.029ms
+synthetic-id8-128 IVF-Flat {'nlist': 1024} k=10 qp=2 rec=0.7107 med=0.040ms
+synthetic-id8-128 IVF-Flat {'nlist': 1024} k=10 qp=3 rec=0.8237 med=0.052ms
+synthetic-id8-128 IVF-Flat {'nlist': 1024} k=10 qp=4 rec=0.8893 med=0.061ms
+synthetic-id8-128 IVF-Flat {'nlist': 1024} k=10 qp=6 rec=0.9470 med=0.105ms
+synthetic-id8-128 IVF-Flat {'nlist': 1024} k=10 qp=8 rec=0.9777 med=0.107ms
+synthetic-id8-128 IVF-Flat {'nlist': 1024} k=10 qp=12 rec=0.9947 med=0.155ms
+synthetic-id8-128 IVF-Flat {'nlist': 1024} k=10 qp=16 rec=0.9987 med=0.196ms
+synthetic-id8-128 IVF-Flat {'nlist': 1024} k=10 qp=24 rec=1.0000 med=0.287ms
+synthetic-id8-128 IVF-Flat {'nlist': 1024} k=10 qp=32 rec=1.0000 med=0.383ms
+synthetic-id8-128 IVF-Flat {'nlist': 1024} k=10 qp=48 rec=1.0000 med=0.526ms
+synthetic-id8-128 IVF-Flat {'nlist': 1024} k=10 qp=64 rec=1.0000 med=0.703ms
+synthetic-id8-128 IVF-Flat {'nlist': 1024} k=10 qp=96 rec=1.0000 med=0.999ms
+synthetic-id8-128 IVF-Flat {'nlist': 1024} k=10 qp=128 rec=1.0000 med=1.331ms
+synthetic-id8-128 IVF-Flat {'nlist': 1024} k=10 qp=192 rec=1.0000 med=2.094ms
+synthetic-id8-128 IVF-Flat {'nlist': 1024} k=10 qp=256 rec=1.0000 med=2.861ms
+loaded synthetic-id16-128: base=(200000, 128) queries=(300, 128) metric=euclidean profile=dense
+exact ground truth in 1.7s
+synthetic-id16-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=10 rec=0.8423 med=0.034ms
+synthetic-id16-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=12 rec=0.8780 med=0.038ms
+synthetic-id16-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=16 rec=0.9323 med=0.047ms
+synthetic-id16-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=20 rec=0.9533 med=0.058ms
+synthetic-id16-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=24 rec=0.9710 med=0.085ms
+synthetic-id16-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=32 rec=0.9860 med=0.073ms
+synthetic-id16-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=40 rec=0.9930 med=0.086ms
+synthetic-id16-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=48 rec=0.9957 med=0.099ms
+synthetic-id16-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=64 rec=0.9987 med=0.129ms
+synthetic-id16-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=80 rec=0.9993 med=0.152ms
+synthetic-id16-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=96 rec=0.9997 med=0.190ms
+synthetic-id16-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=128 rec=0.9997 med=0.244ms
+synthetic-id16-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=160 rec=1.0000 med=0.302ms
+synthetic-id16-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=192 rec=1.0000 med=0.334ms
+synthetic-id16-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=256 rec=1.0000 med=0.424ms
+synthetic-id16-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=320 rec=1.0000 med=0.528ms
+synthetic-id16-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=384 rec=1.0000 med=0.660ms
+synthetic-id16-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=512 rec=1.0000 med=0.736ms
+synthetic-id16-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=640 rec=1.0000 med=0.796ms
+synthetic-id16-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=768 rec=1.0000 med=0.977ms
+synthetic-id16-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=1024 rec=1.0000 med=1.282ms
+synthetic-id16-128 IVF-Flat {'nlist': 1024} k=10 qp=1 rec=0.3440 med=0.031ms
+synthetic-id16-128 IVF-Flat {'nlist': 1024} k=10 qp=2 rec=0.5283 med=0.044ms
+synthetic-id16-128 IVF-Flat {'nlist': 1024} k=10 qp=3 rec=0.6417 med=0.056ms
+synthetic-id16-128 IVF-Flat {'nlist': 1024} k=10 qp=4 rec=0.7200 med=0.063ms
+synthetic-id16-128 IVF-Flat {'nlist': 1024} k=10 qp=6 rec=0.8357 med=0.090ms
+synthetic-id16-128 IVF-Flat {'nlist': 1024} k=10 qp=8 rec=0.8950 med=0.109ms
+synthetic-id16-128 IVF-Flat {'nlist': 1024} k=10 qp=12 rec=0.9517 med=0.166ms
+synthetic-id16-128 IVF-Flat {'nlist': 1024} k=10 qp=16 rec=0.9787 med=0.201ms
+synthetic-id16-128 IVF-Flat {'nlist': 1024} k=10 qp=24 rec=0.9953 med=0.272ms
+synthetic-id16-128 IVF-Flat {'nlist': 1024} k=10 qp=32 rec=0.9993 med=0.384ms
+synthetic-id16-128 IVF-Flat {'nlist': 1024} k=10 qp=48 rec=1.0000 med=0.501ms
+synthetic-id16-128 IVF-Flat {'nlist': 1024} k=10 qp=64 rec=1.0000 med=0.674ms
+synthetic-id16-128 IVF-Flat {'nlist': 1024} k=10 qp=96 rec=1.0000 med=1.101ms
+synthetic-id16-128 IVF-Flat {'nlist': 1024} k=10 qp=128 rec=1.0000 med=1.352ms
+synthetic-id16-128 IVF-Flat {'nlist': 1024} k=10 qp=192 rec=1.0000 med=1.992ms
+synthetic-id16-128 IVF-Flat {'nlist': 1024} k=10 qp=256 rec=1.0000 med=2.624ms
+loaded synthetic-id24-128: base=(200000, 128) queries=(300, 128) metric=euclidean profile=dense
+exact ground truth in 1.6s
+synthetic-id24-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=10 rec=0.7610 med=0.039ms
+synthetic-id24-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=12 rec=0.8017 med=0.045ms
+synthetic-id24-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=16 rec=0.8600 med=0.054ms
+synthetic-id24-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=20 rec=0.8980 med=0.062ms
+synthetic-id24-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=24 rec=0.9233 med=0.072ms
+synthetic-id24-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=32 rec=0.9570 med=0.087ms
+synthetic-id24-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=40 rec=0.9700 med=0.105ms
+synthetic-id24-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=48 rec=0.9820 med=0.147ms
+synthetic-id24-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=64 rec=0.9910 med=0.154ms
+synthetic-id24-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=80 rec=0.9953 med=0.183ms
+synthetic-id24-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=96 rec=0.9983 med=0.212ms
+synthetic-id24-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=128 rec=0.9993 med=0.277ms
+synthetic-id24-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=160 rec=0.9997 med=0.310ms
+synthetic-id24-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=192 rec=0.9997 med=0.360ms
+synthetic-id24-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=256 rec=1.0000 med=0.450ms
+synthetic-id24-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=320 rec=1.0000 med=0.570ms
+synthetic-id24-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=384 rec=1.0000 med=0.656ms
+synthetic-id24-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=512 rec=1.0000 med=0.855ms
+synthetic-id24-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=640 rec=1.0000 med=0.964ms
+synthetic-id24-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=768 rec=1.0000 med=1.063ms
+synthetic-id24-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=1024 rec=1.0000 med=1.340ms
+synthetic-id24-128 IVF-Flat {'nlist': 1024} k=10 qp=1 rec=0.2867 med=0.032ms
+synthetic-id24-128 IVF-Flat {'nlist': 1024} k=10 qp=2 rec=0.4480 med=0.043ms
+synthetic-id24-128 IVF-Flat {'nlist': 1024} k=10 qp=3 rec=0.5663 med=0.053ms
+synthetic-id24-128 IVF-Flat {'nlist': 1024} k=10 qp=4 rec=0.6543 med=0.067ms
+synthetic-id24-128 IVF-Flat {'nlist': 1024} k=10 qp=6 rec=0.7703 med=0.090ms
+synthetic-id24-128 IVF-Flat {'nlist': 1024} k=10 qp=8 rec=0.8467 med=0.114ms
+synthetic-id24-128 IVF-Flat {'nlist': 1024} k=10 qp=12 rec=0.9207 med=0.161ms
+synthetic-id24-128 IVF-Flat {'nlist': 1024} k=10 qp=16 rec=0.9607 med=0.221ms
+synthetic-id24-128 IVF-Flat {'nlist': 1024} k=10 qp=24 rec=0.9870 med=0.304ms
+synthetic-id24-128 IVF-Flat {'nlist': 1024} k=10 qp=32 rec=0.9970 med=0.401ms
+synthetic-id24-128 IVF-Flat {'nlist': 1024} k=10 qp=48 rec=1.0000 med=0.568ms
+synthetic-id24-128 IVF-Flat {'nlist': 1024} k=10 qp=64 rec=1.0000 med=0.655ms
+synthetic-id24-128 IVF-Flat {'nlist': 1024} k=10 qp=96 rec=1.0000 med=0.988ms
+synthetic-id24-128 IVF-Flat {'nlist': 1024} k=10 qp=128 rec=1.0000 med=1.303ms
+synthetic-id24-128 IVF-Flat {'nlist': 1024} k=10 qp=192 rec=1.0000 med=1.856ms
+synthetic-id24-128 IVF-Flat {'nlist': 1024} k=10 qp=256 rec=1.0000 med=2.685ms
+loaded synthetic-id32-128: base=(200000, 128) queries=(300, 128) metric=euclidean profile=dense
+exact ground truth in 1.6s
+synthetic-id32-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=10 rec=0.7073 med=0.041ms
+synthetic-id32-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=12 rec=0.7587 med=0.048ms
+synthetic-id32-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=16 rec=0.8177 med=0.054ms
+synthetic-id32-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=20 rec=0.8570 med=0.091ms
+synthetic-id32-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=24 rec=0.8880 med=0.072ms
+synthetic-id32-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=32 rec=0.9330 med=0.091ms
+synthetic-id32-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=40 rec=0.9560 med=0.105ms
+synthetic-id32-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=48 rec=0.9710 med=0.121ms
+synthetic-id32-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=64 rec=0.9880 med=0.155ms
+synthetic-id32-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=80 rec=0.9943 med=0.191ms
+synthetic-id32-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=96 rec=0.9980 med=0.216ms
+synthetic-id32-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=128 rec=0.9997 med=0.284ms
+synthetic-id32-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=160 rec=1.0000 med=0.340ms
+synthetic-id32-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=192 rec=1.0000 med=0.400ms
+synthetic-id32-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=256 rec=1.0000 med=0.547ms
+synthetic-id32-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=320 rec=1.0000 med=0.599ms
+synthetic-id32-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=384 rec=1.0000 med=0.686ms
+synthetic-id32-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=512 rec=1.0000 med=0.790ms
+synthetic-id32-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=640 rec=1.0000 med=0.989ms
+synthetic-id32-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=768 rec=1.0000 med=1.137ms
+synthetic-id32-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=1024 rec=1.0000 med=1.416ms
+synthetic-id32-128 IVF-Flat {'nlist': 1024} k=10 qp=1 rec=0.2730 med=0.032ms
+synthetic-id32-128 IVF-Flat {'nlist': 1024} k=10 qp=2 rec=0.4267 med=0.045ms
+synthetic-id32-128 IVF-Flat {'nlist': 1024} k=10 qp=3 rec=0.5350 med=0.055ms
+synthetic-id32-128 IVF-Flat {'nlist': 1024} k=10 qp=4 rec=0.6157 med=0.069ms
+synthetic-id32-128 IVF-Flat {'nlist': 1024} k=10 qp=6 rec=0.7187 med=0.089ms
+synthetic-id32-128 IVF-Flat {'nlist': 1024} k=10 qp=8 rec=0.7957 med=0.148ms
+synthetic-id32-128 IVF-Flat {'nlist': 1024} k=10 qp=12 rec=0.8903 med=0.169ms
+synthetic-id32-128 IVF-Flat {'nlist': 1024} k=10 qp=16 rec=0.9390 med=0.204ms
+synthetic-id32-128 IVF-Flat {'nlist': 1024} k=10 qp=24 rec=0.9813 med=0.275ms
+synthetic-id32-128 IVF-Flat {'nlist': 1024} k=10 qp=32 rec=0.9937 med=0.397ms
+synthetic-id32-128 IVF-Flat {'nlist': 1024} k=10 qp=48 rec=0.9997 med=0.540ms
+synthetic-id32-128 IVF-Flat {'nlist': 1024} k=10 qp=64 rec=1.0000 med=0.802ms
+synthetic-id32-128 IVF-Flat {'nlist': 1024} k=10 qp=96 rec=1.0000 med=1.019ms
+synthetic-id32-128 IVF-Flat {'nlist': 1024} k=10 qp=128 rec=1.0000 med=1.298ms
+synthetic-id32-128 IVF-Flat {'nlist': 1024} k=10 qp=192 rec=1.0000 med=1.948ms
+synthetic-id32-128 IVF-Flat {'nlist': 1024} k=10 qp=256 rec=1.0000 med=2.599ms
+loaded synthetic-id48-128: base=(200000, 128) queries=(300, 128) metric=euclidean profile=dense
+exact ground truth in 1.7s
+synthetic-id48-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=10 rec=0.6587 med=0.046ms
+synthetic-id48-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=12 rec=0.7110 med=0.049ms
+synthetic-id48-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=16 rec=0.7700 med=0.060ms
+synthetic-id48-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=20 rec=0.8167 med=0.069ms
+synthetic-id48-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=24 rec=0.8623 med=0.078ms
+synthetic-id48-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=32 rec=0.9053 med=0.132ms
+synthetic-id48-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=40 rec=0.9330 med=0.113ms
+synthetic-id48-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=48 rec=0.9523 med=0.135ms
+synthetic-id48-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=64 rec=0.9753 med=0.169ms
+synthetic-id48-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=80 rec=0.9863 med=0.201ms
+synthetic-id48-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=96 rec=0.9947 med=0.231ms
+synthetic-id48-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=128 rec=0.9980 med=0.420ms
+synthetic-id48-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=160 rec=0.9993 med=0.378ms
+synthetic-id48-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=192 rec=0.9993 med=0.440ms
+synthetic-id48-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=256 rec=0.9997 med=0.521ms
+synthetic-id48-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=320 rec=0.9997 med=0.624ms
+synthetic-id48-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=384 rec=0.9997 med=0.733ms
+synthetic-id48-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=512 rec=0.9997 med=0.887ms
+synthetic-id48-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=640 rec=0.9997 med=0.995ms
+synthetic-id48-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=768 rec=0.9997 med=1.131ms
+synthetic-id48-128 HNSW {'M': 16, 'efConstruction': 200} k=10 qp=1024 rec=0.9997 med=1.439ms
+synthetic-id48-128 IVF-Flat {'nlist': 1024} k=10 qp=1 rec=0.2383 med=0.032ms
+synthetic-id48-128 IVF-Flat {'nlist': 1024} k=10 qp=2 rec=0.3663 med=0.043ms
+synthetic-id48-128 IVF-Flat {'nlist': 1024} k=10 qp=3 rec=0.4670 med=0.053ms
+synthetic-id48-128 IVF-Flat {'nlist': 1024} k=10 qp=4 rec=0.5477 med=0.064ms
+synthetic-id48-128 IVF-Flat {'nlist': 1024} k=10 qp=6 rec=0.6690 med=0.112ms
+synthetic-id48-128 IVF-Flat {'nlist': 1024} k=10 qp=8 rec=0.7483 med=0.109ms
+synthetic-id48-128 IVF-Flat {'nlist': 1024} k=10 qp=12 rec=0.8430 med=0.149ms
+synthetic-id48-128 IVF-Flat {'nlist': 1024} k=10 qp=16 rec=0.9070 med=0.206ms
+synthetic-id48-128 IVF-Flat {'nlist': 1024} k=10 qp=24 rec=0.9673 med=0.286ms
+synthetic-id48-128 IVF-Flat {'nlist': 1024} k=10 qp=32 rec=0.9903 med=0.389ms
+synthetic-id48-128 IVF-Flat {'nlist': 1024} k=10 qp=48 rec=1.0000 med=0.548ms
+synthetic-id48-128 IVF-Flat {'nlist': 1024} k=10 qp=64 rec=1.0000 med=0.692ms
+synthetic-id48-128 IVF-Flat {'nlist': 1024} k=10 qp=96 rec=1.0000 med=1.001ms
+synthetic-id48-128 IVF-Flat {'nlist': 1024} k=10 qp=128 rec=1.0000 med=1.388ms
+synthetic-id48-128 IVF-Flat {'nlist': 1024} k=10 qp=192 rec=1.0000 med=1.987ms
+synthetic-id48-128 IVF-Flat {'nlist': 1024} k=10 qp=256 rec=1.0000 med=2.658ms
+=== STAGE 2: Progress Report 1 grid on the three new real datasets (04:37) ===
+loaded fashion-mnist-784-euclidean: base=(60000, 784) queries=(300, 784) metric=euclidean profile=pr1
+exact ground truth in 0.3s
+fashion-mnist-784-euclidean HNSW {'M': 8, 'efConstruction': 100} k=10 qp=10 rec=0.8740 med=0.059ms
+fashion-mnist-784-euclidean HNSW {'M': 8, 'efConstruction': 100} k=10 qp=16 rec=0.9397 med=0.085ms
+fashion-mnist-784-euclidean HNSW {'M': 8, 'efConstruction': 100} k=10 qp=32 rec=0.9803 med=0.118ms
+fashion-mnist-784-euclidean HNSW {'M': 8, 'efConstruction': 100} k=10 qp=64 rec=0.9937 med=0.215ms
+fashion-mnist-784-euclidean HNSW {'M': 8, 'efConstruction': 100} k=10 qp=128 rec=0.9983 med=0.342ms
+fashion-mnist-784-euclidean HNSW {'M': 8, 'efConstruction': 100} k=10 qp=256 rec=0.9983 med=0.568ms
+fashion-mnist-784-euclidean HNSW {'M': 8, 'efConstruction': 100} k=10 qp=512 rec=0.9993 med=1.041ms
+fashion-mnist-784-euclidean HNSW {'M': 16, 'efConstruction': 200} k=10 qp=10 rec=0.9303 med=0.088ms
+fashion-mnist-784-euclidean HNSW {'M': 16, 'efConstruction': 200} k=10 qp=16 rec=0.9723 med=0.116ms
+fashion-mnist-784-euclidean HNSW {'M': 16, 'efConstruction': 200} k=10 qp=32 rec=0.9943 med=0.176ms
+fashion-mnist-784-euclidean HNSW {'M': 16, 'efConstruction': 200} k=10 qp=64 rec=0.9977 med=0.270ms
+fashion-mnist-784-euclidean HNSW {'M': 16, 'efConstruction': 200} k=10 qp=128 rec=0.9990 med=0.445ms
+fashion-mnist-784-euclidean HNSW {'M': 16, 'efConstruction': 200} k=10 qp=256 rec=0.9990 med=0.756ms
+fashion-mnist-784-euclidean HNSW {'M': 16, 'efConstruction': 200} k=10 qp=512 rec=1.0000 med=1.258ms
+fashion-mnist-784-euclidean HNSW {'M': 32, 'efConstruction': 200} k=10 qp=10 rec=0.9480 med=0.093ms
+fashion-mnist-784-euclidean HNSW {'M': 32, 'efConstruction': 200} k=10 qp=16 rec=0.9783 med=0.136ms
+fashion-mnist-784-euclidean HNSW {'M': 32, 'efConstruction': 200} k=10 qp=32 rec=0.9953 med=0.205ms
+fashion-mnist-784-euclidean HNSW {'M': 32, 'efConstruction': 200} k=10 qp=64 rec=0.9987 med=0.302ms
+fashion-mnist-784-euclidean HNSW {'M': 32, 'efConstruction': 200} k=10 qp=128 rec=0.9997 med=0.546ms
+fashion-mnist-784-euclidean HNSW {'M': 32, 'efConstruction': 200} k=10 qp=256 rec=0.9997 med=0.798ms
+fashion-mnist-784-euclidean HNSW {'M': 32, 'efConstruction': 200} k=10 qp=512 rec=1.0000 med=1.276ms
+fashion-mnist-784-euclidean HNSW {'M': 48, 'efConstruction': 400} k=10 qp=10 rec=0.9567 med=0.117ms
+fashion-mnist-784-euclidean HNSW {'M': 48, 'efConstruction': 400} k=10 qp=16 rec=0.9820 med=0.164ms
+fashion-mnist-784-euclidean HNSW {'M': 48, 'efConstruction': 400} k=10 qp=32 rec=0.9970 med=0.210ms
+fashion-mnist-784-euclidean HNSW {'M': 48, 'efConstruction': 400} k=10 qp=64 rec=0.9997 med=0.342ms
+fashion-mnist-784-euclidean HNSW {'M': 48, 'efConstruction': 400} k=10 qp=128 rec=0.9997 med=0.538ms
+fashion-mnist-784-euclidean HNSW {'M': 48, 'efConstruction': 400} k=10 qp=256 rec=0.9997 med=0.978ms
+fashion-mnist-784-euclidean HNSW {'M': 48, 'efConstruction': 400} k=10 qp=512 rec=1.0000 med=1.558ms
+fashion-mnist-784-euclidean IVF-Flat {'nlist': 100} k=10 qp=1 rec=0.6983 med=0.244ms
+fashion-mnist-784-euclidean IVF-Flat {'nlist': 100} k=10 qp=2 rec=0.8787 med=0.460ms
+fashion-mnist-784-euclidean IVF-Flat {'nlist': 100} k=10 qp=4 rec=0.9800 med=0.922ms
+fashion-mnist-784-euclidean IVF-Flat {'nlist': 100} k=10 qp=8 rec=0.9977 med=1.560ms
+fashion-mnist-784-euclidean IVF-Flat {'nlist': 100} k=10 qp=16 rec=1.0000 med=3.318ms
+fashion-mnist-784-euclidean IVF-Flat {'nlist': 100} k=10 qp=32 rec=1.0000 med=6.567ms
+fashion-mnist-784-euclidean IVF-Flat {'nlist': 100} k=10 qp=64 rec=1.0000 med=12.456ms
+fashion-mnist-784-euclidean IVF-Flat {'nlist': 100} k=10 qp=128 rec=1.0000 med=19.141ms
+fashion-mnist-784-euclidean IVF-Flat {'nlist': 1024} k=10 qp=1 rec=0.4997 med=0.154ms
+fashion-mnist-784-euclidean IVF-Flat {'nlist': 1024} k=10 qp=2 rec=0.6897 med=0.183ms
+fashion-mnist-784-euclidean IVF-Flat {'nlist': 1024} k=10 qp=4 rec=0.8697 med=0.235ms
+fashion-mnist-784-euclidean IVF-Flat {'nlist': 1024} k=10 qp=8 rec=0.9627 med=0.336ms
+fashion-mnist-784-euclidean IVF-Flat {'nlist': 1024} k=10 qp=16 rec=0.9913 med=0.531ms
+fashion-mnist-784-euclidean IVF-Flat {'nlist': 1024} k=10 qp=32 rec=0.9993 med=0.838ms
+fashion-mnist-784-euclidean IVF-Flat {'nlist': 1024} k=10 qp=64 rec=1.0000 med=1.544ms
+fashion-mnist-784-euclidean IVF-Flat {'nlist': 1024} k=10 qp=128 rec=1.0000 med=2.902ms
+WARNING clustering 60000 points to 4096 centroids: please provide at least 159744 training points
+fashion-mnist-784-euclidean IVF-Flat {'nlist': 4096} k=10 qp=1 rec=0.3707 med=0.574ms
+fashion-mnist-784-euclidean IVF-Flat {'nlist': 4096} k=10 qp=2 rec=0.5463 med=0.542ms
+fashion-mnist-784-euclidean IVF-Flat {'nlist': 4096} k=10 qp=4 rec=0.7330 med=0.580ms
+fashion-mnist-784-euclidean IVF-Flat {'nlist': 4096} k=10 qp=8 rec=0.8830 med=0.589ms
+fashion-mnist-784-euclidean IVF-Flat {'nlist': 4096} k=10 qp=16 rec=0.9623 med=0.658ms
+fashion-mnist-784-euclidean IVF-Flat {'nlist': 4096} k=10 qp=32 rec=0.9920 med=0.779ms
+fashion-mnist-784-euclidean IVF-Flat {'nlist': 4096} k=10 qp=64 rec=0.9983 med=0.996ms
+fashion-mnist-784-euclidean IVF-Flat {'nlist': 4096} k=10 qp=128 rec=0.9997 med=1.388ms
+fashion-mnist-784-euclidean IVF-PQ {'nlist': 1024, 'm': 8, 'nbits': 8} k=10 qp=1 rec=0.3800 med=0.146ms
+fashion-mnist-784-euclidean IVF-PQ {'nlist': 1024, 'm': 8, 'nbits': 8} k=10 qp=2 rec=0.4543 med=0.152ms
+fashion-mnist-784-euclidean IVF-PQ {'nlist': 1024, 'm': 8, 'nbits': 8} k=10 qp=4 rec=0.5053 med=0.156ms
+fashion-mnist-784-euclidean IVF-PQ {'nlist': 1024, 'm': 8, 'nbits': 8} k=10 qp=8 rec=0.5157 med=0.173ms
+fashion-mnist-784-euclidean IVF-PQ {'nlist': 1024, 'm': 8, 'nbits': 8} k=10 qp=16 rec=0.5163 med=0.193ms
+fashion-mnist-784-euclidean IVF-PQ {'nlist': 1024, 'm': 8, 'nbits': 8} k=10 qp=64 rec=0.5163 med=0.275ms
+fashion-mnist-784-euclidean IVF-PQ {'nlist': 1024, 'm': 8, 'nbits': 8} k=10 qp=128 rec=0.5163 med=0.323ms
+fashion-mnist-784-euclidean IVF-PQ {'nlist': 1024, 'm': 16, 'nbits': 8} k=10 qp=1 rec=0.4227 med=0.160ms
+fashion-mnist-784-euclidean IVF-PQ {'nlist': 1024, 'm': 16, 'nbits': 8} k=10 qp=2 rec=0.5207 med=0.166ms
+fashion-mnist-784-euclidean IVF-PQ {'nlist': 1024, 'm': 16, 'nbits': 8} k=10 qp=4 rec=0.5803 med=0.172ms
+fashion-mnist-784-euclidean IVF-PQ {'nlist': 1024, 'm': 16, 'nbits': 8} k=10 qp=8 rec=0.5977 med=0.207ms
+fashion-mnist-784-euclidean IVF-PQ {'nlist': 1024, 'm': 16, 'nbits': 8} k=10 qp=16 rec=0.6013 med=0.257ms
+fashion-mnist-784-euclidean IVF-PQ {'nlist': 1024, 'm': 16, 'nbits': 8} k=10 qp=64 rec=0.6013 med=0.370ms
+fashion-mnist-784-euclidean IVF-PQ {'nlist': 1024, 'm': 16, 'nbits': 8} k=10 qp=128 rec=0.6013 med=0.518ms
+WARNING clustering 60000 points to 4096 centroids: please provide at least 159744 training points
+fashion-mnist-784-euclidean IVF-PQ {'nlist': 4096, 'm': 16, 'nbits': 8} k=10 qp=1 rec=0.3510 med=0.510ms
+fashion-mnist-784-euclidean IVF-PQ {'nlist': 4096, 'm': 16, 'nbits': 8} k=10 qp=2 rec=0.4753 med=0.623ms
+fashion-mnist-784-euclidean IVF-PQ {'nlist': 4096, 'm': 16, 'nbits': 8} k=10 qp=4 rec=0.5703 med=0.595ms
+fashion-mnist-784-euclidean IVF-PQ {'nlist': 4096, 'm': 16, 'nbits': 8} k=10 qp=8 rec=0.6120 med=0.610ms
+fashion-mnist-784-euclidean IVF-PQ {'nlist': 4096, 'm': 16, 'nbits': 8} k=10 qp=16 rec=0.6223 med=0.640ms
+fashion-mnist-784-euclidean IVF-PQ {'nlist': 4096, 'm': 16, 'nbits': 8} k=10 qp=64 rec=0.6243 med=0.833ms
+fashion-mnist-784-euclidean IVF-PQ {'nlist': 4096, 'm': 16, 'nbits': 8} k=10 qp=128 rec=0.6247 med=1.052ms
+loaded mnist-784-euclidean: base=(60000, 784) queries=(300, 784) metric=euclidean profile=pr1
+exact ground truth in 0.3s
+mnist-784-euclidean HNSW {'M': 8, 'efConstruction': 100} k=10 qp=10 rec=0.8637 med=0.062ms
+mnist-784-euclidean HNSW {'M': 8, 'efConstruction': 100} k=10 qp=16 rec=0.9310 med=0.078ms
+mnist-784-euclidean HNSW {'M': 8, 'efConstruction': 100} k=10 qp=32 rec=0.9763 med=0.126ms
+mnist-784-euclidean HNSW {'M': 8, 'efConstruction': 100} k=10 qp=64 rec=0.9930 med=0.206ms
+mnist-784-euclidean HNSW {'M': 8, 'efConstruction': 100} k=10 qp=128 rec=0.9960 med=0.363ms
+mnist-784-euclidean HNSW {'M': 8, 'efConstruction': 100} k=10 qp=256 rec=0.9990 med=0.629ms
+mnist-784-euclidean HNSW {'M': 8, 'efConstruction': 100} k=10 qp=512 rec=0.9997 med=1.155ms
+mnist-784-euclidean HNSW {'M': 16, 'efConstruction': 200} k=10 qp=10 rec=0.9293 med=0.090ms
+mnist-784-euclidean HNSW {'M': 16, 'efConstruction': 200} k=10 qp=16 rec=0.9653 med=0.120ms
+mnist-784-euclidean HNSW {'M': 16, 'efConstruction': 200} k=10 qp=32 rec=0.9870 med=0.193ms
+mnist-784-euclidean HNSW {'M': 16, 'efConstruction': 200} k=10 qp=64 rec=0.9977 med=0.323ms
+mnist-784-euclidean HNSW {'M': 16, 'efConstruction': 200} k=10 qp=128 rec=0.9987 med=0.535ms
+mnist-784-euclidean HNSW {'M': 16, 'efConstruction': 200} k=10 qp=256 rec=0.9997 med=0.905ms
+mnist-784-euclidean HNSW {'M': 16, 'efConstruction': 200} k=10 qp=512 rec=1.0000 med=1.631ms
+mnist-784-euclidean HNSW {'M': 32, 'efConstruction': 200} k=10 qp=10 rec=0.9320 med=0.112ms
+mnist-784-euclidean HNSW {'M': 32, 'efConstruction': 200} k=10 qp=16 rec=0.9713 med=0.150ms
+mnist-784-euclidean HNSW {'M': 32, 'efConstruction': 200} k=10 qp=32 rec=0.9877 med=0.243ms
+mnist-784-euclidean HNSW {'M': 32, 'efConstruction': 200} k=10 qp=64 rec=0.9970 med=0.393ms
+mnist-784-euclidean HNSW {'M': 32, 'efConstruction': 200} k=10 qp=128 rec=0.9987 med=0.649ms
+mnist-784-euclidean HNSW {'M': 32, 'efConstruction': 200} k=10 qp=256 rec=0.9997 med=1.092ms
+mnist-784-euclidean HNSW {'M': 32, 'efConstruction': 200} k=10 qp=512 rec=0.9997 med=1.802ms
+mnist-784-euclidean HNSW {'M': 48, 'efConstruction': 400} k=10 qp=10 rec=0.9443 med=0.120ms
+mnist-784-euclidean HNSW {'M': 48, 'efConstruction': 400} k=10 qp=16 rec=0.9770 med=0.158ms
+mnist-784-euclidean HNSW {'M': 48, 'efConstruction': 400} k=10 qp=32 rec=0.9910 med=0.256ms
+mnist-784-euclidean HNSW {'M': 48, 'efConstruction': 400} k=10 qp=64 rec=0.9980 med=0.428ms
+mnist-784-euclidean HNSW {'M': 48, 'efConstruction': 400} k=10 qp=128 rec=0.9993 med=0.699ms
+mnist-784-euclidean HNSW {'M': 48, 'efConstruction': 400} k=10 qp=256 rec=1.0000 med=1.160ms
+mnist-784-euclidean HNSW {'M': 48, 'efConstruction': 400} k=10 qp=512 rec=1.0000 med=2.070ms
+mnist-784-euclidean IVF-Flat {'nlist': 100} k=10 qp=1 rec=0.6423 med=0.250ms
+mnist-784-euclidean IVF-Flat {'nlist': 100} k=10 qp=2 rec=0.8337 med=0.421ms
+mnist-784-euclidean IVF-Flat {'nlist': 100} k=10 qp=4 rec=0.9487 med=0.784ms
+mnist-784-euclidean IVF-Flat {'nlist': 100} k=10 qp=8 rec=0.9870 med=1.478ms
+mnist-784-euclidean IVF-Flat {'nlist': 100} k=10 qp=16 rec=0.9960 med=3.061ms
+mnist-784-euclidean IVF-Flat {'nlist': 100} k=10 qp=32 rec=0.9997 med=6.143ms
+mnist-784-euclidean IVF-Flat {'nlist': 100} k=10 qp=64 rec=1.0000 med=12.245ms
+mnist-784-euclidean IVF-Flat {'nlist': 100} k=10 qp=128 rec=1.0000 med=18.807ms
+mnist-784-euclidean IVF-Flat {'nlist': 1024} k=10 qp=1 rec=0.4667 med=0.153ms
+mnist-784-euclidean IVF-Flat {'nlist': 1024} k=10 qp=2 rec=0.6487 med=0.187ms
+mnist-784-euclidean IVF-Flat {'nlist': 1024} k=10 qp=4 rec=0.8170 med=0.210ms
+mnist-784-euclidean IVF-Flat {'nlist': 1024} k=10 qp=8 rec=0.9340 med=0.298ms
+mnist-784-euclidean IVF-Flat {'nlist': 1024} k=10 qp=16 rec=0.9820 med=0.504ms
+mnist-784-euclidean IVF-Flat {'nlist': 1024} k=10 qp=32 rec=0.9923 med=0.821ms
+mnist-784-euclidean IVF-Flat {'nlist': 1024} k=10 qp=64 rec=0.9970 med=1.402ms
+mnist-784-euclidean IVF-Flat {'nlist': 1024} k=10 qp=128 rec=0.9997 med=2.614ms
+WARNING clustering 60000 points to 4096 centroids: please provide at least 159744 training points
+mnist-784-euclidean IVF-Flat {'nlist': 4096} k=10 qp=1 rec=0.3457 med=0.509ms
+mnist-784-euclidean IVF-Flat {'nlist': 4096} k=10 qp=2 rec=0.5120 med=0.545ms
+mnist-784-euclidean IVF-Flat {'nlist': 4096} k=10 qp=4 rec=0.7043 med=0.609ms
+mnist-784-euclidean IVF-Flat {'nlist': 4096} k=10 qp=8 rec=0.8580 med=0.613ms
+mnist-784-euclidean IVF-Flat {'nlist': 4096} k=10 qp=16 rec=0.9497 med=0.697ms
+mnist-784-euclidean IVF-Flat {'nlist': 4096} k=10 qp=32 rec=0.9837 med=0.783ms
+mnist-784-euclidean IVF-Flat {'nlist': 4096} k=10 qp=64 rec=0.9947 med=0.979ms
+mnist-784-euclidean IVF-Flat {'nlist': 4096} k=10 qp=128 rec=0.9987 med=1.343ms
+mnist-784-euclidean IVF-PQ {'nlist': 1024, 'm': 8, 'nbits': 8} k=10 qp=1 rec=0.3927 med=0.155ms
+mnist-784-euclidean IVF-PQ {'nlist': 1024, 'm': 8, 'nbits': 8} k=10 qp=2 rec=0.4740 med=0.191ms
+mnist-784-euclidean IVF-PQ {'nlist': 1024, 'm': 8, 'nbits': 8} k=10 qp=4 rec=0.5263 med=0.180ms
+mnist-784-euclidean IVF-PQ {'nlist': 1024, 'm': 8, 'nbits': 8} k=10 qp=8 rec=0.5470 med=0.189ms
+mnist-784-euclidean IVF-PQ {'nlist': 1024, 'm': 8, 'nbits': 8} k=10 qp=16 rec=0.5523 med=0.212ms
+mnist-784-euclidean IVF-PQ {'nlist': 1024, 'm': 8, 'nbits': 8} k=10 qp=64 rec=0.5537 med=0.324ms
+mnist-784-euclidean IVF-PQ {'nlist': 1024, 'm': 8, 'nbits': 8} k=10 qp=128 rec=0.5537 med=0.441ms
+mnist-784-euclidean IVF-PQ {'nlist': 1024, 'm': 16, 'nbits': 8} k=10 qp=1 rec=0.4223 med=0.162ms
+mnist-784-euclidean IVF-PQ {'nlist': 1024, 'm': 16, 'nbits': 8} k=10 qp=2 rec=0.5367 med=0.206ms
+mnist-784-euclidean IVF-PQ {'nlist': 1024, 'm': 16, 'nbits': 8} k=10 qp=4 rec=0.6090 med=0.197ms
+mnist-784-euclidean IVF-PQ {'nlist': 1024, 'm': 16, 'nbits': 8} k=10 qp=8 rec=0.6357 med=0.223ms
+mnist-784-euclidean IVF-PQ {'nlist': 1024, 'm': 16, 'nbits': 8} k=10 qp=16 rec=0.6437 med=0.242ms
+mnist-784-euclidean IVF-PQ {'nlist': 1024, 'm': 16, 'nbits': 8} k=10 qp=64 rec=0.6453 med=0.424ms
+mnist-784-euclidean IVF-PQ {'nlist': 1024, 'm': 16, 'nbits': 8} k=10 qp=128 rec=0.6457 med=0.572ms
+WARNING clustering 60000 points to 4096 centroids: please provide at least 159744 training points
+mnist-784-euclidean IVF-PQ {'nlist': 4096, 'm': 16, 'nbits': 8} k=10 qp=1 rec=0.3377 med=0.535ms
+mnist-784-euclidean IVF-PQ {'nlist': 4096, 'm': 16, 'nbits': 8} k=10 qp=2 rec=0.4703 med=0.600ms
+mnist-784-euclidean IVF-PQ {'nlist': 4096, 'm': 16, 'nbits': 8} k=10 qp=4 rec=0.5870 med=0.564ms
+mnist-784-euclidean IVF-PQ {'nlist': 4096, 'm': 16, 'nbits': 8} k=10 qp=8 rec=0.6403 med=0.610ms
+mnist-784-euclidean IVF-PQ {'nlist': 4096, 'm': 16, 'nbits': 8} k=10 qp=16 rec=0.6637 med=0.702ms
+mnist-784-euclidean IVF-PQ {'nlist': 4096, 'm': 16, 'nbits': 8} k=10 qp=64 rec=0.6673 med=0.788ms
+mnist-784-euclidean IVF-PQ {'nlist': 4096, 'm': 16, 'nbits': 8} k=10 qp=128 rec=0.6677 med=0.911ms
+loaded glove-25-angular: base=(200000, 25) queries=(300, 25) metric=angular profile=pr1
+exact ground truth in 0.3s
+glove-25-angular HNSW {'M': 8, 'efConstruction': 100} k=10 qp=10 rec=0.6197 med=0.017ms
+glove-25-angular HNSW {'M': 8, 'efConstruction': 100} k=10 qp=16 rec=0.7113 med=0.025ms
+glove-25-angular HNSW {'M': 8, 'efConstruction': 100} k=10 qp=32 rec=0.8300 med=0.036ms
+glove-25-angular HNSW {'M': 8, 'efConstruction': 100} k=10 qp=64 rec=0.9070 med=0.070ms
+glove-25-angular HNSW {'M': 8, 'efConstruction': 100} k=10 qp=128 rec=0.9557 med=0.156ms
+glove-25-angular HNSW {'M': 8, 'efConstruction': 100} k=10 qp=256 rec=0.9860 med=0.316ms
+glove-25-angular HNSW {'M': 8, 'efConstruction': 100} k=10 qp=512 rec=0.9947 med=0.510ms
+glove-25-angular HNSW {'M': 16, 'efConstruction': 200} k=10 qp=10 rec=0.7630 med=0.029ms
+glove-25-angular HNSW {'M': 16, 'efConstruction': 200} k=10 qp=16 rec=0.8517 med=0.039ms
+glove-25-angular HNSW {'M': 16, 'efConstruction': 200} k=10 qp=32 rec=0.9317 med=0.064ms
+glove-25-angular HNSW {'M': 16, 'efConstruction': 200} k=10 qp=64 rec=0.9790 med=0.193ms
+glove-25-angular HNSW {'M': 16, 'efConstruction': 200} k=10 qp=128 rec=0.9937 med=0.224ms
+glove-25-angular HNSW {'M': 16, 'efConstruction': 200} k=10 qp=256 rec=0.9987 med=0.441ms
+glove-25-angular HNSW {'M': 16, 'efConstruction': 200} k=10 qp=512 rec=1.0000 med=0.853ms
+glove-25-angular HNSW {'M': 32, 'efConstruction': 200} k=10 qp=10 rec=0.8310 med=0.040ms
+glove-25-angular HNSW {'M': 32, 'efConstruction': 200} k=10 qp=16 rec=0.9040 med=0.058ms
+glove-25-angular HNSW {'M': 32, 'efConstruction': 200} k=10 qp=32 rec=0.9670 med=0.095ms
+glove-25-angular HNSW {'M': 32, 'efConstruction': 200} k=10 qp=64 rec=0.9897 med=0.296ms
+glove-25-angular HNSW {'M': 32, 'efConstruction': 200} k=10 qp=128 rec=0.9983 med=0.351ms
+glove-25-angular HNSW {'M': 32, 'efConstruction': 200} k=10 qp=256 rec=0.9997 med=0.560ms
+glove-25-angular HNSW {'M': 32, 'efConstruction': 200} k=10 qp=512 rec=1.0000 med=0.999ms
+glove-25-angular HNSW {'M': 48, 'efConstruction': 400} k=10 qp=10 rec=0.8603 med=0.048ms
+glove-25-angular HNSW {'M': 48, 'efConstruction': 400} k=10 qp=16 rec=0.9233 med=0.067ms
+glove-25-angular HNSW {'M': 48, 'efConstruction': 400} k=10 qp=32 rec=0.9820 med=0.117ms
+glove-25-angular HNSW {'M': 48, 'efConstruction': 400} k=10 qp=64 rec=0.9967 med=0.206ms
+glove-25-angular HNSW {'M': 48, 'efConstruction': 400} k=10 qp=128 rec=0.9993 med=0.366ms
+glove-25-angular HNSW {'M': 48, 'efConstruction': 400} k=10 qp=256 rec=1.0000 med=0.700ms
+glove-25-angular HNSW {'M': 48, 'efConstruction': 400} k=10 qp=512 rec=1.0000 med=1.181ms
+glove-25-angular IVF-Flat {'nlist': 100} k=10 qp=1 rec=0.5640 med=0.030ms
+glove-25-angular IVF-Flat {'nlist': 100} k=10 qp=2 rec=0.7233 med=0.054ms
+glove-25-angular IVF-Flat {'nlist': 100} k=10 qp=4 rec=0.8553 med=0.166ms
+glove-25-angular IVF-Flat {'nlist': 100} k=10 qp=8 rec=0.9353 med=0.182ms
+glove-25-angular IVF-Flat {'nlist': 100} k=10 qp=16 rec=0.9807 med=0.357ms
+glove-25-angular IVF-Flat {'nlist': 100} k=10 qp=32 rec=0.9973 med=0.686ms
+glove-25-angular IVF-Flat {'nlist': 100} k=10 qp=64 rec=1.0000 med=1.416ms
+glove-25-angular IVF-Flat {'nlist': 100} k=10 qp=128 rec=1.0000 med=2.353ms
+glove-25-angular IVF-Flat {'nlist': 1024} k=10 qp=1 rec=0.4080 med=0.016ms
+glove-25-angular IVF-Flat {'nlist': 1024} k=10 qp=2 rec=0.5530 med=0.020ms
+glove-25-angular IVF-Flat {'nlist': 1024} k=10 qp=4 rec=0.6930 med=0.026ms
+glove-25-angular IVF-Flat {'nlist': 1024} k=10 qp=8 rec=0.8113 med=0.040ms
+glove-25-angular IVF-Flat {'nlist': 1024} k=10 qp=16 rec=0.9037 med=0.058ms
+glove-25-angular IVF-Flat {'nlist': 1024} k=10 qp=32 rec=0.9613 med=0.101ms
+glove-25-angular IVF-Flat {'nlist': 1024} k=10 qp=64 rec=0.9857 med=0.212ms
+glove-25-angular IVF-Flat {'nlist': 1024} k=10 qp=128 rec=0.9973 med=0.358ms
+glove-25-angular IVF-Flat {'nlist': 4096} k=10 qp=1 rec=0.2937 med=0.030ms
+glove-25-angular IVF-Flat {'nlist': 4096} k=10 qp=2 rec=0.4513 med=0.032ms
+glove-25-angular IVF-Flat {'nlist': 4096} k=10 qp=4 rec=0.5857 med=0.035ms
+glove-25-angular IVF-Flat {'nlist': 4096} k=10 qp=8 rec=0.7153 med=0.041ms
+glove-25-angular IVF-Flat {'nlist': 4096} k=10 qp=16 rec=0.8173 med=0.051ms
+glove-25-angular IVF-Flat {'nlist': 4096} k=10 qp=32 rec=0.8987 med=0.073ms
+glove-25-angular IVF-Flat {'nlist': 4096} k=10 qp=64 rec=0.9490 med=0.195ms
+glove-25-angular IVF-Flat {'nlist': 4096} k=10 qp=128 rec=0.9787 med=0.168ms
+glove-25-angular IVF-PQ {'nlist': 1024, 'm': 5, 'nbits': 8} k=10 qp=1 rec=0.2473 med=0.022ms
+glove-25-angular IVF-PQ {'nlist': 1024, 'm': 5, 'nbits': 8} k=10 qp=2 rec=0.2930 med=0.025ms
+glove-25-angular IVF-PQ {'nlist': 1024, 'm': 5, 'nbits': 8} k=10 qp=4 rec=0.3197 med=0.030ms
+glove-25-angular IVF-PQ {'nlist': 1024, 'm': 5, 'nbits': 8} k=10 qp=8 rec=0.3370 med=0.041ms
+glove-25-angular IVF-PQ {'nlist': 1024, 'm': 5, 'nbits': 8} k=10 qp=16 rec=0.3497 med=0.053ms
+glove-25-angular IVF-PQ {'nlist': 1024, 'm': 5, 'nbits': 8} k=10 qp=64 rec=0.3520 med=0.147ms
+glove-25-angular IVF-PQ {'nlist': 1024, 'm': 5, 'nbits': 8} k=10 qp=128 rec=0.3517 med=0.258ms
+glove-25-angular IVF-PQ {'nlist': 4096, 'm': 5, 'nbits': 8} k=10 qp=1 rec=0.2187 med=0.037ms
+glove-25-angular IVF-PQ {'nlist': 4096, 'm': 5, 'nbits': 8} k=10 qp=2 rec=0.2917 med=0.038ms
+glove-25-angular IVF-PQ {'nlist': 4096, 'm': 5, 'nbits': 8} k=10 qp=4 rec=0.3313 med=0.084ms
+glove-25-angular IVF-PQ {'nlist': 4096, 'm': 5, 'nbits': 8} k=10 qp=8 rec=0.3590 med=0.048ms
+glove-25-angular IVF-PQ {'nlist': 4096, 'm': 5, 'nbits': 8} k=10 qp=16 rec=0.3710 med=0.058ms
+glove-25-angular IVF-PQ {'nlist': 4096, 'm': 5, 'nbits': 8} k=10 qp=64 rec=0.3837 med=0.106ms
+glove-25-angular IVF-PQ {'nlist': 4096, 'm': 5, 'nbits': 8} k=10 qp=128 rec=0.3860 med=0.168ms
+=== STAGE 3: k = 1 and k = 100 passes (04:50) ===
+loaded sift-128-euclidean: base=(200000, 128) queries=(300, 128) metric=euclidean profile=kpass
+exact ground truth in 1.6s
+sift-128-euclidean HNSW {'M': 16, 'efConstruction': 200} k=1 qp=1 rec=0.2633 med=0.012ms
+sift-128-euclidean HNSW {'M': 16, 'efConstruction': 200} k=1 qp=2 rec=0.4167 med=0.017ms
+sift-128-euclidean HNSW {'M': 16, 'efConstruction': 200} k=1 qp=4 rec=0.5967 med=0.025ms
+sift-128-euclidean HNSW {'M': 16, 'efConstruction': 200} k=1 qp=8 rec=0.7567 med=0.034ms
+sift-128-euclidean HNSW {'M': 16, 'efConstruction': 200} k=1 qp=10 rec=0.7900 med=0.041ms
+sift-128-euclidean HNSW {'M': 16, 'efConstruction': 200} k=1 qp=16 rec=0.9067 med=0.051ms
+sift-128-euclidean HNSW {'M': 16, 'efConstruction': 200} k=1 qp=32 rec=0.9567 med=0.089ms
+sift-128-euclidean HNSW {'M': 16, 'efConstruction': 200} k=1 qp=64 rec=0.9833 med=0.157ms
+sift-128-euclidean HNSW {'M': 16, 'efConstruction': 200} k=1 qp=128 rec=0.9967 med=0.280ms
+sift-128-euclidean HNSW {'M': 16, 'efConstruction': 200} k=100 qp=10 rec=0.9497 med=0.233ms
+sift-128-euclidean HNSW {'M': 16, 'efConstruction': 200} k=100 qp=100 rec=0.9497 med=0.229ms
+sift-128-euclidean HNSW {'M': 16, 'efConstruction': 200} k=100 qp=128 rec=0.9694 med=0.273ms
+sift-128-euclidean HNSW {'M': 16, 'efConstruction': 200} k=100 qp=192 rec=0.9873 med=0.401ms
+sift-128-euclidean HNSW {'M': 16, 'efConstruction': 200} k=100 qp=256 rec=0.9939 med=0.517ms
+sift-128-euclidean HNSW {'M': 16, 'efConstruction': 200} k=100 qp=384 rec=0.9978 med=0.755ms
+sift-128-euclidean HNSW {'M': 16, 'efConstruction': 200} k=100 qp=512 rec=0.9991 med=0.871ms
+sift-128-euclidean HNSW {'M': 16, 'efConstruction': 200} k=100 qp=768 rec=0.9998 med=1.256ms
+sift-128-euclidean HNSW {'M': 16, 'efConstruction': 200} k=100 qp=1024 rec=0.9999 med=1.645ms
+sift-128-euclidean IVF-Flat {'nlist': 100} k=1 qp=1 rec=0.5433 med=0.106ms
+sift-128-euclidean IVF-Flat {'nlist': 100} k=1 qp=2 rec=0.7100 med=0.199ms
+sift-128-euclidean IVF-Flat {'nlist': 100} k=1 qp=4 rec=0.8733 med=0.421ms
+sift-128-euclidean IVF-Flat {'nlist': 100} k=1 qp=8 rec=0.9767 med=0.749ms
+sift-128-euclidean IVF-Flat {'nlist': 100} k=1 qp=16 rec=0.9967 med=1.570ms
+sift-128-euclidean IVF-Flat {'nlist': 100} k=1 qp=32 rec=1.0000 med=3.083ms
+sift-128-euclidean IVF-Flat {'nlist': 100} k=1 qp=64 rec=1.0000 med=6.434ms
+sift-128-euclidean IVF-Flat {'nlist': 100} k=1 qp=128 rec=1.0000 med=10.423ms
+sift-128-euclidean IVF-Flat {'nlist': 100} k=100 qp=1 rec=0.4575 med=0.130ms
+sift-128-euclidean IVF-Flat {'nlist': 100} k=100 qp=2 rec=0.6268 med=0.230ms
+sift-128-euclidean IVF-Flat {'nlist': 100} k=100 qp=4 rec=0.8141 med=0.432ms
+sift-128-euclidean IVF-Flat {'nlist': 100} k=100 qp=8 rec=0.9383 med=0.814ms
+sift-128-euclidean IVF-Flat {'nlist': 100} k=100 qp=16 rec=0.9914 med=1.505ms
+sift-128-euclidean IVF-Flat {'nlist': 100} k=100 qp=32 rec=0.9999 med=3.505ms
+sift-128-euclidean IVF-Flat {'nlist': 100} k=100 qp=64 rec=1.0000 med=6.345ms
+sift-128-euclidean IVF-Flat {'nlist': 100} k=100 qp=128 rec=1.0000 med=10.673ms
+sift-128-euclidean IVF-Flat {'nlist': 1024} k=1 qp=1 rec=0.3800 med=0.027ms
+sift-128-euclidean IVF-Flat {'nlist': 1024} k=1 qp=2 rec=0.4833 med=0.041ms
+sift-128-euclidean IVF-Flat {'nlist': 1024} k=1 qp=4 rec=0.6900 med=0.082ms
+sift-128-euclidean IVF-Flat {'nlist': 1024} k=1 qp=8 rec=0.8267 med=0.101ms
+sift-128-euclidean IVF-Flat {'nlist': 1024} k=1 qp=16 rec=0.9200 med=0.192ms
+sift-128-euclidean IVF-Flat {'nlist': 1024} k=1 qp=32 rec=0.9900 med=0.357ms
+sift-128-euclidean IVF-Flat {'nlist': 1024} k=1 qp=64 rec=0.9967 med=0.663ms
+sift-128-euclidean IVF-Flat {'nlist': 1024} k=1 qp=128 rec=1.0000 med=1.291ms
+sift-128-euclidean IVF-Flat {'nlist': 1024} k=100 qp=1 rec=0.2043 med=0.036ms
+sift-128-euclidean IVF-Flat {'nlist': 1024} k=100 qp=2 rec=0.3277 med=0.053ms
+sift-128-euclidean IVF-Flat {'nlist': 1024} k=100 qp=4 rec=0.4850 med=0.081ms
+sift-128-euclidean IVF-Flat {'nlist': 1024} k=100 qp=8 rec=0.6510 med=0.138ms
+sift-128-euclidean IVF-Flat {'nlist': 1024} k=100 qp=16 rec=0.8046 med=0.235ms
+sift-128-euclidean IVF-Flat {'nlist': 1024} k=100 qp=32 rec=0.9170 med=0.379ms
+sift-128-euclidean IVF-Flat {'nlist': 1024} k=100 qp=64 rec=0.9766 med=0.700ms
+sift-128-euclidean IVF-Flat {'nlist': 1024} k=100 qp=128 rec=0.9972 med=1.285ms
+loaded glove-100-angular: base=(200000, 100) queries=(300, 100) metric=angular profile=kpass
+exact ground truth in 1.3s
+glove-100-angular HNSW {'M': 16, 'efConstruction': 200} k=1 qp=1 rec=0.1433 med=0.010ms
+glove-100-angular HNSW {'M': 16, 'efConstruction': 200} k=1 qp=2 rec=0.2767 med=0.014ms
+glove-100-angular HNSW {'M': 16, 'efConstruction': 200} k=1 qp=4 rec=0.4033 med=0.021ms
+glove-100-angular HNSW {'M': 16, 'efConstruction': 200} k=1 qp=8 rec=0.5333 med=0.031ms
+glove-100-angular HNSW {'M': 16, 'efConstruction': 200} k=1 qp=10 rec=0.5833 med=0.034ms
+glove-100-angular HNSW {'M': 16, 'efConstruction': 200} k=1 qp=16 rec=0.6633 med=0.050ms
+glove-100-angular HNSW {'M': 16, 'efConstruction': 200} k=1 qp=32 rec=0.7667 med=0.082ms
+glove-100-angular HNSW {'M': 16, 'efConstruction': 200} k=1 qp=64 rec=0.8400 med=0.145ms
+glove-100-angular HNSW {'M': 16, 'efConstruction': 200} k=1 qp=128 rec=0.9033 med=0.290ms
+glove-100-angular HNSW {'M': 16, 'efConstruction': 200} k=100 qp=10 rec=0.7308 med=0.230ms
+glove-100-angular HNSW {'M': 16, 'efConstruction': 200} k=100 qp=100 rec=0.7308 med=0.228ms
+glove-100-angular HNSW {'M': 16, 'efConstruction': 200} k=100 qp=128 rec=0.7664 med=0.289ms
+glove-100-angular HNSW {'M': 16, 'efConstruction': 200} k=100 qp=192 rec=0.8172 med=0.418ms
+glove-100-angular HNSW {'M': 16, 'efConstruction': 200} k=100 qp=256 rec=0.8505 med=0.536ms
+glove-100-angular HNSW {'M': 16, 'efConstruction': 200} k=100 qp=384 rec=0.8938 med=0.807ms
+glove-100-angular HNSW {'M': 16, 'efConstruction': 200} k=100 qp=512 rec=0.9179 med=1.077ms
+glove-100-angular HNSW {'M': 16, 'efConstruction': 200} k=100 qp=768 rec=0.9477 med=1.523ms
+glove-100-angular HNSW {'M': 16, 'efConstruction': 200} k=100 qp=1024 rec=0.9638 med=1.985ms
+glove-100-angular IVF-Flat {'nlist': 100} k=1 qp=1 rec=0.5533 med=0.098ms
+glove-100-angular IVF-Flat {'nlist': 100} k=1 qp=2 rec=0.6900 med=0.198ms
+glove-100-angular IVF-Flat {'nlist': 100} k=1 qp=4 rec=0.8133 med=0.401ms
+glove-100-angular IVF-Flat {'nlist': 100} k=1 qp=8 rec=0.8833 med=0.736ms
+glove-100-angular IVF-Flat {'nlist': 100} k=1 qp=16 rec=0.9433 med=1.410ms
+glove-100-angular IVF-Flat {'nlist': 100} k=1 qp=32 rec=0.9733 med=2.798ms
+glove-100-angular IVF-Flat {'nlist': 100} k=1 qp=64 rec=0.9933 med=5.448ms
+glove-100-angular IVF-Flat {'nlist': 100} k=1 qp=128 rec=1.0000 med=8.657ms
+glove-100-angular IVF-Flat {'nlist': 100} k=100 qp=1 rec=0.4276 med=0.125ms
+glove-100-angular IVF-Flat {'nlist': 100} k=100 qp=2 rec=0.5604 med=0.226ms
+glove-100-angular IVF-Flat {'nlist': 100} k=100 qp=4 rec=0.6880 med=0.398ms
+glove-100-angular IVF-Flat {'nlist': 100} k=100 qp=8 rec=0.7979 med=0.750ms
+glove-100-angular IVF-Flat {'nlist': 100} k=100 qp=16 rec=0.8854 med=1.421ms
+glove-100-angular IVF-Flat {'nlist': 100} k=100 qp=32 rec=0.9565 med=2.708ms
+glove-100-angular IVF-Flat {'nlist': 100} k=100 qp=64 rec=0.9946 med=5.875ms
+glove-100-angular IVF-Flat {'nlist': 100} k=100 qp=128 rec=1.0000 med=8.537ms
+glove-100-angular IVF-Flat {'nlist': 1024} k=1 qp=1 rec=0.3833 med=0.026ms
+glove-100-angular IVF-Flat {'nlist': 1024} k=1 qp=2 rec=0.5267 med=0.036ms
+glove-100-angular IVF-Flat {'nlist': 1024} k=1 qp=4 rec=0.6467 med=0.079ms
+glove-100-angular IVF-Flat {'nlist': 1024} k=1 qp=8 rec=0.7533 med=0.093ms
+glove-100-angular IVF-Flat {'nlist': 1024} k=1 qp=16 rec=0.8233 med=0.173ms
+glove-100-angular IVF-Flat {'nlist': 1024} k=1 qp=32 rec=0.8733 med=0.313ms
+glove-100-angular IVF-Flat {'nlist': 1024} k=1 qp=64 rec=0.9267 med=0.543ms
+glove-100-angular IVF-Flat {'nlist': 1024} k=1 qp=128 rec=0.9633 med=1.116ms
+glove-100-angular IVF-Flat {'nlist': 1024} k=100 qp=1 rec=0.2244 med=0.036ms
+glove-100-angular IVF-Flat {'nlist': 1024} k=100 qp=2 rec=0.3231 med=0.049ms
+glove-100-angular IVF-Flat {'nlist': 1024} k=100 qp=4 rec=0.4365 med=0.070ms
+glove-100-angular IVF-Flat {'nlist': 1024} k=100 qp=8 rec=0.5532 med=0.118ms
+glove-100-angular IVF-Flat {'nlist': 1024} k=100 qp=16 rec=0.6613 med=0.182ms
+glove-100-angular IVF-Flat {'nlist': 1024} k=100 qp=32 rec=0.7630 med=0.406ms
+glove-100-angular IVF-Flat {'nlist': 1024} k=100 qp=64 rec=0.8462 med=0.563ms
+glove-100-angular IVF-Flat {'nlist': 1024} k=100 qp=128 rec=0.9188 med=1.140ms
+loaded nytimes-256-angular: base=(200000, 256) queries=(300, 256) metric=angular profile=kpass
+exact ground truth in 3.0s
+nytimes-256-angular HNSW {'M': 16, 'efConstruction': 200} k=1 qp=1 rec=0.2067 med=0.014ms
+nytimes-256-angular HNSW {'M': 16, 'efConstruction': 200} k=1 qp=2 rec=0.3233 med=0.023ms
+nytimes-256-angular HNSW {'M': 16, 'efConstruction': 200} k=1 qp=4 rec=0.4633 med=0.034ms
+nytimes-256-angular HNSW {'M': 16, 'efConstruction': 200} k=1 qp=8 rec=0.6267 med=0.055ms
+nytimes-256-angular HNSW {'M': 16, 'efConstruction': 200} k=1 qp=10 rec=0.6700 med=0.062ms
+nytimes-256-angular HNSW {'M': 16, 'efConstruction': 200} k=1 qp=16 rec=0.7533 med=0.106ms
+nytimes-256-angular HNSW {'M': 16, 'efConstruction': 200} k=1 qp=32 rec=0.8233 med=0.145ms
+nytimes-256-angular HNSW {'M': 16, 'efConstruction': 200} k=1 qp=64 rec=0.8700 med=0.267ms
+nytimes-256-angular HNSW {'M': 16, 'efConstruction': 200} k=1 qp=128 rec=0.9267 med=0.454ms
+nytimes-256-angular HNSW {'M': 16, 'efConstruction': 200} k=100 qp=10 rec=0.7332 med=0.368ms
+nytimes-256-angular HNSW {'M': 16, 'efConstruction': 200} k=100 qp=100 rec=0.7332 med=0.371ms
+nytimes-256-angular HNSW {'M': 16, 'efConstruction': 200} k=100 qp=128 rec=0.7526 med=0.474ms
+nytimes-256-angular HNSW {'M': 16, 'efConstruction': 200} k=100 qp=192 rec=0.7795 med=0.672ms
+nytimes-256-angular HNSW {'M': 16, 'efConstruction': 200} k=100 qp=256 rec=0.7988 med=0.864ms
+nytimes-256-angular HNSW {'M': 16, 'efConstruction': 200} k=100 qp=384 rec=0.8290 med=1.332ms
+nytimes-256-angular HNSW {'M': 16, 'efConstruction': 200} k=100 qp=512 rec=0.8501 med=1.714ms
+nytimes-256-angular HNSW {'M': 16, 'efConstruction': 200} k=100 qp=768 rec=0.8850 med=2.728ms
+nytimes-256-angular HNSW {'M': 16, 'efConstruction': 200} k=100 qp=1024 rec=0.9093 med=3.501ms
+nytimes-256-angular IVF-Flat {'nlist': 100} k=1 qp=1 rec=0.6133 med=0.227ms
+nytimes-256-angular IVF-Flat {'nlist': 100} k=1 qp=2 rec=0.6833 med=0.446ms
+nytimes-256-angular IVF-Flat {'nlist': 100} k=1 qp=4 rec=0.7300 med=0.852ms
+nytimes-256-angular IVF-Flat {'nlist': 100} k=1 qp=8 rec=0.8067 med=1.671ms
+nytimes-256-angular IVF-Flat {'nlist': 100} k=1 qp=16 rec=0.8833 med=3.576ms
+nytimes-256-angular IVF-Flat {'nlist': 100} k=1 qp=32 rec=0.9400 med=6.483ms
+nytimes-256-angular IVF-Flat {'nlist': 100} k=1 qp=64 rec=0.9900 med=12.973ms
+nytimes-256-angular IVF-Flat {'nlist': 100} k=1 qp=128 rec=1.0000 med=20.313ms
+nytimes-256-angular IVF-Flat {'nlist': 100} k=100 qp=1 rec=0.3941 med=0.260ms
+nytimes-256-angular IVF-Flat {'nlist': 100} k=100 qp=2 rec=0.4797 med=0.472ms
+nytimes-256-angular IVF-Flat {'nlist': 100} k=100 qp=4 rec=0.5536 med=0.864ms
+nytimes-256-angular IVF-Flat {'nlist': 100} k=100 qp=8 rec=0.6372 med=1.686ms
+nytimes-256-angular IVF-Flat {'nlist': 100} k=100 qp=16 rec=0.7383 med=3.310ms
+nytimes-256-angular IVF-Flat {'nlist': 100} k=100 qp=32 rec=0.8462 med=6.645ms
+nytimes-256-angular IVF-Flat {'nlist': 100} k=100 qp=64 rec=0.9562 med=12.922ms
+nytimes-256-angular IVF-Flat {'nlist': 100} k=100 qp=128 rec=1.0000 med=20.270ms
+nytimes-256-angular IVF-Flat {'nlist': 1024} k=1 qp=1 rec=0.7133 med=0.055ms
+nytimes-256-angular IVF-Flat {'nlist': 1024} k=1 qp=2 rec=0.7700 med=0.091ms
+nytimes-256-angular IVF-Flat {'nlist': 1024} k=1 qp=4 rec=0.8133 med=0.133ms
+nytimes-256-angular IVF-Flat {'nlist': 1024} k=1 qp=8 rec=0.8467 med=0.250ms
+nytimes-256-angular IVF-Flat {'nlist': 1024} k=1 qp=16 rec=0.8767 med=0.398ms
+nytimes-256-angular IVF-Flat {'nlist': 1024} k=1 qp=32 rec=0.8833 med=0.736ms
+nytimes-256-angular IVF-Flat {'nlist': 1024} k=1 qp=64 rec=0.9033 med=1.411ms
+nytimes-256-angular IVF-Flat {'nlist': 1024} k=1 qp=128 rec=0.9367 med=2.780ms
+nytimes-256-angular IVF-Flat {'nlist': 1024} k=100 qp=1 rec=0.4001 med=0.070ms
+nytimes-256-angular IVF-Flat {'nlist': 1024} k=100 qp=2 rec=0.4950 med=0.108ms
+nytimes-256-angular IVF-Flat {'nlist': 1024} k=100 qp=4 rec=0.5634 med=0.150ms
+nytimes-256-angular IVF-Flat {'nlist': 1024} k=100 qp=8 rec=0.6146 med=0.245ms
+nytimes-256-angular IVF-Flat {'nlist': 1024} k=100 qp=16 rec=0.6664 med=0.433ms
+nytimes-256-angular IVF-Flat {'nlist': 1024} k=100 qp=32 rec=0.7209 med=0.757ms
+nytimes-256-angular IVF-Flat {'nlist': 1024} k=100 qp=64 rec=0.7794 med=1.422ms
+nytimes-256-angular IVF-Flat {'nlist': 1024} k=100 qp=128 rec=0.8402 med=2.704ms
+=== STAGE 4: full-size base sets (04:56) ===
+loaded sift-128-euclidean: base=(1000000, 128) queries=(300, 128) metric=euclidean profile=scale
+exact ground truth in 8.0s
+sift-128-euclidean HNSW {'M': 16, 'efConstruction': 200} k=10 qp=10 rec=0.6963 med=0.058ms
+sift-128-euclidean HNSW {'M': 16, 'efConstruction': 200} k=10 qp=16 rec=0.7860 med=0.069ms
+sift-128-euclidean HNSW {'M': 16, 'efConstruction': 200} k=10 qp=32 rec=0.8917 med=0.119ms
+sift-128-euclidean HNSW {'M': 16, 'efConstruction': 200} k=10 qp=64 rec=0.9580 med=0.206ms
+sift-128-euclidean HNSW {'M': 16, 'efConstruction': 200} k=10 qp=128 rec=0.9853 med=0.423ms
+sift-128-euclidean HNSW {'M': 16, 'efConstruction': 200} k=10 qp=256 rec=0.9980 med=0.705ms
+sift-128-euclidean HNSW {'M': 16, 'efConstruction': 200} k=10 qp=512 rec=0.9997 med=1.305ms
+sift-128-euclidean IVF-Flat {'nlist': 100} k=10 qp=1 rec=0.5600 med=0.557ms
+sift-128-euclidean IVF-Flat {'nlist': 100} k=10 qp=2 rec=0.7457 med=1.104ms
+sift-128-euclidean IVF-Flat {'nlist': 100} k=10 qp=4 rec=0.9047 med=2.261ms
+sift-128-euclidean IVF-Flat {'nlist': 100} k=10 qp=8 rec=0.9760 med=4.372ms
+sift-128-euclidean IVF-Flat {'nlist': 100} k=10 qp=16 rec=0.9987 med=9.027ms
+sift-128-euclidean IVF-Flat {'nlist': 100} k=10 qp=32 rec=1.0000 med=17.024ms
+sift-128-euclidean IVF-Flat {'nlist': 100} k=10 qp=64 rec=1.0000 med=32.990ms
+sift-128-euclidean IVF-Flat {'nlist': 100} k=10 qp=128 rec=1.0000 med=53.788ms
+sift-128-euclidean IVF-Flat {'nlist': 4096} k=10 qp=1 rec=0.2653 med=0.112ms
+sift-128-euclidean IVF-Flat {'nlist': 4096} k=10 qp=2 rec=0.3943 med=0.107ms
+sift-128-euclidean IVF-Flat {'nlist': 4096} k=10 qp=4 rec=0.5443 med=0.142ms
+sift-128-euclidean IVF-Flat {'nlist': 4096} k=10 qp=8 rec=0.6873 med=0.201ms
+sift-128-euclidean IVF-Flat {'nlist': 4096} k=10 qp=16 rec=0.8273 med=0.331ms
+sift-128-euclidean IVF-Flat {'nlist': 4096} k=10 qp=32 rec=0.9163 med=0.555ms
+sift-128-euclidean IVF-Flat {'nlist': 4096} k=10 qp=64 rec=0.9653 med=1.009ms
+sift-128-euclidean IVF-Flat {'nlist': 4096} k=10 qp=128 rec=0.9920 med=1.944ms
+loaded glove-100-angular: base=(1183514, 100) queries=(300, 100) metric=angular profile=scale
+exact ground truth in 7.7s
+glove-100-angular HNSW {'M': 16, 'efConstruction': 200} k=10 qp=10 rec=0.4777 med=0.046ms
+glove-100-angular HNSW {'M': 16, 'efConstruction': 200} k=10 qp=16 rec=0.5650 med=0.066ms
+glove-100-angular HNSW {'M': 16, 'efConstruction': 200} k=10 qp=32 rec=0.6760 med=0.115ms
+glove-100-angular HNSW {'M': 16, 'efConstruction': 200} k=10 qp=64 rec=0.7560 med=0.222ms
+glove-100-angular HNSW {'M': 16, 'efConstruction': 200} k=10 qp=128 rec=0.8307 med=0.369ms
+glove-100-angular HNSW {'M': 16, 'efConstruction': 200} k=10 qp=256 rec=0.8820 med=0.662ms
+glove-100-angular HNSW {'M': 16, 'efConstruction': 200} k=10 qp=512 rec=0.9253 med=1.242ms
+glove-100-angular IVF-Flat {'nlist': 100} k=10 qp=1 rec=0.5350 med=0.623ms
+glove-100-angular IVF-Flat {'nlist': 100} k=10 qp=2 rec=0.6907 med=1.134ms
+glove-100-angular IVF-Flat {'nlist': 100} k=10 qp=4 rec=0.8080 med=2.144ms
+glove-100-angular IVF-Flat {'nlist': 100} k=10 qp=8 rec=0.8910 med=4.452ms
+glove-100-angular IVF-Flat {'nlist': 100} k=10 qp=16 rec=0.9470 med=9.120ms
+glove-100-angular IVF-Flat {'nlist': 100} k=10 qp=32 rec=0.9793 med=18.085ms
+glove-100-angular IVF-Flat {'nlist': 100} k=10 qp=64 rec=0.9970 med=34.810ms
+glove-100-angular IVF-Flat {'nlist': 100} k=10 qp=128 rec=1.0000 med=49.959ms
+glove-100-angular IVF-Flat {'nlist': 4096} k=10 qp=1 rec=0.3273 med=0.077ms
+glove-100-angular IVF-Flat {'nlist': 4096} k=10 qp=2 rec=0.4607 med=0.109ms
+glove-100-angular IVF-Flat {'nlist': 4096} k=10 qp=4 rec=0.5650 med=0.139ms
+glove-100-angular IVF-Flat {'nlist': 4096} k=10 qp=8 rec=0.6640 med=0.177ms
+glove-100-angular IVF-Flat {'nlist': 4096} k=10 qp=16 rec=0.7417 med=0.292ms
+glove-100-angular IVF-Flat {'nlist': 4096} k=10 qp=32 rec=0.8100 med=0.557ms
+glove-100-angular IVF-Flat {'nlist': 4096} k=10 qp=64 rec=0.8637 med=0.970ms
+glove-100-angular IVF-Flat {'nlist': 4096} k=10 qp=128 rec=0.9100 med=1.908ms
+ALL PR2 EXPERIMENTS DONE (05:14)

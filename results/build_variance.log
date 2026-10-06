@@ -1,0 +1,12 @@
+{"dataset": "nytimes-256-angular", "build_threads": 1, "rebuild": 0, "recall_tieaware_ef10": 0.67867, "recall_id_ef10": 0.67433, "build_s": 158.9}
+{"dataset": "nytimes-256-angular", "build_threads": 1, "rebuild": 1, "recall_tieaware_ef10": 0.67867, "recall_id_ef10": 0.67433, "build_s": 162.4}
+{"dataset": "nytimes-256-angular", "build_threads": 2, "rebuild": 0, "recall_tieaware_ef10": 0.61267, "recall_id_ef10": 0.60733, "build_s": 78.3}
+{"dataset": "nytimes-256-angular", "build_threads": 2, "rebuild": 1, "recall_tieaware_ef10": 0.63433, "recall_id_ef10": 0.628, "build_s": 88.5}
+{"dataset": "nytimes-256-angular", "build_threads": 2, "rebuild": 2, "recall_tieaware_ef10": 0.61733, "recall_id_ef10": 0.611, "build_s": 77.8}
+{"dataset": "nytimes-256-angular", "build_threads": 2, "rebuild": 3, "recall_tieaware_ef10": 0.58967, "recall_id_ef10": 0.58633, "build_s": 78.3}
+{"dataset": "sift-128-euclidean", "build_threads": 1, "rebuild": 0, "recall_tieaware_ef10": 0.73067, "recall_id_ef10": 0.73067, "build_s": 75.9}
+{"dataset": "sift-128-euclidean", "build_threads": 1, "rebuild": 1, "recall_tieaware_ef10": 0.73067, "recall_id_ef10": 0.73067, "build_s": 78.1}
+{"dataset": "sift-128-euclidean", "build_threads": 2, "rebuild": 0, "recall_tieaware_ef10": 0.736, "recall_id_ef10": 0.736, "build_s": 38.0}
+{"dataset": "sift-128-euclidean", "build_threads": 2, "rebuild": 1, "recall_tieaware_ef10": 0.74333, "recall_id_ef10": 0.74333, "build_s": 38.2}
+{"dataset": "sift-128-euclidean", "build_threads": 2, "rebuild": 2, "recall_tieaware_ef10": 0.73067, "recall_id_ef10": 0.73067, "build_s": 39.3}
+{"dataset": "sift-128-euclidean", "build_threads": 2, "rebuild": 3, "recall_tieaware_ef10": 0.733, "recall_id_ef10": 0.733, "build_s": 38.1}

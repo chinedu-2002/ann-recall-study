@@ -1,0 +1,721 @@
+dataset,family,target,feature,method,setting,raw_prediction,recall,latency_ms,hit,latency_vs_oracle,log2_error,training
+sift-128-euclidean,HNSW,0.9,lid,heuristic,32.0,28.79708219242497,0.92833,0.0968,True,1.0,0.0,real+synthetic
+sift-128-euclidean,HNSW,0.9,lid,heuristic+margin,48.0,,0.9613299999999999,0.11906666666666667,True,1.2300275482093666,0.5849625007211561,real+synthetic
+sift-128-euclidean,HNSW,0.9,lid,constant-max,192.0,,0.99833,0.38586666666666664,True,3.9862258953168044,2.584962500721156,real+synthetic
+sift-128-euclidean,HNSW,0.9,lid,constant-median,24.0,,0.892,0.07563333333333333,False,0.7813360881542699,-0.4150374992788439,real+synthetic
+sift-128-euclidean,HNSW,0.9,lid,default,10.0,,0.72933,0.04136666666666667,False,0.4273415977961433,-1.6780719051126378,real+synthetic
+sift-128-euclidean,HNSW,0.9,lid,oracle,32.0,,0.92833,0.0968,True,1.0,0.0,real+synthetic
+glove-100-angular,HNSW,0.9,lid,heuristic,96.0,88.9842872091446,0.85133,0.23136666666666664,False,0.5154845896769401,-1.0,real+synthetic
+glove-100-angular,HNSW,0.9,lid,heuristic+margin,128.0,,0.87433,0.3747666666666667,False,0.8349795766802822,-0.5849625007211561,real+synthetic
+glove-100-angular,HNSW,0.9,lid,constant-max,160.0,,0.89033,0.3511666666666667,False,0.7823988117341255,-0.26303440583379345,real+synthetic
+glove-100-angular,HNSW,0.9,lid,constant-median,24.0,,0.66533,0.06876666666666667,False,0.1532120311919792,-3.0,real+synthetic
+glove-100-angular,HNSW,0.9,lid,default,10.0,,0.503,0.036366666666666665,False,0.08102487931674711,-4.263034405833794,real+synthetic
+glove-100-angular,HNSW,0.9,lid,oracle,192.0,,0.90333,0.44883333333333336,True,1.0,0.0,real+synthetic
+nytimes-256-angular,HNSW,0.9,lid,heuristic,384.0,368.9572738329421,0.93967,1.2836999999999998,True,2.134164588528678,1.2630344058337934,real+synthetic
+nytimes-256-angular,HNSW,0.9,lid,heuristic+margin,512.0,,0.952,1.742,True,2.8960931005818784,1.6780719051126374,real+synthetic
+nytimes-256-angular,HNSW,0.9,lid,constant-max,192.0,,0.91033,0.6866666666666666,True,1.1415904682737599,0.26303440583379345,real+synthetic
+nytimes-256-angular,HNSW,0.9,lid,constant-median,24.0,,0.763,0.14,False,0.23275145469659186,-2.7369655941662066,real+synthetic
+nytimes-256-angular,HNSW,0.9,lid,default,10.0,,0.60433,0.0626,False,0.10407315045719036,-4.0,real+synthetic
+nytimes-256-angular,HNSW,0.9,lid,oracle,160.0,,0.9049999999999999,0.6015,True,1.0,0.0,real+synthetic
+fashion-mnist-784-euclidean,HNSW,0.9,lid,heuristic,20.0,19.818797179225403,0.9816699999999999,0.13426666666666667,True,1.555813055233681,1.0000000000000004,real+synthetic
+fashion-mnist-784-euclidean,HNSW,0.9,lid,heuristic+margin,32.0,,0.99433,0.1832666666666667,True,2.1235998455001934,1.6780719051126378,real+synthetic
+fashion-mnist-784-euclidean,HNSW,0.9,lid,constant-max,192.0,,0.999,0.5981333333333333,True,6.9308613364233285,4.263034405833794,real+synthetic
+fashion-mnist-784-euclidean,HNSW,0.9,lid,constant-median,24.0,,0.99033,0.1471,True,1.704519119351101,1.263034405833794,real+synthetic
+fashion-mnist-784-euclidean,HNSW,0.9,lid,default,10.0,,0.93067,0.0863,True,1.0,0.0,real+synthetic
+fashion-mnist-784-euclidean,HNSW,0.9,lid,oracle,10.0,,0.93067,0.0863,True,1.0,0.0,real+synthetic
+mnist-784-euclidean,HNSW,0.9,lid,heuristic,20.0,17.564074807592707,0.9739999999999999,0.15876666666666667,True,1.8518662519440126,1.0000000000000004,real+synthetic
+mnist-784-euclidean,HNSW,0.9,lid,heuristic+margin,24.0,,0.98067,0.16493333333333335,True,1.923794712286159,1.263034405833794,real+synthetic
+mnist-784-euclidean,HNSW,0.9,lid,constant-max,192.0,,0.99933,0.7383666666666667,True,8.612363919129084,4.263034405833794,real+synthetic
+mnist-784-euclidean,HNSW,0.9,lid,constant-median,24.0,,0.98067,0.16493333333333335,True,1.923794712286159,1.263034405833794,real+synthetic
+mnist-784-euclidean,HNSW,0.9,lid,default,10.0,,0.9289999999999999,0.08573333333333333,True,1.0,0.0,real+synthetic
+mnist-784-euclidean,HNSW,0.9,lid,oracle,10.0,,0.9289999999999999,0.08573333333333333,True,1.0,0.0,real+synthetic
+glove-25-angular,HNSW,0.9,lid,heuristic,20.0,18.977301306482296,0.88333,0.045000000000000005,False,0.8495909376966647,-0.26303440583379345,real+synthetic
+glove-25-angular,HNSW,0.9,lid,heuristic+margin,32.0,,0.93133,0.06616666666666667,True,1.249213341724355,0.4150374992788439,real+synthetic
+glove-25-angular,HNSW,0.9,lid,constant-max,192.0,,0.9973300000000002,0.32343333333333335,True,6.106356198867213,3.0,real+synthetic
+glove-25-angular,HNSW,0.9,lid,constant-median,24.0,,0.90667,0.05296666666666666,True,1.0,0.0,real+synthetic
+glove-25-angular,HNSW,0.9,lid,default,10.0,,0.77,0.030533333333333332,False,0.5764631843926998,-1.263034405833794,real+synthetic
+glove-25-angular,HNSW,0.9,lid,oracle,24.0,,0.90667,0.05296666666666666,True,1.0,0.0,real+synthetic
+sift-128-euclidean,HNSW,0.9,intrinsic_dim,heuristic,32.0,26.914916752624414,0.92833,0.0968,True,1.0,0.0,real+synthetic
+sift-128-euclidean,HNSW,0.9,intrinsic_dim,heuristic+margin,40.0,,0.94867,0.1115,True,1.1518595041322315,0.3219280948873626,real+synthetic
+sift-128-euclidean,HNSW,0.9,intrinsic_dim,constant-max,192.0,,0.99833,0.38586666666666664,True,3.9862258953168044,2.584962500721156,real+synthetic
+sift-128-euclidean,HNSW,0.9,intrinsic_dim,constant-median,24.0,,0.892,0.07563333333333333,False,0.7813360881542699,-0.4150374992788439,real+synthetic
+sift-128-euclidean,HNSW,0.9,intrinsic_dim,default,10.0,,0.72933,0.04136666666666667,False,0.4273415977961433,-1.6780719051126378,real+synthetic
+sift-128-euclidean,HNSW,0.9,intrinsic_dim,oracle,32.0,,0.92833,0.0968,True,1.0,0.0,real+synthetic
+glove-100-angular,HNSW,0.9,intrinsic_dim,heuristic,96.0,82.9931233355381,0.85133,0.23136666666666664,False,0.5154845896769401,-1.0,real+synthetic
+glove-100-angular,HNSW,0.9,intrinsic_dim,heuristic+margin,128.0,,0.87433,0.3747666666666667,False,0.8349795766802822,-0.5849625007211561,real+synthetic
+glove-100-angular,HNSW,0.9,intrinsic_dim,constant-max,160.0,,0.89033,0.3511666666666667,False,0.7823988117341255,-0.26303440583379345,real+synthetic
+glove-100-angular,HNSW,0.9,intrinsic_dim,constant-median,24.0,,0.66533,0.06876666666666667,False,0.1532120311919792,-3.0,real+synthetic
+glove-100-angular,HNSW,0.9,intrinsic_dim,default,10.0,,0.503,0.036366666666666665,False,0.08102487931674711,-4.263034405833794,real+synthetic
+glove-100-angular,HNSW,0.9,intrinsic_dim,oracle,192.0,,0.90333,0.44883333333333336,True,1.0,0.0,real+synthetic
+nytimes-256-angular,HNSW,0.9,intrinsic_dim,heuristic,384.0,370.1868714470112,0.93967,1.2836999999999998,True,2.134164588528678,1.2630344058337934,real+synthetic
+nytimes-256-angular,HNSW,0.9,intrinsic_dim,heuristic+margin,512.0,,0.952,1.742,True,2.8960931005818784,1.6780719051126374,real+synthetic
+nytimes-256-angular,HNSW,0.9,intrinsic_dim,constant-max,192.0,,0.91033,0.6866666666666666,True,1.1415904682737599,0.26303440583379345,real+synthetic
+nytimes-256-angular,HNSW,0.9,intrinsic_dim,constant-median,24.0,,0.763,0.14,False,0.23275145469659186,-2.7369655941662066,real+synthetic
+nytimes-256-angular,HNSW,0.9,intrinsic_dim,default,10.0,,0.60433,0.0626,False,0.10407315045719036,-4.0,real+synthetic
+nytimes-256-angular,HNSW,0.9,intrinsic_dim,oracle,160.0,,0.9049999999999999,0.6015,True,1.0,0.0,real+synthetic
+fashion-mnist-784-euclidean,HNSW,0.9,intrinsic_dim,heuristic,24.0,20.91423882951568,0.99033,0.1471,True,1.704519119351101,1.263034405833794,real+synthetic
+fashion-mnist-784-euclidean,HNSW,0.9,intrinsic_dim,heuristic+margin,32.0,,0.99433,0.1832666666666667,True,2.1235998455001934,1.6780719051126378,real+synthetic
+fashion-mnist-784-euclidean,HNSW,0.9,intrinsic_dim,constant-max,192.0,,0.999,0.5981333333333333,True,6.9308613364233285,4.263034405833794,real+synthetic
+fashion-mnist-784-euclidean,HNSW,0.9,intrinsic_dim,constant-median,24.0,,0.99033,0.1471,True,1.704519119351101,1.263034405833794,real+synthetic
+fashion-mnist-784-euclidean,HNSW,0.9,intrinsic_dim,default,10.0,,0.93067,0.0863,True,1.0,0.0,real+synthetic
+fashion-mnist-784-euclidean,HNSW,0.9,intrinsic_dim,oracle,10.0,,0.93067,0.0863,True,1.0,0.0,real+synthetic
+mnist-784-euclidean,HNSW,0.9,intrinsic_dim,heuristic,20.0,17.99956049712098,0.9739999999999999,0.15876666666666667,True,1.8518662519440126,1.0000000000000004,real+synthetic
+mnist-784-euclidean,HNSW,0.9,intrinsic_dim,heuristic+margin,32.0,,0.987,0.20516666666666664,True,2.3930793157076202,1.6780719051126378,real+synthetic
+mnist-784-euclidean,HNSW,0.9,intrinsic_dim,constant-max,192.0,,0.99933,0.7383666666666667,True,8.612363919129084,4.263034405833794,real+synthetic
+mnist-784-euclidean,HNSW,0.9,intrinsic_dim,constant-median,24.0,,0.98067,0.16493333333333335,True,1.923794712286159,1.263034405833794,real+synthetic
+mnist-784-euclidean,HNSW,0.9,intrinsic_dim,default,10.0,,0.9289999999999999,0.08573333333333333,True,1.0,0.0,real+synthetic
+mnist-784-euclidean,HNSW,0.9,intrinsic_dim,oracle,10.0,,0.9289999999999999,0.08573333333333333,True,1.0,0.0,real+synthetic
+glove-25-angular,HNSW,0.9,intrinsic_dim,heuristic,20.0,18.930593112383228,0.88333,0.045000000000000005,False,0.8495909376966647,-0.26303440583379345,real+synthetic
+glove-25-angular,HNSW,0.9,intrinsic_dim,heuristic+margin,32.0,,0.93133,0.06616666666666667,True,1.249213341724355,0.4150374992788439,real+synthetic
+glove-25-angular,HNSW,0.9,intrinsic_dim,constant-max,192.0,,0.9973300000000002,0.32343333333333335,True,6.106356198867213,3.0,real+synthetic
+glove-25-angular,HNSW,0.9,intrinsic_dim,constant-median,24.0,,0.90667,0.05296666666666666,True,1.0,0.0,real+synthetic
+glove-25-angular,HNSW,0.9,intrinsic_dim,default,10.0,,0.77,0.030533333333333332,False,0.5764631843926998,-1.263034405833794,real+synthetic
+glove-25-angular,HNSW,0.9,intrinsic_dim,oracle,24.0,,0.90667,0.05296666666666666,True,1.0,0.0,real+synthetic
+sift-128-euclidean,HNSW,0.9,ambient_dim,heuristic,32.0,30.13487144426476,0.92833,0.0968,True,1.0,0.0,real+synthetic
+sift-128-euclidean,HNSW,0.9,ambient_dim,heuristic+margin,80.0,,0.9896699999999999,0.20420000000000002,True,2.109504132231405,1.3219280948873626,real+synthetic
+sift-128-euclidean,HNSW,0.9,ambient_dim,constant-max,192.0,,0.99833,0.38586666666666664,True,3.9862258953168044,2.584962500721156,real+synthetic
+sift-128-euclidean,HNSW,0.9,ambient_dim,constant-median,24.0,,0.892,0.07563333333333333,False,0.7813360881542699,-0.4150374992788439,real+synthetic
+sift-128-euclidean,HNSW,0.9,ambient_dim,default,10.0,,0.72933,0.04136666666666667,False,0.4273415977961433,-1.6780719051126378,real+synthetic
+sift-128-euclidean,HNSW,0.9,ambient_dim,oracle,32.0,,0.92833,0.0968,True,1.0,0.0,real+synthetic
+glove-100-angular,HNSW,0.9,ambient_dim,heuristic,32.0,25.325337340787673,0.71033,0.08353333333333333,False,0.18611214259190492,-2.584962500721156,real+synthetic
+glove-100-angular,HNSW,0.9,ambient_dim,heuristic+margin,64.0,,0.8083300000000001,0.15416666666666667,False,0.3434831043445971,-1.584962500721156,real+synthetic
+glove-100-angular,HNSW,0.9,ambient_dim,constant-max,160.0,,0.89033,0.3511666666666667,False,0.7823988117341255,-0.26303440583379345,real+synthetic
+glove-100-angular,HNSW,0.9,ambient_dim,constant-median,24.0,,0.66533,0.06876666666666667,False,0.1532120311919792,-3.0,real+synthetic
+glove-100-angular,HNSW,0.9,ambient_dim,default,10.0,,0.503,0.036366666666666665,False,0.08102487931674711,-4.263034405833794,real+synthetic
+glove-100-angular,HNSW,0.9,ambient_dim,oracle,192.0,,0.90333,0.44883333333333336,True,1.0,0.0,real+synthetic
+nytimes-256-angular,HNSW,0.9,ambient_dim,heuristic,24.0,21.32310428839531,0.763,0.14,False,0.23275145469659186,-2.7369655941662066,real+synthetic
+nytimes-256-angular,HNSW,0.9,ambient_dim,heuristic+margin,48.0,,0.8283299999999999,0.22426666666666664,False,0.3728456636187309,-1.7369655941662066,real+synthetic
+nytimes-256-angular,HNSW,0.9,ambient_dim,constant-max,192.0,,0.91033,0.6866666666666666,True,1.1415904682737599,0.26303440583379345,real+synthetic
+nytimes-256-angular,HNSW,0.9,ambient_dim,constant-median,24.0,,0.763,0.14,False,0.23275145469659186,-2.7369655941662066,real+synthetic
+nytimes-256-angular,HNSW,0.9,ambient_dim,default,10.0,,0.60433,0.0626,False,0.10407315045719036,-4.0,real+synthetic
+nytimes-256-angular,HNSW,0.9,ambient_dim,oracle,160.0,,0.9049999999999999,0.6015,True,1.0,0.0,real+synthetic
+fashion-mnist-784-euclidean,HNSW,0.9,ambient_dim,heuristic,16.0,13.946891618694712,0.972,0.11666666666666665,True,1.3518733101583622,0.6780719051126378,real+synthetic
+fashion-mnist-784-euclidean,HNSW,0.9,ambient_dim,heuristic+margin,40.0,,0.99567,0.21350000000000002,True,2.4739281575898033,2.0000000000000004,real+synthetic
+fashion-mnist-784-euclidean,HNSW,0.9,ambient_dim,constant-max,192.0,,0.999,0.5981333333333333,True,6.9308613364233285,4.263034405833794,real+synthetic
+fashion-mnist-784-euclidean,HNSW,0.9,ambient_dim,constant-median,24.0,,0.99033,0.1471,True,1.704519119351101,1.263034405833794,real+synthetic
+fashion-mnist-784-euclidean,HNSW,0.9,ambient_dim,default,10.0,,0.93067,0.0863,True,1.0,0.0,real+synthetic
+fashion-mnist-784-euclidean,HNSW,0.9,ambient_dim,oracle,10.0,,0.93067,0.0863,True,1.0,0.0,real+synthetic
+mnist-784-euclidean,HNSW,0.9,ambient_dim,heuristic,16.0,13.946891618694712,0.96467,0.12333333333333334,True,1.4385692068429239,0.6780719051126378,real+synthetic
+mnist-784-euclidean,HNSW,0.9,ambient_dim,heuristic+margin,40.0,,0.99133,0.23750000000000002,True,2.7702177293934684,2.0000000000000004,real+synthetic
+mnist-784-euclidean,HNSW,0.9,ambient_dim,constant-max,192.0,,0.99933,0.7383666666666667,True,8.612363919129084,4.263034405833794,real+synthetic
+mnist-784-euclidean,HNSW,0.9,ambient_dim,constant-median,24.0,,0.98067,0.16493333333333335,True,1.923794712286159,1.263034405833794,real+synthetic
+mnist-784-euclidean,HNSW,0.9,ambient_dim,default,10.0,,0.9289999999999999,0.08573333333333333,True,1.0,0.0,real+synthetic
+mnist-784-euclidean,HNSW,0.9,ambient_dim,oracle,10.0,,0.9289999999999999,0.08573333333333333,True,1.0,0.0,real+synthetic
+glove-25-angular,HNSW,0.9,ambient_dim,heuristic,40.0,37.43982484781977,0.95267,0.07876666666666667,True,1.487098804279421,0.7369655941662066,real+synthetic
+glove-25-angular,HNSW,0.9,ambient_dim,heuristic+margin,96.0,,0.98767,0.1756333333333333,True,3.315921963499056,2.0,real+synthetic
+glove-25-angular,HNSW,0.9,ambient_dim,constant-max,192.0,,0.9973300000000002,0.32343333333333335,True,6.106356198867213,3.0,real+synthetic
+glove-25-angular,HNSW,0.9,ambient_dim,constant-median,24.0,,0.90667,0.05296666666666666,True,1.0,0.0,real+synthetic
+glove-25-angular,HNSW,0.9,ambient_dim,default,10.0,,0.77,0.030533333333333332,False,0.5764631843926998,-1.263034405833794,real+synthetic
+glove-25-angular,HNSW,0.9,ambient_dim,oracle,24.0,,0.90667,0.05296666666666666,True,1.0,0.0,real+synthetic
+sift-128-euclidean,HNSW,0.9,none,heuristic,32.0,25.448391089853263,0.92833,0.0968,True,1.0,0.0,real+synthetic
+sift-128-euclidean,HNSW,0.9,none,heuristic+margin,80.0,,0.9896699999999999,0.20420000000000002,True,2.109504132231405,1.3219280948873626,real+synthetic
+sift-128-euclidean,HNSW,0.9,none,constant-max,192.0,,0.99833,0.38586666666666664,True,3.9862258953168044,2.584962500721156,real+synthetic
+sift-128-euclidean,HNSW,0.9,none,constant-median,24.0,,0.892,0.07563333333333333,False,0.7813360881542699,-0.4150374992788439,real+synthetic
+sift-128-euclidean,HNSW,0.9,none,default,10.0,,0.72933,0.04136666666666667,False,0.4273415977961433,-1.6780719051126378,real+synthetic
+sift-128-euclidean,HNSW,0.9,none,oracle,32.0,,0.92833,0.0968,True,1.0,0.0,real+synthetic
+glove-100-angular,HNSW,0.9,none,heuristic,24.0,21.623167255801125,0.66533,0.06876666666666667,False,0.1532120311919792,-3.0,real+synthetic
+glove-100-angular,HNSW,0.9,none,heuristic+margin,48.0,,0.7719999999999999,0.1283,False,0.28585220943186035,-2.0,real+synthetic
+glove-100-angular,HNSW,0.9,none,constant-max,160.0,,0.89033,0.3511666666666667,False,0.7823988117341255,-0.26303440583379345,real+synthetic
+glove-100-angular,HNSW,0.9,none,constant-median,24.0,,0.66533,0.06876666666666667,False,0.1532120311919792,-3.0,real+synthetic
+glove-100-angular,HNSW,0.9,none,default,10.0,,0.503,0.036366666666666665,False,0.08102487931674711,-4.263034405833794,real+synthetic
+glove-100-angular,HNSW,0.9,none,oracle,192.0,,0.90333,0.44883333333333336,True,1.0,0.0,real+synthetic
+nytimes-256-angular,HNSW,0.9,none,heuristic,24.0,21.984551123603147,0.763,0.14,False,0.23275145469659186,-2.7369655941662066,real+synthetic
+nytimes-256-angular,HNSW,0.9,none,heuristic+margin,64.0,,0.8523299999999999,0.2877,False,0.47830423940149625,-1.3219280948873626,real+synthetic
+nytimes-256-angular,HNSW,0.9,none,constant-max,192.0,,0.91033,0.6866666666666666,True,1.1415904682737599,0.26303440583379345,real+synthetic
+nytimes-256-angular,HNSW,0.9,none,constant-median,24.0,,0.763,0.14,False,0.23275145469659186,-2.7369655941662066,real+synthetic
+nytimes-256-angular,HNSW,0.9,none,default,10.0,,0.60433,0.0626,False,0.10407315045719036,-4.0,real+synthetic
+nytimes-256-angular,HNSW,0.9,none,oracle,160.0,,0.9049999999999999,0.6015,True,1.0,0.0,real+synthetic
+fashion-mnist-784-euclidean,HNSW,0.9,none,heuristic,32.0,28.28675022923399,0.99433,0.1832666666666667,True,2.1235998455001934,1.6780719051126378,real+synthetic
+fashion-mnist-784-euclidean,HNSW,0.9,none,heuristic+margin,80.0,,0.99833,0.35309999999999997,True,4.09154113557358,3.0000000000000004,real+synthetic
+fashion-mnist-784-euclidean,HNSW,0.9,none,constant-max,192.0,,0.999,0.5981333333333333,True,6.9308613364233285,4.263034405833794,real+synthetic
+fashion-mnist-784-euclidean,HNSW,0.9,none,constant-median,24.0,,0.99033,0.1471,True,1.704519119351101,1.263034405833794,real+synthetic
+fashion-mnist-784-euclidean,HNSW,0.9,none,default,10.0,,0.93067,0.0863,True,1.0,0.0,real+synthetic
+fashion-mnist-784-euclidean,HNSW,0.9,none,oracle,10.0,,0.93067,0.0863,True,1.0,0.0,real+synthetic
+mnist-784-euclidean,HNSW,0.9,none,heuristic,32.0,28.28675022923399,0.987,0.20516666666666664,True,2.3930793157076202,1.6780719051126378,real+synthetic
+mnist-784-euclidean,HNSW,0.9,none,heuristic+margin,80.0,,0.99767,0.37999999999999995,True,4.432348367029548,3.0000000000000004,real+synthetic
+mnist-784-euclidean,HNSW,0.9,none,constant-max,192.0,,0.99933,0.7383666666666667,True,8.612363919129084,4.263034405833794,real+synthetic
+mnist-784-euclidean,HNSW,0.9,none,constant-median,24.0,,0.98067,0.16493333333333335,True,1.923794712286159,1.263034405833794,real+synthetic
+mnist-784-euclidean,HNSW,0.9,none,default,10.0,,0.9289999999999999,0.08573333333333333,True,1.0,0.0,real+synthetic
+mnist-784-euclidean,HNSW,0.9,none,oracle,10.0,,0.9289999999999999,0.08573333333333333,True,1.0,0.0,real+synthetic
+glove-25-angular,HNSW,0.9,none,heuristic,32.0,26.122720116325215,0.93133,0.06616666666666667,True,1.249213341724355,0.4150374992788439,real+synthetic
+glove-25-angular,HNSW,0.9,none,heuristic+margin,80.0,,0.9853299999999999,0.15023333333333333,True,2.836375078665828,1.7369655941662066,real+synthetic
+glove-25-angular,HNSW,0.9,none,constant-max,192.0,,0.9973300000000002,0.32343333333333335,True,6.106356198867213,3.0,real+synthetic
+glove-25-angular,HNSW,0.9,none,constant-median,24.0,,0.90667,0.05296666666666666,True,1.0,0.0,real+synthetic
+glove-25-angular,HNSW,0.9,none,default,10.0,,0.77,0.030533333333333332,False,0.5764631843926998,-1.263034405833794,real+synthetic
+glove-25-angular,HNSW,0.9,none,oracle,24.0,,0.90667,0.05296666666666666,True,1.0,0.0,real+synthetic
+sift-128-euclidean,HNSW,0.9,lid,heuristic,24.0,23.86220302516624,0.892,0.07563333333333333,False,0.7813360881542699,-0.4150374992788439,real only
+sift-128-euclidean,HNSW,0.9,lid,heuristic+margin,40.0,,0.94867,0.1115,True,1.1518595041322315,0.3219280948873626,real only
+sift-128-euclidean,HNSW,0.9,lid,constant-max,192.0,,0.99833,0.38586666666666664,True,3.9862258953168044,2.584962500721156,real only
+sift-128-euclidean,HNSW,0.9,lid,constant-median,24.0,,0.892,0.07563333333333333,False,0.7813360881542699,-0.4150374992788439,real only
+sift-128-euclidean,HNSW,0.9,lid,default,10.0,,0.72933,0.04136666666666667,False,0.4273415977961433,-1.6780719051126378,real only
+sift-128-euclidean,HNSW,0.9,lid,oracle,32.0,,0.92833,0.0968,True,1.0,0.0,real only
+glove-100-angular,HNSW,0.9,lid,heuristic,96.0,85.32375033477233,0.85133,0.23136666666666664,False,0.5154845896769401,-1.0,real only
+glove-100-angular,HNSW,0.9,lid,heuristic+margin,128.0,,0.87433,0.3747666666666667,False,0.8349795766802822,-0.5849625007211561,real only
+glove-100-angular,HNSW,0.9,lid,constant-max,160.0,,0.89033,0.3511666666666667,False,0.7823988117341255,-0.26303440583379345,real only
+glove-100-angular,HNSW,0.9,lid,constant-median,24.0,,0.66533,0.06876666666666667,False,0.1532120311919792,-3.0,real only
+glove-100-angular,HNSW,0.9,lid,default,10.0,,0.503,0.036366666666666665,False,0.08102487931674711,-4.263034405833794,real only
+glove-100-angular,HNSW,0.9,lid,oracle,192.0,,0.90333,0.44883333333333336,True,1.0,0.0,real only
+nytimes-256-angular,HNSW,0.9,lid,heuristic,640.0,598.1973922526087,0.961,2.1986000000000003,True,3.6551953449709065,1.9999999999999991,real only
+nytimes-256-angular,HNSW,0.9,lid,heuristic+margin,1024.0,,0.9736699999999999,3.588433333333333,True,5.96580770296481,2.6780719051126374,real only
+nytimes-256-angular,HNSW,0.9,lid,constant-max,192.0,,0.91033,0.6866666666666666,True,1.1415904682737599,0.26303440583379345,real only
+nytimes-256-angular,HNSW,0.9,lid,constant-median,24.0,,0.763,0.14,False,0.23275145469659186,-2.7369655941662066,real only
+nytimes-256-angular,HNSW,0.9,lid,default,10.0,,0.60433,0.0626,False,0.10407315045719036,-4.0,real only
+nytimes-256-angular,HNSW,0.9,lid,oracle,160.0,,0.9049999999999999,0.6015,True,1.0,0.0,real only
+fashion-mnist-784-euclidean,HNSW,0.9,lid,heuristic,20.0,17.94626906968024,0.9816699999999999,0.13426666666666667,True,1.555813055233681,1.0000000000000004,real only
+fashion-mnist-784-euclidean,HNSW,0.9,lid,heuristic+margin,32.0,,0.99433,0.1832666666666667,True,2.1235998455001934,1.6780719051126378,real only
+fashion-mnist-784-euclidean,HNSW,0.9,lid,constant-max,192.0,,0.999,0.5981333333333333,True,6.9308613364233285,4.263034405833794,real only
+fashion-mnist-784-euclidean,HNSW,0.9,lid,constant-median,32.0,,0.99433,0.1832666666666667,True,2.1235998455001934,1.6780719051126378,real only
+fashion-mnist-784-euclidean,HNSW,0.9,lid,default,10.0,,0.93067,0.0863,True,1.0,0.0,real only
+fashion-mnist-784-euclidean,HNSW,0.9,lid,oracle,10.0,,0.93067,0.0863,True,1.0,0.0,real only
+mnist-784-euclidean,HNSW,0.9,lid,heuristic,16.0,15.38117275578515,0.96467,0.12333333333333334,True,1.4385692068429239,0.6780719051126378,real only
+mnist-784-euclidean,HNSW,0.9,lid,heuristic+margin,24.0,,0.98067,0.16493333333333335,True,1.923794712286159,1.263034405833794,real only
+mnist-784-euclidean,HNSW,0.9,lid,constant-max,192.0,,0.99933,0.7383666666666667,True,8.612363919129084,4.263034405833794,real only
+mnist-784-euclidean,HNSW,0.9,lid,constant-median,32.0,,0.987,0.20516666666666664,True,2.3930793157076202,1.6780719051126378,real only
+mnist-784-euclidean,HNSW,0.9,lid,default,10.0,,0.9289999999999999,0.08573333333333333,True,1.0,0.0,real only
+mnist-784-euclidean,HNSW,0.9,lid,oracle,10.0,,0.9289999999999999,0.08573333333333333,True,1.0,0.0,real only
+glove-25-angular,HNSW,0.9,lid,heuristic,16.0,14.035633939576623,0.851,0.03783333333333333,False,0.7142857142857143,-0.5849625007211561,real only
+glove-25-angular,HNSW,0.9,lid,heuristic+margin,24.0,,0.90667,0.05296666666666666,True,1.0,0.0,real only
+glove-25-angular,HNSW,0.9,lid,constant-max,192.0,,0.9973300000000002,0.32343333333333335,True,6.106356198867213,3.0,real only
+glove-25-angular,HNSW,0.9,lid,constant-median,32.0,,0.93133,0.06616666666666667,True,1.249213341724355,0.4150374992788439,real only
+glove-25-angular,HNSW,0.9,lid,default,10.0,,0.77,0.030533333333333332,False,0.5764631843926998,-1.263034405833794,real only
+glove-25-angular,HNSW,0.9,lid,oracle,24.0,,0.90667,0.05296666666666666,True,1.0,0.0,real only
+sift-128-euclidean,IVF-Flat,0.9,lid,heuristic,16.0,15.470820113159746,0.882,0.19236666666666666,False,0.7087939081306803,-0.5849625007211561,real+synthetic
+sift-128-euclidean,IVF-Flat,0.9,lid,heuristic+margin,24.0,,0.93833,0.27140000000000003,True,1.0,0.0,real+synthetic
+sift-128-euclidean,IVF-Flat,0.9,lid,constant-max,128.0,,0.99933,1.3408,True,4.940309506263817,2.415037499278844,real+synthetic
+sift-128-euclidean,IVF-Flat,0.9,lid,constant-median,12.0,,0.84233,0.1463,False,0.5390567428150331,-1.0,real+synthetic
+sift-128-euclidean,IVF-Flat,0.9,lid,default,1.0,,0.308,0.030466666666666666,False,0.11225743060673052,-4.584962500721156,real+synthetic
+sift-128-euclidean,IVF-Flat,0.9,lid,oracle,24.0,,0.93833,0.27140000000000003,True,1.0,0.0,real+synthetic
+glove-100-angular,IVF-Flat,0.9,lid,heuristic,96.0,71.87321910020552,0.93667,0.8171666666666667,True,1.5365089313694769,0.5849625007211561,real+synthetic
+glove-100-angular,IVF-Flat,0.9,lid,heuristic+margin,128.0,,0.9573300000000001,1.0788666666666666,True,2.02858038232529,1.0,real+synthetic
+glove-100-angular,IVF-Flat,0.9,lid,constant-max,128.0,,0.9573300000000001,1.0788666666666666,True,2.02858038232529,1.0,real+synthetic
+glove-100-angular,IVF-Flat,0.9,lid,constant-median,12.0,,0.7316699999999999,0.1174,False,0.22074584769664685,-2.415037499278844,real+synthetic
+glove-100-angular,IVF-Flat,0.9,lid,default,1.0,,0.3353300000000001,0.02526666666666667,False,0.04750861798809152,-6.0,real+synthetic
+glove-100-angular,IVF-Flat,0.9,lid,oracle,64.0,,0.907,0.5318333333333333,True,1.0,0.0,real+synthetic
+nytimes-256-angular,IVF-Flat,0.9,lid,heuristic,256.0,192.42409781104655,0.95133,5.414766666666666,True,2.0452118953491296,1.0,real+synthetic
+nytimes-256-angular,IVF-Flat,0.9,lid,heuristic+margin,256.0,,0.95133,5.414766666666666,True,2.0452118953491296,1.0,real+synthetic
+nytimes-256-angular,IVF-Flat,0.9,lid,constant-max,64.0,,0.87033,1.4112333333333333,False,0.5330370407675068,-1.0,real+synthetic
+nytimes-256-angular,IVF-Flat,0.9,lid,constant-median,12.0,,0.78633,0.3186333333333333,False,0.12035101855815475,-3.415037499278844,real+synthetic
+nytimes-256-angular,IVF-Flat,0.9,lid,default,1.0,,0.59233,0.07186666666666668,False,0.027144763679399695,-7.0,real+synthetic
+nytimes-256-angular,IVF-Flat,0.9,lid,oracle,128.0,,0.908,2.6475333333333335,True,1.0,0.0,real+synthetic
+fashion-mnist-784-euclidean,IVF-Flat,0.9,lid,heuristic,12.0,10.399228103165084,0.98267,0.4387666666666667,True,1.4588274409841517,1.0,real+synthetic
+fashion-mnist-784-euclidean,IVF-Flat,0.9,lid,heuristic+margin,16.0,,0.99133,0.5223,True,1.7365621190291476,1.415037499278844,real+synthetic
+fashion-mnist-784-euclidean,IVF-Flat,0.9,lid,constant-max,128.0,,1.0,2.8556333333333335,True,9.494514019727363,4.415037499278844,real+synthetic
+fashion-mnist-784-euclidean,IVF-Flat,0.9,lid,constant-median,16.0,,0.99133,0.5223,True,1.7365621190291476,1.415037499278844,real+synthetic
+fashion-mnist-784-euclidean,IVF-Flat,0.9,lid,default,1.0,,0.49967,0.16066666666666665,False,0.53419040230522,-2.584962500721156,real+synthetic
+fashion-mnist-784-euclidean,IVF-Flat,0.9,lid,oracle,6.0,,0.936,0.3007666666666667,True,1.0,0.0,real+synthetic
+mnist-784-euclidean,IVF-Flat,0.9,lid,heuristic,12.0,8.804867516223139,0.9653300000000001,0.37556666666666666,True,1.3831328259268352,0.5849625007211561,real+synthetic
+mnist-784-euclidean,IVF-Flat,0.9,lid,heuristic+margin,16.0,,0.9819999999999999,0.4442333333333333,True,1.6360176773876747,1.0,real+synthetic
+mnist-784-euclidean,IVF-Flat,0.9,lid,constant-max,128.0,,0.99967,2.365066666666667,True,8.710041738276455,4.0,real+synthetic
+mnist-784-euclidean,IVF-Flat,0.9,lid,constant-median,16.0,,0.9819999999999999,0.4442333333333333,True,1.6360176773876747,1.0,real+synthetic
+mnist-784-euclidean,IVF-Flat,0.9,lid,default,1.0,,0.46667,0.15213333333333334,False,0.5602749815860545,-3.0,real+synthetic
+mnist-784-euclidean,IVF-Flat,0.9,lid,oracle,8.0,,0.934,0.27153333333333335,True,1.0,0.0,real+synthetic
+glove-25-angular,IVF-Flat,0.9,lid,heuristic,12.0,9.896815122475909,0.86933,0.044399999999999995,False,0.6336822074215033,-0.4150374992788439,real+synthetic
+glove-25-angular,IVF-Flat,0.9,lid,heuristic+margin,16.0,,0.90367,0.07006666666666667,True,1.0,0.0,real+synthetic
+glove-25-angular,IVF-Flat,0.9,lid,constant-max,128.0,,0.9973300000000002,0.3017,True,4.305899143672693,3.0,real+synthetic
+glove-25-angular,IVF-Flat,0.9,lid,constant-median,12.0,,0.86933,0.044399999999999995,False,0.6336822074215033,-0.4150374992788439,real+synthetic
+glove-25-angular,IVF-Flat,0.9,lid,default,1.0,,0.408,0.016200000000000003,False,0.2312083729781161,-4.0,real+synthetic
+glove-25-angular,IVF-Flat,0.9,lid,oracle,16.0,,0.90367,0.07006666666666667,True,1.0,0.0,real+synthetic
+sift-128-euclidean,IVF-Flat,0.9,intrinsic_dim,heuristic,16.0,14.381077573217224,0.882,0.19236666666666666,False,0.7087939081306803,-0.5849625007211561,real+synthetic
+sift-128-euclidean,IVF-Flat,0.9,intrinsic_dim,heuristic+margin,24.0,,0.93833,0.27140000000000003,True,1.0,0.0,real+synthetic
+sift-128-euclidean,IVF-Flat,0.9,intrinsic_dim,constant-max,128.0,,0.99933,1.3408,True,4.940309506263817,2.415037499278844,real+synthetic
+sift-128-euclidean,IVF-Flat,0.9,intrinsic_dim,constant-median,12.0,,0.84233,0.1463,False,0.5390567428150331,-1.0,real+synthetic
+sift-128-euclidean,IVF-Flat,0.9,intrinsic_dim,default,1.0,,0.308,0.030466666666666666,False,0.11225743060673052,-4.584962500721156,real+synthetic
+sift-128-euclidean,IVF-Flat,0.9,intrinsic_dim,oracle,24.0,,0.93833,0.27140000000000003,True,1.0,0.0,real+synthetic
+glove-100-angular,IVF-Flat,0.9,intrinsic_dim,heuristic,96.0,65.62602197057782,0.93667,0.8171666666666667,True,1.5365089313694769,0.5849625007211561,real+synthetic
+glove-100-angular,IVF-Flat,0.9,intrinsic_dim,heuristic+margin,96.0,,0.93667,0.8171666666666667,True,1.5365089313694769,0.5849625007211561,real+synthetic
+glove-100-angular,IVF-Flat,0.9,intrinsic_dim,constant-max,128.0,,0.9573300000000001,1.0788666666666666,True,2.02858038232529,1.0,real+synthetic
+glove-100-angular,IVF-Flat,0.9,intrinsic_dim,constant-median,12.0,,0.7316699999999999,0.1174,False,0.22074584769664685,-2.415037499278844,real+synthetic
+glove-100-angular,IVF-Flat,0.9,intrinsic_dim,default,1.0,,0.3353300000000001,0.02526666666666667,False,0.04750861798809152,-6.0,real+synthetic
+glove-100-angular,IVF-Flat,0.9,intrinsic_dim,oracle,64.0,,0.907,0.5318333333333333,True,1.0,0.0,real+synthetic
+nytimes-256-angular,IVF-Flat,0.9,intrinsic_dim,heuristic,256.0,193.69792092708136,0.95133,5.414766666666666,True,2.0452118953491296,1.0,real+synthetic
+nytimes-256-angular,IVF-Flat,0.9,intrinsic_dim,heuristic+margin,256.0,,0.95133,5.414766666666666,True,2.0452118953491296,1.0,real+synthetic
+nytimes-256-angular,IVF-Flat,0.9,intrinsic_dim,constant-max,64.0,,0.87033,1.4112333333333333,False,0.5330370407675068,-1.0,real+synthetic
+nytimes-256-angular,IVF-Flat,0.9,intrinsic_dim,constant-median,12.0,,0.78633,0.3186333333333333,False,0.12035101855815475,-3.415037499278844,real+synthetic
+nytimes-256-angular,IVF-Flat,0.9,intrinsic_dim,default,1.0,,0.59233,0.07186666666666668,False,0.027144763679399695,-7.0,real+synthetic
+nytimes-256-angular,IVF-Flat,0.9,intrinsic_dim,oracle,128.0,,0.908,2.6475333333333335,True,1.0,0.0,real+synthetic
+fashion-mnist-784-euclidean,IVF-Flat,0.9,intrinsic_dim,heuristic,12.0,11.02615692203304,0.98267,0.4387666666666667,True,1.4588274409841517,1.0,real+synthetic
+fashion-mnist-784-euclidean,IVF-Flat,0.9,intrinsic_dim,heuristic+margin,16.0,,0.99133,0.5223,True,1.7365621190291476,1.415037499278844,real+synthetic
+fashion-mnist-784-euclidean,IVF-Flat,0.9,intrinsic_dim,constant-max,128.0,,1.0,2.8556333333333335,True,9.494514019727363,4.415037499278844,real+synthetic
+fashion-mnist-784-euclidean,IVF-Flat,0.9,intrinsic_dim,constant-median,16.0,,0.99133,0.5223,True,1.7365621190291476,1.415037499278844,real+synthetic
+fashion-mnist-784-euclidean,IVF-Flat,0.9,intrinsic_dim,default,1.0,,0.49967,0.16066666666666665,False,0.53419040230522,-2.584962500721156,real+synthetic
+fashion-mnist-784-euclidean,IVF-Flat,0.9,intrinsic_dim,oracle,6.0,,0.936,0.3007666666666667,True,1.0,0.0,real+synthetic
+mnist-784-euclidean,IVF-Flat,0.9,intrinsic_dim,heuristic,12.0,9.043038820385158,0.9653300000000001,0.37556666666666666,True,1.3831328259268352,0.5849625007211561,real+synthetic
+mnist-784-euclidean,IVF-Flat,0.9,intrinsic_dim,heuristic+margin,16.0,,0.9819999999999999,0.4442333333333333,True,1.6360176773876747,1.0,real+synthetic
+mnist-784-euclidean,IVF-Flat,0.9,intrinsic_dim,constant-max,128.0,,0.99967,2.365066666666667,True,8.710041738276455,4.0,real+synthetic
+mnist-784-euclidean,IVF-Flat,0.9,intrinsic_dim,constant-median,16.0,,0.9819999999999999,0.4442333333333333,True,1.6360176773876747,1.0,real+synthetic
+mnist-784-euclidean,IVF-Flat,0.9,intrinsic_dim,default,1.0,,0.46667,0.15213333333333334,False,0.5602749815860545,-3.0,real+synthetic
+mnist-784-euclidean,IVF-Flat,0.9,intrinsic_dim,oracle,8.0,,0.934,0.27153333333333335,True,1.0,0.0,real+synthetic
+glove-25-angular,IVF-Flat,0.9,intrinsic_dim,heuristic,12.0,9.863424525083662,0.86933,0.044399999999999995,False,0.6336822074215033,-0.4150374992788439,real+synthetic
+glove-25-angular,IVF-Flat,0.9,intrinsic_dim,heuristic+margin,16.0,,0.90367,0.07006666666666667,True,1.0,0.0,real+synthetic
+glove-25-angular,IVF-Flat,0.9,intrinsic_dim,constant-max,128.0,,0.9973300000000002,0.3017,True,4.305899143672693,3.0,real+synthetic
+glove-25-angular,IVF-Flat,0.9,intrinsic_dim,constant-median,12.0,,0.86933,0.044399999999999995,False,0.6336822074215033,-0.4150374992788439,real+synthetic
+glove-25-angular,IVF-Flat,0.9,intrinsic_dim,default,1.0,,0.408,0.016200000000000003,False,0.2312083729781161,-4.0,real+synthetic
+glove-25-angular,IVF-Flat,0.9,intrinsic_dim,oracle,16.0,,0.90367,0.07006666666666667,True,1.0,0.0,real+synthetic
+sift-128-euclidean,IVF-Flat,0.9,ambient_dim,heuristic,16.0,15.040632689143168,0.882,0.19236666666666666,False,0.7087939081306803,-0.5849625007211561,real+synthetic
+sift-128-euclidean,IVF-Flat,0.9,ambient_dim,heuristic+margin,48.0,,0.9860000000000001,0.4887666666666666,True,1.800908867600098,1.0,real+synthetic
+sift-128-euclidean,IVF-Flat,0.9,ambient_dim,constant-max,128.0,,0.99933,1.3408,True,4.940309506263817,2.415037499278844,real+synthetic
+sift-128-euclidean,IVF-Flat,0.9,ambient_dim,constant-median,12.0,,0.84233,0.1463,False,0.5390567428150331,-1.0,real+synthetic
+sift-128-euclidean,IVF-Flat,0.9,ambient_dim,default,1.0,,0.308,0.030466666666666666,False,0.11225743060673052,-4.584962500721156,real+synthetic
+sift-128-euclidean,IVF-Flat,0.9,ambient_dim,oracle,24.0,,0.93833,0.27140000000000003,True,1.0,0.0,real+synthetic
+glove-100-angular,IVF-Flat,0.9,ambient_dim,heuristic,16.0,13.688620045161558,0.77033,0.1648666666666667,False,0.30999686618614863,-2.0,real+synthetic
+glove-100-angular,IVF-Flat,0.9,ambient_dim,heuristic+margin,48.0,,0.8856699999999998,0.3776,False,0.7099968661861487,-0.4150374992788439,real+synthetic
+glove-100-angular,IVF-Flat,0.9,ambient_dim,constant-max,128.0,,0.9573300000000001,1.0788666666666666,True,2.02858038232529,1.0,real+synthetic
+glove-100-angular,IVF-Flat,0.9,ambient_dim,constant-median,12.0,,0.7316699999999999,0.1174,False,0.22074584769664685,-2.415037499278844,real+synthetic
+glove-100-angular,IVF-Flat,0.9,ambient_dim,default,1.0,,0.3353300000000001,0.02526666666666667,False,0.04750861798809152,-6.0,real+synthetic
+glove-100-angular,IVF-Flat,0.9,ambient_dim,oracle,64.0,,0.907,0.5318333333333333,True,1.0,0.0,real+synthetic
+nytimes-256-angular,IVF-Flat,0.9,ambient_dim,heuristic,12.0,11.378895253464469,0.78633,0.3186333333333333,False,0.12035101855815475,-3.415037499278844,real+synthetic
+nytimes-256-angular,IVF-Flat,0.9,ambient_dim,heuristic+margin,32.0,,0.83367,0.7338,False,0.2771636491828872,-2.0,real+synthetic
+nytimes-256-angular,IVF-Flat,0.9,ambient_dim,constant-max,64.0,,0.87033,1.4112333333333333,False,0.5330370407675068,-1.0,real+synthetic
+nytimes-256-angular,IVF-Flat,0.9,ambient_dim,constant-median,12.0,,0.78633,0.3186333333333333,False,0.12035101855815475,-3.415037499278844,real+synthetic
+nytimes-256-angular,IVF-Flat,0.9,ambient_dim,default,1.0,,0.59233,0.07186666666666668,False,0.027144763679399695,-7.0,real+synthetic
+nytimes-256-angular,IVF-Flat,0.9,ambient_dim,oracle,128.0,,0.908,2.6475333333333335,True,1.0,0.0,real+synthetic
+fashion-mnist-784-euclidean,IVF-Flat,0.9,ambient_dim,heuristic,12.0,11.544027334882632,0.98267,0.4387666666666667,True,1.4588274409841517,1.0,real+synthetic
+fashion-mnist-784-euclidean,IVF-Flat,0.9,ambient_dim,heuristic+margin,48.0,,0.99967,1.2853666666666665,True,4.273634046326055,3.0,real+synthetic
+fashion-mnist-784-euclidean,IVF-Flat,0.9,ambient_dim,constant-max,128.0,,1.0,2.8556333333333335,True,9.494514019727363,4.415037499278844,real+synthetic
+fashion-mnist-784-euclidean,IVF-Flat,0.9,ambient_dim,constant-median,16.0,,0.99133,0.5223,True,1.7365621190291476,1.415037499278844,real+synthetic
+fashion-mnist-784-euclidean,IVF-Flat,0.9,ambient_dim,default,1.0,,0.49967,0.16066666666666665,False,0.53419040230522,-2.584962500721156,real+synthetic
+fashion-mnist-784-euclidean,IVF-Flat,0.9,ambient_dim,oracle,6.0,,0.936,0.3007666666666667,True,1.0,0.0,real+synthetic
+mnist-784-euclidean,IVF-Flat,0.9,ambient_dim,heuristic,12.0,8.809307588510816,0.9653300000000001,0.37556666666666666,True,1.3831328259268352,0.5849625007211561,real+synthetic
+mnist-784-euclidean,IVF-Flat,0.9,ambient_dim,heuristic+margin,32.0,,0.99233,0.7435333333333333,True,2.7382764547016936,2.0,real+synthetic
+mnist-784-euclidean,IVF-Flat,0.9,ambient_dim,constant-max,128.0,,0.99967,2.365066666666667,True,8.710041738276455,4.0,real+synthetic
+mnist-784-euclidean,IVF-Flat,0.9,ambient_dim,constant-median,16.0,,0.9819999999999999,0.4442333333333333,True,1.6360176773876747,1.0,real+synthetic
+mnist-784-euclidean,IVF-Flat,0.9,ambient_dim,default,1.0,,0.46667,0.15213333333333334,False,0.5602749815860545,-3.0,real+synthetic
+mnist-784-euclidean,IVF-Flat,0.9,ambient_dim,oracle,8.0,,0.934,0.27153333333333335,True,1.0,0.0,real+synthetic
+glove-25-angular,IVF-Flat,0.9,ambient_dim,heuristic,24.0,17.632004051310833,0.9376700000000001,0.122,True,1.7411988582302569,0.5849625007211561,real+synthetic
+glove-25-angular,IVF-Flat,0.9,ambient_dim,heuristic+margin,64.0,,0.9856700000000002,0.19593333333333332,True,2.7963843958135106,2.0,real+synthetic
+glove-25-angular,IVF-Flat,0.9,ambient_dim,constant-max,128.0,,0.9973300000000002,0.3017,True,4.305899143672693,3.0,real+synthetic
+glove-25-angular,IVF-Flat,0.9,ambient_dim,constant-median,12.0,,0.86933,0.044399999999999995,False,0.6336822074215033,-0.4150374992788439,real+synthetic
+glove-25-angular,IVF-Flat,0.9,ambient_dim,default,1.0,,0.408,0.016200000000000003,False,0.2312083729781161,-4.0,real+synthetic
+glove-25-angular,IVF-Flat,0.9,ambient_dim,oracle,16.0,,0.90367,0.07006666666666667,True,1.0,0.0,real+synthetic
+sift-128-euclidean,IVF-Flat,0.9,none,heuristic,16.0,13.530733850521713,0.882,0.19236666666666666,False,0.7087939081306803,-0.5849625007211561,real+synthetic
+sift-128-euclidean,IVF-Flat,0.9,none,heuristic+margin,48.0,,0.9860000000000001,0.4887666666666666,True,1.800908867600098,1.0,real+synthetic
+sift-128-euclidean,IVF-Flat,0.9,none,constant-max,128.0,,0.99933,1.3408,True,4.940309506263817,2.415037499278844,real+synthetic
+sift-128-euclidean,IVF-Flat,0.9,none,constant-median,12.0,,0.84233,0.1463,False,0.5390567428150331,-1.0,real+synthetic
+sift-128-euclidean,IVF-Flat,0.9,none,default,1.0,,0.308,0.030466666666666666,False,0.11225743060673052,-4.584962500721156,real+synthetic
+sift-128-euclidean,IVF-Flat,0.9,none,oracle,24.0,,0.93833,0.27140000000000003,True,1.0,0.0,real+synthetic
+glove-100-angular,IVF-Flat,0.9,none,heuristic,16.0,12.376473644524152,0.77033,0.1648666666666667,False,0.30999686618614863,-2.0,real+synthetic
+glove-100-angular,IVF-Flat,0.9,none,heuristic+margin,48.0,,0.8856699999999998,0.3776,False,0.7099968661861487,-0.4150374992788439,real+synthetic
+glove-100-angular,IVF-Flat,0.9,none,constant-max,128.0,,0.9573300000000001,1.0788666666666666,True,2.02858038232529,1.0,real+synthetic
+glove-100-angular,IVF-Flat,0.9,none,constant-median,12.0,,0.7316699999999999,0.1174,False,0.22074584769664685,-2.415037499278844,real+synthetic
+glove-100-angular,IVF-Flat,0.9,none,default,1.0,,0.3353300000000001,0.02526666666666667,False,0.04750861798809152,-6.0,real+synthetic
+glove-100-angular,IVF-Flat,0.9,none,oracle,64.0,,0.907,0.5318333333333333,True,1.0,0.0,real+synthetic
+nytimes-256-angular,IVF-Flat,0.9,none,heuristic,12.0,11.62065366983367,0.78633,0.3186333333333333,False,0.12035101855815475,-3.415037499278844,real+synthetic
+nytimes-256-angular,IVF-Flat,0.9,none,heuristic+margin,32.0,,0.83367,0.7338,False,0.2771636491828872,-2.0,real+synthetic
+nytimes-256-angular,IVF-Flat,0.9,none,constant-max,64.0,,0.87033,1.4112333333333333,False,0.5330370407675068,-1.0,real+synthetic
+nytimes-256-angular,IVF-Flat,0.9,none,constant-median,12.0,,0.78633,0.3186333333333333,False,0.12035101855815475,-3.415037499278844,real+synthetic
+nytimes-256-angular,IVF-Flat,0.9,none,default,1.0,,0.59233,0.07186666666666668,False,0.027144763679399695,-7.0,real+synthetic
+nytimes-256-angular,IVF-Flat,0.9,none,oracle,128.0,,0.908,2.6475333333333335,True,1.0,0.0,real+synthetic
+fashion-mnist-784-euclidean,IVF-Flat,0.9,none,heuristic,16.0,15.348080841140806,0.99133,0.5223,True,1.7365621190291476,1.415037499278844,real+synthetic
+fashion-mnist-784-euclidean,IVF-Flat,0.9,none,heuristic+margin,48.0,,0.99967,1.2853666666666665,True,4.273634046326055,3.0,real+synthetic
+fashion-mnist-784-euclidean,IVF-Flat,0.9,none,constant-max,128.0,,1.0,2.8556333333333335,True,9.494514019727363,4.415037499278844,real+synthetic
+fashion-mnist-784-euclidean,IVF-Flat,0.9,none,constant-median,16.0,,0.99133,0.5223,True,1.7365621190291476,1.415037499278844,real+synthetic
+fashion-mnist-784-euclidean,IVF-Flat,0.9,none,default,1.0,,0.49967,0.16066666666666665,False,0.53419040230522,-2.584962500721156,real+synthetic
+fashion-mnist-784-euclidean,IVF-Flat,0.9,none,oracle,6.0,,0.936,0.3007666666666667,True,1.0,0.0,real+synthetic
+mnist-784-euclidean,IVF-Flat,0.9,none,heuristic,16.0,14.95188716889947,0.9819999999999999,0.4442333333333333,True,1.6360176773876747,1.0,real+synthetic
+mnist-784-euclidean,IVF-Flat,0.9,none,heuristic+margin,48.0,,0.99667,1.0388666666666666,True,3.8259268352565674,2.584962500721156,real+synthetic
+mnist-784-euclidean,IVF-Flat,0.9,none,constant-max,128.0,,0.99967,2.365066666666667,True,8.710041738276455,4.0,real+synthetic
+mnist-784-euclidean,IVF-Flat,0.9,none,constant-median,16.0,,0.9819999999999999,0.4442333333333333,True,1.6360176773876747,1.0,real+synthetic
+mnist-784-euclidean,IVF-Flat,0.9,none,default,1.0,,0.46667,0.15213333333333334,False,0.5602749815860545,-3.0,real+synthetic
+mnist-784-euclidean,IVF-Flat,0.9,none,oracle,8.0,,0.934,0.27153333333333335,True,1.0,0.0,real+synthetic
+glove-25-angular,IVF-Flat,0.9,none,heuristic,16.0,14.038789035605863,0.90367,0.07006666666666667,True,1.0,0.0,real+synthetic
+glove-25-angular,IVF-Flat,0.9,none,heuristic+margin,48.0,,0.979,0.1717,True,2.450523311132255,1.584962500721156,real+synthetic
+glove-25-angular,IVF-Flat,0.9,none,constant-max,128.0,,0.9973300000000002,0.3017,True,4.305899143672693,3.0,real+synthetic
+glove-25-angular,IVF-Flat,0.9,none,constant-median,12.0,,0.86933,0.044399999999999995,False,0.6336822074215033,-0.4150374992788439,real+synthetic
+glove-25-angular,IVF-Flat,0.9,none,default,1.0,,0.408,0.016200000000000003,False,0.2312083729781161,-4.0,real+synthetic
+glove-25-angular,IVF-Flat,0.9,none,oracle,16.0,,0.90367,0.07006666666666667,True,1.0,0.0,real+synthetic
+sift-128-euclidean,IVF-Flat,0.9,lid,heuristic,16.0,15.0190411321538,0.882,0.19236666666666666,False,0.7087939081306803,-0.5849625007211561,real only
+sift-128-euclidean,IVF-Flat,0.9,lid,heuristic+margin,24.0,,0.93833,0.27140000000000003,True,1.0,0.0,real only
+sift-128-euclidean,IVF-Flat,0.9,lid,constant-max,128.0,,0.99933,1.3408,True,4.940309506263817,2.415037499278844,real only
+sift-128-euclidean,IVF-Flat,0.9,lid,constant-median,16.0,,0.882,0.19236666666666666,False,0.7087939081306803,-0.5849625007211561,real only
+sift-128-euclidean,IVF-Flat,0.9,lid,default,1.0,,0.308,0.030466666666666666,False,0.11225743060673052,-4.584962500721156,real only
+sift-128-euclidean,IVF-Flat,0.9,lid,oracle,24.0,,0.93833,0.27140000000000003,True,1.0,0.0,real only
+glove-100-angular,IVF-Flat,0.9,lid,heuristic,96.0,65.63911265871498,0.93667,0.8171666666666667,True,1.5365089313694769,0.5849625007211561,real only
+glove-100-angular,IVF-Flat,0.9,lid,heuristic+margin,96.0,,0.93667,0.8171666666666667,True,1.5365089313694769,0.5849625007211561,real only
+glove-100-angular,IVF-Flat,0.9,lid,constant-max,128.0,,0.9573300000000001,1.0788666666666666,True,2.02858038232529,1.0,real only
+glove-100-angular,IVF-Flat,0.9,lid,constant-median,16.0,,0.77033,0.1648666666666667,False,0.30999686618614863,-2.0,real only
+glove-100-angular,IVF-Flat,0.9,lid,default,1.0,,0.3353300000000001,0.02526666666666667,False,0.04750861798809152,-6.0,real only
+glove-100-angular,IVF-Flat,0.9,lid,oracle,64.0,,0.907,0.5318333333333333,True,1.0,0.0,real only
+nytimes-256-angular,IVF-Flat,0.9,lid,heuristic,192.0,156.79525347635473,0.93633,4.078066666666667,True,1.540326845113691,0.5849625007211561,real only
+nytimes-256-angular,IVF-Flat,0.9,lid,heuristic+margin,256.0,,0.95133,5.414766666666666,True,2.0452118953491296,1.0,real only
+nytimes-256-angular,IVF-Flat,0.9,lid,constant-max,64.0,,0.87033,1.4112333333333333,False,0.5330370407675068,-1.0,real only
+nytimes-256-angular,IVF-Flat,0.9,lid,constant-median,16.0,,0.80133,0.43356666666666666,False,0.1637624959081409,-3.0,real only
+nytimes-256-angular,IVF-Flat,0.9,lid,default,1.0,,0.59233,0.07186666666666668,False,0.027144763679399695,-7.0,real only
+nytimes-256-angular,IVF-Flat,0.9,lid,oracle,128.0,,0.908,2.6475333333333335,True,1.0,0.0,real only
+fashion-mnist-784-euclidean,IVF-Flat,0.9,lid,heuristic,16.0,12.632362616682542,0.99133,0.5223,True,1.7365621190291476,1.415037499278844,real only
+fashion-mnist-784-euclidean,IVF-Flat,0.9,lid,heuristic+margin,16.0,,0.99133,0.5223,True,1.7365621190291476,1.415037499278844,real only
+fashion-mnist-784-euclidean,IVF-Flat,0.9,lid,constant-max,128.0,,1.0,2.8556333333333335,True,9.494514019727363,4.415037499278844,real only
+fashion-mnist-784-euclidean,IVF-Flat,0.9,lid,constant-median,24.0,,0.997,0.6880333333333333,True,2.287598359747312,2.0,real only
+fashion-mnist-784-euclidean,IVF-Flat,0.9,lid,default,1.0,,0.49967,0.16066666666666665,False,0.53419040230522,-2.584962500721156,real only
+fashion-mnist-784-euclidean,IVF-Flat,0.9,lid,oracle,6.0,,0.936,0.3007666666666667,True,1.0,0.0,real only
+mnist-784-euclidean,IVF-Flat,0.9,lid,heuristic,12.0,9.782144346084376,0.9653300000000001,0.37556666666666666,True,1.3831328259268352,0.5849625007211561,real only
+mnist-784-euclidean,IVF-Flat,0.9,lid,heuristic+margin,16.0,,0.9819999999999999,0.4442333333333333,True,1.6360176773876747,1.0,real only
+mnist-784-euclidean,IVF-Flat,0.9,lid,constant-max,128.0,,0.99967,2.365066666666667,True,8.710041738276455,4.0,real only
+mnist-784-euclidean,IVF-Flat,0.9,lid,constant-median,24.0,,0.988,0.5937666666666667,True,2.186717407316474,1.584962500721156,real only
+mnist-784-euclidean,IVF-Flat,0.9,lid,default,1.0,,0.46667,0.15213333333333334,False,0.5602749815860545,-3.0,real only
+mnist-784-euclidean,IVF-Flat,0.9,lid,oracle,8.0,,0.934,0.27153333333333335,True,1.0,0.0,real only
+glove-25-angular,IVF-Flat,0.9,lid,heuristic,12.0,9.461524599883008,0.86933,0.044399999999999995,False,0.6336822074215033,-0.4150374992788439,real only
+glove-25-angular,IVF-Flat,0.9,lid,heuristic+margin,16.0,,0.90367,0.07006666666666667,True,1.0,0.0,real only
+glove-25-angular,IVF-Flat,0.9,lid,constant-max,128.0,,0.9973300000000002,0.3017,True,4.305899143672693,3.0,real only
+glove-25-angular,IVF-Flat,0.9,lid,constant-median,24.0,,0.9376700000000001,0.122,True,1.7411988582302569,0.5849625007211561,real only
+glove-25-angular,IVF-Flat,0.9,lid,default,1.0,,0.408,0.016200000000000003,False,0.2312083729781161,-4.0,real only
+glove-25-angular,IVF-Flat,0.9,lid,oracle,16.0,,0.90367,0.07006666666666667,True,1.0,0.0,real only
+sift-128-euclidean,HNSW,0.95,lid,heuristic,48.0,45.05277070490147,0.9613299999999999,0.11906666666666667,True,1.0,0.0,real+synthetic
+sift-128-euclidean,HNSW,0.95,lid,heuristic+margin,80.0,,0.9896699999999999,0.20420000000000002,True,1.7150055991041435,0.7369655941662066,real+synthetic
+sift-128-euclidean,HNSW,0.95,lid,constant-max,512.0,,0.99933,0.9305666666666667,True,7.815509518477043,3.415037499278844,real+synthetic
+sift-128-euclidean,HNSW,0.95,lid,constant-median,32.0,,0.92833,0.0968,False,0.8129899216125419,-0.5849625007211561,real+synthetic
+sift-128-euclidean,HNSW,0.95,lid,default,10.0,,0.72933,0.04136666666666667,False,0.347424412094065,-2.263034405833794,real+synthetic
+sift-128-euclidean,HNSW,0.95,lid,oracle,48.0,,0.9613299999999999,0.11906666666666667,True,1.0,0.0,real+synthetic
+glove-100-angular,HNSW,0.95,lid,heuristic,256.0,216.04437022054233,0.92433,0.5448666666666667,False,0.5724992995236762,-1.0,real+synthetic
+glove-100-angular,HNSW,0.95,lid,heuristic+margin,320.0,,0.93667,0.6491666666666667,False,0.6820888203978706,-0.6780719051126383,real+synthetic
+glove-100-angular,HNSW,0.95,lid,constant-max,512.0,,0.961,0.9517333333333333,True,1.0,0.0,real+synthetic
+glove-100-angular,HNSW,0.95,lid,constant-median,32.0,,0.71033,0.08353333333333333,False,0.0877696833847016,-4.0,real+synthetic
+glove-100-angular,HNSW,0.95,lid,default,10.0,,0.503,0.036366666666666665,False,0.03821098346875876,-5.678071905112638,real+synthetic
+glove-100-angular,HNSW,0.95,lid,oracle,512.0,,0.961,0.9517333333333333,True,1.0,0.0,real+synthetic
+nytimes-256-angular,HNSW,0.95,lid,heuristic,1024.0,1196.417458066931,0.9736699999999999,3.588433333333333,True,2.059950248756219,1.0,real+synthetic
+nytimes-256-angular,HNSW,0.95,lid,heuristic+margin,1024.0,,0.9736699999999999,3.588433333333333,True,2.059950248756219,1.0,real+synthetic
+nytimes-256-angular,HNSW,0.95,lid,constant-max,512.0,,0.952,1.742,True,1.0,0.0,real+synthetic
+nytimes-256-angular,HNSW,0.95,lid,constant-median,32.0,,0.79867,0.15673333333333334,False,0.08997321086873326,-4.0,real+synthetic
+nytimes-256-angular,HNSW,0.95,lid,default,10.0,,0.60433,0.0626,False,0.035935706084959815,-5.678071905112638,real+synthetic
+nytimes-256-angular,HNSW,0.95,lid,oracle,512.0,,0.952,1.742,True,1.0,0.0,real+synthetic
+fashion-mnist-784-euclidean,HNSW,0.95,lid,heuristic,32.0,26.716824657608985,0.99433,0.1832666666666667,True,1.9406989057536184,1.415037499278844,real+synthetic
+fashion-mnist-784-euclidean,HNSW,0.95,lid,heuristic+margin,40.0,,0.99567,0.21350000000000002,True,2.2608542181433116,1.7369655941662066,real+synthetic
+fashion-mnist-784-euclidean,HNSW,0.95,lid,constant-max,512.0,,1.0,1.2351666666666667,True,13.07977409106954,5.415037499278844,real+synthetic
+fashion-mnist-784-euclidean,HNSW,0.95,lid,constant-median,40.0,,0.99567,0.21350000000000002,True,2.2608542181433116,1.7369655941662066,real+synthetic
+fashion-mnist-784-euclidean,HNSW,0.95,lid,default,10.0,,0.93067,0.0863,False,0.9138722202612073,-0.2630344058337939,real+synthetic
+fashion-mnist-784-euclidean,HNSW,0.95,lid,oracle,12.0,,0.95433,0.09443333333333333,True,1.0,0.0,real+synthetic
+mnist-784-euclidean,HNSW,0.95,lid,heuristic,24.0,21.93155581859248,0.98067,0.16493333333333335,True,1.3372972972972974,0.5849625007211561,real+synthetic
+mnist-784-euclidean,HNSW,0.95,lid,heuristic+margin,32.0,,0.987,0.20516666666666664,True,1.6635135135135133,1.0,real+synthetic
+mnist-784-euclidean,HNSW,0.95,lid,constant-max,512.0,,1.0,1.5386333333333333,True,12.475405405405406,5.0,real+synthetic
+mnist-784-euclidean,HNSW,0.95,lid,constant-median,40.0,,0.99133,0.23750000000000002,True,1.9256756756756757,1.3219280948873626,real+synthetic
+mnist-784-euclidean,HNSW,0.95,lid,default,10.0,,0.9289999999999999,0.08573333333333333,False,0.695135135135135,-0.6780719051126378,real+synthetic
+mnist-784-euclidean,HNSW,0.95,lid,oracle,16.0,,0.96467,0.12333333333333334,True,1.0,0.0,real+synthetic
+glove-25-angular,HNSW,0.95,lid,heuristic,32.0,25.14929555807602,0.93133,0.06616666666666667,False,0.8400338552687262,-0.3219280948873626,real+synthetic
+glove-25-angular,HNSW,0.95,lid,heuristic+margin,40.0,,0.95267,0.07876666666666667,True,1.0,0.0,real+synthetic
+glove-25-angular,HNSW,0.95,lid,constant-max,512.0,,1.0,0.7471,True,9.48497672450275,3.6780719051126374,real+synthetic
+glove-25-angular,HNSW,0.95,lid,constant-median,32.0,,0.93133,0.06616666666666667,False,0.8400338552687262,-0.3219280948873626,real+synthetic
+glove-25-angular,HNSW,0.95,lid,default,10.0,,0.77,0.030533333333333332,False,0.3876428269149386,-2.0000000000000004,real+synthetic
+glove-25-angular,HNSW,0.95,lid,oracle,40.0,,0.95267,0.07876666666666667,True,1.0,0.0,real+synthetic
+sift-128-euclidean,HNSW,0.95,intrinsic_dim,heuristic,48.0,41.12430739673605,0.9613299999999999,0.11906666666666667,True,1.0,0.0,real+synthetic
+sift-128-euclidean,HNSW,0.95,intrinsic_dim,heuristic+margin,64.0,,0.98,0.15113333333333334,True,1.269316909294513,0.4150374992788439,real+synthetic
+sift-128-euclidean,HNSW,0.95,intrinsic_dim,constant-max,512.0,,0.99933,0.9305666666666667,True,7.815509518477043,3.415037499278844,real+synthetic
+sift-128-euclidean,HNSW,0.95,intrinsic_dim,constant-median,32.0,,0.92833,0.0968,False,0.8129899216125419,-0.5849625007211561,real+synthetic
+sift-128-euclidean,HNSW,0.95,intrinsic_dim,default,10.0,,0.72933,0.04136666666666667,False,0.347424412094065,-2.263034405833794,real+synthetic
+sift-128-euclidean,HNSW,0.95,intrinsic_dim,oracle,48.0,,0.9613299999999999,0.11906666666666667,True,1.0,0.0,real+synthetic
+glove-100-angular,HNSW,0.95,intrinsic_dim,heuristic,256.0,196.47923395296218,0.92433,0.5448666666666667,False,0.5724992995236762,-1.0,real+synthetic
+glove-100-angular,HNSW,0.95,intrinsic_dim,heuristic+margin,320.0,,0.93667,0.6491666666666667,False,0.6820888203978706,-0.6780719051126383,real+synthetic
+glove-100-angular,HNSW,0.95,intrinsic_dim,constant-max,512.0,,0.961,0.9517333333333333,True,1.0,0.0,real+synthetic
+glove-100-angular,HNSW,0.95,intrinsic_dim,constant-median,32.0,,0.71033,0.08353333333333333,False,0.0877696833847016,-4.0,real+synthetic
+glove-100-angular,HNSW,0.95,intrinsic_dim,default,10.0,,0.503,0.036366666666666665,False,0.03821098346875876,-5.678071905112638,real+synthetic
+glove-100-angular,HNSW,0.95,intrinsic_dim,oracle,512.0,,0.961,0.9517333333333333,True,1.0,0.0,real+synthetic
+nytimes-256-angular,HNSW,0.95,intrinsic_dim,heuristic,1024.0,1205.3400785401702,0.9736699999999999,3.588433333333333,True,2.059950248756219,1.0,real+synthetic
+nytimes-256-angular,HNSW,0.95,intrinsic_dim,heuristic+margin,1024.0,,0.9736699999999999,3.588433333333333,True,2.059950248756219,1.0,real+synthetic
+nytimes-256-angular,HNSW,0.95,intrinsic_dim,constant-max,512.0,,0.952,1.742,True,1.0,0.0,real+synthetic
+nytimes-256-angular,HNSW,0.95,intrinsic_dim,constant-median,32.0,,0.79867,0.15673333333333334,False,0.08997321086873326,-4.0,real+synthetic
+nytimes-256-angular,HNSW,0.95,intrinsic_dim,default,10.0,,0.60433,0.0626,False,0.035935706084959815,-5.678071905112638,real+synthetic
+nytimes-256-angular,HNSW,0.95,intrinsic_dim,oracle,512.0,,0.952,1.742,True,1.0,0.0,real+synthetic
+fashion-mnist-784-euclidean,HNSW,0.95,intrinsic_dim,heuristic,32.0,28.728403685279293,0.99433,0.1832666666666667,True,1.9406989057536184,1.415037499278844,real+synthetic
+fashion-mnist-784-euclidean,HNSW,0.95,intrinsic_dim,heuristic+margin,40.0,,0.99567,0.21350000000000002,True,2.2608542181433116,1.7369655941662066,real+synthetic
+fashion-mnist-784-euclidean,HNSW,0.95,intrinsic_dim,constant-max,512.0,,1.0,1.2351666666666667,True,13.07977409106954,5.415037499278844,real+synthetic
+fashion-mnist-784-euclidean,HNSW,0.95,intrinsic_dim,constant-median,40.0,,0.99567,0.21350000000000002,True,2.2608542181433116,1.7369655941662066,real+synthetic
+fashion-mnist-784-euclidean,HNSW,0.95,intrinsic_dim,default,10.0,,0.93067,0.0863,False,0.9138722202612073,-0.2630344058337939,real+synthetic
+fashion-mnist-784-euclidean,HNSW,0.95,intrinsic_dim,oracle,12.0,,0.95433,0.09443333333333333,True,1.0,0.0,real+synthetic
+mnist-784-euclidean,HNSW,0.95,intrinsic_dim,heuristic,24.0,22.673335022103004,0.98067,0.16493333333333335,True,1.3372972972972974,0.5849625007211561,real+synthetic
+mnist-784-euclidean,HNSW,0.95,intrinsic_dim,heuristic+margin,40.0,,0.99133,0.23750000000000002,True,1.9256756756756757,1.3219280948873626,real+synthetic
+mnist-784-euclidean,HNSW,0.95,intrinsic_dim,constant-max,512.0,,1.0,1.5386333333333333,True,12.475405405405406,5.0,real+synthetic
+mnist-784-euclidean,HNSW,0.95,intrinsic_dim,constant-median,40.0,,0.99133,0.23750000000000002,True,1.9256756756756757,1.3219280948873626,real+synthetic
+mnist-784-euclidean,HNSW,0.95,intrinsic_dim,default,10.0,,0.9289999999999999,0.08573333333333333,False,0.695135135135135,-0.6780719051126378,real+synthetic
+mnist-784-euclidean,HNSW,0.95,intrinsic_dim,oracle,16.0,,0.96467,0.12333333333333334,True,1.0,0.0,real+synthetic
+glove-25-angular,HNSW,0.95,intrinsic_dim,heuristic,32.0,25.05381630168042,0.93133,0.06616666666666667,False,0.8400338552687262,-0.3219280948873626,real+synthetic
+glove-25-angular,HNSW,0.95,intrinsic_dim,heuristic+margin,40.0,,0.95267,0.07876666666666667,True,1.0,0.0,real+synthetic
+glove-25-angular,HNSW,0.95,intrinsic_dim,constant-max,512.0,,1.0,0.7471,True,9.48497672450275,3.6780719051126374,real+synthetic
+glove-25-angular,HNSW,0.95,intrinsic_dim,constant-median,32.0,,0.93133,0.06616666666666667,False,0.8400338552687262,-0.3219280948873626,real+synthetic
+glove-25-angular,HNSW,0.95,intrinsic_dim,default,10.0,,0.77,0.030533333333333332,False,0.3876428269149386,-2.0000000000000004,real+synthetic
+glove-25-angular,HNSW,0.95,intrinsic_dim,oracle,40.0,,0.95267,0.07876666666666667,True,1.0,0.0,real+synthetic
+sift-128-euclidean,HNSW,0.95,ambient_dim,heuristic,48.0,45.38493963920196,0.9613299999999999,0.11906666666666667,True,1.0,0.0,real+synthetic
+sift-128-euclidean,HNSW,0.95,ambient_dim,heuristic+margin,192.0,,0.99833,0.38586666666666664,True,3.2407614781634937,2.0,real+synthetic
+sift-128-euclidean,HNSW,0.95,ambient_dim,constant-max,512.0,,0.99933,0.9305666666666667,True,7.815509518477043,3.415037499278844,real+synthetic
+sift-128-euclidean,HNSW,0.95,ambient_dim,constant-median,32.0,,0.92833,0.0968,False,0.8129899216125419,-0.5849625007211561,real+synthetic
+sift-128-euclidean,HNSW,0.95,ambient_dim,default,10.0,,0.72933,0.04136666666666667,False,0.347424412094065,-2.263034405833794,real+synthetic
+sift-128-euclidean,HNSW,0.95,ambient_dim,oracle,48.0,,0.9613299999999999,0.11906666666666667,True,1.0,0.0,real+synthetic
+glove-100-angular,HNSW,0.95,ambient_dim,heuristic,40.0,35.61138356625672,0.74467,0.11563333333333332,False,0.12149761838049873,-3.6780719051126374,real+synthetic
+glove-100-angular,HNSW,0.95,ambient_dim,heuristic+margin,128.0,,0.87433,0.3747666666666667,False,0.3937727654805268,-2.0,real+synthetic
+glove-100-angular,HNSW,0.95,ambient_dim,constant-max,512.0,,0.961,0.9517333333333333,True,1.0,0.0,real+synthetic
+glove-100-angular,HNSW,0.95,ambient_dim,constant-median,32.0,,0.71033,0.08353333333333333,False,0.0877696833847016,-4.0,real+synthetic
+glove-100-angular,HNSW,0.95,ambient_dim,default,10.0,,0.503,0.036366666666666665,False,0.03821098346875876,-5.678071905112638,real+synthetic
+glove-100-angular,HNSW,0.95,ambient_dim,oracle,512.0,,0.961,0.9517333333333333,True,1.0,0.0,real+synthetic
+nytimes-256-angular,HNSW,0.95,ambient_dim,heuristic,32.0,29.779168266493752,0.79867,0.15673333333333334,False,0.08997321086873326,-4.0,real+synthetic
+nytimes-256-angular,HNSW,0.95,ambient_dim,heuristic+margin,80.0,,0.86133,0.32366666666666666,False,0.1858017604286261,-2.6780719051126374,real+synthetic
+nytimes-256-angular,HNSW,0.95,ambient_dim,constant-max,512.0,,0.952,1.742,True,1.0,0.0,real+synthetic
+nytimes-256-angular,HNSW,0.95,ambient_dim,constant-median,32.0,,0.79867,0.15673333333333334,False,0.08997321086873326,-4.0,real+synthetic
+nytimes-256-angular,HNSW,0.95,ambient_dim,default,10.0,,0.60433,0.0626,False,0.035935706084959815,-5.678071905112638,real+synthetic
+nytimes-256-angular,HNSW,0.95,ambient_dim,oracle,512.0,,0.952,1.742,True,1.0,0.0,real+synthetic
+fashion-mnist-784-euclidean,HNSW,0.95,ambient_dim,heuristic,32.0,24.5800182046502,0.99433,0.1832666666666667,True,1.9406989057536184,1.415037499278844,real+synthetic
+fashion-mnist-784-euclidean,HNSW,0.95,ambient_dim,heuristic+margin,96.0,,0.99833,0.3922666666666667,True,4.153900458877516,3.0,real+synthetic
+fashion-mnist-784-euclidean,HNSW,0.95,ambient_dim,constant-max,512.0,,1.0,1.2351666666666667,True,13.07977409106954,5.415037499278844,real+synthetic
+fashion-mnist-784-euclidean,HNSW,0.95,ambient_dim,constant-median,40.0,,0.99567,0.21350000000000002,True,2.2608542181433116,1.7369655941662066,real+synthetic
+fashion-mnist-784-euclidean,HNSW,0.95,ambient_dim,default,10.0,,0.93067,0.0863,False,0.9138722202612073,-0.2630344058337939,real+synthetic
+fashion-mnist-784-euclidean,HNSW,0.95,ambient_dim,oracle,12.0,,0.95433,0.09443333333333333,True,1.0,0.0,real+synthetic
+mnist-784-euclidean,HNSW,0.95,ambient_dim,heuristic,20.0,18.7571403475164,0.9739999999999999,0.15876666666666667,True,1.2872972972972974,0.3219280948873626,real+synthetic
+mnist-784-euclidean,HNSW,0.95,ambient_dim,heuristic+margin,80.0,,0.99767,0.37999999999999995,True,3.0810810810810807,2.3219280948873626,real+synthetic
+mnist-784-euclidean,HNSW,0.95,ambient_dim,constant-max,512.0,,1.0,1.5386333333333333,True,12.475405405405406,5.0,real+synthetic
+mnist-784-euclidean,HNSW,0.95,ambient_dim,constant-median,40.0,,0.99133,0.23750000000000002,True,1.9256756756756757,1.3219280948873626,real+synthetic
+mnist-784-euclidean,HNSW,0.95,ambient_dim,default,10.0,,0.9289999999999999,0.08573333333333333,False,0.695135135135135,-0.6780719051126378,real+synthetic
+mnist-784-euclidean,HNSW,0.95,ambient_dim,oracle,16.0,,0.96467,0.12333333333333334,True,1.0,0.0,real+synthetic
+glove-25-angular,HNSW,0.95,ambient_dim,heuristic,64.0,55.7020129152796,0.9780000000000001,0.12430000000000001,True,1.5780787134997885,0.6780719051126374,real+synthetic
+glove-25-angular,HNSW,0.95,ambient_dim,heuristic+margin,256.0,,0.9986700000000001,0.40243333333333337,True,5.109183241641981,2.6780719051126374,real+synthetic
+glove-25-angular,HNSW,0.95,ambient_dim,constant-max,512.0,,1.0,0.7471,True,9.48497672450275,3.6780719051126374,real+synthetic
+glove-25-angular,HNSW,0.95,ambient_dim,constant-median,32.0,,0.93133,0.06616666666666667,False,0.8400338552687262,-0.3219280948873626,real+synthetic
+glove-25-angular,HNSW,0.95,ambient_dim,default,10.0,,0.77,0.030533333333333332,False,0.3876428269149386,-2.0000000000000004,real+synthetic
+glove-25-angular,HNSW,0.95,ambient_dim,oracle,40.0,,0.95267,0.07876666666666667,True,1.0,0.0,real+synthetic
+sift-128-euclidean,HNSW,0.95,none,heuristic,40.0,38.12559031606118,0.94867,0.1115,False,0.9364501679731243,-0.26303440583379345,real+synthetic
+sift-128-euclidean,HNSW,0.95,none,heuristic+margin,160.0,,0.9979999999999999,0.34790000000000004,True,2.921892497200448,1.7369655941662066,real+synthetic
+sift-128-euclidean,HNSW,0.95,none,constant-max,512.0,,0.99933,0.9305666666666667,True,7.815509518477043,3.415037499278844,real+synthetic
+sift-128-euclidean,HNSW,0.95,none,constant-median,32.0,,0.92833,0.0968,False,0.8129899216125419,-0.5849625007211561,real+synthetic
+sift-128-euclidean,HNSW,0.95,none,default,10.0,,0.72933,0.04136666666666667,False,0.347424412094065,-2.263034405833794,real+synthetic
+sift-128-euclidean,HNSW,0.95,none,oracle,48.0,,0.9613299999999999,0.11906666666666667,True,1.0,0.0,real+synthetic
+glove-100-angular,HNSW,0.95,none,heuristic,32.0,30.743932652727914,0.71033,0.08353333333333333,False,0.0877696833847016,-4.0,real+synthetic
+glove-100-angular,HNSW,0.95,none,heuristic+margin,96.0,,0.85133,0.23136666666666664,False,0.24310030820958248,-2.415037499278844,real+synthetic
+glove-100-angular,HNSW,0.95,none,constant-max,512.0,,0.961,0.9517333333333333,True,1.0,0.0,real+synthetic
+glove-100-angular,HNSW,0.95,none,constant-median,32.0,,0.71033,0.08353333333333333,False,0.0877696833847016,-4.0,real+synthetic
+glove-100-angular,HNSW,0.95,none,default,10.0,,0.503,0.036366666666666665,False,0.03821098346875876,-5.678071905112638,real+synthetic
+glove-100-angular,HNSW,0.95,none,oracle,512.0,,0.961,0.9517333333333333,True,1.0,0.0,real+synthetic
+nytimes-256-angular,HNSW,0.95,none,heuristic,32.0,30.743932652727914,0.79867,0.15673333333333334,False,0.08997321086873326,-4.0,real+synthetic
+nytimes-256-angular,HNSW,0.95,none,heuristic+margin,96.0,,0.87667,0.38553333333333334,False,0.22131649445082283,-2.415037499278844,real+synthetic
+nytimes-256-angular,HNSW,0.95,none,constant-max,512.0,,0.952,1.742,True,1.0,0.0,real+synthetic
+nytimes-256-angular,HNSW,0.95,none,constant-median,32.0,,0.79867,0.15673333333333334,False,0.08997321086873326,-4.0,real+synthetic
+nytimes-256-angular,HNSW,0.95,none,default,10.0,,0.60433,0.0626,False,0.035935706084959815,-5.678071905112638,real+synthetic
+nytimes-256-angular,HNSW,0.95,none,oracle,512.0,,0.952,1.742,True,1.0,0.0,real+synthetic
+fashion-mnist-784-euclidean,HNSW,0.95,none,heuristic,48.0,43.24633451160228,0.99667,0.24116666666666667,True,2.5538298623367455,2.0,real+synthetic
+fashion-mnist-784-euclidean,HNSW,0.95,none,heuristic+margin,160.0,,0.999,0.5449,True,5.770208259795271,3.7369655941662066,real+synthetic
+fashion-mnist-784-euclidean,HNSW,0.95,none,constant-max,512.0,,1.0,1.2351666666666667,True,13.07977409106954,5.415037499278844,real+synthetic
+fashion-mnist-784-euclidean,HNSW,0.95,none,constant-median,40.0,,0.99567,0.21350000000000002,True,2.2608542181433116,1.7369655941662066,real+synthetic
+fashion-mnist-784-euclidean,HNSW,0.95,none,default,10.0,,0.93067,0.0863,False,0.9138722202612073,-0.2630344058337939,real+synthetic
+fashion-mnist-784-euclidean,HNSW,0.95,none,oracle,12.0,,0.95433,0.09443333333333333,True,1.0,0.0,real+synthetic
+mnist-784-euclidean,HNSW,0.95,none,heuristic,48.0,42.12997838483485,0.99533,0.26376666666666665,True,2.1386486486486485,1.584962500721156,real+synthetic
+mnist-784-euclidean,HNSW,0.95,none,heuristic+margin,160.0,,0.99933,0.6472,True,5.247567567567567,3.3219280948873626,real+synthetic
+mnist-784-euclidean,HNSW,0.95,none,constant-max,512.0,,1.0,1.5386333333333333,True,12.475405405405406,5.0,real+synthetic
+mnist-784-euclidean,HNSW,0.95,none,constant-median,40.0,,0.99133,0.23750000000000002,True,1.9256756756756757,1.3219280948873626,real+synthetic
+mnist-784-euclidean,HNSW,0.95,none,default,10.0,,0.9289999999999999,0.08573333333333333,False,0.695135135135135,-0.6780719051126378,real+synthetic
+mnist-784-euclidean,HNSW,0.95,none,oracle,16.0,,0.96467,0.12333333333333334,True,1.0,0.0,real+synthetic
+glove-25-angular,HNSW,0.95,none,heuristic,40.0,38.76277603116297,0.95267,0.07876666666666667,True,1.0,0.0,real+synthetic
+glove-25-angular,HNSW,0.95,none,heuristic+margin,160.0,,0.99533,0.2478,True,3.146000846381718,2.0,real+synthetic
+glove-25-angular,HNSW,0.95,none,constant-max,512.0,,1.0,0.7471,True,9.48497672450275,3.6780719051126374,real+synthetic
+glove-25-angular,HNSW,0.95,none,constant-median,32.0,,0.93133,0.06616666666666667,False,0.8400338552687262,-0.3219280948873626,real+synthetic
+glove-25-angular,HNSW,0.95,none,default,10.0,,0.77,0.030533333333333332,False,0.3876428269149386,-2.0000000000000004,real+synthetic
+glove-25-angular,HNSW,0.95,none,oracle,40.0,,0.95267,0.07876666666666667,True,1.0,0.0,real+synthetic
+sift-128-euclidean,HNSW,0.95,lid,heuristic,48.0,40.83147148102775,0.9613299999999999,0.11906666666666667,True,1.0,0.0,real only
+sift-128-euclidean,HNSW,0.95,lid,heuristic+margin,80.0,,0.9896699999999999,0.20420000000000002,True,1.7150055991041435,0.7369655941662066,real only
+sift-128-euclidean,HNSW,0.95,lid,constant-max,512.0,,0.99933,0.9305666666666667,True,7.815509518477043,3.415037499278844,real only
+sift-128-euclidean,HNSW,0.95,lid,constant-median,40.0,,0.94867,0.1115,False,0.9364501679731243,-0.26303440583379345,real only
+sift-128-euclidean,HNSW,0.95,lid,default,10.0,,0.72933,0.04136666666666667,False,0.347424412094065,-2.263034405833794,real only
+sift-128-euclidean,HNSW,0.95,lid,oracle,48.0,,0.9613299999999999,0.11906666666666667,True,1.0,0.0,real only
+glove-100-angular,HNSW,0.95,lid,heuristic,256.0,213.78114253470298,0.92433,0.5448666666666667,False,0.5724992995236762,-1.0,real only
+glove-100-angular,HNSW,0.95,lid,heuristic+margin,320.0,,0.93667,0.6491666666666667,False,0.6820888203978706,-0.6780719051126383,real only
+glove-100-angular,HNSW,0.95,lid,constant-max,512.0,,0.961,0.9517333333333333,True,1.0,0.0,real only
+glove-100-angular,HNSW,0.95,lid,constant-median,40.0,,0.74467,0.11563333333333332,False,0.12149761838049873,-3.6780719051126374,real only
+glove-100-angular,HNSW,0.95,lid,default,10.0,,0.503,0.036366666666666665,False,0.03821098346875876,-5.678071905112638,real only
+glove-100-angular,HNSW,0.95,lid,oracle,512.0,,0.961,0.9517333333333333,True,1.0,0.0,real only
+nytimes-256-angular,HNSW,0.95,lid,heuristic,1024.0,1951.3226301623515,0.9736699999999999,3.588433333333333,True,2.059950248756219,1.0,real only
+nytimes-256-angular,HNSW,0.95,lid,heuristic+margin,1024.0,,0.9736699999999999,3.588433333333333,True,2.059950248756219,1.0,real only
+nytimes-256-angular,HNSW,0.95,lid,constant-max,512.0,,0.952,1.742,True,1.0,0.0,real only
+nytimes-256-angular,HNSW,0.95,lid,constant-median,40.0,,0.8126700000000001,0.17903333333333335,False,0.10277458859548413,-3.6780719051126374,real only
+nytimes-256-angular,HNSW,0.95,lid,default,10.0,,0.60433,0.0626,False,0.035935706084959815,-5.678071905112638,real only
+nytimes-256-angular,HNSW,0.95,lid,oracle,512.0,,0.952,1.742,True,1.0,0.0,real only
+fashion-mnist-784-euclidean,HNSW,0.95,lid,heuristic,32.0,27.859190540036504,0.99433,0.1832666666666667,True,1.9406989057536184,1.415037499278844,real only
+fashion-mnist-784-euclidean,HNSW,0.95,lid,heuristic+margin,48.0,,0.99667,0.24116666666666667,True,2.5538298623367455,2.0,real only
+fashion-mnist-784-euclidean,HNSW,0.95,lid,constant-max,512.0,,1.0,1.2351666666666667,True,13.07977409106954,5.415037499278844,real only
+fashion-mnist-784-euclidean,HNSW,0.95,lid,constant-median,48.0,,0.99667,0.24116666666666667,True,2.5538298623367455,2.0,real only
+fashion-mnist-784-euclidean,HNSW,0.95,lid,default,10.0,,0.93067,0.0863,False,0.9138722202612073,-0.2630344058337939,real only
+fashion-mnist-784-euclidean,HNSW,0.95,lid,oracle,12.0,,0.95433,0.09443333333333333,True,1.0,0.0,real only
+mnist-784-euclidean,HNSW,0.95,lid,heuristic,24.0,20.303446926335386,0.98067,0.16493333333333335,True,1.3372972972972974,0.5849625007211561,real only
+mnist-784-euclidean,HNSW,0.95,lid,heuristic+margin,40.0,,0.99133,0.23750000000000002,True,1.9256756756756757,1.3219280948873626,real only
+mnist-784-euclidean,HNSW,0.95,lid,constant-max,512.0,,1.0,1.5386333333333333,True,12.475405405405406,5.0,real only
+mnist-784-euclidean,HNSW,0.95,lid,constant-median,48.0,,0.99533,0.26376666666666665,True,2.1386486486486485,1.584962500721156,real only
+mnist-784-euclidean,HNSW,0.95,lid,default,10.0,,0.9289999999999999,0.08573333333333333,False,0.695135135135135,-0.6780719051126378,real only
+mnist-784-euclidean,HNSW,0.95,lid,oracle,16.0,,0.96467,0.12333333333333334,True,1.0,0.0,real only
+glove-25-angular,HNSW,0.95,lid,heuristic,20.0,19.745852731049382,0.88333,0.045000000000000005,False,0.5713076597545493,-1.0,real only
+glove-25-angular,HNSW,0.95,lid,heuristic+margin,32.0,,0.93133,0.06616666666666667,False,0.8400338552687262,-0.3219280948873626,real only
+glove-25-angular,HNSW,0.95,lid,constant-max,512.0,,1.0,0.7471,True,9.48497672450275,3.6780719051126374,real only
+glove-25-angular,HNSW,0.95,lid,constant-median,48.0,,0.961,0.09226666666666666,True,1.1713922979263647,0.26303440583379345,real only
+glove-25-angular,HNSW,0.95,lid,default,10.0,,0.77,0.030533333333333332,False,0.3876428269149386,-2.0000000000000004,real only
+glove-25-angular,HNSW,0.95,lid,oracle,40.0,,0.95267,0.07876666666666667,True,1.0,0.0,real only
+sift-128-euclidean,IVF-Flat,0.95,lid,heuristic,24.0,23.818400910091576,0.93833,0.27140000000000003,False,0.7433579841139415,-0.4150374992788439,real+synthetic
+sift-128-euclidean,IVF-Flat,0.95,lid,heuristic+margin,48.0,,0.9860000000000001,0.4887666666666666,True,1.3387199853921299,0.5849625007211561,real+synthetic
+sift-128-euclidean,IVF-Flat,0.95,lid,constant-max,256.0,,1.0,2.5856,True,7.081895371131197,3.0,real+synthetic
+sift-128-euclidean,IVF-Flat,0.95,lid,constant-median,16.0,,0.882,0.19236666666666666,False,0.5268876107002648,-1.0,real+synthetic
+sift-128-euclidean,IVF-Flat,0.95,lid,default,1.0,,0.308,0.030466666666666666,False,0.08344745731762987,-5.0,real+synthetic
+sift-128-euclidean,IVF-Flat,0.95,lid,oracle,32.0,,0.967,0.3651,True,1.0,0.0,real+synthetic
+glove-100-angular,IVF-Flat,0.95,lid,heuristic,128.0,125.46601186288753,0.9573300000000001,1.0788666666666666,True,1.0,0.0,real+synthetic
+glove-100-angular,IVF-Flat,0.95,lid,heuristic+margin,192.0,,0.9776700000000002,1.6232333333333333,True,1.5045726997466478,0.5849625007211561,real+synthetic
+glove-100-angular,IVF-Flat,0.95,lid,constant-max,256.0,,0.9860000000000001,2.0902,True,1.9374034480627818,1.0,real+synthetic
+glove-100-angular,IVF-Flat,0.95,lid,constant-median,16.0,,0.77033,0.1648666666666667,False,0.15281468207378116,-3.0,real+synthetic
+glove-100-angular,IVF-Flat,0.95,lid,default,1.0,,0.3353300000000001,0.02526666666666667,False,0.02341963789161466,-7.0,real+synthetic
+glove-100-angular,IVF-Flat,0.95,lid,oracle,128.0,,0.9573300000000001,1.0788666666666666,True,1.0,0.0,real+synthetic
+nytimes-256-angular,IVF-Flat,0.95,lid,heuristic,256.0,385.13093235336646,0.95133,5.414766666666666,True,1.0,0.0,real+synthetic
+nytimes-256-angular,IVF-Flat,0.95,lid,heuristic+margin,256.0,,0.95133,5.414766666666666,True,1.0,0.0,real+synthetic
+nytimes-256-angular,IVF-Flat,0.95,lid,constant-max,128.0,,0.908,2.6475333333333335,False,0.48894689214062786,-1.0,real+synthetic
+nytimes-256-angular,IVF-Flat,0.95,lid,constant-median,16.0,,0.80133,0.43356666666666666,False,0.08007116342347778,-4.0,real+synthetic
+nytimes-256-angular,IVF-Flat,0.95,lid,default,1.0,,0.59233,0.07186666666666668,False,0.013272347838934275,-8.0,real+synthetic
+nytimes-256-angular,IVF-Flat,0.95,lid,oracle,256.0,,0.95133,5.414766666666666,True,1.0,0.0,real+synthetic
+fashion-mnist-784-euclidean,IVF-Flat,0.95,lid,heuristic,16.0,15.022057109225617,0.99133,0.5223,True,1.6021472392638036,1.0,real+synthetic
+fashion-mnist-784-euclidean,IVF-Flat,0.95,lid,heuristic+margin,24.0,,0.997,0.6880333333333333,True,2.110531697341513,1.584962500721156,real+synthetic
+fashion-mnist-784-euclidean,IVF-Flat,0.95,lid,constant-max,256.0,,1.0,5.594566666666666,True,17.16124744376278,5.0,real+synthetic
+fashion-mnist-784-euclidean,IVF-Flat,0.95,lid,constant-median,24.0,,0.997,0.6880333333333333,True,2.110531697341513,1.584962500721156,real+synthetic
+fashion-mnist-784-euclidean,IVF-Flat,0.95,lid,default,1.0,,0.49967,0.16066666666666665,False,0.492842535787321,-3.0,real+synthetic
+fashion-mnist-784-euclidean,IVF-Flat,0.95,lid,oracle,8.0,,0.96267,0.326,True,1.0,0.0,real+synthetic
+mnist-784-euclidean,IVF-Flat,0.95,lid,heuristic,16.0,12.347486982831642,0.9819999999999999,0.4442333333333333,True,1.1828348273719713,0.4150374992788439,real+synthetic
+mnist-784-euclidean,IVF-Flat,0.95,lid,heuristic+margin,24.0,,0.988,0.5937666666666667,True,1.5809887281441377,1.0,real+synthetic
+mnist-784-euclidean,IVF-Flat,0.95,lid,constant-max,256.0,,1.0,5.128333333333333,True,13.654921452028045,4.415037499278844,real+synthetic
+mnist-784-euclidean,IVF-Flat,0.95,lid,constant-median,24.0,,0.988,0.5937666666666667,True,1.5809887281441377,1.0,real+synthetic
+mnist-784-euclidean,IVF-Flat,0.95,lid,default,1.0,,0.46667,0.15213333333333334,False,0.40507677287654215,-3.584962500721156,real+synthetic
+mnist-784-euclidean,IVF-Flat,0.95,lid,oracle,12.0,,0.9653300000000001,0.37556666666666666,True,1.0,0.0,real+synthetic
+glove-25-angular,IVF-Flat,0.95,lid,heuristic,16.0,13.804885395929697,0.90367,0.07006666666666667,False,0.6928147659854976,-1.0,real+synthetic
+glove-25-angular,IVF-Flat,0.95,lid,heuristic+margin,24.0,,0.9376700000000001,0.122,False,1.2063282794990111,-0.4150374992788439,real+synthetic
+glove-25-angular,IVF-Flat,0.95,lid,constant-max,256.0,,1.0,0.6770999999999999,True,6.6951219512195115,3.0,real+synthetic
+glove-25-angular,IVF-Flat,0.95,lid,constant-median,16.0,,0.90367,0.07006666666666667,False,0.6928147659854976,-1.0,real+synthetic
+glove-25-angular,IVF-Flat,0.95,lid,default,1.0,,0.408,0.016200000000000003,False,0.16018457481872117,-5.0,real+synthetic
+glove-25-angular,IVF-Flat,0.95,lid,oracle,32.0,,0.9613299999999999,0.10113333333333334,True,1.0,0.0,real+synthetic
+sift-128-euclidean,IVF-Flat,0.95,intrinsic_dim,heuristic,24.0,21.94161663384874,0.93833,0.27140000000000003,False,0.7433579841139415,-0.4150374992788439,real+synthetic
+sift-128-euclidean,IVF-Flat,0.95,intrinsic_dim,heuristic+margin,32.0,,0.967,0.3651,True,1.0,0.0,real+synthetic
+sift-128-euclidean,IVF-Flat,0.95,intrinsic_dim,constant-max,256.0,,1.0,2.5856,True,7.081895371131197,3.0,real+synthetic
+sift-128-euclidean,IVF-Flat,0.95,intrinsic_dim,constant-median,16.0,,0.882,0.19236666666666666,False,0.5268876107002648,-1.0,real+synthetic
+sift-128-euclidean,IVF-Flat,0.95,intrinsic_dim,default,1.0,,0.308,0.030466666666666666,False,0.08344745731762987,-5.0,real+synthetic
+sift-128-euclidean,IVF-Flat,0.95,intrinsic_dim,oracle,32.0,,0.967,0.3651,True,1.0,0.0,real+synthetic
+glove-100-angular,IVF-Flat,0.95,intrinsic_dim,heuristic,128.0,113.89868952898603,0.9573300000000001,1.0788666666666666,True,1.0,0.0,real+synthetic
+glove-100-angular,IVF-Flat,0.95,intrinsic_dim,heuristic+margin,192.0,,0.9776700000000002,1.6232333333333333,True,1.5045726997466478,0.5849625007211561,real+synthetic
+glove-100-angular,IVF-Flat,0.95,intrinsic_dim,constant-max,256.0,,0.9860000000000001,2.0902,True,1.9374034480627818,1.0,real+synthetic
+glove-100-angular,IVF-Flat,0.95,intrinsic_dim,constant-median,16.0,,0.77033,0.1648666666666667,False,0.15281468207378116,-3.0,real+synthetic
+glove-100-angular,IVF-Flat,0.95,intrinsic_dim,default,1.0,,0.3353300000000001,0.02526666666666667,False,0.02341963789161466,-7.0,real+synthetic
+glove-100-angular,IVF-Flat,0.95,intrinsic_dim,oracle,128.0,,0.9573300000000001,1.0788666666666666,True,1.0,0.0,real+synthetic
+nytimes-256-angular,IVF-Flat,0.95,intrinsic_dim,heuristic,256.0,390.01192656924707,0.95133,5.414766666666666,True,1.0,0.0,real+synthetic
+nytimes-256-angular,IVF-Flat,0.95,intrinsic_dim,heuristic+margin,256.0,,0.95133,5.414766666666666,True,1.0,0.0,real+synthetic
+nytimes-256-angular,IVF-Flat,0.95,intrinsic_dim,constant-max,128.0,,0.908,2.6475333333333335,False,0.48894689214062786,-1.0,real+synthetic
+nytimes-256-angular,IVF-Flat,0.95,intrinsic_dim,constant-median,16.0,,0.80133,0.43356666666666666,False,0.08007116342347778,-4.0,real+synthetic
+nytimes-256-angular,IVF-Flat,0.95,intrinsic_dim,default,1.0,,0.59233,0.07186666666666668,False,0.013272347838934275,-8.0,real+synthetic
+nytimes-256-angular,IVF-Flat,0.95,intrinsic_dim,oracle,256.0,,0.95133,5.414766666666666,True,1.0,0.0,real+synthetic
+fashion-mnist-784-euclidean,IVF-Flat,0.95,intrinsic_dim,heuristic,24.0,16.034885135809372,0.997,0.6880333333333333,True,2.110531697341513,1.584962500721156,real+synthetic
+fashion-mnist-784-euclidean,IVF-Flat,0.95,intrinsic_dim,heuristic+margin,24.0,,0.997,0.6880333333333333,True,2.110531697341513,1.584962500721156,real+synthetic
+fashion-mnist-784-euclidean,IVF-Flat,0.95,intrinsic_dim,constant-max,256.0,,1.0,5.594566666666666,True,17.16124744376278,5.0,real+synthetic
+fashion-mnist-784-euclidean,IVF-Flat,0.95,intrinsic_dim,constant-median,24.0,,0.997,0.6880333333333333,True,2.110531697341513,1.584962500721156,real+synthetic
+fashion-mnist-784-euclidean,IVF-Flat,0.95,intrinsic_dim,default,1.0,,0.49967,0.16066666666666665,False,0.492842535787321,-3.0,real+synthetic
+fashion-mnist-784-euclidean,IVF-Flat,0.95,intrinsic_dim,oracle,8.0,,0.96267,0.326,True,1.0,0.0,real+synthetic
+mnist-784-euclidean,IVF-Flat,0.95,intrinsic_dim,heuristic,16.0,12.717584470007305,0.9819999999999999,0.4442333333333333,True,1.1828348273719713,0.4150374992788439,real+synthetic
+mnist-784-euclidean,IVF-Flat,0.95,intrinsic_dim,heuristic+margin,24.0,,0.988,0.5937666666666667,True,1.5809887281441377,1.0,real+synthetic
+mnist-784-euclidean,IVF-Flat,0.95,intrinsic_dim,constant-max,256.0,,1.0,5.128333333333333,True,13.654921452028045,4.415037499278844,real+synthetic
+mnist-784-euclidean,IVF-Flat,0.95,intrinsic_dim,constant-median,24.0,,0.988,0.5937666666666667,True,1.5809887281441377,1.0,real+synthetic
+mnist-784-euclidean,IVF-Flat,0.95,intrinsic_dim,default,1.0,,0.46667,0.15213333333333334,False,0.40507677287654215,-3.584962500721156,real+synthetic
+mnist-784-euclidean,IVF-Flat,0.95,intrinsic_dim,oracle,12.0,,0.9653300000000001,0.37556666666666666,True,1.0,0.0,real+synthetic
+glove-25-angular,IVF-Flat,0.95,intrinsic_dim,heuristic,16.0,13.746281028859908,0.90367,0.07006666666666667,False,0.6928147659854976,-1.0,real+synthetic
+glove-25-angular,IVF-Flat,0.95,intrinsic_dim,heuristic+margin,24.0,,0.9376700000000001,0.122,False,1.2063282794990111,-0.4150374992788439,real+synthetic
+glove-25-angular,IVF-Flat,0.95,intrinsic_dim,constant-max,256.0,,1.0,0.6770999999999999,True,6.6951219512195115,3.0,real+synthetic
+glove-25-angular,IVF-Flat,0.95,intrinsic_dim,constant-median,16.0,,0.90367,0.07006666666666667,False,0.6928147659854976,-1.0,real+synthetic
+glove-25-angular,IVF-Flat,0.95,intrinsic_dim,default,1.0,,0.408,0.016200000000000003,False,0.16018457481872117,-5.0,real+synthetic
+glove-25-angular,IVF-Flat,0.95,intrinsic_dim,oracle,32.0,,0.9613299999999999,0.10113333333333334,True,1.0,0.0,real+synthetic
+sift-128-euclidean,IVF-Flat,0.95,ambient_dim,heuristic,24.0,23.113114805669067,0.93833,0.27140000000000003,False,0.7433579841139415,-0.4150374992788439,real+synthetic
+sift-128-euclidean,IVF-Flat,0.95,ambient_dim,heuristic+margin,96.0,,0.999,0.9974333333333334,True,2.731945585684288,1.584962500721156,real+synthetic
+sift-128-euclidean,IVF-Flat,0.95,ambient_dim,constant-max,256.0,,1.0,2.5856,True,7.081895371131197,3.0,real+synthetic
+sift-128-euclidean,IVF-Flat,0.95,ambient_dim,constant-median,16.0,,0.882,0.19236666666666666,False,0.5268876107002648,-1.0,real+synthetic
+sift-128-euclidean,IVF-Flat,0.95,ambient_dim,default,1.0,,0.308,0.030466666666666666,False,0.08344745731762987,-5.0,real+synthetic
+sift-128-euclidean,IVF-Flat,0.95,ambient_dim,oracle,32.0,,0.967,0.3651,True,1.0,0.0,real+synthetic
+glove-100-angular,IVF-Flat,0.95,ambient_dim,heuristic,24.0,20.116601225556938,0.816,0.23596666666666666,False,0.21871717234134586,-2.415037499278844,real+synthetic
+glove-100-angular,IVF-Flat,0.95,ambient_dim,heuristic+margin,64.0,,0.907,0.5318333333333333,False,0.49295557066056966,-1.0,real+synthetic
+glove-100-angular,IVF-Flat,0.95,ambient_dim,constant-max,256.0,,0.9860000000000001,2.0902,True,1.9374034480627818,1.0,real+synthetic
+glove-100-angular,IVF-Flat,0.95,ambient_dim,constant-median,16.0,,0.77033,0.1648666666666667,False,0.15281468207378116,-3.0,real+synthetic
+glove-100-angular,IVF-Flat,0.95,ambient_dim,default,1.0,,0.3353300000000001,0.02526666666666667,False,0.02341963789161466,-7.0,real+synthetic
+glove-100-angular,IVF-Flat,0.95,ambient_dim,oracle,128.0,,0.9573300000000001,1.0788666666666666,True,1.0,0.0,real+synthetic
+nytimes-256-angular,IVF-Flat,0.95,ambient_dim,heuristic,24.0,16.569325989669906,0.8166699999999999,0.5499333333333333,False,0.1015617785931065,-3.415037499278844,real+synthetic
+nytimes-256-angular,IVF-Flat,0.95,ambient_dim,heuristic+margin,48.0,,0.8566699999999999,1.0759999999999998,False,0.19871585725454466,-2.415037499278844,real+synthetic
+nytimes-256-angular,IVF-Flat,0.95,ambient_dim,constant-max,128.0,,0.908,2.6475333333333335,False,0.48894689214062786,-1.0,real+synthetic
+nytimes-256-angular,IVF-Flat,0.95,ambient_dim,constant-median,16.0,,0.80133,0.43356666666666666,False,0.08007116342347778,-4.0,real+synthetic
+nytimes-256-angular,IVF-Flat,0.95,ambient_dim,default,1.0,,0.59233,0.07186666666666668,False,0.013272347838934275,-8.0,real+synthetic
+nytimes-256-angular,IVF-Flat,0.95,ambient_dim,oracle,256.0,,0.95133,5.414766666666666,True,1.0,0.0,real+synthetic
+fashion-mnist-784-euclidean,IVF-Flat,0.95,ambient_dim,heuristic,24.0,17.306419502310828,0.997,0.6880333333333333,True,2.110531697341513,1.584962500721156,real+synthetic
+fashion-mnist-784-euclidean,IVF-Flat,0.95,ambient_dim,heuristic+margin,64.0,,1.0,1.5768666666666666,True,4.8370143149284255,3.0,real+synthetic
+fashion-mnist-784-euclidean,IVF-Flat,0.95,ambient_dim,constant-max,256.0,,1.0,5.594566666666666,True,17.16124744376278,5.0,real+synthetic
+fashion-mnist-784-euclidean,IVF-Flat,0.95,ambient_dim,constant-median,24.0,,0.997,0.6880333333333333,True,2.110531697341513,1.584962500721156,real+synthetic
+fashion-mnist-784-euclidean,IVF-Flat,0.95,ambient_dim,default,1.0,,0.49967,0.16066666666666665,False,0.492842535787321,-3.0,real+synthetic
+fashion-mnist-784-euclidean,IVF-Flat,0.95,ambient_dim,oracle,8.0,,0.96267,0.326,True,1.0,0.0,real+synthetic
+mnist-784-euclidean,IVF-Flat,0.95,ambient_dim,heuristic,12.0,11.822770853669876,0.9653300000000001,0.37556666666666666,True,1.0,0.0,real+synthetic
+mnist-784-euclidean,IVF-Flat,0.95,ambient_dim,heuristic+margin,48.0,,0.99667,1.0388666666666666,True,2.766131179550901,2.0,real+synthetic
+mnist-784-euclidean,IVF-Flat,0.95,ambient_dim,constant-max,256.0,,1.0,5.128333333333333,True,13.654921452028045,4.415037499278844,real+synthetic
+mnist-784-euclidean,IVF-Flat,0.95,ambient_dim,constant-median,24.0,,0.988,0.5937666666666667,True,1.5809887281441377,1.0,real+synthetic
+mnist-784-euclidean,IVF-Flat,0.95,ambient_dim,default,1.0,,0.46667,0.15213333333333334,False,0.40507677287654215,-3.584962500721156,real+synthetic
+mnist-784-euclidean,IVF-Flat,0.95,ambient_dim,oracle,12.0,,0.9653300000000001,0.37556666666666666,True,1.0,0.0,real+synthetic
+glove-25-angular,IVF-Flat,0.95,ambient_dim,heuristic,32.0,25.817714910758657,0.9613299999999999,0.10113333333333334,True,1.0,0.0,real+synthetic
+glove-25-angular,IVF-Flat,0.95,ambient_dim,heuristic+margin,96.0,,0.99467,0.31653333333333333,True,3.129861568885959,1.584962500721156,real+synthetic
+glove-25-angular,IVF-Flat,0.95,ambient_dim,constant-max,256.0,,1.0,0.6770999999999999,True,6.6951219512195115,3.0,real+synthetic
+glove-25-angular,IVF-Flat,0.95,ambient_dim,constant-median,16.0,,0.90367,0.07006666666666667,False,0.6928147659854976,-1.0,real+synthetic
+glove-25-angular,IVF-Flat,0.95,ambient_dim,default,1.0,,0.408,0.016200000000000003,False,0.16018457481872117,-5.0,real+synthetic
+glove-25-angular,IVF-Flat,0.95,ambient_dim,oracle,32.0,,0.9613299999999999,0.10113333333333334,True,1.0,0.0,real+synthetic
+sift-128-euclidean,IVF-Flat,0.95,none,heuristic,24.0,20.489333305325566,0.93833,0.27140000000000003,False,0.7433579841139415,-0.4150374992788439,real+synthetic
+sift-128-euclidean,IVF-Flat,0.95,none,heuristic+margin,96.0,,0.999,0.9974333333333334,True,2.731945585684288,1.584962500721156,real+synthetic
+sift-128-euclidean,IVF-Flat,0.95,none,constant-max,256.0,,1.0,2.5856,True,7.081895371131197,3.0,real+synthetic
+sift-128-euclidean,IVF-Flat,0.95,none,constant-median,16.0,,0.882,0.19236666666666666,False,0.5268876107002648,-1.0,real+synthetic
+sift-128-euclidean,IVF-Flat,0.95,none,default,1.0,,0.308,0.030466666666666666,False,0.08344745731762987,-5.0,real+synthetic
+sift-128-euclidean,IVF-Flat,0.95,none,oracle,32.0,,0.967,0.3651,True,1.0,0.0,real+synthetic
+glove-100-angular,IVF-Flat,0.95,none,heuristic,24.0,18.063217062673743,0.816,0.23596666666666666,False,0.21871717234134586,-2.415037499278844,real+synthetic
+glove-100-angular,IVF-Flat,0.95,none,heuristic+margin,64.0,,0.907,0.5318333333333333,False,0.49295557066056966,-1.0,real+synthetic
+glove-100-angular,IVF-Flat,0.95,none,constant-max,256.0,,0.9860000000000001,2.0902,True,1.9374034480627818,1.0,real+synthetic
+glove-100-angular,IVF-Flat,0.95,none,constant-median,16.0,,0.77033,0.1648666666666667,False,0.15281468207378116,-3.0,real+synthetic
+glove-100-angular,IVF-Flat,0.95,none,default,1.0,,0.3353300000000001,0.02526666666666667,False,0.02341963789161466,-7.0,real+synthetic
+glove-100-angular,IVF-Flat,0.95,none,oracle,128.0,,0.9573300000000001,1.0788666666666666,True,1.0,0.0,real+synthetic
+nytimes-256-angular,IVF-Flat,0.95,none,heuristic,24.0,16.96011284613633,0.8166699999999999,0.5499333333333333,False,0.1015617785931065,-3.415037499278844,real+synthetic
+nytimes-256-angular,IVF-Flat,0.95,none,heuristic+margin,48.0,,0.8566699999999999,1.0759999999999998,False,0.19871585725454466,-2.415037499278844,real+synthetic
+nytimes-256-angular,IVF-Flat,0.95,none,constant-max,128.0,,0.908,2.6475333333333335,False,0.48894689214062786,-1.0,real+synthetic
+nytimes-256-angular,IVF-Flat,0.95,none,constant-median,16.0,,0.80133,0.43356666666666666,False,0.08007116342347778,-4.0,real+synthetic
+nytimes-256-angular,IVF-Flat,0.95,none,default,1.0,,0.59233,0.07186666666666668,False,0.013272347838934275,-8.0,real+synthetic
+nytimes-256-angular,IVF-Flat,0.95,none,oracle,256.0,,0.95133,5.414766666666666,True,1.0,0.0,real+synthetic
+fashion-mnist-784-euclidean,IVF-Flat,0.95,none,heuristic,24.0,23.241307339667348,0.997,0.6880333333333333,True,2.110531697341513,1.584962500721156,real+synthetic
+fashion-mnist-784-euclidean,IVF-Flat,0.95,none,heuristic+margin,96.0,,1.0,2.1797666666666666,True,6.68640081799591,3.584962500721156,real+synthetic
+fashion-mnist-784-euclidean,IVF-Flat,0.95,none,constant-max,256.0,,1.0,5.594566666666666,True,17.16124744376278,5.0,real+synthetic
+fashion-mnist-784-euclidean,IVF-Flat,0.95,none,constant-median,24.0,,0.997,0.6880333333333333,True,2.110531697341513,1.584962500721156,real+synthetic
+fashion-mnist-784-euclidean,IVF-Flat,0.95,none,default,1.0,,0.49967,0.16066666666666665,False,0.492842535787321,-3.0,real+synthetic
+fashion-mnist-784-euclidean,IVF-Flat,0.95,none,oracle,8.0,,0.96267,0.326,True,1.0,0.0,real+synthetic
+mnist-784-euclidean,IVF-Flat,0.95,none,heuristic,24.0,22.40021864803556,0.988,0.5937666666666667,True,1.5809887281441377,1.0,real+synthetic
+mnist-784-euclidean,IVF-Flat,0.95,none,heuristic+margin,96.0,,0.999,1.7595,True,4.684920564480341,3.0,real+synthetic
+mnist-784-euclidean,IVF-Flat,0.95,none,constant-max,256.0,,1.0,5.128333333333333,True,13.654921452028045,4.415037499278844,real+synthetic
+mnist-784-euclidean,IVF-Flat,0.95,none,constant-median,24.0,,0.988,0.5937666666666667,True,1.5809887281441377,1.0,real+synthetic
+mnist-784-euclidean,IVF-Flat,0.95,none,default,1.0,,0.46667,0.15213333333333334,False,0.40507677287654215,-3.584962500721156,real+synthetic
+mnist-784-euclidean,IVF-Flat,0.95,none,oracle,12.0,,0.9653300000000001,0.37556666666666666,True,1.0,0.0,real+synthetic
+glove-25-angular,IVF-Flat,0.95,none,heuristic,24.0,20.489333305325566,0.9376700000000001,0.122,False,1.2063282794990111,-0.4150374992788439,real+synthetic
+glove-25-angular,IVF-Flat,0.95,none,heuristic+margin,96.0,,0.99467,0.31653333333333333,True,3.129861568885959,1.584962500721156,real+synthetic
+glove-25-angular,IVF-Flat,0.95,none,constant-max,256.0,,1.0,0.6770999999999999,True,6.6951219512195115,3.0,real+synthetic
+glove-25-angular,IVF-Flat,0.95,none,constant-median,16.0,,0.90367,0.07006666666666667,False,0.6928147659854976,-1.0,real+synthetic
+glove-25-angular,IVF-Flat,0.95,none,default,1.0,,0.408,0.016200000000000003,False,0.16018457481872117,-5.0,real+synthetic
+glove-25-angular,IVF-Flat,0.95,none,oracle,32.0,,0.9613299999999999,0.10113333333333334,True,1.0,0.0,real+synthetic
+sift-128-euclidean,IVF-Flat,0.95,lid,heuristic,32.0,25.082911679877373,0.967,0.3651,True,1.0,0.0,real only
+sift-128-euclidean,IVF-Flat,0.95,lid,heuristic+margin,48.0,,0.9860000000000001,0.4887666666666666,True,1.3387199853921299,0.5849625007211561,real only
+sift-128-euclidean,IVF-Flat,0.95,lid,constant-max,256.0,,1.0,2.5856,True,7.081895371131197,3.0,real only
+sift-128-euclidean,IVF-Flat,0.95,lid,constant-median,32.0,,0.967,0.3651,True,1.0,0.0,real only
+sift-128-euclidean,IVF-Flat,0.95,lid,default,1.0,,0.308,0.030466666666666666,False,0.08344745731762987,-5.0,real only
+sift-128-euclidean,IVF-Flat,0.95,lid,oracle,32.0,,0.967,0.3651,True,1.0,0.0,real only
+glove-100-angular,IVF-Flat,0.95,lid,heuristic,128.0,118.9547807916359,0.9573300000000001,1.0788666666666666,True,1.0,0.0,real only
+glove-100-angular,IVF-Flat,0.95,lid,heuristic+margin,192.0,,0.9776700000000002,1.6232333333333333,True,1.5045726997466478,0.5849625007211561,real only
+glove-100-angular,IVF-Flat,0.95,lid,constant-max,256.0,,0.9860000000000001,2.0902,True,1.9374034480627818,1.0,real only
+glove-100-angular,IVF-Flat,0.95,lid,constant-median,32.0,,0.84567,0.27776666666666666,False,0.25746153370821234,-2.0,real only
+glove-100-angular,IVF-Flat,0.95,lid,default,1.0,,0.3353300000000001,0.02526666666666667,False,0.02341963789161466,-7.0,real only
+glove-100-angular,IVF-Flat,0.95,lid,oracle,128.0,,0.9573300000000001,1.0788666666666666,True,1.0,0.0,real only
+nytimes-256-angular,IVF-Flat,0.95,lid,heuristic,256.0,331.4104080869087,0.95133,5.414766666666666,True,1.0,0.0,real only
+nytimes-256-angular,IVF-Flat,0.95,lid,heuristic+margin,256.0,,0.95133,5.414766666666666,True,1.0,0.0,real only
+nytimes-256-angular,IVF-Flat,0.95,lid,constant-max,128.0,,0.908,2.6475333333333335,False,0.48894689214062786,-1.0,real only
+nytimes-256-angular,IVF-Flat,0.95,lid,constant-median,32.0,,0.83367,0.7338,False,0.13551830488232797,-3.0,real only
+nytimes-256-angular,IVF-Flat,0.95,lid,default,1.0,,0.59233,0.07186666666666668,False,0.013272347838934275,-8.0,real only
+nytimes-256-angular,IVF-Flat,0.95,lid,oracle,256.0,,0.95133,5.414766666666666,True,1.0,0.0,real only
+fashion-mnist-784-euclidean,IVF-Flat,0.95,lid,heuristic,24.0,20.15426937410779,0.997,0.6880333333333333,True,2.110531697341513,1.584962500721156,real only
+fashion-mnist-784-euclidean,IVF-Flat,0.95,lid,heuristic+margin,32.0,,0.99933,0.8928666666666666,True,2.738854805725971,2.0,real only
+fashion-mnist-784-euclidean,IVF-Flat,0.95,lid,constant-max,256.0,,1.0,5.594566666666666,True,17.16124744376278,5.0,real only
+fashion-mnist-784-euclidean,IVF-Flat,0.95,lid,constant-median,32.0,,0.99933,0.8928666666666666,True,2.738854805725971,2.0,real only
+fashion-mnist-784-euclidean,IVF-Flat,0.95,lid,default,1.0,,0.49967,0.16066666666666665,False,0.492842535787321,-3.0,real only
+fashion-mnist-784-euclidean,IVF-Flat,0.95,lid,oracle,8.0,,0.96267,0.326,True,1.0,0.0,real only
+mnist-784-euclidean,IVF-Flat,0.95,lid,heuristic,16.0,14.685472144742556,0.9819999999999999,0.4442333333333333,True,1.1828348273719713,0.4150374992788439,real only
+mnist-784-euclidean,IVF-Flat,0.95,lid,heuristic+margin,24.0,,0.988,0.5937666666666667,True,1.5809887281441377,1.0,real only
+mnist-784-euclidean,IVF-Flat,0.95,lid,constant-max,256.0,,1.0,5.128333333333333,True,13.654921452028045,4.415037499278844,real only
+mnist-784-euclidean,IVF-Flat,0.95,lid,constant-median,32.0,,0.99233,0.7435333333333333,True,1.9797639123102866,1.415037499278844,real only
+mnist-784-euclidean,IVF-Flat,0.95,lid,default,1.0,,0.46667,0.15213333333333334,False,0.40507677287654215,-3.584962500721156,real only
+mnist-784-euclidean,IVF-Flat,0.95,lid,oracle,12.0,,0.9653300000000001,0.37556666666666666,True,1.0,0.0,real only
+glove-25-angular,IVF-Flat,0.95,lid,heuristic,16.0,13.184892153101435,0.90367,0.07006666666666667,False,0.6928147659854976,-1.0,real only
+glove-25-angular,IVF-Flat,0.95,lid,heuristic+margin,24.0,,0.9376700000000001,0.122,False,1.2063282794990111,-0.4150374992788439,real only
+glove-25-angular,IVF-Flat,0.95,lid,constant-max,256.0,,1.0,0.6770999999999999,True,6.6951219512195115,3.0,real only
+glove-25-angular,IVF-Flat,0.95,lid,constant-median,32.0,,0.9613299999999999,0.10113333333333334,True,1.0,0.0,real only
+glove-25-angular,IVF-Flat,0.95,lid,default,1.0,,0.408,0.016200000000000003,False,0.16018457481872117,-5.0,real only
+glove-25-angular,IVF-Flat,0.95,lid,oracle,32.0,,0.9613299999999999,0.10113333333333334,True,1.0,0.0,real only

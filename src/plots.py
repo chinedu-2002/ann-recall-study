@@ -25,7 +25,22 @@ DATASET_LABEL = {
     "sift-128-euclidean": "SIFT-128 (image descriptors, euclidean)",
     "glove-100-angular": "GloVe-100 (word embeddings, angular)",
     "nytimes-256-angular": "NYTimes-256 (text documents, angular)",
+    "fashion-mnist-784-euclidean": "Fashion-MNIST-784 (images, euclidean)",
+    "mnist-784-euclidean": "MNIST-784 (digits, euclidean)",
+    "glove-25-angular": "GloVe-25 (word embeddings, angular)",
 }
+SHORT = {
+    "sift-128-euclidean": "SIFT", "glove-100-angular": "GloVe-100",
+    "nytimes-256-angular": "NYTimes", "fashion-mnist-784-euclidean": "Fashion-MNIST",
+    "mnist-784-euclidean": "MNIST", "glove-25-angular": "GloVe-25",
+}
+METHOD_COLOR = {"heuristic": "#2a78d6", "heuristic+margin": "#4a3aa7", "constant-max": "#eb6834",
+                "constant-median": "#1baf7a", "default": "#8f8e88", "oracle": "#0b0b0b"}
+METHOD_MARKER = {"heuristic": "o", "heuristic+margin": "D", "constant-max": "s",
+                 "constant-median": "^", "default": "X", "oracle": "*"}
+METHOD_LABEL = {"heuristic": "LID heuristic", "heuristic+margin": "LID heuristic + margin", "constant-max": "safe constant (max of training)",
+                "constant-median": "median constant", "default": "library default",
+                "oracle": "oracle (exhaustive sweep)"}
 
 
 def _style(ax):
@@ -176,3 +191,182 @@ def lid_vs_cost(gap_df, chars, out_path, target=0.95):
     fig.savefig(out_path, dpi=200, facecolor="white")
     plt.close(fig)
     return out_path
+
+
+def heuristic_fit(orc_by_family, chars, fits, out_path, target):
+    """Oracle setting against query-point LID, one panel per index family."""
+    fams = list(orc_by_family)
+    fig, axes = plt.subplots(1, len(fams), figsize=(6.35, 3.1), squeeze=False)
+    fig.patch.set_facecolor("white")
+    c = chars.set_index("dataset")
+    for ax, fam in zip(axes[0], fams):
+        _style(ax)
+        o = orc_by_family[fam].dropna(subset=["oracle_qp"]).copy()
+        o["lid"] = o["dataset"].map(c["lid_at_queries_mean"])
+        syn = o[o["dataset"].str.startswith("synthetic")]
+        real = o[~o["dataset"].str.startswith("synthetic")]
+        ax.scatter(syn["lid"], syn["oracle_qp"], s=34, facecolors="white",
+                   edgecolors=FAMILY_COLOR[fam], linewidths=1.4, zorder=3, label="synthetic")
+        ax.scatter(real["lid"], real["oracle_qp"], s=38, color=FAMILY_COLOR[fam],
+                   zorder=4, label="real")
+        # points that share a y value sit close together, so a few labels go left
+        left = {("HNSW", "glove-100-angular"), ("IVF-Flat", "glove-25-angular"),
+                ("HNSW", "glove-25-angular")}
+        for _, r in real.iterrows():
+            lft = (fam, r["dataset"]) in left
+            ax.annotate(SHORT.get(r["dataset"], r["dataset"]), (r["lid"], r["oracle_qp"]),
+                        textcoords="offset points", xytext=(-5 if lft else 5, 4 if lft else -3),
+                        ha="right" if lft else "left", fontsize=6.6, color=INK2)
+        a, b = fits[fam]
+        xs = np.linspace(min(o["lid"].min(), 3), o["lid"].max() * 1.05, 50)
+        ax.plot(xs, 2 ** (a + b * xs), color=MUTED, linewidth=1.2, linestyle="--", zorder=2)
+        ax.set_yscale("log", base=2)
+        ax.set_xlabel("local intrinsic dimensionality at queries", fontsize=8, color=INK2)
+        qname = "HNSW ef" if fam == "HNSW" else "IVF nprobe (nlist 1024)"
+        ax.set_ylabel(f"smallest {qname} for recall@10 \u2265 {target}", fontsize=7.6, color=INK2)
+        ax.set_title(f"{fam}", fontsize=9.5, color=INK, pad=6)
+        ax.legend(frameon=False, fontsize=7, loc="upper left", labelcolor=INK2)
+    fig.tight_layout()
+    fig.savefig(out_path, dpi=200, facecolor="white")
+    plt.close(fig)
+
+
+def heldout_panels(ev, out_path, target, family="HNSW"):
+    """Held-out evaluation: recall reached and latency paid, per method per dataset."""
+    e = ev[(ev["family"] == family) & (ev["target"] == target) & (ev["method"] != "oracle")]
+    order = [d for d in SHORT if d in set(e["dataset"])]
+    methods = ["heuristic", "heuristic+margin", "constant-max", "constant-median", "default"]
+    fig, axes = plt.subplots(1, 2, figsize=(6.35, 3.6))
+    fig.patch.set_facecolor("white")
+    y = np.arange(len(order))
+    off = {m: (i - 2) * 0.15 for i, m in enumerate(methods)}
+    for ax in axes:
+        _style(ax)
+    for m in methods:
+        sub = e[e["method"] == m].set_index("dataset").reindex(order)
+        mk = METHOD_MARKER[m]
+        axes[0].scatter(sub["recall"], y + off[m], s=28, color=METHOD_COLOR[m], marker=mk, zorder=3,
+                        label=METHOD_LABEL[m])
+        if m != "default":
+            axes[1].scatter(sub["latency_vs_oracle"], y + off[m], s=28, color=METHOD_COLOR[m],
+                            marker=mk, zorder=3)
+    axes[0].axvline(target, color=INK2, linewidth=0.9, linestyle="--", zorder=1)
+    axes[0].text(target, len(order) - 0.35, f" target {target}", fontsize=6.8, color=INK2, va="bottom")
+    axes[1].axvline(1.0, color=INK2, linewidth=0.9, linestyle="--", zorder=1)
+    axes[1].text(1.0, len(order) - 0.35, " oracle cost", fontsize=6.8, color=INK2, va="bottom")
+    for ax in axes:
+        ax.set_yticks(y)
+        ax.set_ylim(-0.6, len(order) - 0.1)
+    axes[0].set_yticklabels([SHORT[d] for d in order], fontsize=7.5, color=INK2)
+    axes[1].set_yticklabels([])
+    axes[0].set_xlabel("recall@10 reached on the held-out dataset", fontsize=7.8, color=INK2)
+    axes[1].set_xlabel("latency relative to oracle (log scale)", fontsize=7.8, color=INK2)
+    axes[1].set_xscale("log", base=2)
+    handles, labels = axes[0].get_legend_handles_labels()
+    fig.legend(handles, labels, loc="upper center", ncol=3, frameon=False, fontsize=7,
+               labelcolor=INK2, bbox_to_anchor=(0.5, 1.0), handletextpad=0.3, columnspacing=1.2)
+    fig.tight_layout(rect=[0, 0, 1, 0.86])
+    fig.savefig(out_path, dpi=200, facecolor="white")
+    plt.close(fig)
+
+
+def kpass_panels(agg, out_path, datasets_order):
+    """HNSW recall against ef at k = 1, 10, 100, default build, one panel per dataset."""
+    kcol = {1: "#1baf7a", 10: "#2a78d6", 100: "#eb6834"}
+    fig, axes = plt.subplots(1, len(datasets_order), figsize=(6.35, 2.6), squeeze=False)
+    fig.patch.set_facecolor("white")
+    for ax, ds in zip(axes[0], datasets_order):
+        _style(ax)
+        for k in (1, 10, 100):
+            g = agg[(agg["dataset"] == ds) & (agg["k"] == k)].sort_values("query_param")
+            if not len(g):
+                continue
+            ax.plot(g["query_param"], g["recall"], color=kcol[k], linewidth=1.8,
+                    marker="o", markersize=3, label=f"k = {k}", zorder=3)
+            d = g[g["query_param"] == 10]
+            if len(d):
+                ax.scatter(d["query_param"], d["recall"], s=80, facecolors="none",
+                           edgecolors=kcol[k], linewidths=1.6, zorder=4)
+        ax.axvline(10, color=MUTED, linewidth=0.8, linestyle=":", zorder=1)
+        ax.set_xscale("log", base=2)
+        ax.set_ylim(0.3, 1.02)
+        ax.set_title(SHORT.get(ds, ds), fontsize=9, color=INK, pad=5)
+        ax.set_xlabel("ef (log scale)", fontsize=7.6, color=INK2)
+    axes[0][0].set_ylabel("recall@k (tie-aware)", fontsize=7.8, color=INK2)
+    handles, labels = axes[0][0].get_legend_handles_labels()
+    fig.legend(handles, labels, loc="upper center", ncol=3, frameon=False, fontsize=7.5,
+               labelcolor=INK2, bbox_to_anchor=(0.5, 1.0))
+    fig.tight_layout(rect=[0, 0, 1, 0.88])
+    fig.savefig(out_path, dpi=200, facecolor="white")
+    plt.close(fig)
+
+
+def default_gap_dumbbell(gap_df, out_path, chars=None):
+    """Default recall vs the best recall at the same latency, one panel per family.
+
+    Rows are ordered by query-point LID when characteristics are supplied, so the
+    reader can see whether the gap grows with intrinsic dimensionality."""
+    fams = [f for f in ("HNSW", "IVF-Flat", "IVF-PQ") if f in set(gap_df["family"])]
+    fig, axes = plt.subplots(1, len(fams), figsize=(6.35, 2.9), sharey=True, squeeze=False)
+    fig.patch.set_facecolor("white")
+    order = [d for d in SHORT if d in set(gap_df["dataset"])]
+    if chars is not None:
+        lid = chars.set_index("dataset")["lid_at_queries_mean"]
+        order = sorted(order, key=lambda d: lid.get(d, 0))
+    y = np.arange(len(order))
+    for ax, fam in zip(axes[0], fams):
+        _style(ax)
+        g = gap_df[gap_df["family"] == fam].set_index("dataset").reindex(order)
+        for yi, (a, b) in enumerate(zip(g["default_recall"], g["best_recall_at_default_latency"])):
+            ax.plot([a, b], [yi, yi], color=FAMILY_COLOR[fam], linewidth=2, alpha=0.55, zorder=2)
+        ax.scatter(g["default_recall"], y, s=30, color="#8f8e88", zorder=3, label="library default")
+        ax.scatter(g["best_recall_at_default_latency"], y, s=30, color=FAMILY_COLOR[fam], zorder=4,
+                   label="best at same latency")
+        ax.set_xlim(0, 1.02)
+        ax.set_title(fam, fontsize=9, color=INK, pad=5)
+        ax.set_xlabel("recall@10", fontsize=7.8, color=INK2)
+    axes[0][0].set_yticks(y)
+    labels = [SHORT[d] for d in order]
+    if chars is not None:
+        labels = [f"{SHORT[d]}  ({lid[d]:.0f})" for d in order]
+    axes[0][0].set_yticklabels(labels, fontsize=7.4, color=INK2)
+    axes[0][0].set_ylabel("dataset  (LID)", fontsize=7.6, color=INK2)
+    from matplotlib.lines import Line2D
+    handles = [Line2D([], [], marker="o", linestyle="", color="#8f8e88", label="library default"),
+               Line2D([], [], marker="o", linestyle="", color=FAMILY_COLOR["HNSW"], label="best measured config at the same latency"),
+               Line2D([], [], marker="o", linestyle="", color=FAMILY_COLOR["IVF-Flat"], label=" "),
+               Line2D([], [], marker="o", linestyle="", color=FAMILY_COLOR["IVF-PQ"], label=" ")]
+    from matplotlib.legend_handler import HandlerTuple
+    fig.legend([handles[0], tuple(handles[1:])], ["library default", "best measured config at the same latency"],
+               handler_map={tuple: HandlerTuple(ndivide=None, pad=0.3)}, loc="upper center", ncol=2,
+               frameon=False, fontsize=7.4, labelcolor=INK2, bbox_to_anchor=(0.5, 1.0))
+    fig.tight_layout(rect=[0, 0, 1, 0.9])
+    fig.savefig(out_path, dpi=200, facecolor="white")
+    plt.close(fig)
+
+
+def size_panels(agg, orc, out_path):
+    """Week 7: how the HNSW default and the needed setting move with collection size."""
+    dcol = {"sift-128-euclidean": "#2a78d6", "glove-100-angular": "#eb6834"}
+    fig, axes = plt.subplots(1, 2, figsize=(6.35, 2.7))
+    fig.patch.set_facecolor("white")
+    for ax in axes:
+        _style(ax)
+    for ds, c in dcol.items():
+        d = agg[(agg.dataset == ds) & (agg.family == "HNSW") & (agg.query_param == 10)].sort_values("n_base")
+        axes[0].plot(d.n_base, d.recall, color=c, marker="o", markersize=4, linewidth=1.8, label=SHORT[ds])
+        o = orc[(orc.dataset == ds) & (orc.family == "HNSW") & (orc.target == 0.95)].sort_values("n_base")
+        axes[1].plot(o.n_base, o.oracle_qp, color=c, marker="o", markersize=4, linewidth=1.8, label=SHORT[ds])
+    for ax in axes:
+        ax.set_xscale("log")
+        ax.set_xlabel("vectors in the collection (log scale)", fontsize=7.8, color=INK2)
+    axes[0].set_ylabel("HNSW recall@10 at default ef", fontsize=7.8, color=INK2)
+    axes[0].set_ylim(0.4, 0.85)
+    axes[1].set_yscale("log", base=2)
+    axes[1].set_ylabel("smallest ef for recall@10 ≥ 0.95", fontsize=7.8, color=INK2)
+    axes[0].set_title("Default recall falls as the collection grows", fontsize=8.6, color=INK, pad=5)
+    axes[1].set_title("The ef needed rises as the collection grows", fontsize=8.6, color=INK, pad=5)
+    axes[0].legend(frameon=False, fontsize=7.4, labelcolor=INK2, loc="lower left")
+    fig.tight_layout()
+    fig.savefig(out_path, dpi=200, facecolor="white")
+    plt.close(fig)

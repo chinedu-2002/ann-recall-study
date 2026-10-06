@@ -1,0 +1,134 @@
+=== oracle settings by collection size (target 0.95) ===
+family                        HNSW  IVF-Flat
+dataset            n_base                   
+glove-100-angular  50000     256.0     192.0
+                   100000    256.0     128.0
+                   200000    512.0     128.0
+                   500000    640.0      96.0
+                   1183514  1024.0     128.0
+sift-128-euclidean 50000      32.0      48.0
+                   100000     40.0      32.0
+                   200000     48.0      32.0
+                   500000     64.0      24.0
+                   1000000    64.0      24.0
+
+=== default (ef=10) recall by collection size ===
+dataset  glove-100-angular  sift-128-euclidean
+n_base                                        
+50000               0.5617              0.8053
+100000              0.5350              0.7650
+200000              0.5030              0.7293
+500000              0.4580              0.7007
+1000000                NaN              0.6887
+1183514             0.4637                 NaN
+
+=== hubness ===
+                    dataset  lid_at_queries_mean  hubness_skew_k10
+         sift-128-euclidean                23.94              1.84
+          glove-100-angular                43.11              5.25
+        nytimes-256-angular                53.46              2.46
+fashion-mnist-784-euclidean                17.58              2.24
+        mnist-784-euclidean                15.95              0.91
+           glove-25-angular                18.19              1.76
+          synthetic-id4-128                 4.93             -0.02
+          synthetic-id8-128                 9.07              0.62
+         synthetic-id16-128                15.38              1.63
+         synthetic-id24-128                18.90              2.23
+         synthetic-id32-128                21.72              2.56
+         synthetic-id48-128                25.71              2.84
+
+=== held-out, six real datasets at their week 5-6 size ===
+  family  target                model         method  n  hits  min_recall  cost   err
+    HNSW    0.90                  LID          model  6     4       0.851 1.271 0.877
+    HNSW    0.90                  LID model + margin  6     5       0.874 1.819 1.270
+    HNSW    0.90        LID + hubness          model  6     4       0.874 1.178 0.578
+    HNSW    0.90        LID + hubness model + margin  6     5       0.890 1.463 0.867
+    HNSW    0.90           LID + size          model  6     5       0.851 1.190 0.657
+    HNSW    0.90           LID + size model + margin  6     5       0.874 1.480 0.877
+    HNSW    0.90 LID + size + hubness          model  6     5       0.874 1.104 0.352
+    HNSW    0.90 LID + size + hubness model + margin  6     5       0.874 1.266 0.613
+    HNSW    0.90                 none          model  6     4       0.665 0.971 1.852
+    HNSW    0.90                 none model + margin  6     4       0.772 2.424 2.563
+    HNSW    0.95                  LID          model  6     4       0.924 1.218 0.789
+    HNSW    0.95                  LID model + margin  6     5       0.937 1.550 1.000
+    HNSW    0.95        LID + hubness          model  6     4       0.924 1.163 0.676
+    HNSW    0.95        LID + hubness model + margin  6     5       0.937 1.474 0.903
+    HNSW    0.95           LID + size          model  6     4       0.924 1.102 0.579
+    HNSW    0.95           LID + size model + margin  6     5       0.937 1.300 0.623
+    HNSW    0.95 LID + size + hubness          model  6     4       0.924 1.075 0.554
+    HNSW    0.95 LID + size + hubness model + margin  6     5       0.924 1.195 0.638
+    HNSW    0.95                 none          model  6     4       0.745 0.954 2.246
+    HNSW    0.95                 none model + margin  6     4       0.851 2.730 3.079
+IVF-Flat    0.90                  LID          model  6     4       0.869 1.136 0.626
+IVF-Flat    0.90                  LID model + margin  6     6       0.904 1.509 0.736
+IVF-Flat    0.90        LID + hubness          model  6     4       0.869 1.247 0.764
+IVF-Flat    0.90        LID + hubness model + margin  6     6       0.904 1.615 0.833
+IVF-Flat    0.90           LID + size          model  6     4       0.869 1.169 0.695
+IVF-Flat    0.90           LID + size model + margin  6     6       0.904 1.579 0.833
+IVF-Flat    0.90 LID + size + hubness          model  6     4       0.869 1.284 0.833
+IVF-Flat    0.90 LID + size + hubness model + margin  6     6       0.904 1.691 0.931
+IVF-Flat    0.90                 none          model  6     4       0.770 0.908 1.431
+IVF-Flat    0.90                 none model + margin  6     4       0.870 2.140 1.972
+IVF-Flat    0.95                  LID          model  6     5       0.904 1.120 0.500
+IVF-Flat    0.95                  LID model + margin  6     5       0.938 1.478 0.764
+IVF-Flat    0.95        LID + hubness          model  6     4       0.904 1.066 0.569
+IVF-Flat    0.95        LID + hubness model + margin  6     5       0.938 1.478 0.764
+IVF-Flat    0.95           LID + size          model  6     5       0.904 1.173 0.597
+IVF-Flat    0.95           LID + size model + margin  6     5       0.938 1.544 0.833
+IVF-Flat    0.95 LID + size + hubness          model  6     4       0.904 1.116 0.667
+IVF-Flat    0.95 LID + size + hubness model + margin  6     5       0.938 1.471 0.736
+IVF-Flat    0.95                 none          model  6     4       0.816 0.950 1.862
+IVF-Flat    0.95                 none model + margin  6     4       0.895 2.192 2.305
+
+=== held-out, SIFT and GloVe-100 at all five sizes ===
+  family  target                model         method  n  hits  min_recall  cost   err
+    HNSW    0.90                  LID          model 10     5       0.808 0.828 0.763
+    HNSW    0.90                  LID model + margin 10     7       0.835 1.156 0.894
+    HNSW    0.90        LID + hubness          model 10     6       0.835 0.880 0.458
+    HNSW    0.90        LID + hubness model + margin 10     7       0.852 1.021 0.523
+    HNSW    0.90           LID + size          model 10     5       0.847 0.841 0.768
+    HNSW    0.90           LID + size model + margin 10     5       0.864 1.063 0.794
+    HNSW    0.90 LID + size + hubness          model 10     5       0.864 0.875 0.462
+    HNSW    0.90 LID + size + hubness model + margin 10     5       0.865 0.970 0.568
+    HNSW    0.90                 none          model 10     5       0.615 0.476 1.894
+    HNSW    0.90                 none model + margin 10     5       0.728 1.143 2.263
+    HNSW    0.95                  LID          model 10     7       0.885 0.870 0.642
+    HNSW    0.95                  LID model + margin 10     7       0.899 1.094 0.770
+    HNSW    0.95        LID + hubness          model 10     5       0.885 0.764 0.600
+    HNSW    0.95        LID + hubness model + margin 10     7       0.899 1.094 0.770
+    HNSW    0.95           LID + size          model 10     5       0.919 0.877 0.609
+    HNSW    0.95           LID + size model + margin 10     6       0.925 1.101 0.689
+    HNSW    0.95 LID + size + hubness          model 10     5       0.910 0.833 0.583
+    HNSW    0.95 LID + size + hubness model + margin 10     6       0.924 0.977 0.574
+    HNSW    0.95                 none          model 10     5       0.695 0.422 2.142
+    HNSW    0.95                 none model + margin 10     5       0.808 1.254 2.642
+IVF-Flat    0.90                  LID          model 10     7       0.866 1.082 0.434
+IVF-Flat    0.90                  LID model + margin 10    10       0.918 1.460 0.583
+IVF-Flat    0.90        LID + hubness          model 10     7       0.866 1.218 0.642
+IVF-Flat    0.90        LID + hubness model + margin 10    10       0.918 1.771 0.875
+IVF-Flat    0.90           LID + size          model 10     9       0.882 1.156 0.317
+IVF-Flat    0.90           LID + size model + margin 10    10       0.932 1.512 0.625
+IVF-Flat    0.90 LID + size + hubness          model 10     9       0.882 1.301 0.525
+IVF-Flat    0.90 LID + size + hubness model + margin 10    10       0.918 1.771 0.875
+IVF-Flat    0.90                 none          model 10     5       0.733 0.576 1.151
+IVF-Flat    0.90                 none model + margin 10     7       0.868 1.719 1.358
+IVF-Flat    0.95                  LID          model 10     9       0.946 1.191 0.417
+IVF-Flat    0.95                  LID model + margin 10    10       0.973 1.599 0.800
+IVF-Flat    0.95        LID + hubness          model 10     7       0.918 1.032 0.458
+IVF-Flat    0.95        LID + hubness model + margin 10    10       0.973 1.599 0.800
+IVF-Flat    0.95           LID + size          model 10     9       0.946 1.142 0.334
+IVF-Flat    0.95           LID + size model + margin 10    10       0.973 1.513 0.717
+IVF-Flat    0.95 LID + size + hubness          model 10     7       0.932 1.068 0.417
+IVF-Flat    0.95 LID + size + hubness model + margin 10    10       0.967 1.433 0.625
+IVF-Flat    0.95                 none          model 10     5       0.785 0.559 1.542
+IVF-Flat    0.95                 none model + margin 10     5       0.894 1.313 1.542
+HNSW|none [6.05] rms 2.046 rows 20
+HNSW|LID [2.024, 0.15] rms 0.618 rows 20
+HNSW|LID + size [-4.665, 0.145, 0.39] rms 0.385 rows 20
+HNSW|LID + hubness [2.084, 0.121, 0.278] rms 0.568 rows 20
+HNSW|LID + size + hubness [-4.542, 0.116, 0.387, 0.267] rms 0.306 rows 20
+IVF-Flat|none [5.042] rms 1.671 rows 20
+IVF-Flat|LID [1.725, 0.124] rms 0.461 rows 20
+IVF-Flat|LID + size [3.118, 0.125, -0.081] rms 0.45 rows 20
+IVF-Flat|LID + hubness [1.726, 0.124, 0.001] rms 0.461 rows 20
+IVF-Flat|LID + size + hubness [3.119, 0.125, -0.081, 0.003] rms 0.45 rows 20

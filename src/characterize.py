@@ -111,3 +111,21 @@ def characterize(base, queries, metric, n_sample=20000, seed=0):
     out.update(cluster_structure(sample, seed=seed))
     out["dim_ratio"] = out["intrinsic_dim_mle"] / out["ambient_dim"]
     return out
+
+
+def hubness(sample, metric, k=10):
+    """Skewness of the k-occurrence distribution (Radovanovic et al., 2010).
+
+    Count how often each sample point appears in the k-nearest-neighbor lists of
+    the others. In high-dimensional data a few points ("hubs") appear in very many
+    lists, which skews the distribution right. Word embeddings are known for this,
+    and hubs could make graph search harder in a way LID alone does not capture.
+    """
+    d = sample.shape[1]
+    index = faiss.IndexFlatL2(d) if metric == "euclidean" else faiss.IndexFlatIP(d)
+    index.add(sample)
+    _, ids = index.search(sample, k + 1)
+    ids = ids[:, 1:]                                   # drop the self match
+    counts = np.bincount(ids.ravel(), minlength=sample.shape[0]).astype(float)
+    m, s = counts.mean(), counts.std()
+    return float(np.mean((counts - m) ** 3) / s ** 3) if s > 0 else 0.0

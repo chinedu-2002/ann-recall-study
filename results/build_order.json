@@ -1,0 +1,44 @@
+[
+  {
+    "dataset": "nytimes-256-angular",
+    "build_threads": 1,
+    "insertion_order_seed": 1,
+    "recall_tieaware_ef10": 0.64333,
+    "build_s": 159.2
+  },
+  {
+    "dataset": "nytimes-256-angular",
+    "build_threads": 1,
+    "insertion_order_seed": 2,
+    "recall_tieaware_ef10": 0.646,
+    "build_s": 161.6
+  },
+  {
+    "dataset": "nytimes-256-angular",
+    "build_threads": 1,
+    "insertion_order_seed": 3,
+    "recall_tieaware_ef10": 0.652,
+    "build_s": 164.3
+  },
+  {
+    "dataset": "sift-128-euclidean",
+    "build_threads": 1,
+    "insertion_order_seed": 1,
+    "recall_tieaware_ef10": 0.74,
+    "build_s": 86.0
+  },
+  {
+    "dataset": "sift-128-euclidean",
+    "build_threads": 1,
+    "insertion_order_seed": 2,
+    "recall_tieaware_ef10": 0.733,
+    "build_s": 85.1
+  },
+  {
+    "dataset": "sift-128-euclidean",
+    "build_threads": 1,
+    "insertion_order_seed": 3,
+    "recall_tieaware_ef10": 0.709,
+    "build_s": 84.3
+  }
+]

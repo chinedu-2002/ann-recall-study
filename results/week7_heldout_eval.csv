@@ -1,0 +1,641 @@
+dataset,n_base,family,model,method,target,setting,oracle_qp,recall,hit,latency_vs_oracle,abs_log2_error,test
+sift-128-euclidean,200000,HNSW,none,model,0.9,48.0,32.0,0.9613299999999999,True,1.2300275482093666,0.5849625007211561,primary
+sift-128-euclidean,200000,HNSW,none,model + margin,0.9,160.0,32.0,0.9979999999999999,True,3.5940082644628104,2.3219280948873626,primary
+glove-100-angular,200000,HNSW,none,model,0.9,24.0,192.0,0.66533,False,0.1532120311919792,3.0,primary
+glove-100-angular,200000,HNSW,none,model + margin,0.9,48.0,192.0,0.7719999999999999,False,0.28585220943186035,2.0,primary
+nytimes-256-angular,200000,HNSW,none,model,0.9,40.0,160.0,0.8126700000000001,False,0.2976447769465226,2.0,primary
+nytimes-256-angular,200000,HNSW,none,model + margin,0.9,128.0,160.0,0.89267,False,0.8844555278470491,0.3219280948873626,primary
+fashion-mnist-784-euclidean,60000,HNSW,none,model,0.9,48.0,10.0,0.99667,True,2.794515256855929,2.263034405833794,primary
+fashion-mnist-784-euclidean,60000,HNSW,none,model + margin,0.9,160.0,10.0,0.999,True,6.3140208574739285,4.0,primary
+mnist-784-euclidean,60000,HNSW,none,model,0.9,48.0,10.0,0.99533,True,3.0765940902021773,2.263034405833794,primary
+mnist-784-euclidean,60000,HNSW,none,model + margin,0.9,160.0,10.0,0.99933,True,7.548989113530327,4.0,primary
+glove-25-angular,200000,HNSW,none,model,0.9,48.0,24.0,0.961,True,1.7419760855884205,1.0,primary
+glove-25-angular,200000,HNSW,none,model + margin,0.9,160.0,24.0,0.99533,True,4.6784140969163,2.7369655941662066,primary
+sift-128-euclidean,50000,HNSW,none,model,0.9,48.0,20.0,0.9819999999999999,True,1.9970414201183435,1.2630344058337934,all sizes
+sift-128-euclidean,50000,HNSW,none,model + margin,0.9,160.0,20.0,0.99967,True,7.89250493096647,3.0,all sizes
+sift-128-euclidean,100000,HNSW,none,model,0.9,48.0,24.0,0.97033,True,1.8316008316008316,1.0,all sizes
+sift-128-euclidean,100000,HNSW,none,model + margin,0.9,160.0,24.0,0.999,True,6.629937629937631,2.7369655941662066,all sizes
+sift-128-euclidean,200000,HNSW,none,model,0.9,48.0,32.0,0.9613299999999999,True,1.2300275482093666,0.5849625007211561,all sizes
+sift-128-euclidean,200000,HNSW,none,model + margin,0.9,160.0,32.0,0.9979999999999999,True,3.5940082644628104,2.3219280948873626,all sizes
+sift-128-euclidean,500000,HNSW,none,model,0.9,48.0,32.0,0.94,True,1.2264770240700218,0.5849625007211561,all sizes
+sift-128-euclidean,500000,HNSW,none,model + margin,0.9,160.0,32.0,0.99133,True,3.548413566739606,2.3219280948873626,all sizes
+sift-128-euclidean,1000000,HNSW,none,model,0.9,48.0,40.0,0.93667,True,1.2347926267281106,0.26303440583379345,all sizes
+sift-128-euclidean,1000000,HNSW,none,model + margin,0.9,160.0,40.0,0.991,True,3.7255760368663595,2.0,all sizes
+glove-100-angular,50000,HNSW,none,model,0.9,24.0,128.0,0.71433,False,0.23414141414141412,2.415037499278844,all sizes
+glove-100-angular,50000,HNSW,none,model + margin,0.9,48.0,128.0,0.81767,False,0.3931313131313131,1.415037499278844,all sizes
+glove-100-angular,100000,HNSW,none,model,0.9,24.0,128.0,0.6793299999999999,False,0.22037668693459886,2.415037499278844,all sizes
+glove-100-angular,100000,HNSW,none,model + margin,0.9,48.0,128.0,0.79467,False,0.43615601364377876,1.415037499278844,all sizes
+glove-100-angular,200000,HNSW,none,model,0.9,24.0,192.0,0.66533,False,0.1532120311919792,3.0,all sizes
+glove-100-angular,200000,HNSW,none,model + margin,0.9,48.0,192.0,0.7719999999999999,False,0.28585220943186035,2.0,all sizes
+glove-100-angular,500000,HNSW,none,model,0.9,24.0,256.0,0.627,False,0.13186916768781223,3.415037499278844,all sizes
+glove-100-angular,500000,HNSW,none,model + margin,0.9,48.0,256.0,0.7399999999999999,False,0.21580733339617308,2.415037499278844,all sizes
+glove-100-angular,1183514,HNSW,none,model,0.9,24.0,384.0,0.61467,False,0.08335276288179062,4.0,all sizes
+glove-100-angular,1183514,HNSW,none,model + margin,0.9,48.0,384.0,0.7276700000000002,False,0.144206108650035,3.0,all sizes
+sift-128-euclidean,200000,HNSW,LID,model,0.9,40.0,32.0,0.94867,True,1.1518595041322315,0.3219280948873626,primary
+sift-128-euclidean,200000,HNSW,LID,model + margin,0.9,64.0,32.0,0.98,True,1.5612947658402205,1.0,primary
+glove-100-angular,200000,HNSW,LID,model,0.9,96.0,192.0,0.85133,False,0.5154845896769401,1.0,primary
+glove-100-angular,200000,HNSW,LID,model + margin,0.9,128.0,192.0,0.87433,False,0.8349795766802822,0.5849625007211561,primary
+nytimes-256-angular,200000,HNSW,LID,model,0.9,512.0,160.0,0.952,True,2.8960931005818784,1.6780719051126374,primary
+nytimes-256-angular,200000,HNSW,LID,model + margin,0.9,768.0,160.0,0.9653300000000001,True,4.371127736215018,2.2630344058337934,primary
+fashion-mnist-784-euclidean,60000,HNSW,LID,model,0.9,20.0,10.0,0.9816699999999999,True,1.555813055233681,1.0000000000000004,primary
+fashion-mnist-784-euclidean,60000,HNSW,LID,model + margin,0.9,32.0,10.0,0.99433,True,2.1235998455001934,1.6780719051126378,primary
+mnist-784-euclidean,60000,HNSW,LID,model,0.9,20.0,10.0,0.9739999999999999,True,1.8518662519440126,1.0000000000000004,primary
+mnist-784-euclidean,60000,HNSW,LID,model + margin,0.9,32.0,10.0,0.987,True,2.3930793157076202,1.6780719051126378,primary
+glove-25-angular,200000,HNSW,LID,model,0.9,20.0,24.0,0.88333,False,0.8495909376966647,0.26303440583379345,primary
+glove-25-angular,200000,HNSW,LID,model + margin,0.9,32.0,24.0,0.93133,True,1.249213341724355,0.4150374992788439,primary
+sift-128-euclidean,50000,HNSW,LID,model,0.9,40.0,20.0,0.97433,True,1.7396449704142012,1.0,all sizes
+sift-128-euclidean,50000,HNSW,LID,model + margin,0.9,64.0,20.0,0.9893300000000002,True,2.4881656804733727,1.6780719051126374,all sizes
+sift-128-euclidean,100000,HNSW,LID,model,0.9,40.0,24.0,0.959,True,1.5301455301455302,0.7369655941662066,all sizes
+sift-128-euclidean,100000,HNSW,LID,model + margin,0.9,64.0,24.0,0.9856700000000002,True,2.4747054747054746,1.415037499278844,all sizes
+sift-128-euclidean,200000,HNSW,LID,model,0.9,40.0,32.0,0.94867,True,1.1518595041322315,0.3219280948873626,all sizes
+sift-128-euclidean,200000,HNSW,LID,model + margin,0.9,64.0,32.0,0.98,True,1.5612947658402205,1.0,all sizes
+sift-128-euclidean,500000,HNSW,LID,model,0.9,40.0,32.0,0.92367,True,1.1487964989059083,0.3219280948873626,all sizes
+sift-128-euclidean,500000,HNSW,LID,model + margin,0.9,64.0,32.0,0.9613299999999999,True,1.5812363238512037,1.0,all sizes
+sift-128-euclidean,1000000,HNSW,LID,model,0.9,40.0,40.0,0.919,True,1.0,0.0,all sizes
+sift-128-euclidean,1000000,HNSW,LID,model + margin,0.9,64.0,40.0,0.96,True,1.6430875576036867,0.6780719051126374,all sizes
+glove-100-angular,50000,HNSW,LID,model,0.9,96.0,128.0,0.89233,False,0.7593939393939393,0.4150374992788439,all sizes
+glove-100-angular,50000,HNSW,LID,model + margin,0.9,128.0,128.0,0.916,True,1.0,0.0,all sizes
+glove-100-angular,100000,HNSW,LID,model,0.9,96.0,128.0,0.87333,False,0.7382470710366307,0.4150374992788439,all sizes
+glove-100-angular,100000,HNSW,LID,model + margin,0.9,128.0,128.0,0.9010000000000001,True,1.0,0.0,all sizes
+glove-100-angular,200000,HNSW,LID,model,0.9,96.0,192.0,0.85133,False,0.5154845896769401,1.0,all sizes
+glove-100-angular,200000,HNSW,LID,model + margin,0.9,128.0,192.0,0.87433,False,0.8349795766802822,0.5849625007211561,all sizes
+glove-100-angular,500000,HNSW,LID,model,0.9,96.0,256.0,0.81867,False,0.40781412008671886,1.415037499278844,all sizes
+glove-100-angular,500000,HNSW,LID,model + margin,0.9,128.0,256.0,0.84667,False,0.5299274201149968,1.0,all sizes
+glove-100-angular,1183514,HNSW,LID,model,0.9,96.0,384.0,0.80767,False,0.3668978782933085,2.0,all sizes
+glove-100-angular,1183514,HNSW,LID,model + margin,0.9,128.0,384.0,0.835,False,0.3860165539752856,1.584962500721156,all sizes
+sift-128-euclidean,200000,HNSW,LID + size,model,0.9,40.0,32.0,0.94867,True,1.1518595041322315,0.3219280948873626,primary
+sift-128-euclidean,200000,HNSW,LID + size,model + margin,0.9,48.0,32.0,0.9613299999999999,True,1.2300275482093666,0.5849625007211561,primary
+glove-100-angular,200000,HNSW,LID + size,model,0.9,96.0,192.0,0.85133,False,0.5154845896769401,1.0,primary
+glove-100-angular,200000,HNSW,LID + size,model + margin,0.9,128.0,192.0,0.87433,False,0.8349795766802822,0.5849625007211561,primary
+nytimes-256-angular,200000,HNSW,LID + size,model,0.9,512.0,160.0,0.952,True,2.8960931005818784,1.6780719051126374,primary
+nytimes-256-angular,200000,HNSW,LID + size,model + margin,0.9,640.0,160.0,0.961,True,3.6551953449709065,1.9999999999999991,primary
+fashion-mnist-784-euclidean,60000,HNSW,LID + size,model,0.9,16.0,10.0,0.972,True,1.3518733101583622,0.6780719051126378,primary
+fashion-mnist-784-euclidean,60000,HNSW,LID + size,model + margin,0.9,20.0,10.0,0.9816699999999999,True,1.555813055233681,1.0000000000000004,primary
+mnist-784-euclidean,60000,HNSW,LID + size,model,0.9,12.0,10.0,0.94333,True,1.2227838258164854,0.2630344058337939,primary
+mnist-784-euclidean,60000,HNSW,LID + size,model + margin,0.9,16.0,10.0,0.96467,True,1.4385692068429239,0.6780719051126378,primary
+glove-25-angular,200000,HNSW,LID + size,model,0.9,24.0,24.0,0.90667,True,1.0,0.0,primary
+glove-25-angular,200000,HNSW,LID + size,model + margin,0.9,32.0,24.0,0.93133,True,1.249213341724355,0.4150374992788439,primary
+sift-128-euclidean,50000,HNSW,LID + size,model,0.9,20.0,20.0,0.906,True,1.0,0.0,all sizes
+sift-128-euclidean,50000,HNSW,LID + size,model + margin,0.9,32.0,20.0,0.959,True,1.4467455621301777,0.6780719051126374,all sizes
+sift-128-euclidean,100000,HNSW,LID + size,model,0.9,32.0,24.0,0.943,True,1.275121275121275,0.4150374992788439,all sizes
+sift-128-euclidean,100000,HNSW,LID + size,model + margin,0.9,40.0,24.0,0.959,True,1.5301455301455302,0.7369655941662066,all sizes
+sift-128-euclidean,200000,HNSW,LID + size,model,0.9,40.0,32.0,0.94867,True,1.1518595041322315,0.3219280948873626,all sizes
+sift-128-euclidean,200000,HNSW,LID + size,model + margin,0.9,48.0,32.0,0.9613299999999999,True,1.2300275482093666,0.5849625007211561,all sizes
+sift-128-euclidean,500000,HNSW,LID + size,model,0.9,64.0,32.0,0.9613299999999999,True,1.5812363238512037,1.0,all sizes
+sift-128-euclidean,500000,HNSW,LID + size,model + margin,0.9,80.0,32.0,0.9739999999999999,True,2.3175601750547044,1.3219280948873626,all sizes
+sift-128-euclidean,1000000,HNSW,LID + size,model,0.9,80.0,40.0,0.97167,True,1.8458525345622117,1.0,all sizes
+sift-128-euclidean,1000000,HNSW,LID + size,model + margin,0.9,96.0,40.0,0.97867,True,2.2297235023041475,1.2630344058337934,all sizes
+glove-100-angular,50000,HNSW,LID + size,model,0.9,64.0,128.0,0.854,False,0.5084848484848484,1.0,all sizes
+glove-100-angular,50000,HNSW,LID + size,model + margin,0.9,80.0,128.0,0.874,False,0.6393939393939393,0.6780719051126374,all sizes
+glove-100-angular,100000,HNSW,LID + size,model,0.9,80.0,128.0,0.858,False,0.6731425181669879,0.6780719051126374,all sizes
+glove-100-angular,100000,HNSW,LID + size,model + margin,0.9,96.0,128.0,0.87333,False,0.7382470710366307,0.4150374992788439,all sizes
+glove-100-angular,200000,HNSW,LID + size,model,0.9,96.0,192.0,0.85133,False,0.5154845896769401,1.0,all sizes
+glove-100-angular,200000,HNSW,LID + size,model + margin,0.9,128.0,192.0,0.87433,False,0.8349795766802822,0.5849625007211561,all sizes
+glove-100-angular,500000,HNSW,LID + size,model,0.9,128.0,256.0,0.84667,False,0.5299274201149968,1.0,all sizes
+glove-100-angular,500000,HNSW,LID + size,model + margin,0.9,160.0,256.0,0.8649999999999999,False,0.6579790743708173,0.6780719051126374,all sizes
+glove-100-angular,1183514,HNSW,LID + size,model,0.9,160.0,384.0,0.852,False,0.4392632315224995,1.2630344058337934,all sizes
+glove-100-angular,1183514,HNSW,LID + size,model + margin,0.9,192.0,384.0,0.8643300000000002,False,0.5055957099557006,1.0,all sizes
+sift-128-euclidean,200000,HNSW,LID + hubness,model,0.9,32.0,32.0,0.92833,True,1.0,0.0,primary
+sift-128-euclidean,200000,HNSW,LID + hubness,model + margin,0.9,40.0,32.0,0.94867,True,1.1518595041322315,0.3219280948873626,primary
+glove-100-angular,200000,HNSW,LID + hubness,model,0.9,128.0,192.0,0.87433,False,0.8349795766802822,0.5849625007211561,primary
+glove-100-angular,200000,HNSW,LID + hubness,model + margin,0.9,160.0,192.0,0.89033,False,0.7823988117341255,0.26303440583379345,primary
+nytimes-256-angular,200000,HNSW,LID + hubness,model,0.9,256.0,160.0,0.92067,True,1.534330839567747,0.6780719051126374,primary
+nytimes-256-angular,200000,HNSW,LID + hubness,model + margin,0.9,384.0,160.0,0.93967,True,2.134164588528678,1.2630344058337934,primary
+fashion-mnist-784-euclidean,60000,HNSW,LID + hubness,model,0.9,24.0,10.0,0.99033,True,1.704519119351101,1.263034405833794,primary
+fashion-mnist-784-euclidean,60000,HNSW,LID + hubness,model + margin,0.9,32.0,10.0,0.99433,True,2.1235998455001934,1.6780719051126378,primary
+mnist-784-euclidean,60000,HNSW,LID + hubness,model,0.9,16.0,10.0,0.96467,True,1.4385692068429239,0.6780719051126378,primary
+mnist-784-euclidean,60000,HNSW,LID + hubness,model + margin,0.9,24.0,10.0,0.98067,True,1.923794712286159,1.263034405833794,primary
+glove-25-angular,200000,HNSW,LID + hubness,model,0.9,20.0,24.0,0.88333,False,0.8495909376966647,0.26303440583379345,primary
+glove-25-angular,200000,HNSW,LID + hubness,model + margin,0.9,32.0,24.0,0.93133,True,1.249213341724355,0.4150374992788439,primary
+sift-128-euclidean,50000,HNSW,LID + hubness,model,0.9,32.0,20.0,0.959,True,1.4467455621301777,0.6780719051126374,all sizes
+sift-128-euclidean,50000,HNSW,LID + hubness,model + margin,0.9,40.0,20.0,0.97433,True,1.7396449704142012,1.0,all sizes
+sift-128-euclidean,100000,HNSW,LID + hubness,model,0.9,32.0,24.0,0.943,True,1.275121275121275,0.4150374992788439,all sizes
+sift-128-euclidean,100000,HNSW,LID + hubness,model + margin,0.9,40.0,24.0,0.959,True,1.5301455301455302,0.7369655941662066,all sizes
+sift-128-euclidean,200000,HNSW,LID + hubness,model,0.9,32.0,32.0,0.92833,True,1.0,0.0,all sizes
+sift-128-euclidean,200000,HNSW,LID + hubness,model + margin,0.9,40.0,32.0,0.94867,True,1.1518595041322315,0.3219280948873626,all sizes
+sift-128-euclidean,500000,HNSW,LID + hubness,model,0.9,32.0,32.0,0.90333,True,1.0,0.0,all sizes
+sift-128-euclidean,500000,HNSW,LID + hubness,model + margin,0.9,40.0,32.0,0.92367,True,1.1487964989059083,0.3219280948873626,all sizes
+sift-128-euclidean,1000000,HNSW,LID + hubness,model,0.9,32.0,40.0,0.8930000000000001,False,0.8870967741935484,0.3219280948873626,all sizes
+sift-128-euclidean,1000000,HNSW,LID + hubness,model + margin,0.9,40.0,40.0,0.919,True,1.0,0.0,all sizes
+glove-100-angular,50000,HNSW,LID + hubness,model,0.9,128.0,128.0,0.916,True,1.0,0.0,all sizes
+glove-100-angular,50000,HNSW,LID + hubness,model + margin,0.9,160.0,128.0,0.93633,True,1.23010101010101,0.3219280948873626,all sizes
+glove-100-angular,100000,HNSW,LID + hubness,model,0.9,128.0,128.0,0.9010000000000001,True,1.0,0.0,all sizes
+glove-100-angular,100000,HNSW,LID + hubness,model + margin,0.9,160.0,128.0,0.92,True,1.2516683968559987,0.3219280948873626,all sizes
+glove-100-angular,200000,HNSW,LID + hubness,model,0.9,128.0,192.0,0.87433,False,0.8349795766802822,0.5849625007211561,all sizes
+glove-100-angular,200000,HNSW,LID + hubness,model + margin,0.9,160.0,192.0,0.89033,False,0.7823988117341255,0.26303440583379345,all sizes
+glove-100-angular,500000,HNSW,LID + hubness,model,0.9,128.0,256.0,0.84667,False,0.5299274201149968,1.0,all sizes
+glove-100-angular,500000,HNSW,LID + hubness,model + margin,0.9,160.0,256.0,0.8649999999999999,False,0.6579790743708173,0.6780719051126374,all sizes
+glove-100-angular,1183514,HNSW,LID + hubness,model,0.9,128.0,384.0,0.835,False,0.3860165539752856,1.584962500721156,all sizes
+glove-100-angular,1183514,HNSW,LID + hubness,model + margin,0.9,160.0,384.0,0.852,False,0.4392632315224995,1.2630344058337934,all sizes
+sift-128-euclidean,200000,HNSW,LID + size + hubness,model,0.9,32.0,32.0,0.92833,True,1.0,0.0,primary
+sift-128-euclidean,200000,HNSW,LID + size + hubness,model + margin,0.9,40.0,32.0,0.94867,True,1.1518595041322315,0.3219280948873626,primary
+glove-100-angular,200000,HNSW,LID + size + hubness,model,0.9,128.0,192.0,0.87433,False,0.8349795766802822,0.5849625007211561,primary
+glove-100-angular,200000,HNSW,LID + size + hubness,model + margin,0.9,128.0,192.0,0.87433,False,0.8349795766802822,0.5849625007211561,primary
+nytimes-256-angular,200000,HNSW,LID + size + hubness,model,0.9,192.0,160.0,0.91033,True,1.1415904682737599,0.26303440583379345,primary
+nytimes-256-angular,200000,HNSW,LID + size + hubness,model + margin,0.9,256.0,160.0,0.92067,True,1.534330839567747,0.6780719051126374,primary
+fashion-mnist-784-euclidean,60000,HNSW,LID + size + hubness,model,0.9,20.0,10.0,0.9816699999999999,True,1.555813055233681,1.0000000000000004,primary
+fashion-mnist-784-euclidean,60000,HNSW,LID + size + hubness,model + margin,0.9,20.0,10.0,0.9816699999999999,True,1.555813055233681,1.0000000000000004,primary
+mnist-784-euclidean,60000,HNSW,LID + size + hubness,model,0.9,12.0,10.0,0.94333,True,1.2227838258164854,0.2630344058337939,primary
+mnist-784-euclidean,60000,HNSW,LID + size + hubness,model + margin,0.9,16.0,10.0,0.96467,True,1.4385692068429239,0.6780719051126378,primary
+glove-25-angular,200000,HNSW,LID + size + hubness,model,0.9,24.0,24.0,0.90667,True,1.0,0.0,primary
+glove-25-angular,200000,HNSW,LID + size + hubness,model + margin,0.9,32.0,24.0,0.93133,True,1.249213341724355,0.4150374992788439,primary
+sift-128-euclidean,50000,HNSW,LID + size + hubness,model,0.9,20.0,20.0,0.906,True,1.0,0.0,all sizes
+sift-128-euclidean,50000,HNSW,LID + size + hubness,model + margin,0.9,20.0,20.0,0.906,True,1.0,0.0,all sizes
+sift-128-euclidean,100000,HNSW,LID + size + hubness,model,0.9,24.0,24.0,0.91033,True,1.0,0.0,all sizes
+sift-128-euclidean,100000,HNSW,LID + size + hubness,model + margin,0.9,32.0,24.0,0.943,True,1.275121275121275,0.4150374992788439,all sizes
+sift-128-euclidean,200000,HNSW,LID + size + hubness,model,0.9,32.0,32.0,0.92833,True,1.0,0.0,all sizes
+sift-128-euclidean,200000,HNSW,LID + size + hubness,model + margin,0.9,40.0,32.0,0.94867,True,1.1518595041322315,0.3219280948873626,all sizes
+sift-128-euclidean,500000,HNSW,LID + size + hubness,model,0.9,48.0,32.0,0.94,True,1.2264770240700218,0.5849625007211561,all sizes
+sift-128-euclidean,500000,HNSW,LID + size + hubness,model + margin,0.9,64.0,32.0,0.9613299999999999,True,1.5812363238512037,1.0,all sizes
+sift-128-euclidean,1000000,HNSW,LID + size + hubness,model,0.9,64.0,40.0,0.96,True,1.6430875576036867,0.6780719051126374,all sizes
+sift-128-euclidean,1000000,HNSW,LID + size + hubness,model + margin,0.9,80.0,40.0,0.97167,True,1.8458525345622117,1.0,all sizes
+glove-100-angular,50000,HNSW,LID + size + hubness,model,0.9,80.0,128.0,0.874,False,0.6393939393939393,0.6780719051126374,all sizes
+glove-100-angular,50000,HNSW,LID + size + hubness,model + margin,0.9,80.0,128.0,0.874,False,0.6393939393939393,0.6780719051126374,all sizes
+glove-100-angular,100000,HNSW,LID + size + hubness,model,0.9,96.0,128.0,0.87333,False,0.7382470710366307,0.4150374992788439,all sizes
+glove-100-angular,100000,HNSW,LID + size + hubness,model + margin,0.9,96.0,128.0,0.87333,False,0.7382470710366307,0.4150374992788439,all sizes
+glove-100-angular,200000,HNSW,LID + size + hubness,model,0.9,128.0,192.0,0.87433,False,0.8349795766802822,0.5849625007211561,all sizes
+glove-100-angular,200000,HNSW,LID + size + hubness,model + margin,0.9,128.0,192.0,0.87433,False,0.8349795766802822,0.5849625007211561,all sizes
+glove-100-angular,500000,HNSW,LID + size + hubness,model,0.9,160.0,256.0,0.8649999999999999,False,0.6579790743708173,0.6780719051126374,all sizes
+glove-100-angular,500000,HNSW,LID + size + hubness,model + margin,0.9,160.0,256.0,0.8649999999999999,False,0.6579790743708173,0.6780719051126374,all sizes
+glove-100-angular,1183514,HNSW,LID + size + hubness,model,0.9,192.0,384.0,0.8643300000000002,False,0.5055957099557006,1.0,all sizes
+glove-100-angular,1183514,HNSW,LID + size + hubness,model + margin,0.9,256.0,384.0,0.8853300000000001,False,0.6661809279552344,0.5849625007211561,all sizes
+sift-128-euclidean,200000,HNSW,none,model,0.95,80.0,48.0,0.9896699999999999,True,1.7150055991041435,0.7369655941662066,primary
+sift-128-euclidean,200000,HNSW,none,model + margin,0.95,384.0,48.0,0.99933,True,5.992441209406496,3.0,primary
+glove-100-angular,200000,HNSW,none,model,0.95,40.0,512.0,0.74467,False,0.12149761838049873,3.6780719051126374,primary
+glove-100-angular,200000,HNSW,none,model + margin,0.95,96.0,512.0,0.85133,False,0.24310030820958248,2.415037499278844,primary
+nytimes-256-angular,200000,HNSW,none,model,0.95,64.0,512.0,0.8523299999999999,False,0.1651549942594719,3.0,primary
+nytimes-256-angular,200000,HNSW,none,model + margin,0.95,256.0,512.0,0.92067,False,0.5297933409873709,1.0,primary
+fashion-mnist-784-euclidean,60000,HNSW,none,model,0.95,80.0,12.0,0.99833,True,3.739145781856689,2.7369655941662066,primary
+fashion-mnist-784-euclidean,60000,HNSW,none,model + margin,0.95,320.0,12.0,0.99933,True,9.408753971055418,4.736965594166206,primary
+mnist-784-euclidean,60000,HNSW,none,model,0.95,80.0,16.0,0.99767,True,3.0810810810810807,2.3219280948873626,primary
+mnist-784-euclidean,60000,HNSW,none,model + margin,0.95,320.0,16.0,1.0,True,9.212432432432431,4.321928094887362,primary
+glove-25-angular,200000,HNSW,none,model,0.95,80.0,40.0,0.9853299999999999,True,1.9073212018620398,1.0,primary
+glove-25-angular,200000,HNSW,none,model + margin,0.95,320.0,40.0,0.999,True,6.192551840880237,2.999999999999999,primary
+sift-128-euclidean,50000,HNSW,none,model,0.95,80.0,32.0,0.9940000000000001,True,2.0647580095432856,1.3219280948873626,all sizes
+sift-128-euclidean,50000,HNSW,none,model + margin,0.95,384.0,32.0,1.0,True,9.141104294478527,3.584962500721156,all sizes
+sift-128-euclidean,100000,HNSW,none,model,0.95,80.0,40.0,0.993,True,1.8179347826086958,1.0,all sizes
+sift-128-euclidean,100000,HNSW,none,model + margin,0.95,384.0,40.0,0.99967,True,7.848731884057971,3.2630344058337934,all sizes
+sift-128-euclidean,200000,HNSW,none,model,0.95,80.0,48.0,0.9896699999999999,True,1.7150055991041435,0.7369655941662066,all sizes
+sift-128-euclidean,200000,HNSW,none,model + margin,0.95,384.0,48.0,0.99933,True,5.992441209406496,3.0,all sizes
+sift-128-euclidean,500000,HNSW,none,model,0.95,80.0,64.0,0.9739999999999999,True,1.4656633800380556,0.3219280948873626,all sizes
+sift-128-euclidean,500000,HNSW,none,model + margin,0.95,384.0,64.0,0.9986700000000001,True,5.133713890330392,2.584962500721156,all sizes
+sift-128-euclidean,1000000,HNSW,none,model,0.95,80.0,64.0,0.97167,True,1.12340485205441,0.3219280948873626,all sizes
+sift-128-euclidean,1000000,HNSW,none,model + margin,0.95,384.0,64.0,0.99933,True,4.517879680269247,2.584962500721156,all sizes
+glove-100-angular,50000,HNSW,none,model,0.95,40.0,256.0,0.79467,False,0.1624031007751938,2.6780719051126374,all sizes
+glove-100-angular,50000,HNSW,none,model + margin,0.95,96.0,256.0,0.89233,False,0.3642441860465116,1.415037499278844,all sizes
+glove-100-angular,100000,HNSW,none,model,0.95,40.0,256.0,0.76233,False,0.18900126422250316,2.6780719051126374,all sizes
+glove-100-angular,100000,HNSW,none,model + margin,0.95,96.0,256.0,0.87333,False,0.3933312262958281,1.415037499278844,all sizes
+glove-100-angular,200000,HNSW,none,model,0.95,40.0,512.0,0.74467,False,0.12149761838049873,3.6780719051126374,all sizes
+glove-100-angular,200000,HNSW,none,model + margin,0.95,96.0,512.0,0.85133,False,0.24310030820958248,2.415037499278844,all sizes
+glove-100-angular,500000,HNSW,none,model,0.95,40.0,640.0,0.719,False,0.08742013376925871,3.999999999999999,all sizes
+glove-100-angular,500000,HNSW,none,model + margin,0.95,96.0,640.0,0.81867,False,0.18490501527875716,2.7369655941662057,all sizes
+glove-100-angular,1183514,HNSW,none,model,0.95,40.0,1024.0,0.6953299999999999,False,0.05149183622504192,4.678071905112637,all sizes
+glove-100-angular,1183514,HNSW,none,model + margin,0.95,96.0,1024.0,0.80767,False,0.14970686518176737,3.415037499278844,all sizes
+sift-128-euclidean,200000,HNSW,LID,model,0.95,64.0,48.0,0.98,True,1.269316909294513,0.4150374992788439,primary
+sift-128-euclidean,200000,HNSW,LID,model + margin,0.95,80.0,48.0,0.9896699999999999,True,1.7150055991041435,0.7369655941662066,primary
+glove-100-angular,200000,HNSW,LID,model,0.95,256.0,512.0,0.92433,False,0.5724992995236762,1.0,primary
+glove-100-angular,200000,HNSW,LID,model + margin,0.95,320.0,512.0,0.93667,False,0.6820888203978706,0.6780719051126383,primary
+nytimes-256-angular,200000,HNSW,LID,model,0.95,1024.0,512.0,0.9736699999999999,True,2.059950248756219,1.0,primary
+nytimes-256-angular,200000,HNSW,LID,model + margin,0.95,1024.0,512.0,0.9736699999999999,True,2.059950248756219,1.0,primary
+fashion-mnist-784-euclidean,60000,HNSW,LID,model,0.95,32.0,12.0,0.99433,True,1.9406989057536184,1.415037499278844,primary
+fashion-mnist-784-euclidean,60000,HNSW,LID,model + margin,0.95,48.0,12.0,0.99667,True,2.5538298623367455,2.0,primary
+mnist-784-euclidean,60000,HNSW,LID,model,0.95,24.0,16.0,0.98067,True,1.3372972972972974,0.5849625007211561,primary
+mnist-784-euclidean,60000,HNSW,LID,model + margin,0.95,40.0,16.0,0.99133,True,1.9256756756756757,1.3219280948873626,primary
+glove-25-angular,200000,HNSW,LID,model,0.95,32.0,40.0,0.93133,False,0.8400338552687262,0.3219280948873626,primary
+glove-25-angular,200000,HNSW,LID,model + margin,0.95,48.0,40.0,0.961,True,1.1713922979263647,0.26303440583379345,primary
+sift-128-euclidean,50000,HNSW,LID,model,0.95,64.0,32.0,0.9893300000000002,True,1.7198364008179958,1.0,all sizes
+sift-128-euclidean,50000,HNSW,LID,model + margin,0.95,80.0,32.0,0.9940000000000001,True,2.0647580095432856,1.3219280948873626,all sizes
+sift-128-euclidean,100000,HNSW,LID,model,0.95,64.0,40.0,0.9856700000000002,True,1.6173007246376812,0.6780719051126374,all sizes
+sift-128-euclidean,100000,HNSW,LID,model + margin,0.95,80.0,40.0,0.993,True,1.8179347826086958,1.0,all sizes
+sift-128-euclidean,200000,HNSW,LID,model,0.95,64.0,48.0,0.98,True,1.269316909294513,0.4150374992788439,all sizes
+sift-128-euclidean,200000,HNSW,LID,model + margin,0.95,80.0,48.0,0.9896699999999999,True,1.7150055991041435,0.7369655941662066,all sizes
+sift-128-euclidean,500000,HNSW,LID,model,0.95,64.0,64.0,0.9613299999999999,True,1.0,0.0,all sizes
+sift-128-euclidean,500000,HNSW,LID,model + margin,0.95,80.0,64.0,0.9739999999999999,True,1.4656633800380556,0.3219280948873626,all sizes
+sift-128-euclidean,1000000,HNSW,LID,model,0.95,64.0,64.0,0.96,True,1.0,0.0,all sizes
+sift-128-euclidean,1000000,HNSW,LID,model + margin,0.95,80.0,64.0,0.97167,True,1.12340485205441,0.3219280948873626,all sizes
+glove-100-angular,50000,HNSW,LID,model,0.95,256.0,256.0,0.96333,True,1.0,0.0,all sizes
+glove-100-angular,50000,HNSW,LID,model + margin,0.95,320.0,256.0,0.972,True,1.2859496124031005,0.32192809488736174,all sizes
+glove-100-angular,100000,HNSW,LID,model,0.95,256.0,256.0,0.95133,True,1.0,0.0,all sizes
+glove-100-angular,100000,HNSW,LID,model + margin,0.95,320.0,256.0,0.96067,True,1.4133217446270543,0.32192809488736174,all sizes
+glove-100-angular,200000,HNSW,LID,model,0.95,256.0,512.0,0.92433,False,0.5724992995236762,1.0,all sizes
+glove-100-angular,200000,HNSW,LID,model + margin,0.95,320.0,512.0,0.93667,False,0.6820888203978706,0.6780719051126383,all sizes
+glove-100-angular,500000,HNSW,LID,model,0.95,256.0,640.0,0.9053299999999999,False,0.45340513280765854,1.3219280948873617,all sizes
+glove-100-angular,500000,HNSW,LID,model + margin,0.95,320.0,640.0,0.91933,False,0.5553347436801503,1.0,all sizes
+glove-100-angular,1183514,HNSW,LID,model,0.95,256.0,1024.0,0.8853300000000001,False,0.27182457100046375,2.0,all sizes
+glove-100-angular,1183514,HNSW,LID,model + margin,0.95,320.0,1024.0,0.899,False,0.3351607187451689,1.6780719051126383,all sizes
+sift-128-euclidean,200000,HNSW,LID + size,model,0.95,64.0,48.0,0.98,True,1.269316909294513,0.4150374992788439,primary
+sift-128-euclidean,200000,HNSW,LID + size,model + margin,0.95,80.0,48.0,0.9896699999999999,True,1.7150055991041435,0.7369655941662066,primary
+glove-100-angular,200000,HNSW,LID + size,model,0.95,256.0,512.0,0.92433,False,0.5724992995236762,1.0,primary
+glove-100-angular,200000,HNSW,LID + size,model + margin,0.95,320.0,512.0,0.93667,False,0.6820888203978706,0.6780719051126383,primary
+nytimes-256-angular,200000,HNSW,LID + size,model,0.95,1024.0,512.0,0.9736699999999999,True,2.059950248756219,1.0,primary
+nytimes-256-angular,200000,HNSW,LID + size,model + margin,0.95,1024.0,512.0,0.9736699999999999,True,2.059950248756219,1.0,primary
+fashion-mnist-784-euclidean,60000,HNSW,LID + size,model,0.95,20.0,12.0,0.9816699999999999,True,1.4218143310977764,0.7369655941662066,primary
+fashion-mnist-784-euclidean,60000,HNSW,LID + size,model + margin,0.95,24.0,12.0,0.99033,True,1.5577126720790684,1.0,primary
+mnist-784-euclidean,60000,HNSW,LID + size,model,0.95,16.0,16.0,0.96467,True,1.0,0.0,primary
+mnist-784-euclidean,60000,HNSW,LID + size,model + margin,0.95,20.0,16.0,0.9739999999999999,True,1.2872972972972974,0.3219280948873626,primary
+glove-25-angular,200000,HNSW,LID + size,model,0.95,32.0,40.0,0.93133,False,0.8400338552687262,0.3219280948873626,primary
+glove-25-angular,200000,HNSW,LID + size,model + margin,0.95,40.0,40.0,0.95267,True,1.0,0.0,primary
+sift-128-euclidean,50000,HNSW,LID + size,model,0.95,32.0,32.0,0.959,True,1.0,0.0,all sizes
+sift-128-euclidean,50000,HNSW,LID + size,model + margin,0.95,40.0,32.0,0.97433,True,1.2024539877300613,0.3219280948873626,all sizes
+sift-128-euclidean,100000,HNSW,LID + size,model,0.95,40.0,40.0,0.959,True,1.0,0.0,all sizes
+sift-128-euclidean,100000,HNSW,LID + size,model + margin,0.95,64.0,40.0,0.9856700000000002,True,1.6173007246376812,0.6780719051126374,all sizes
+sift-128-euclidean,200000,HNSW,LID + size,model,0.95,64.0,48.0,0.98,True,1.269316909294513,0.4150374992788439,all sizes
+sift-128-euclidean,200000,HNSW,LID + size,model + margin,0.95,80.0,48.0,0.9896699999999999,True,1.7150055991041435,0.7369655941662066,all sizes
+sift-128-euclidean,500000,HNSW,LID + size,model,0.95,96.0,64.0,0.981,True,1.4483653347171768,0.5849625007211561,all sizes
+sift-128-euclidean,500000,HNSW,LID + size,model + margin,0.95,128.0,64.0,0.987,True,1.845182494378135,1.0,all sizes
+sift-128-euclidean,1000000,HNSW,LID + size,model,0.95,128.0,64.0,0.9860000000000001,True,1.8305987939980368,1.0,all sizes
+sift-128-euclidean,1000000,HNSW,LID + size,model + margin,0.95,160.0,64.0,0.991,True,2.267423923713364,1.3219280948873626,all sizes
+glove-100-angular,50000,HNSW,LID + size,model,0.95,160.0,256.0,0.93633,False,0.5900193798449611,0.6780719051126374,all sizes
+glove-100-angular,50000,HNSW,LID + size,model + margin,0.95,192.0,256.0,0.94667,False,0.7768410852713179,0.4150374992788439,all sizes
+glove-100-angular,100000,HNSW,LID + size,model,0.95,192.0,256.0,0.9330000000000002,False,0.7861883691529711,0.4150374992788439,all sizes
+glove-100-angular,100000,HNSW,LID + size,model + margin,0.95,256.0,256.0,0.95133,True,1.0,0.0,all sizes
+glove-100-angular,200000,HNSW,LID + size,model,0.95,256.0,512.0,0.92433,False,0.5724992995236762,1.0,all sizes
+glove-100-angular,200000,HNSW,LID + size,model + margin,0.95,320.0,512.0,0.93667,False,0.6820888203978706,0.6780719051126383,all sizes
+glove-100-angular,500000,HNSW,LID + size,model,0.95,320.0,640.0,0.91933,False,0.5553347436801503,1.0,all sizes
+glove-100-angular,500000,HNSW,LID + size,model + margin,0.95,384.0,640.0,0.92867,False,0.6562600166677351,0.7369655941662057,all sizes
+glove-100-angular,1183514,HNSW,LID + size,model,0.95,512.0,1024.0,0.9253300000000001,False,0.541722657597127,1.0,all sizes
+glove-100-angular,1183514,HNSW,LID + size,model + margin,0.95,512.0,1024.0,0.9253300000000001,False,0.541722657597127,1.0,all sizes
+sift-128-euclidean,200000,HNSW,LID + hubness,model,0.95,48.0,48.0,0.9613299999999999,True,1.0,0.0,primary
+sift-128-euclidean,200000,HNSW,LID + hubness,model + margin,0.95,80.0,48.0,0.9896699999999999,True,1.7150055991041435,0.7369655941662066,primary
+glove-100-angular,200000,HNSW,LID + hubness,model,0.95,256.0,512.0,0.92433,False,0.5724992995236762,1.0,primary
+glove-100-angular,200000,HNSW,LID + hubness,model + margin,0.95,320.0,512.0,0.93667,False,0.6820888203978706,0.6780719051126383,primary
+nytimes-256-angular,200000,HNSW,LID + hubness,model,0.95,1024.0,512.0,0.9736699999999999,True,2.059950248756219,1.0,primary
+nytimes-256-angular,200000,HNSW,LID + hubness,model + margin,0.95,1024.0,512.0,0.9736699999999999,True,2.059950248756219,1.0,primary
+fashion-mnist-784-euclidean,60000,HNSW,LID + hubness,model,0.95,32.0,12.0,0.99433,True,1.9406989057536184,1.415037499278844,primary
+fashion-mnist-784-euclidean,60000,HNSW,LID + hubness,model + margin,0.95,48.0,12.0,0.99667,True,2.5538298623367455,2.0,primary
+mnist-784-euclidean,60000,HNSW,LID + hubness,model,0.95,20.0,16.0,0.9739999999999999,True,1.2872972972972974,0.3219280948873626,primary
+mnist-784-euclidean,60000,HNSW,LID + hubness,model + margin,0.95,32.0,16.0,0.987,True,1.6635135135135133,1.0,primary
+glove-25-angular,200000,HNSW,LID + hubness,model,0.95,32.0,40.0,0.93133,False,0.8400338552687262,0.3219280948873626,primary
+glove-25-angular,200000,HNSW,LID + hubness,model + margin,0.95,40.0,40.0,0.95267,True,1.0,0.0,primary
+sift-128-euclidean,50000,HNSW,LID + hubness,model,0.95,48.0,32.0,0.9819999999999999,True,1.3803680981595092,0.5849625007211561,all sizes
+sift-128-euclidean,50000,HNSW,LID + hubness,model + margin,0.95,80.0,32.0,0.9940000000000001,True,2.0647580095432856,1.3219280948873626,all sizes
+sift-128-euclidean,100000,HNSW,LID + hubness,model,0.95,48.0,40.0,0.97033,True,1.1970108695652173,0.26303440583379345,all sizes
+sift-128-euclidean,100000,HNSW,LID + hubness,model + margin,0.95,80.0,40.0,0.993,True,1.8179347826086958,1.0,all sizes
+sift-128-euclidean,200000,HNSW,LID + hubness,model,0.95,48.0,48.0,0.9613299999999999,True,1.0,0.0,all sizes
+sift-128-euclidean,200000,HNSW,LID + hubness,model + margin,0.95,80.0,48.0,0.9896699999999999,True,1.7150055991041435,0.7369655941662066,all sizes
+sift-128-euclidean,500000,HNSW,LID + hubness,model,0.95,48.0,64.0,0.94,False,0.7756443521882027,0.4150374992788439,all sizes
+sift-128-euclidean,500000,HNSW,LID + hubness,model + margin,0.95,80.0,64.0,0.9739999999999999,True,1.4656633800380556,0.3219280948873626,all sizes
+sift-128-euclidean,1000000,HNSW,LID + hubness,model,0.95,48.0,64.0,0.93667,False,0.7515075024540737,0.4150374992788439,all sizes
+sift-128-euclidean,1000000,HNSW,LID + hubness,model + margin,0.95,80.0,64.0,0.97167,True,1.12340485205441,0.3219280948873626,all sizes
+glove-100-angular,50000,HNSW,LID + hubness,model,0.95,256.0,256.0,0.96333,True,1.0,0.0,all sizes
+glove-100-angular,50000,HNSW,LID + hubness,model + margin,0.95,320.0,256.0,0.972,True,1.2859496124031005,0.32192809488736174,all sizes
+glove-100-angular,100000,HNSW,LID + hubness,model,0.95,256.0,256.0,0.95133,True,1.0,0.0,all sizes
+glove-100-angular,100000,HNSW,LID + hubness,model + margin,0.95,320.0,256.0,0.96067,True,1.4133217446270543,0.32192809488736174,all sizes
+glove-100-angular,200000,HNSW,LID + hubness,model,0.95,256.0,512.0,0.92433,False,0.5724992995236762,1.0,all sizes
+glove-100-angular,200000,HNSW,LID + hubness,model + margin,0.95,320.0,512.0,0.93667,False,0.6820888203978706,0.6780719051126383,all sizes
+glove-100-angular,500000,HNSW,LID + hubness,model,0.95,256.0,640.0,0.9053299999999999,False,0.45340513280765854,1.3219280948873617,all sizes
+glove-100-angular,500000,HNSW,LID + hubness,model + margin,0.95,320.0,640.0,0.91933,False,0.5553347436801503,1.0,all sizes
+glove-100-angular,1183514,HNSW,LID + hubness,model,0.95,256.0,1024.0,0.8853300000000001,False,0.27182457100046375,2.0,all sizes
+glove-100-angular,1183514,HNSW,LID + hubness,model + margin,0.95,320.0,1024.0,0.899,False,0.3351607187451689,1.6780719051126383,all sizes
+sift-128-euclidean,200000,HNSW,LID + size + hubness,model,0.95,48.0,48.0,0.9613299999999999,True,1.0,0.0,primary
+sift-128-euclidean,200000,HNSW,LID + size + hubness,model + margin,0.95,64.0,48.0,0.98,True,1.269316909294513,0.4150374992788439,primary
+glove-100-angular,200000,HNSW,LID + size + hubness,model,0.95,256.0,512.0,0.92433,False,0.5724992995236762,1.0,primary
+glove-100-angular,200000,HNSW,LID + size + hubness,model + margin,0.95,256.0,512.0,0.92433,False,0.5724992995236762,1.0,primary
+nytimes-256-angular,200000,HNSW,LID + size + hubness,model,0.95,1024.0,512.0,0.9736699999999999,True,2.059950248756219,1.0,primary
+nytimes-256-angular,200000,HNSW,LID + size + hubness,model + margin,0.95,1024.0,512.0,0.9736699999999999,True,2.059950248756219,1.0,primary
+fashion-mnist-784-euclidean,60000,HNSW,LID + size + hubness,model,0.95,24.0,12.0,0.99033,True,1.5577126720790684,1.0,primary
+fashion-mnist-784-euclidean,60000,HNSW,LID + size + hubness,model + margin,0.95,32.0,12.0,0.99433,True,1.9406989057536184,1.415037499278844,primary
+mnist-784-euclidean,60000,HNSW,LID + size + hubness,model,0.95,16.0,16.0,0.96467,True,1.0,0.0,primary
+mnist-784-euclidean,60000,HNSW,LID + size + hubness,model + margin,0.95,16.0,16.0,0.96467,True,1.0,0.0,primary
+glove-25-angular,200000,HNSW,LID + size + hubness,model,0.95,32.0,40.0,0.93133,False,0.8400338552687262,0.3219280948873626,primary
+glove-25-angular,200000,HNSW,LID + size + hubness,model + margin,0.95,40.0,40.0,0.95267,True,1.0,0.0,primary
+sift-128-euclidean,50000,HNSW,LID + size + hubness,model,0.95,32.0,32.0,0.959,True,1.0,0.0,all sizes
+sift-128-euclidean,50000,HNSW,LID + size + hubness,model + margin,0.95,32.0,32.0,0.959,True,1.0,0.0,all sizes
+sift-128-euclidean,100000,HNSW,LID + size + hubness,model,0.95,40.0,40.0,0.959,True,1.0,0.0,all sizes
+sift-128-euclidean,100000,HNSW,LID + size + hubness,model + margin,0.95,48.0,40.0,0.97033,True,1.1970108695652173,0.26303440583379345,all sizes
+sift-128-euclidean,200000,HNSW,LID + size + hubness,model,0.95,48.0,48.0,0.9613299999999999,True,1.0,0.0,all sizes
+sift-128-euclidean,200000,HNSW,LID + size + hubness,model + margin,0.95,64.0,48.0,0.98,True,1.269316909294513,0.4150374992788439,all sizes
+sift-128-euclidean,500000,HNSW,LID + size + hubness,model,0.95,80.0,64.0,0.9739999999999999,True,1.4656633800380556,0.3219280948873626,all sizes
+sift-128-euclidean,500000,HNSW,LID + size + hubness,model + margin,0.95,96.0,64.0,0.981,True,1.4483653347171768,0.5849625007211561,all sizes
+sift-128-euclidean,1000000,HNSW,LID + size + hubness,model,0.95,128.0,64.0,0.9860000000000001,True,1.8305987939980368,1.0,all sizes
+sift-128-euclidean,1000000,HNSW,LID + size + hubness,model + margin,0.95,160.0,64.0,0.991,True,2.267423923713364,1.3219280948873626,all sizes
+glove-100-angular,50000,HNSW,LID + size + hubness,model,0.95,160.0,256.0,0.93633,False,0.5900193798449611,0.6780719051126374,all sizes
+glove-100-angular,50000,HNSW,LID + size + hubness,model + margin,0.95,192.0,256.0,0.94667,False,0.7768410852713179,0.4150374992788439,all sizes
+glove-100-angular,100000,HNSW,LID + size + hubness,model,0.95,192.0,256.0,0.9330000000000002,False,0.7861883691529711,0.4150374992788439,all sizes
+glove-100-angular,100000,HNSW,LID + size + hubness,model + margin,0.95,256.0,256.0,0.95133,True,1.0,0.0,all sizes
+glove-100-angular,200000,HNSW,LID + size + hubness,model,0.95,256.0,512.0,0.92433,False,0.5724992995236762,1.0,all sizes
+glove-100-angular,200000,HNSW,LID + size + hubness,model + margin,0.95,256.0,512.0,0.92433,False,0.5724992995236762,1.0,all sizes
+glove-100-angular,500000,HNSW,LID + size + hubness,model,0.95,320.0,640.0,0.91933,False,0.5553347436801503,1.0,all sizes
+glove-100-angular,500000,HNSW,LID + size + hubness,model + margin,0.95,384.0,640.0,0.92867,False,0.6562600166677351,0.7369655941662057,all sizes
+glove-100-angular,1183514,HNSW,LID + size + hubness,model,0.95,384.0,1024.0,0.91,False,0.4080341534765908,1.415037499278844,all sizes
+glove-100-angular,1183514,HNSW,LID + size + hubness,model + margin,0.95,512.0,1024.0,0.9253300000000001,False,0.541722657597127,1.0,all sizes
+sift-128-euclidean,200000,IVF-Flat,none,model,0.9,24.0,24.0,0.93833,True,1.0,0.0,primary
+sift-128-euclidean,200000,IVF-Flat,none,model + margin,0.9,96.0,24.0,0.999,True,3.675141242937853,2.0,primary
+glove-100-angular,200000,IVF-Flat,none,model,0.9,16.0,64.0,0.77033,False,0.30999686618614863,2.0,primary
+glove-100-angular,200000,IVF-Flat,none,model + margin,0.9,48.0,64.0,0.8856699999999998,False,0.7099968661861487,0.4150374992788439,primary
+nytimes-256-angular,200000,IVF-Flat,none,model,0.9,24.0,128.0,0.8166699999999999,False,0.207715357691436,2.415037499278844,primary
+nytimes-256-angular,200000,IVF-Flat,none,model + margin,0.9,64.0,128.0,0.87033,False,0.5330370407675068,1.0,primary
+fashion-mnist-784-euclidean,60000,IVF-Flat,none,model,0.9,24.0,6.0,0.997,True,2.287598359747312,2.0,primary
+fashion-mnist-784-euclidean,60000,IVF-Flat,none,model + margin,0.9,64.0,6.0,1.0,True,5.2428238944918535,3.415037499278844,primary
+mnist-784-euclidean,60000,IVF-Flat,none,model,0.9,24.0,8.0,0.988,True,2.186717407316474,1.584962500721156,primary
+mnist-784-euclidean,60000,IVF-Flat,none,model + margin,0.9,64.0,8.0,0.997,True,4.705376872084458,3.0,primary
+glove-25-angular,200000,IVF-Flat,none,model,0.9,24.0,16.0,0.9376700000000001,True,1.7411988582302569,0.5849625007211561,primary
+glove-25-angular,200000,IVF-Flat,none,model + margin,0.9,64.0,16.0,0.9856700000000002,True,2.7963843958135106,2.0,primary
+sift-128-euclidean,50000,IVF-Flat,none,model,0.9,24.0,24.0,0.9176699999999999,True,1.0,0.0,all sizes
+sift-128-euclidean,50000,IVF-Flat,none,model + margin,0.9,96.0,24.0,0.995,True,3.4142037935597704,2.0,all sizes
+sift-128-euclidean,100000,IVF-Flat,none,model,0.9,24.0,24.0,0.932,True,1.0,0.0,all sizes
+sift-128-euclidean,100000,IVF-Flat,none,model + margin,0.9,96.0,24.0,0.9979999999999999,True,2.908184558312079,2.0,all sizes
+sift-128-euclidean,200000,IVF-Flat,none,model,0.9,24.0,24.0,0.93833,True,1.0,0.0,all sizes
+sift-128-euclidean,200000,IVF-Flat,none,model + margin,0.9,96.0,24.0,0.999,True,3.675141242937853,2.0,all sizes
+sift-128-euclidean,500000,IVF-Flat,none,model,0.9,24.0,16.0,0.95133,True,1.410621684448948,0.5849625007211561,all sizes
+sift-128-euclidean,500000,IVF-Flat,none,model + margin,0.9,96.0,16.0,0.99767,True,4.792871192704298,2.584962500721156,all sizes
+sift-128-euclidean,1000000,IVF-Flat,none,model,0.9,24.0,16.0,0.95567,True,1.5990217504422937,0.5849625007211561,all sizes
+sift-128-euclidean,1000000,IVF-Flat,none,model + margin,0.9,96.0,16.0,0.99933,True,5.820168591945052,2.584962500721156,all sizes
+glove-100-angular,50000,IVF-Flat,none,model,0.9,16.0,96.0,0.73333,False,0.19139756830958296,2.584962500721156,all sizes
+glove-100-angular,50000,IVF-Flat,none,model + margin,0.9,48.0,96.0,0.86967,False,0.47156491044580995,1.0,all sizes
+glove-100-angular,100000,IVF-Flat,none,model,0.9,16.0,96.0,0.742,False,0.23452140363769977,2.584962500721156,all sizes
+glove-100-angular,100000,IVF-Flat,none,model + margin,0.9,48.0,96.0,0.86767,False,0.6625022965276502,1.0,all sizes
+glove-100-angular,200000,IVF-Flat,none,model,0.9,16.0,64.0,0.77033,False,0.30999686618614863,2.0,all sizes
+glove-100-angular,200000,IVF-Flat,none,model + margin,0.9,48.0,64.0,0.8856699999999998,False,0.7099968661861487,0.4150374992788439,all sizes
+glove-100-angular,500000,IVF-Flat,none,model,0.9,16.0,48.0,0.805,False,0.3485090796533223,1.584962500721156,all sizes
+glove-100-angular,500000,IVF-Flat,none,model + margin,0.9,48.0,48.0,0.9096699999999999,True,1.0,0.0,all sizes
+glove-100-angular,1183514,IVF-Flat,none,model,0.9,16.0,48.0,0.8203299999999999,False,0.3674784940230142,1.584962500721156,all sizes
+glove-100-angular,1183514,IVF-Flat,none,model + margin,0.9,48.0,48.0,0.907,True,1.0,0.0,all sizes
+sift-128-euclidean,200000,IVF-Flat,LID,model,0.9,16.0,24.0,0.882,False,0.7087939081306803,0.5849625007211561,primary
+sift-128-euclidean,200000,IVF-Flat,LID,model + margin,0.9,24.0,24.0,0.93833,True,1.0,0.0,primary
+glove-100-angular,200000,IVF-Flat,LID,model,0.9,96.0,64.0,0.93667,True,1.5365089313694769,0.5849625007211561,primary
+glove-100-angular,200000,IVF-Flat,LID,model + margin,0.9,128.0,64.0,0.9573300000000001,True,2.02858038232529,1.0,primary
+nytimes-256-angular,200000,IVF-Flat,LID,model,0.9,192.0,128.0,0.93633,True,1.540326845113691,0.5849625007211561,primary
+nytimes-256-angular,200000,IVF-Flat,LID,model + margin,0.9,256.0,128.0,0.95133,True,2.0452118953491296,1.0,primary
+fashion-mnist-784-euclidean,60000,IVF-Flat,LID,model,0.9,12.0,6.0,0.98267,True,1.4588274409841517,1.0,primary
+fashion-mnist-784-euclidean,60000,IVF-Flat,LID,model + margin,0.9,16.0,6.0,0.99133,True,1.7365621190291476,1.415037499278844,primary
+mnist-784-euclidean,60000,IVF-Flat,LID,model,0.9,12.0,8.0,0.9653300000000001,True,1.3831328259268352,0.5849625007211561,primary
+mnist-784-euclidean,60000,IVF-Flat,LID,model + margin,0.9,16.0,8.0,0.9819999999999999,True,1.6360176773876747,1.0,primary
+glove-25-angular,200000,IVF-Flat,LID,model,0.9,12.0,16.0,0.86933,False,0.6336822074215033,0.4150374992788439,primary
+glove-25-angular,200000,IVF-Flat,LID,model + margin,0.9,16.0,16.0,0.90367,True,1.0,0.0,primary
+sift-128-euclidean,50000,IVF-Flat,LID,model,0.9,16.0,24.0,0.866,False,0.7565063961182178,0.5849625007211561,all sizes
+sift-128-euclidean,50000,IVF-Flat,LID,model + margin,0.9,24.0,24.0,0.9176699999999999,True,1.0,0.0,all sizes
+sift-128-euclidean,100000,IVF-Flat,LID,model,0.9,16.0,24.0,0.87867,False,0.6835149547878506,0.5849625007211561,all sizes
+sift-128-euclidean,100000,IVF-Flat,LID,model + margin,0.9,24.0,24.0,0.932,True,1.0,0.0,all sizes
+sift-128-euclidean,200000,IVF-Flat,LID,model,0.9,16.0,24.0,0.882,False,0.7087939081306803,0.5849625007211561,all sizes
+sift-128-euclidean,200000,IVF-Flat,LID,model + margin,0.9,24.0,24.0,0.93833,True,1.0,0.0,all sizes
+sift-128-euclidean,500000,IVF-Flat,LID,model,0.9,16.0,16.0,0.91033,True,1.0,0.0,all sizes
+sift-128-euclidean,500000,IVF-Flat,LID,model + margin,0.9,24.0,16.0,0.95133,True,1.410621684448948,0.5849625007211561,all sizes
+sift-128-euclidean,1000000,IVF-Flat,LID,model,0.9,16.0,16.0,0.92033,True,1.0,0.0,all sizes
+sift-128-euclidean,1000000,IVF-Flat,LID,model + margin,0.9,24.0,16.0,0.95567,True,1.5990217504422937,0.5849625007211561,all sizes
+glove-100-angular,50000,IVF-Flat,LID,model,0.9,96.0,96.0,0.927,True,1.0,0.0,all sizes
+glove-100-angular,50000,IVF-Flat,LID,model + margin,0.9,128.0,96.0,0.9460000000000001,True,1.0843247483331155,0.4150374992788439,all sizes
+glove-100-angular,100000,IVF-Flat,LID,model,0.9,96.0,96.0,0.9293299999999999,True,1.0,0.0,all sizes
+glove-100-angular,100000,IVF-Flat,LID,model + margin,0.9,128.0,96.0,0.952,True,1.3651478963806725,0.4150374992788439,all sizes
+glove-100-angular,200000,IVF-Flat,LID,model,0.9,96.0,64.0,0.93667,True,1.5365089313694769,0.5849625007211561,all sizes
+glove-100-angular,200000,IVF-Flat,LID,model + margin,0.9,128.0,64.0,0.9573300000000001,True,2.02858038232529,1.0,all sizes
+glove-100-angular,500000,IVF-Flat,LID,model,0.9,96.0,48.0,0.952,True,1.9083522492777547,1.0,all sizes
+glove-100-angular,500000,IVF-Flat,LID,model + margin,0.9,128.0,48.0,0.967,True,2.5485967808501857,1.415037499278844,all sizes
+glove-100-angular,1183514,IVF-Flat,LID,model,0.9,96.0,48.0,0.9496699999999999,True,2.05192715897665,1.0,all sizes
+glove-100-angular,1183514,IVF-Flat,LID,model + margin,0.9,128.0,48.0,0.96367,True,2.555971399843593,1.415037499278844,all sizes
+sift-128-euclidean,200000,IVF-Flat,LID + size,model,0.9,16.0,24.0,0.882,False,0.7087939081306803,0.5849625007211561,primary
+sift-128-euclidean,200000,IVF-Flat,LID + size,model + margin,0.9,24.0,24.0,0.93833,True,1.0,0.0,primary
+glove-100-angular,200000,IVF-Flat,LID + size,model,0.9,96.0,64.0,0.93667,True,1.5365089313694769,0.5849625007211561,primary
+glove-100-angular,200000,IVF-Flat,LID + size,model + margin,0.9,128.0,64.0,0.9573300000000001,True,2.02858038232529,1.0,primary
+nytimes-256-angular,200000,IVF-Flat,LID + size,model,0.9,192.0,128.0,0.93633,True,1.540326845113691,0.5849625007211561,primary
+nytimes-256-angular,200000,IVF-Flat,LID + size,model + margin,0.9,256.0,128.0,0.95133,True,2.0452118953491296,1.0,primary
+fashion-mnist-784-euclidean,60000,IVF-Flat,LID + size,model,0.9,16.0,6.0,0.99133,True,1.7365621190291476,1.415037499278844,primary
+fashion-mnist-784-euclidean,60000,IVF-Flat,LID + size,model + margin,0.9,24.0,6.0,0.997,True,2.287598359747312,2.0,primary
+mnist-784-euclidean,60000,IVF-Flat,LID + size,model,0.9,12.0,8.0,0.9653300000000001,True,1.3831328259268352,0.5849625007211561,primary
+mnist-784-euclidean,60000,IVF-Flat,LID + size,model + margin,0.9,16.0,8.0,0.9819999999999999,True,1.6360176773876747,1.0,primary
+glove-25-angular,200000,IVF-Flat,LID + size,model,0.9,12.0,16.0,0.86933,False,0.6336822074215033,0.4150374992788439,primary
+glove-25-angular,200000,IVF-Flat,LID + size,model + margin,0.9,16.0,16.0,0.90367,True,1.0,0.0,primary
+sift-128-euclidean,50000,IVF-Flat,LID + size,model,0.9,24.0,24.0,0.9176699999999999,True,1.0,0.0,all sizes
+sift-128-euclidean,50000,IVF-Flat,LID + size,model + margin,0.9,32.0,24.0,0.94633,True,1.4150860167622408,0.4150374992788439,all sizes
+sift-128-euclidean,100000,IVF-Flat,LID + size,model,0.9,24.0,24.0,0.932,True,1.0,0.0,all sizes
+sift-128-euclidean,100000,IVF-Flat,LID + size,model + margin,0.9,24.0,24.0,0.932,True,1.0,0.0,all sizes
+sift-128-euclidean,200000,IVF-Flat,LID + size,model,0.9,16.0,24.0,0.882,False,0.7087939081306803,0.5849625007211561,all sizes
+sift-128-euclidean,200000,IVF-Flat,LID + size,model + margin,0.9,24.0,24.0,0.93833,True,1.0,0.0,all sizes
+sift-128-euclidean,500000,IVF-Flat,LID + size,model,0.9,16.0,16.0,0.91033,True,1.0,0.0,all sizes
+sift-128-euclidean,500000,IVF-Flat,LID + size,model + margin,0.9,24.0,16.0,0.95133,True,1.410621684448948,0.5849625007211561,all sizes
+sift-128-euclidean,1000000,IVF-Flat,LID + size,model,0.9,16.0,16.0,0.92033,True,1.0,0.0,all sizes
+sift-128-euclidean,1000000,IVF-Flat,LID + size,model + margin,0.9,24.0,16.0,0.95567,True,1.5990217504422937,0.5849625007211561,all sizes
+glove-100-angular,50000,IVF-Flat,LID + size,model,0.9,96.0,96.0,0.927,True,1.0,0.0,all sizes
+glove-100-angular,50000,IVF-Flat,LID + size,model + margin,0.9,128.0,96.0,0.9460000000000001,True,1.0843247483331155,0.4150374992788439,all sizes
+glove-100-angular,100000,IVF-Flat,LID + size,model,0.9,96.0,96.0,0.9293299999999999,True,1.0,0.0,all sizes
+glove-100-angular,100000,IVF-Flat,LID + size,model + margin,0.9,128.0,96.0,0.952,True,1.3651478963806725,0.4150374992788439,all sizes
+glove-100-angular,200000,IVF-Flat,LID + size,model,0.9,96.0,64.0,0.93667,True,1.5365089313694769,0.5849625007211561,all sizes
+glove-100-angular,200000,IVF-Flat,LID + size,model + margin,0.9,128.0,64.0,0.9573300000000001,True,2.02858038232529,1.0,all sizes
+glove-100-angular,500000,IVF-Flat,LID + size,model,0.9,96.0,48.0,0.952,True,1.9083522492777547,1.0,all sizes
+glove-100-angular,500000,IVF-Flat,LID + size,model + margin,0.9,128.0,48.0,0.967,True,2.5485967808501857,1.415037499278844,all sizes
+glove-100-angular,1183514,IVF-Flat,LID + size,model,0.9,96.0,48.0,0.9496699999999999,True,2.05192715897665,1.0,all sizes
+glove-100-angular,1183514,IVF-Flat,LID + size,model + margin,0.9,128.0,48.0,0.96367,True,2.555971399843593,1.415037499278844,all sizes
+sift-128-euclidean,200000,IVF-Flat,LID + hubness,model,0.9,16.0,24.0,0.882,False,0.7087939081306803,0.5849625007211561,primary
+sift-128-euclidean,200000,IVF-Flat,LID + hubness,model + margin,0.9,24.0,24.0,0.93833,True,1.0,0.0,primary
+glove-100-angular,200000,IVF-Flat,LID + hubness,model,0.9,128.0,64.0,0.9573300000000001,True,2.02858038232529,1.0,primary
+glove-100-angular,200000,IVF-Flat,LID + hubness,model + margin,0.9,192.0,64.0,0.9776700000000002,True,3.0521466624882487,1.584962500721156,primary
+nytimes-256-angular,200000,IVF-Flat,LID + hubness,model,0.9,256.0,128.0,0.95133,True,2.0452118953491296,1.0,primary
+nytimes-256-angular,200000,IVF-Flat,LID + hubness,model + margin,0.9,256.0,128.0,0.95133,True,2.0452118953491296,1.0,primary
+fashion-mnist-784-euclidean,60000,IVF-Flat,LID + hubness,model,0.9,12.0,6.0,0.98267,True,1.4588274409841517,1.0,primary
+fashion-mnist-784-euclidean,60000,IVF-Flat,LID + hubness,model + margin,0.9,16.0,6.0,0.99133,True,1.7365621190291476,1.415037499278844,primary
+mnist-784-euclidean,60000,IVF-Flat,LID + hubness,model,0.9,12.0,8.0,0.9653300000000001,True,1.3831328259268352,0.5849625007211561,primary
+mnist-784-euclidean,60000,IVF-Flat,LID + hubness,model + margin,0.9,16.0,8.0,0.9819999999999999,True,1.6360176773876747,1.0,primary
+glove-25-angular,200000,IVF-Flat,LID + hubness,model,0.9,12.0,16.0,0.86933,False,0.6336822074215033,0.4150374992788439,primary
+glove-25-angular,200000,IVF-Flat,LID + hubness,model + margin,0.9,16.0,16.0,0.90367,True,1.0,0.0,primary
+sift-128-euclidean,50000,IVF-Flat,LID + hubness,model,0.9,16.0,24.0,0.866,False,0.7565063961182178,0.5849625007211561,all sizes
+sift-128-euclidean,50000,IVF-Flat,LID + hubness,model + margin,0.9,24.0,24.0,0.9176699999999999,True,1.0,0.0,all sizes
+sift-128-euclidean,100000,IVF-Flat,LID + hubness,model,0.9,16.0,24.0,0.87867,False,0.6835149547878506,0.5849625007211561,all sizes
+sift-128-euclidean,100000,IVF-Flat,LID + hubness,model + margin,0.9,24.0,24.0,0.932,True,1.0,0.0,all sizes
+sift-128-euclidean,200000,IVF-Flat,LID + hubness,model,0.9,16.0,24.0,0.882,False,0.7087939081306803,0.5849625007211561,all sizes
+sift-128-euclidean,200000,IVF-Flat,LID + hubness,model + margin,0.9,24.0,24.0,0.93833,True,1.0,0.0,all sizes
+sift-128-euclidean,500000,IVF-Flat,LID + hubness,model,0.9,16.0,16.0,0.91033,True,1.0,0.0,all sizes
+sift-128-euclidean,500000,IVF-Flat,LID + hubness,model + margin,0.9,24.0,16.0,0.95133,True,1.410621684448948,0.5849625007211561,all sizes
+sift-128-euclidean,1000000,IVF-Flat,LID + hubness,model,0.9,16.0,16.0,0.92033,True,1.0,0.0,all sizes
+sift-128-euclidean,1000000,IVF-Flat,LID + hubness,model + margin,0.9,24.0,16.0,0.95567,True,1.5990217504422937,0.5849625007211561,all sizes
+glove-100-angular,50000,IVF-Flat,LID + hubness,model,0.9,128.0,96.0,0.9460000000000001,True,1.0843247483331155,0.4150374992788439,all sizes
+glove-100-angular,50000,IVF-Flat,LID + hubness,model + margin,0.9,192.0,96.0,0.965,True,1.4643744280298079,1.0,all sizes
+glove-100-angular,100000,IVF-Flat,LID + hubness,model,0.9,128.0,96.0,0.952,True,1.3651478963806725,0.4150374992788439,all sizes
+glove-100-angular,100000,IVF-Flat,LID + hubness,model + margin,0.9,192.0,96.0,0.97167,True,2.067242329597648,1.0,all sizes
+glove-100-angular,200000,IVF-Flat,LID + hubness,model,0.9,128.0,64.0,0.9573300000000001,True,2.02858038232529,1.0,all sizes
+glove-100-angular,200000,IVF-Flat,LID + hubness,model + margin,0.9,192.0,64.0,0.9776700000000002,True,3.0521466624882487,1.584962500721156,all sizes
+glove-100-angular,500000,IVF-Flat,LID + hubness,model,0.9,128.0,48.0,0.967,True,2.5485967808501857,1.415037499278844,all sizes
+glove-100-angular,500000,IVF-Flat,LID + hubness,model + margin,0.9,192.0,48.0,0.98067,True,3.6884286009079656,2.0,all sizes
+glove-100-angular,1183514,IVF-Flat,LID + hubness,model,0.9,128.0,48.0,0.96367,True,2.555971399843593,1.415037499278844,all sizes
+glove-100-angular,1183514,IVF-Flat,LID + hubness,model + margin,0.9,192.0,48.0,0.9776700000000002,True,3.957312032175176,2.0,all sizes
+sift-128-euclidean,200000,IVF-Flat,LID + size + hubness,model,0.9,16.0,24.0,0.882,False,0.7087939081306803,0.5849625007211561,primary
+sift-128-euclidean,200000,IVF-Flat,LID + size + hubness,model + margin,0.9,24.0,24.0,0.93833,True,1.0,0.0,primary
+glove-100-angular,200000,IVF-Flat,LID + size + hubness,model,0.9,128.0,64.0,0.9573300000000001,True,2.02858038232529,1.0,primary
+glove-100-angular,200000,IVF-Flat,LID + size + hubness,model + margin,0.9,192.0,64.0,0.9776700000000002,True,3.0521466624882487,1.584962500721156,primary
+nytimes-256-angular,200000,IVF-Flat,LID + size + hubness,model,0.9,256.0,128.0,0.95133,True,2.0452118953491296,1.0,primary
+nytimes-256-angular,200000,IVF-Flat,LID + size + hubness,model + margin,0.9,256.0,128.0,0.95133,True,2.0452118953491296,1.0,primary
+fashion-mnist-784-euclidean,60000,IVF-Flat,LID + size + hubness,model,0.9,16.0,6.0,0.99133,True,1.7365621190291476,1.415037499278844,primary
+fashion-mnist-784-euclidean,60000,IVF-Flat,LID + size + hubness,model + margin,0.9,24.0,6.0,0.997,True,2.287598359747312,2.0,primary
+mnist-784-euclidean,60000,IVF-Flat,LID + size + hubness,model,0.9,12.0,8.0,0.9653300000000001,True,1.3831328259268352,0.5849625007211561,primary
+mnist-784-euclidean,60000,IVF-Flat,LID + size + hubness,model + margin,0.9,16.0,8.0,0.9819999999999999,True,1.6360176773876747,1.0,primary
+glove-25-angular,200000,IVF-Flat,LID + size + hubness,model,0.9,12.0,16.0,0.86933,False,0.6336822074215033,0.4150374992788439,primary
+glove-25-angular,200000,IVF-Flat,LID + size + hubness,model + margin,0.9,16.0,16.0,0.90367,True,1.0,0.0,primary
+sift-128-euclidean,50000,IVF-Flat,LID + size + hubness,model,0.9,24.0,24.0,0.9176699999999999,True,1.0,0.0,all sizes
+sift-128-euclidean,50000,IVF-Flat,LID + size + hubness,model + margin,0.9,24.0,24.0,0.9176699999999999,True,1.0,0.0,all sizes
+sift-128-euclidean,100000,IVF-Flat,LID + size + hubness,model,0.9,24.0,24.0,0.932,True,1.0,0.0,all sizes
+sift-128-euclidean,100000,IVF-Flat,LID + size + hubness,model + margin,0.9,24.0,24.0,0.932,True,1.0,0.0,all sizes
+sift-128-euclidean,200000,IVF-Flat,LID + size + hubness,model,0.9,16.0,24.0,0.882,False,0.7087939081306803,0.5849625007211561,all sizes
+sift-128-euclidean,200000,IVF-Flat,LID + size + hubness,model + margin,0.9,24.0,24.0,0.93833,True,1.0,0.0,all sizes
+sift-128-euclidean,500000,IVF-Flat,LID + size + hubness,model,0.9,16.0,16.0,0.91033,True,1.0,0.0,all sizes
+sift-128-euclidean,500000,IVF-Flat,LID + size + hubness,model + margin,0.9,24.0,16.0,0.95133,True,1.410621684448948,0.5849625007211561,all sizes
+sift-128-euclidean,1000000,IVF-Flat,LID + size + hubness,model,0.9,16.0,16.0,0.92033,True,1.0,0.0,all sizes
+sift-128-euclidean,1000000,IVF-Flat,LID + size + hubness,model + margin,0.9,24.0,16.0,0.95567,True,1.5990217504422937,0.5849625007211561,all sizes
+glove-100-angular,50000,IVF-Flat,LID + size + hubness,model,0.9,128.0,96.0,0.9460000000000001,True,1.0843247483331155,0.4150374992788439,all sizes
+glove-100-angular,50000,IVF-Flat,LID + size + hubness,model + margin,0.9,192.0,96.0,0.965,True,1.4643744280298079,1.0,all sizes
+glove-100-angular,100000,IVF-Flat,LID + size + hubness,model,0.9,128.0,96.0,0.952,True,1.3651478963806725,0.4150374992788439,all sizes
+glove-100-angular,100000,IVF-Flat,LID + size + hubness,model + margin,0.9,192.0,96.0,0.97167,True,2.067242329597648,1.0,all sizes
+glove-100-angular,200000,IVF-Flat,LID + size + hubness,model,0.9,128.0,64.0,0.9573300000000001,True,2.02858038232529,1.0,all sizes
+glove-100-angular,200000,IVF-Flat,LID + size + hubness,model + margin,0.9,192.0,64.0,0.9776700000000002,True,3.0521466624882487,1.584962500721156,all sizes
+glove-100-angular,500000,IVF-Flat,LID + size + hubness,model,0.9,128.0,48.0,0.967,True,2.5485967808501857,1.415037499278844,all sizes
+glove-100-angular,500000,IVF-Flat,LID + size + hubness,model + margin,0.9,192.0,48.0,0.98067,True,3.6884286009079656,2.0,all sizes
+glove-100-angular,1183514,IVF-Flat,LID + size + hubness,model,0.9,128.0,48.0,0.96367,True,2.555971399843593,1.415037499278844,all sizes
+glove-100-angular,1183514,IVF-Flat,LID + size + hubness,model + margin,0.9,192.0,48.0,0.9776700000000002,True,3.957312032175176,2.0,all sizes
+sift-128-euclidean,200000,IVF-Flat,none,model,0.95,48.0,32.0,0.9860000000000001,True,1.3387199853921299,0.5849625007211561,primary
+sift-128-euclidean,200000,IVF-Flat,none,model + margin,0.95,128.0,32.0,0.99933,True,3.6724185154752123,2.0,primary
+glove-100-angular,200000,IVF-Flat,none,model,0.95,24.0,128.0,0.816,False,0.21871717234134586,2.415037499278844,primary
+glove-100-angular,200000,IVF-Flat,none,model + margin,0.95,64.0,128.0,0.907,False,0.49295557066056966,1.0,primary
+nytimes-256-angular,200000,IVF-Flat,none,model,0.95,32.0,256.0,0.83367,False,0.13551830488232797,3.0,primary
+nytimes-256-angular,200000,IVF-Flat,none,model + margin,0.95,96.0,256.0,0.89533,False,0.37208743990199644,1.415037499278844,primary
+fashion-mnist-784-euclidean,60000,IVF-Flat,none,model,0.95,48.0,8.0,0.99967,True,3.9428425357873205,2.584962500721156,primary
+fashion-mnist-784-euclidean,60000,IVF-Flat,none,model + margin,0.95,128.0,8.0,1.0,True,8.75961145194274,4.0,primary
+mnist-784-euclidean,60000,IVF-Flat,none,model,0.95,48.0,12.0,0.99667,True,2.766131179550901,2.0,primary
+mnist-784-euclidean,60000,IVF-Flat,none,model + margin,0.95,128.0,12.0,0.99967,True,6.297328481405876,3.415037499278844,primary
+glove-25-angular,200000,IVF-Flat,none,model,0.95,48.0,32.0,0.979,True,1.6977587343441,0.5849625007211561,primary
+glove-25-angular,200000,IVF-Flat,none,model + margin,0.95,128.0,32.0,0.9973300000000002,True,2.9831905075807517,2.0,primary
+sift-128-euclidean,50000,IVF-Flat,none,model,0.95,48.0,48.0,0.973,True,1.0,0.0,all sizes
+sift-128-euclidean,50000,IVF-Flat,none,model + margin,0.95,128.0,48.0,0.9986700000000001,True,1.5374373162718311,1.415037499278844,all sizes
+sift-128-euclidean,100000,IVF-Flat,none,model,0.95,48.0,32.0,0.98267,True,1.207661612130886,0.5849625007211561,all sizes
+sift-128-euclidean,100000,IVF-Flat,none,model + margin,0.95,128.0,32.0,0.99833,True,2.45634477254589,2.0,all sizes
+sift-128-euclidean,200000,IVF-Flat,none,model,0.95,48.0,32.0,0.9860000000000001,True,1.3387199853921299,0.5849625007211561,all sizes
+sift-128-euclidean,200000,IVF-Flat,none,model + margin,0.95,128.0,32.0,0.99933,True,3.6724185154752123,2.0,all sizes
+sift-128-euclidean,500000,IVF-Flat,none,model,0.95,48.0,24.0,0.9856700000000002,True,1.7964168004732526,1.0,all sizes
+sift-128-euclidean,500000,IVF-Flat,none,model + margin,0.95,128.0,24.0,0.9986700000000001,True,4.421363982084002,2.415037499278844,all sizes
+sift-128-euclidean,1000000,IVF-Flat,none,model,0.95,48.0,24.0,0.9893300000000002,True,1.8954550385074305,1.0,all sizes
+sift-128-euclidean,1000000,IVF-Flat,none,model + margin,0.95,128.0,24.0,1.0,True,4.889380626966049,2.415037499278844,all sizes
+glove-100-angular,50000,IVF-Flat,none,model,0.95,24.0,192.0,0.7846699999999999,False,0.18168020712436392,3.0,all sizes
+glove-100-angular,50000,IVF-Flat,none,model + margin,0.95,64.0,192.0,0.8969999999999999,False,0.46727970716900274,1.584962500721156,all sizes
+glove-100-angular,100000,IVF-Flat,none,model,0.95,24.0,128.0,0.7879999999999999,False,0.2363905524527286,2.415037499278844,all sizes
+glove-100-angular,100000,IVF-Flat,none,model + margin,0.95,64.0,128.0,0.89433,False,0.5965278245070992,1.0,all sizes
+glove-100-angular,200000,IVF-Flat,none,model,0.95,24.0,128.0,0.816,False,0.21871717234134586,2.415037499278844,all sizes
+glove-100-angular,200000,IVF-Flat,none,model + margin,0.95,64.0,128.0,0.907,False,0.49295557066056966,1.0,all sizes
+glove-100-angular,500000,IVF-Flat,none,model,0.95,24.0,96.0,0.84767,False,0.2586540151115797,2.0,all sizes
+glove-100-angular,500000,IVF-Flat,none,model + margin,0.95,64.0,96.0,0.93033,False,0.6886041387886406,0.5849625007211561,all sizes
+glove-100-angular,1183514,IVF-Flat,none,model,0.95,24.0,128.0,0.85967,False,0.22337565836921128,2.415037499278844,all sizes
+glove-100-angular,1183514,IVF-Flat,none,model + margin,0.95,64.0,128.0,0.92767,False,0.5372249054789432,1.0,all sizes
+sift-128-euclidean,200000,IVF-Flat,LID,model,0.95,32.0,32.0,0.967,True,1.0,0.0,primary
+sift-128-euclidean,200000,IVF-Flat,LID,model + margin,0.95,48.0,32.0,0.9860000000000001,True,1.3387199853921299,0.5849625007211561,primary
+glove-100-angular,200000,IVF-Flat,LID,model,0.95,192.0,128.0,0.9776700000000002,True,1.5045726997466478,0.5849625007211561,primary
+glove-100-angular,200000,IVF-Flat,LID,model + margin,0.95,256.0,128.0,0.9860000000000001,True,1.9374034480627818,1.0,primary
+nytimes-256-angular,200000,IVF-Flat,LID,model,0.95,256.0,256.0,0.95133,True,1.0,0.0,primary
+nytimes-256-angular,200000,IVF-Flat,LID,model + margin,0.95,256.0,256.0,0.95133,True,1.0,0.0,primary
+fashion-mnist-784-euclidean,60000,IVF-Flat,LID,model,0.95,16.0,8.0,0.99133,True,1.6021472392638036,1.0,primary
+fashion-mnist-784-euclidean,60000,IVF-Flat,LID,model + margin,0.95,24.0,8.0,0.997,True,2.110531697341513,1.584962500721156,primary
+mnist-784-euclidean,60000,IVF-Flat,LID,model,0.95,16.0,12.0,0.9819999999999999,True,1.1828348273719713,0.4150374992788439,primary
+mnist-784-euclidean,60000,IVF-Flat,LID,model + margin,0.95,24.0,12.0,0.988,True,1.5809887281441377,1.0,primary
+glove-25-angular,200000,IVF-Flat,LID,model,0.95,16.0,32.0,0.90367,False,0.6928147659854976,1.0,primary
+glove-25-angular,200000,IVF-Flat,LID,model + margin,0.95,24.0,32.0,0.9376700000000001,False,1.2063282794990111,0.4150374992788439,primary
+sift-128-euclidean,50000,IVF-Flat,LID,model,0.95,32.0,48.0,0.94633,False,0.5547293792149404,0.5849625007211561,all sizes
+sift-128-euclidean,50000,IVF-Flat,LID,model + margin,0.95,48.0,48.0,0.973,True,1.0,0.0,all sizes
+sift-128-euclidean,100000,IVF-Flat,LID,model,0.95,32.0,32.0,0.95833,True,1.0,0.0,all sizes
+sift-128-euclidean,100000,IVF-Flat,LID,model + margin,0.95,48.0,32.0,0.98267,True,1.207661612130886,0.5849625007211561,all sizes
+sift-128-euclidean,200000,IVF-Flat,LID,model,0.95,32.0,32.0,0.967,True,1.0,0.0,all sizes
+sift-128-euclidean,200000,IVF-Flat,LID,model + margin,0.95,48.0,32.0,0.9860000000000001,True,1.3387199853921299,0.5849625007211561,all sizes
+sift-128-euclidean,500000,IVF-Flat,LID,model,0.95,32.0,24.0,0.9700000000000001,True,1.1829629003633904,0.4150374992788439,all sizes
+sift-128-euclidean,500000,IVF-Flat,LID,model + margin,0.95,48.0,24.0,0.9856700000000002,True,1.7964168004732526,1.0,all sizes
+sift-128-euclidean,1000000,IVF-Flat,LID,model,0.95,32.0,24.0,0.976,True,1.2869074736956287,0.4150374992788439,all sizes
+sift-128-euclidean,1000000,IVF-Flat,LID,model + margin,0.95,48.0,24.0,0.9893300000000002,True,1.8954550385074305,1.0,all sizes
+glove-100-angular,50000,IVF-Flat,LID,model,0.95,192.0,192.0,0.965,True,1.0,0.0,all sizes
+glove-100-angular,50000,IVF-Flat,LID,model + margin,0.95,256.0,192.0,0.9819999999999999,True,1.294616552093563,0.4150374992788439,all sizes
+glove-100-angular,100000,IVF-Flat,LID,model,0.95,192.0,128.0,0.97167,True,1.5142991723302603,0.5849625007211561,all sizes
+glove-100-angular,100000,IVF-Flat,LID,model + margin,0.95,256.0,128.0,0.9813300000000001,True,1.519009487921405,1.0,all sizes
+glove-100-angular,200000,IVF-Flat,LID,model,0.95,192.0,128.0,0.9776700000000002,True,1.5045726997466478,0.5849625007211561,all sizes
+glove-100-angular,200000,IVF-Flat,LID,model + margin,0.95,256.0,128.0,0.9860000000000001,True,1.9374034480627818,1.0,all sizes
+glove-100-angular,500000,IVF-Flat,LID,model,0.95,192.0,96.0,0.98067,True,1.9327818552910805,1.0,all sizes
+glove-100-angular,500000,IVF-Flat,LID,model + margin,0.95,256.0,96.0,0.98867,True,2.550193963478096,1.415037499278844,all sizes
+glove-100-angular,1183514,IVF-Flat,LID,model,0.95,192.0,128.0,0.9776700000000002,True,1.5482614681906595,0.5849625007211561,all sizes
+glove-100-angular,1183514,IVF-Flat,LID,model + margin,0.95,256.0,128.0,0.9860000000000001,True,2.0392857923377843,1.0,all sizes
+sift-128-euclidean,200000,IVF-Flat,LID + size,model,0.95,32.0,32.0,0.967,True,1.0,0.0,primary
+sift-128-euclidean,200000,IVF-Flat,LID + size,model + margin,0.95,48.0,32.0,0.9860000000000001,True,1.3387199853921299,0.5849625007211561,primary
+glove-100-angular,200000,IVF-Flat,LID + size,model,0.95,192.0,128.0,0.9776700000000002,True,1.5045726997466478,0.5849625007211561,primary
+glove-100-angular,200000,IVF-Flat,LID + size,model + margin,0.95,256.0,128.0,0.9860000000000001,True,1.9374034480627818,1.0,primary
+nytimes-256-angular,200000,IVF-Flat,LID + size,model,0.95,256.0,256.0,0.95133,True,1.0,0.0,primary
+nytimes-256-angular,200000,IVF-Flat,LID + size,model + margin,0.95,256.0,256.0,0.95133,True,1.0,0.0,primary
+fashion-mnist-784-euclidean,60000,IVF-Flat,LID + size,model,0.95,24.0,8.0,0.997,True,2.110531697341513,1.584962500721156,primary
+fashion-mnist-784-euclidean,60000,IVF-Flat,LID + size,model + margin,0.95,32.0,8.0,0.99933,True,2.738854805725971,2.0,primary
+mnist-784-euclidean,60000,IVF-Flat,LID + size,model,0.95,16.0,12.0,0.9819999999999999,True,1.1828348273719713,0.4150374992788439,primary
+mnist-784-euclidean,60000,IVF-Flat,LID + size,model + margin,0.95,24.0,12.0,0.988,True,1.5809887281441377,1.0,primary
+glove-25-angular,200000,IVF-Flat,LID + size,model,0.95,16.0,32.0,0.90367,False,0.6928147659854976,1.0,primary
+glove-25-angular,200000,IVF-Flat,LID + size,model + margin,0.95,24.0,32.0,0.9376700000000001,False,1.2063282794990111,0.4150374992788439,primary
+sift-128-euclidean,50000,IVF-Flat,LID + size,model,0.95,32.0,48.0,0.94633,False,0.5547293792149404,0.5849625007211561,all sizes
+sift-128-euclidean,50000,IVF-Flat,LID + size,model + margin,0.95,48.0,48.0,0.973,True,1.0,0.0,all sizes
+sift-128-euclidean,100000,IVF-Flat,LID + size,model,0.95,32.0,32.0,0.95833,True,1.0,0.0,all sizes
+sift-128-euclidean,100000,IVF-Flat,LID + size,model + margin,0.95,48.0,32.0,0.98267,True,1.207661612130886,0.5849625007211561,all sizes
+sift-128-euclidean,200000,IVF-Flat,LID + size,model,0.95,32.0,32.0,0.967,True,1.0,0.0,all sizes
+sift-128-euclidean,200000,IVF-Flat,LID + size,model + margin,0.95,48.0,32.0,0.9860000000000001,True,1.3387199853921299,0.5849625007211561,all sizes
+sift-128-euclidean,500000,IVF-Flat,LID + size,model,0.95,24.0,24.0,0.95133,True,1.0,0.0,all sizes
+sift-128-euclidean,500000,IVF-Flat,LID + size,model + margin,0.95,48.0,24.0,0.9856700000000002,True,1.7964168004732526,1.0,all sizes
+sift-128-euclidean,1000000,IVF-Flat,LID + size,model,0.95,24.0,24.0,0.95567,True,1.0,0.0,all sizes
+sift-128-euclidean,1000000,IVF-Flat,LID + size,model + margin,0.95,48.0,24.0,0.9893300000000002,True,1.8954550385074305,1.0,all sizes
+glove-100-angular,50000,IVF-Flat,LID + size,model,0.95,192.0,192.0,0.965,True,1.0,0.0,all sizes
+glove-100-angular,50000,IVF-Flat,LID + size,model + margin,0.95,256.0,192.0,0.9819999999999999,True,1.294616552093563,0.4150374992788439,all sizes
+glove-100-angular,100000,IVF-Flat,LID + size,model,0.95,192.0,128.0,0.97167,True,1.5142991723302603,0.5849625007211561,all sizes
+glove-100-angular,100000,IVF-Flat,LID + size,model + margin,0.95,256.0,128.0,0.9813300000000001,True,1.519009487921405,1.0,all sizes
+glove-100-angular,200000,IVF-Flat,LID + size,model,0.95,192.0,128.0,0.9776700000000002,True,1.5045726997466478,0.5849625007211561,all sizes
+glove-100-angular,200000,IVF-Flat,LID + size,model + margin,0.95,256.0,128.0,0.9860000000000001,True,1.9374034480627818,1.0,all sizes
+glove-100-angular,500000,IVF-Flat,LID + size,model,0.95,192.0,96.0,0.98067,True,1.9327818552910805,1.0,all sizes
+glove-100-angular,500000,IVF-Flat,LID + size,model + margin,0.95,192.0,96.0,0.98067,True,1.9327818552910805,1.0,all sizes
+glove-100-angular,1183514,IVF-Flat,LID + size,model,0.95,192.0,128.0,0.9776700000000002,True,1.5482614681906595,0.5849625007211561,all sizes
+glove-100-angular,1183514,IVF-Flat,LID + size,model + margin,0.95,192.0,128.0,0.9776700000000002,True,1.5482614681906595,0.5849625007211561,all sizes
+sift-128-euclidean,200000,IVF-Flat,LID + hubness,model,0.95,24.0,32.0,0.93833,False,0.7433579841139415,0.4150374992788439,primary
+sift-128-euclidean,200000,IVF-Flat,LID + hubness,model + margin,0.95,48.0,32.0,0.9860000000000001,True,1.3387199853921299,0.5849625007211561,primary
+glove-100-angular,200000,IVF-Flat,LID + hubness,model,0.95,192.0,128.0,0.9776700000000002,True,1.5045726997466478,0.5849625007211561,primary
+glove-100-angular,200000,IVF-Flat,LID + hubness,model + margin,0.95,256.0,128.0,0.9860000000000001,True,1.9374034480627818,1.0,primary
+nytimes-256-angular,200000,IVF-Flat,LID + hubness,model,0.95,256.0,256.0,0.95133,True,1.0,0.0,primary
+nytimes-256-angular,200000,IVF-Flat,LID + hubness,model + margin,0.95,256.0,256.0,0.95133,True,1.0,0.0,primary
+fashion-mnist-784-euclidean,60000,IVF-Flat,LID + hubness,model,0.95,16.0,8.0,0.99133,True,1.6021472392638036,1.0,primary
+fashion-mnist-784-euclidean,60000,IVF-Flat,LID + hubness,model + margin,0.95,24.0,8.0,0.997,True,2.110531697341513,1.584962500721156,primary
+mnist-784-euclidean,60000,IVF-Flat,LID + hubness,model,0.95,16.0,12.0,0.9819999999999999,True,1.1828348273719713,0.4150374992788439,primary
+mnist-784-euclidean,60000,IVF-Flat,LID + hubness,model + margin,0.95,24.0,12.0,0.988,True,1.5809887281441377,1.0,primary
+glove-25-angular,200000,IVF-Flat,LID + hubness,model,0.95,16.0,32.0,0.90367,False,0.6928147659854976,1.0,primary
+glove-25-angular,200000,IVF-Flat,LID + hubness,model + margin,0.95,24.0,32.0,0.9376700000000001,False,1.2063282794990111,0.4150374992788439,primary
+sift-128-euclidean,50000,IVF-Flat,LID + hubness,model,0.95,24.0,48.0,0.9176699999999999,False,0.3920110669202836,1.0,all sizes
+sift-128-euclidean,50000,IVF-Flat,LID + hubness,model + margin,0.95,48.0,48.0,0.973,True,1.0,0.0,all sizes
+sift-128-euclidean,100000,IVF-Flat,LID + hubness,model,0.95,24.0,32.0,0.932,False,0.6884277733439745,0.4150374992788439,all sizes
+sift-128-euclidean,100000,IVF-Flat,LID + hubness,model + margin,0.95,48.0,32.0,0.98267,True,1.207661612130886,0.5849625007211561,all sizes
+sift-128-euclidean,200000,IVF-Flat,LID + hubness,model,0.95,24.0,32.0,0.93833,False,0.7433579841139415,0.4150374992788439,all sizes
+sift-128-euclidean,200000,IVF-Flat,LID + hubness,model + margin,0.95,48.0,32.0,0.9860000000000001,True,1.3387199853921299,0.5849625007211561,all sizes
+sift-128-euclidean,500000,IVF-Flat,LID + hubness,model,0.95,24.0,24.0,0.95133,True,1.0,0.0,all sizes
+sift-128-euclidean,500000,IVF-Flat,LID + hubness,model + margin,0.95,48.0,24.0,0.9856700000000002,True,1.7964168004732526,1.0,all sizes
+sift-128-euclidean,1000000,IVF-Flat,LID + hubness,model,0.95,24.0,24.0,0.95567,True,1.0,0.0,all sizes
+sift-128-euclidean,1000000,IVF-Flat,LID + hubness,model + margin,0.95,48.0,24.0,0.9893300000000002,True,1.8954550385074305,1.0,all sizes
+glove-100-angular,50000,IVF-Flat,LID + hubness,model,0.95,192.0,192.0,0.965,True,1.0,0.0,all sizes
+glove-100-angular,50000,IVF-Flat,LID + hubness,model + margin,0.95,256.0,192.0,0.9819999999999999,True,1.294616552093563,0.4150374992788439,all sizes
+glove-100-angular,100000,IVF-Flat,LID + hubness,model,0.95,192.0,128.0,0.97167,True,1.5142991723302603,0.5849625007211561,all sizes
+glove-100-angular,100000,IVF-Flat,LID + hubness,model + margin,0.95,256.0,128.0,0.9813300000000001,True,1.519009487921405,1.0,all sizes
+glove-100-angular,200000,IVF-Flat,LID + hubness,model,0.95,192.0,128.0,0.9776700000000002,True,1.5045726997466478,0.5849625007211561,all sizes
+glove-100-angular,200000,IVF-Flat,LID + hubness,model + margin,0.95,256.0,128.0,0.9860000000000001,True,1.9374034480627818,1.0,all sizes
+glove-100-angular,500000,IVF-Flat,LID + hubness,model,0.95,192.0,96.0,0.98067,True,1.9327818552910805,1.0,all sizes
+glove-100-angular,500000,IVF-Flat,LID + hubness,model + margin,0.95,256.0,96.0,0.98867,True,2.550193963478096,1.415037499278844,all sizes
+glove-100-angular,1183514,IVF-Flat,LID + hubness,model,0.95,192.0,128.0,0.9776700000000002,True,1.5482614681906595,0.5849625007211561,all sizes
+glove-100-angular,1183514,IVF-Flat,LID + hubness,model + margin,0.95,256.0,128.0,0.9860000000000001,True,2.0392857923377843,1.0,all sizes
+sift-128-euclidean,200000,IVF-Flat,LID + size + hubness,model,0.95,24.0,32.0,0.93833,False,0.7433579841139415,0.4150374992788439,primary
+sift-128-euclidean,200000,IVF-Flat,LID + size + hubness,model + margin,0.95,32.0,32.0,0.967,True,1.0,0.0,primary
+glove-100-angular,200000,IVF-Flat,LID + size + hubness,model,0.95,192.0,128.0,0.9776700000000002,True,1.5045726997466478,0.5849625007211561,primary
+glove-100-angular,200000,IVF-Flat,LID + size + hubness,model + margin,0.95,256.0,128.0,0.9860000000000001,True,1.9374034480627818,1.0,primary
+nytimes-256-angular,200000,IVF-Flat,LID + size + hubness,model,0.95,256.0,256.0,0.95133,True,1.0,0.0,primary
+nytimes-256-angular,200000,IVF-Flat,LID + size + hubness,model + margin,0.95,256.0,256.0,0.95133,True,1.0,0.0,primary
+fashion-mnist-784-euclidean,60000,IVF-Flat,LID + size + hubness,model,0.95,24.0,8.0,0.997,True,2.110531697341513,1.584962500721156,primary
+fashion-mnist-784-euclidean,60000,IVF-Flat,LID + size + hubness,model + margin,0.95,32.0,8.0,0.99933,True,2.738854805725971,2.0,primary
+mnist-784-euclidean,60000,IVF-Flat,LID + size + hubness,model,0.95,16.0,12.0,0.9819999999999999,True,1.1828348273719713,0.4150374992788439,primary
+mnist-784-euclidean,60000,IVF-Flat,LID + size + hubness,model + margin,0.95,24.0,12.0,0.988,True,1.5809887281441377,1.0,primary
+glove-25-angular,200000,IVF-Flat,LID + size + hubness,model,0.95,16.0,32.0,0.90367,False,0.6928147659854976,1.0,primary
+glove-25-angular,200000,IVF-Flat,LID + size + hubness,model + margin,0.95,24.0,32.0,0.9376700000000001,False,1.2063282794990111,0.4150374992788439,primary
+sift-128-euclidean,50000,IVF-Flat,LID + size + hubness,model,0.95,32.0,48.0,0.94633,False,0.5547293792149404,0.5849625007211561,all sizes
+sift-128-euclidean,50000,IVF-Flat,LID + size + hubness,model + margin,0.95,48.0,48.0,0.973,True,1.0,0.0,all sizes
+sift-128-euclidean,100000,IVF-Flat,LID + size + hubness,model,0.95,24.0,32.0,0.932,False,0.6884277733439745,0.4150374992788439,all sizes
+sift-128-euclidean,100000,IVF-Flat,LID + size + hubness,model + margin,0.95,48.0,32.0,0.98267,True,1.207661612130886,0.5849625007211561,all sizes
+sift-128-euclidean,200000,IVF-Flat,LID + size + hubness,model,0.95,24.0,32.0,0.93833,False,0.7433579841139415,0.4150374992788439,all sizes
+sift-128-euclidean,200000,IVF-Flat,LID + size + hubness,model + margin,0.95,32.0,32.0,0.967,True,1.0,0.0,all sizes
+sift-128-euclidean,500000,IVF-Flat,LID + size + hubness,model,0.95,24.0,24.0,0.95133,True,1.0,0.0,all sizes
+sift-128-euclidean,500000,IVF-Flat,LID + size + hubness,model + margin,0.95,32.0,24.0,0.9700000000000001,True,1.1829629003633904,0.4150374992788439,all sizes
+sift-128-euclidean,1000000,IVF-Flat,LID + size + hubness,model,0.95,24.0,24.0,0.95567,True,1.0,0.0,all sizes
+sift-128-euclidean,1000000,IVF-Flat,LID + size + hubness,model + margin,0.95,32.0,24.0,0.976,True,1.2869074736956287,0.4150374992788439,all sizes
+glove-100-angular,50000,IVF-Flat,LID + size + hubness,model,0.95,192.0,192.0,0.965,True,1.0,0.0,all sizes
+glove-100-angular,50000,IVF-Flat,LID + size + hubness,model + margin,0.95,256.0,192.0,0.9819999999999999,True,1.294616552093563,0.4150374992788439,all sizes
+glove-100-angular,100000,IVF-Flat,LID + size + hubness,model,0.95,192.0,128.0,0.97167,True,1.5142991723302603,0.5849625007211561,all sizes
+glove-100-angular,100000,IVF-Flat,LID + size + hubness,model + margin,0.95,256.0,128.0,0.9813300000000001,True,1.519009487921405,1.0,all sizes
+glove-100-angular,200000,IVF-Flat,LID + size + hubness,model,0.95,192.0,128.0,0.9776700000000002,True,1.5045726997466478,0.5849625007211561,all sizes
+glove-100-angular,200000,IVF-Flat,LID + size + hubness,model + margin,0.95,256.0,128.0,0.9860000000000001,True,1.9374034480627818,1.0,all sizes
+glove-100-angular,500000,IVF-Flat,LID + size + hubness,model,0.95,192.0,96.0,0.98067,True,1.9327818552910805,1.0,all sizes
+glove-100-angular,500000,IVF-Flat,LID + size + hubness,model + margin,0.95,256.0,96.0,0.98867,True,2.550193963478096,1.415037499278844,all sizes
+glove-100-angular,1183514,IVF-Flat,LID + size + hubness,model,0.95,192.0,128.0,0.9776700000000002,True,1.5482614681906595,0.5849625007211561,all sizes
+glove-100-angular,1183514,IVF-Flat,LID + size + hubness,model + margin,0.95,256.0,128.0,0.9860000000000001,True,2.0392857923377843,1.0,all sizes

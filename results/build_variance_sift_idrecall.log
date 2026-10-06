@@ -1,0 +1,7 @@
+{"dataset": "sift-128-euclidean", "build_threads": 1, "rebuild": 0, "recall_at_ef10": 0.73067, "build_s": 76.5}
+{"dataset": "sift-128-euclidean", "build_threads": 1, "rebuild": 1, "recall_at_ef10": 0.73067, "build_s": 74.5}
+{"dataset": "sift-128-euclidean", "build_threads": 2, "rebuild": 0, "recall_at_ef10": 0.73133, "build_s": 37.7}
+{"dataset": "sift-128-euclidean", "build_threads": 2, "rebuild": 1, "recall_at_ef10": 0.73033, "build_s": 37.2}
+{"dataset": "sift-128-euclidean", "build_threads": 2, "rebuild": 2, "recall_at_ef10": 0.733, "build_s": 38.9}
+{"dataset": "sift-128-euclidean", "build_threads": 2, "rebuild": 3, "recall_at_ef10": 0.72733, "build_s": 45.0}
+{"dataset": "nytimes-256-angular", "build_threads": 1, "rebuild": 0, "recall_at_ef10": 0.67433, "build_s": 159.7}

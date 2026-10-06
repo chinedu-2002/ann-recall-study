@@ -8,10 +8,15 @@ know which library it is talking to:
     memory_bytes()         -> int
     defaults()             -> the library's own default parameters
 """
+import os
 import time
 import numpy as np
 import faiss
 import hnswlib
+
+# Build parallelism is configurable because full-size builds single-threaded take
+# too long on a two-core machine. Search is always timed single-threaded.
+BUILD_THREADS = int(os.environ.get("ANN_BUILD_THREADS", "1"))
 
 
 class HNSWIndex:
@@ -31,7 +36,7 @@ class HNSWIndex:
         t0 = time.perf_counter()
         self.index.init_index(max_elements=base.shape[0], ef_construction=self.efConstruction,
                               M=self.M, random_seed=42)
-        self.index.set_num_threads(1)
+        self.index.set_num_threads(BUILD_THREADS)
         self.index.add_items(base, np.arange(base.shape[0]))
         return time.perf_counter() - t0
 
@@ -73,7 +78,7 @@ class IVFFlatIndex:
         self.nprobe = self.DEFAULTS["nprobe"]
 
     def build(self, base):
-        faiss.omp_set_num_threads(1)
+        faiss.omp_set_num_threads(BUILD_THREADS)
         t0 = time.perf_counter()
         self.index.train(base)
         self.index.add(base)
@@ -114,7 +119,7 @@ class IVFPQIndex:
         self.nprobe = self.DEFAULTS["nprobe"]
 
     def build(self, base):
-        faiss.omp_set_num_threads(1)
+        faiss.omp_set_num_threads(BUILD_THREADS)
         t0 = time.perf_counter()
         self.index.train(base)
         self.index.add(base)

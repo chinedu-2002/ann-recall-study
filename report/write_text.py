@@ -1,0 +1,174 @@
+"""Prose for Progress Report 2. Numbers quoted here were copied from the
+analysis output (results/pr2_analysis.log, build_variance.json, build_order.json,
+pr1_default_ci.json); report/check_numbers.py re-derives each one and fails
+loudly if any quoted figure disagrees with the data."""
+import json, os
+T = {}
+
+T["overview"] = (
+ "The project measures how much recall approximate nearest neighbor (ANN) indexes silently give up at "
+ "their library default settings, and tests whether the query setting a dataset needs can be predicted "
+ "from a cheap statistic of the data instead of found by an exhaustive sweep. Progress Report 1 built "
+ "the measurement harness and ran the first study on three datasets. In weeks 5 and 6 I moved the "
+ "research contribution forward from the original weeks 9 to 11: I built the parameter-selection "
+ "heuristic and evaluated it on datasets it had not seen. To make that evaluation meaningful I doubled "
+ "the real datasets from three to six, added six synthetic datasets with a known intrinsic dimension, "
+ "ran the result-set-size and full-collection checks promised last time, and put confidence intervals "
+ "on the headline numbers. Two of those checks changed conclusions from the first report, and I "
+ "document both below.")
+
+T["work_intro"] = (
+ "The codebase grew from 889 to 1,701 lines of Python. This period produced 2,556 new timed measurement "
+ "records (1,332 from fine-grained sweeps, 636 from the Progress Report 1 grid on the new datasets, 450 "
+ "from the result-set-size passes and 138 from full-size collections), bringing the total to 3,213. "
+ "Every table and figure below regenerates from the committed CSVs with one script.")
+
+T["work_items"] = [
+ ("2.1&nbsp;&nbsp;Six real datasets and six synthetic ones",
+  "I added Fashion-MNIST and MNIST (60,000 vectors, 784 dimensions, euclidean) and GloVe-25 (1,183,514 "
+  "word vectors, 25 dimensions, angular) from ANN-Benchmarks, chosen because they differ from the first "
+  "three in dimension, domain and size. I also wrote a generator for synthetic datasets with a controlled "
+  "intrinsic dimension of 4, 8, 16, 24, 32 or 48: latent points from a 20-cluster Gaussian mixture pushed "
+  "through a fixed random two-layer tanh network into 128 dimensions. Everything except the latent "
+  "dimension is held constant, which isolates the one property the heuristic depends on."),
+ ("2.2&nbsp;&nbsp;Checking the dimensionality estimator against known answers",
+  "Because the synthetic intrinsic dimension is known, the Levina-Bickel estimator can be checked "
+  "directly (Table 2). It recovers low dimensions well, 4.3 for a true 4 and 7.6 for a true 8, but "
+  "underestimates increasingly as the true dimension grows, reading 22.8 for a true 48. This is the known "
+  "downward bias of nearest-neighbor estimators with finite samples. The estimate stays monotone, which is "
+  "what a ranking feature needs, but it means the synthetic sets only reach an LID of about 26."),
+ ("2.3&nbsp;&nbsp;Fine-grained sweeps for the heuristic",
+  "The heuristic needs, for each dataset, the smallest query setting that reaches a target recall. The "
+  "coarse grid from the first report (ef doubling from 10 to 512) is too blunt for that, so I added a "
+  "dense profile: 21 ef values from 10 to 1,024 on the default HNSW build, and 16 nprobe values from 1 to "
+  "256 on an IVF-Flat index with 1,024 lists, across all twelve datasets with three timed repeats each."),
+ ("2.4&nbsp;&nbsp;The heuristic and a held-out evaluation",
+  "The model is deliberately simple: log2 of the needed setting is a linear function of one dataset "
+  "feature. I evaluated it with leave-one-dataset-out on the six real datasets. For each one, the model is "
+  "fitted on the other five real datasets plus the six synthetic ones, predicts the held-out dataset's "
+  "setting, the prediction is rounded up to the next measured grid value, and I read off the recall and "
+  "latency that setting actually produced. It is compared against the library default, the oracle "
+  "(cheapest setting that works, found by sweeping), a safe constant (the largest oracle value seen in "
+  "training) and a median constant. A margin variant inflates the prediction by one root-mean-square "
+  "training residual; I fixed that margin before looking at held-out results rather than tuning it."),
+ ("2.5&nbsp;&nbsp;Result-set size, full collections and confidence intervals",
+  "I ran the default HNSW and IVF-Flat builds at k = 1 and k = 100 on the first three datasets, and the "
+  "default configurations on the full 1,000,000-vector SIFT and 1,183,514-vector GloVe-100 collections. "
+  "The sweep now records the spread of recall across queries, so each recall carries a 95% interval. For "
+  "the first report's defaults I rebuilt the same indexes single-threaded, which reproduces them exactly, "
+  "to recover their intervals."),
+ ("2.6&nbsp;&nbsp;Two live demonstrations",
+  "scripts/live_demo.py shows the default gap on a fresh index in two seconds. scripts/predict_demo.py "
+  "generates a dataset the model has never seen (intrinsic dimension 20 and a new seed), measures its LID "
+  "in under a second, predicts nprobe, and checks the prediction live. On my run it measured an LID of "
+  "17.1, predicted nprobe 19, and reached recall 0.984 against a 0.95 target at 1.51 times the latency of "
+  "the true cheapest setting, where the default reached 0.335. That test set comes from the same "
+  "generator family as the synthetic training data, so it is held out in dimension and seed but not in "
+  "kind; the real-dataset evaluation in section 3.3 is the stronger test."),
+]
+
+T["gap_text"] = (
+ "Across all eighteen dataset-and-index combinations the mean default recall@10 is 0.536, but the spread "
+ "is wide, from 0.128 (IVF-PQ on GloVe-100) to 0.930 (HNSW on Fashion-MNIST). That overturns a claim from "
+ "the first report: with three datasets no default reached 0.75, but HNSW defaults on MNIST and "
+ "Fashion-MNIST reach 0.929 and 0.930. The HNSW default does follow LID, dropping from about 0.93 at LID 16 "
+ "to 18 down to 0.515 and 0.679 at LID 43 and 53, but LID is not the whole story: GloVe-25 has almost the "
+ "same LID as Fashion-MNIST and its default reaches only 0.763. The two MNIST sets are also the smallest "
+ "(60,000 vectors against 200,000), and section 3.6 shows defaults get worse as collections grow, so "
+ "collection size is a confound I have not yet separated from LID. The IVF-Flat finding does generalize: "
+ "on every one of the six datasets a tuned configuration beats the default at the same latency, by "
+ "between 0.171 and 0.291 recall.")
+
+T["fit_text"] = (
+ "Across all twelve datasets, the log of the smallest setting that reaches recall 0.95 is almost linear in "
+ "query-point LID, with a correlation of 0.963 for HNSW and 0.959 for IVF-Flat (Figure 2). The fitted HNSW "
+ "model is log2(ef) = 2.23 + 0.137 × LID, so the ef a dataset needs doubles for every 7.3 points of LID; "
+ "for IVF-Flat, log2(nprobe) = 1.65 + 0.124 × LID, doubling every 8.1 points. The synthetic and real "
+ "datasets fall on the same line, which is the result I was hoping for. The caveat is visible in the "
+ "figure: synthetic points stop at LID 26, so the upper half of the line rests on just GloVe-100 and "
+ "NYTimes.")
+
+T["heldout_text"] = (
+ "Table 4 is the core result of this period. The library default never reaches the 0.95 target on any "
+ "held-out dataset. The safe constant always works for HNSW, but it pays 4.79 times the oracle's latency "
+ "to do it, and still misses once on IVF-Flat. The median constant is cheap and misses four times out of "
+ "six. The bare LID heuristic lands close to the right setting, at 1.17 and 1.00 times the oracle cost, "
+ "and hits the target four times out of six; its misses are near-misses, with the lowest recall at 0.924 "
+ "and 0.904. Adding the pre-registered margin raises that to five of six for both index families at 1.44 "
+ "and 1.42 times the oracle cost, about a third of what the safe constant spends. Both remaining misses "
+ "are GloVe word embeddings (GloVe-100 on HNSW reached 0.937, GloVe-25 on IVF-Flat 0.938), which suggests "
+ "LID is missing something specific to that kind of data. At a target of 0.90 the margin variant hits all "
+ "six IVF-Flat datasets at 1.51 times the oracle cost, where the safe constant hits five at 3.52 times.")
+
+T["ablation_text"] = (
+ "To check that LID is doing the work, I refitted the same model with other features (Table 5). With LID, "
+ "predictions are off by 0.72 log2 units on average for HNSW, about a factor of 1.6, and 0.47 units for "
+ "IVF-Flat. Ambient dimension, the obvious naive choice, barely beats predicting a constant: 1.68 and 1.31 "
+ "units against 1.97 and 1.54. The estimated intrinsic dimension is nearly as good as LID, which makes "
+ "sense since both measure the same thing. I also refitted without the synthetic datasets. The effect is "
+ "small and not uniform: HNSW error falls from 0.83 to 0.72 when synthetic data is added, IVF-Flat error "
+ "from 0.50 to 0.47, but the bare IVF-Flat heuristic hits five of six with real data alone and four of six "
+ "with synthetic data added. With six held-out datasets I cannot claim the synthetic data helps.")
+
+T["kpass_text"] = (
+ "The first report inferred that hnswlib silently raises ef to at least k. This period I tested it "
+ "directly: at k = 100, ef = 10 and ef = 100 give identical recall on all three datasets, to five decimals "
+ "(0.94967, 0.73077 and 0.73317). So the documented default of ef = 10 quietly becomes ef = 100 whenever "
+ "100 neighbors are requested, which makes the default more accurate and about six times slower on SIFT "
+ "(0.258 against 0.041 milliseconds per query). For a single nearest neighbor the default does better "
+ "than at k = 10 (SIFT 0.790 against 0.729, GloVe-100 0.583 against 0.503, NYTimes 0.670 against 0.604), "
+ "though the k = 1 intervals are wide, about ±0.05, because each query is a single hit or miss. The "
+ "IVF-Flat default gets worse as k grows, from 0.543 at k = 1 to 0.458 at k = 100 on SIFT.")
+
+T["full_text"] = (
+ "At full size the HNSW default loses more recall: SIFT falls from 0.731 at 200,000 vectors to 0.696 at "
+ "1,000,000, and GloVe-100 from 0.515 to 0.478. GloVe-100 at full size never reaches 0.95 within the ef "
+ "values I swept, up to 512. The IVF-Flat default improves slightly (0.528 to 0.560 on SIFT, 0.501 to "
+ "0.535 on GloVe-100) only because its fixed 100 lists each hold five to six times more vectors, so one "
+ "probe scans more of the collection, at four to six times the latency. The free gain survives at full "
+ "size: a tuned IVF-Flat index reaches 0.827 on SIFT and 0.810 on GloVe-100 at the default's latency. "
+ "The subsampled study was not flattering the defaults; if anything it was generous to HNSW.")
+
+T["code_text"] = (
+ "All of this period's work is in the repository alongside the first report's. Two reproducibility checks "
+ "passed: recomputing the dataset characteristics reproduced the first report's values to four decimals, "
+ "and rebuilding the SIFT default index single-threaded reproduced its recall of 0.73067 exactly. The "
+ "report itself is generated from the result files by report/build_pr2.py, and report/check_numbers.py "
+ "re-derives every number quoted in this text from the data.")
+
+T["challenges"] = [
+ ("My own headline did not survive more data.",
+  "The first report said no default reached recall 0.75. With six datasets that is false; two HNSW "
+  "defaults reach 0.93. I have restated the finding as what the data supports: the IVF-Flat gap is "
+  "universal, and the HNSW gap depends on the dataset, largely through LID."),
+ ("Rebuilding the same index changes its recall.",
+  "The NYTimes default measured 0.679 in the first report and 0.604 in this period's sweep, with identical parameters. Tracing it: single-threaded hnswlib builds are deterministic and reproduce 0.679 exactly, but they always insert vectors in id order. With shuffled insertion order, three single-threaded builds gave 0.643, 0.646 and 0.652, and four two-threaded builds gave between 0.590 and 0.634. Across ten builds the same configuration spans 0.590 to 0.679 depending only on how the index was built. That 0.089 spread is as large as the entire ±0.044 interval from sampling queries, and the interval does not account for it at all. So the first report's NYTimes figure was a favorable draw, and intervals over queries alone understate the real uncertainty. SIFT is steadier but not immune, spanning 0.709 to 0.743 across sixteen rebuilds. Table 3 keeps the first report's single-threaded figures for comparability; every new measurement this period used two-threaded builds."),
+ ("The estimator saturates.",
+  "Levina-Bickel reads 22.8 for a true intrinsic dimension of 48, so my synthetic generator cannot reach "
+  "the LID of real text and word embeddings, around 43 to 53. The high end of the heuristic is anchored by "
+  "two real datasets only."),
+ ("Collection size is tangled up with LID.",
+  "The two easiest datasets are also the two smallest. Default recall falls with collection size, so some "
+  "of what looks like an LID effect may be a size effect. The heuristic over-predicts both MNIST sets "
+  "(ef 32 for Fashion-MNIST against an oracle of 12, and 24 for MNIST against 16), which is what a "
+  "missing size term would do."),
+ ("Coarse evaluation.",
+  "With six held-out datasets, one dataset moves a hit rate by seventeen points, and predictions are "
+  "rounded to a discrete grid. I report hit counts as fractions of six rather than percentages for that "
+  "reason. Separately, FAISS warns that 60,000 vectors is too few to train 4,096 lists, so the IVF results "
+  "at that setting on MNIST and Fashion-MNIST come from under-trained indexes."),
+]
+
+T["next"] = (
+ "For weeks 7 and 8 I plan five things. First, separate collection size from LID by sweeping SIFT and "
+ "GloVe-100 at 50,000, 100,000, 200,000, 500,000 and 1,000,000 vectors, then add log collection size as a "
+ "second feature and repeat the held-out evaluation. Second, add a hubness measure to test whether it "
+ "explains the two GloVe misses. Third, make the synthetic generator reach an LID of 40 to 55, by using a "
+ "rougher map or heavier noise, so the upper half of the fit is not resting on two points. Fourth, given "
+ "the rebuild effect, build every oracle setting three times with shuffled insertion orders so the oracle "
+ "itself carries an error bar. Fifth, extend the heuristic from query parameters to build parameters "
+ "(HNSW M and IVF nlist), which is where most of the memory cost is decided. I will also start drafting "
+ "the final report's methods section while the design is fresh.")
+
+json.dump(T, open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "pr2_text_numbers.json"), "w"), indent=1)
+print("text written")
