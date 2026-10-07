@@ -111,3 +111,9 @@ python3 report/write_midterm_text.py && python3 report/build_midterm.py
 `src/heuristic2.py` fits log2(setting) on LID, log2(collection size) and hubness, and
 holds out every size of a dataset at once. Adding size cuts the held-out HNSW error
 from 0.79 to 0.58 log2 units; hubness barely helps. The report is `MidtermReport_Enenta.pdf`.
+
+## Theory section (added after Progress Report 2 feedback)
+
+`scripts/make_method_figure.py` draws `figures/fig0_methods.png`, a schematic of how IVF and
+HNSW answer a query. Section 1.1 of the midterm report and `report/build_pr2_revised.py`
+explain recall, IVF and nprobe, HNSW and ef, the speed and accuracy trade-off, and LID.

@@ -135,6 +135,29 @@ st.extend(h2("1.&nbsp;&nbsp;Project Overview"))
 for head, body in EXTRA["overview"]:
     st.append(P(f"<b>{head}</b> {body}"))
 
+
+st.append(P("1.1&nbsp;&nbsp;How the methods work", H3))
+for head, body in EXTRA["theory"]:
+    st.append(P(f"<b>{head}</b> {body}"))
+    if head.startswith("HNSW"):
+        st.append(fig("fig0_methods.png", 6.5, 2.38,
+                      "Figure 1.  How each index answers a query (toy 2-D data, for illustration). Left: IVF scans "
+                      "only the nprobe cells nearest the query, so a neighbor just across a border is missed at "
+                      "nprobe = 1. Right: HNSW walks greedily down a stack of graphs, then keeps ef candidates on "
+                      "the bottom layer."))
+    if head.startswith("The trade-off"):
+        dz = pd.read_csv(os.path.join(RES, "week7_dense_aggregated.csv"))
+        dz = dz[(dz.dataset == "sift-128-euclidean") & (dz.n_base == 200000)]
+        tt = [["index", "setting", "recall@10", "ms per query", "note"]]
+        for fam, name, vals, notes in [("HNSW", "ef", [10, 48, 1024], {10: "library default", 48: "oracle for 0.95"}),
+                                       ("IVF-Flat", "nprobe", [1, 32, 256], {1: "library default", 32: "oracle for 0.95"})]:
+            for v in vals:
+                r = dz[(dz.family == fam) & (dz.query_param == v)].iloc[0]
+                tt.append([fam, f"{name} = {v}", f"{r.recall:.3f}", f"{r.latency_ms:.3f}", notes.get(v, "")])
+        st.append(KeepTogether([tbl(tt, [1.0 * inch, 1.15 * inch, 0.95 * inch, 1.1 * inch, 1.4 * inch]),
+                                P("Table 1.  The speed and accuracy trade-off on SIFT (200,000 vectors, IVF with 1,024 "
+                                  "cells, one search thread).", CAP)]))
+
 # 2 ---------------------------------------------------------------------------
 st.extend(h2("2.&nbsp;&nbsp;Work Completed: Weeks 1 to 7"))
 st.append(P(EXTRA["work_intro"]))
@@ -148,17 +171,17 @@ st.append(P('<b>Repository.</b> All code, raw measurements, figures and both dem
             'github.com/chinedu-2002/ann-recall-study</link>. Running <font face="Courier">python scripts/predict_demo.py</font> '
             'generates an unseen dataset, predicts its setting and checks the prediction live.', ParagraphStyle("BL", parent=B, alignment=0)))
 st.extend(sec("3.1&nbsp;&nbsp;The default gap on six datasets", EXTRA["gap_text"]))
-st.append(fig("fig2_default_gap_six.png", 5.2, 2.37,
-              "Figure 1.  Default recall (gray) against the best measured configuration at the same latency "
+st.append(fig("fig2_default_gap_six.png", 4.9, 2.23,
+              "Figure 2.  Default recall (gray) against the best measured configuration at the same latency "
               "(colored), k = 10. Rows are sorted by LID, shown in parentheses."))
 st.extend(sec("3.2&nbsp;&nbsp;The prediction model", EXTRA["fit_text"]))
 st.append(fig("fig4_heuristic_fit.png", 4.1, 2.0,
-              "Figure 2.  Smallest setting reaching recall@10 of 0.95 against LID for all twelve datasets. "
+              "Figure 3.  Smallest setting reaching recall@10 of 0.95 against LID for all twelve datasets. "
               "Filled points are real, hollow points synthetic; the dashed line is the fitted model."))
 st.extend(sec("3.3&nbsp;&nbsp;Held-out evaluation, collection size and hubness", EXTRA["heldout_text"]))
 st.append(P(EXTRA["size_text"]))
 st.append(fig("fig7_size.png", 4.6, 1.96,
-              "Figure 3.  SIFT and GloVe-100 at five collection sizes. Left: HNSW recall at the default ef. "
+              "Figure 4.  SIFT and GloVe-100 at five collection sizes. Left: HNSW recall at the default ef. "
               "Right: the smallest ef reaching recall 0.95 (log scale)."))
 w = w7[(w7.test == "primary") & (w7.target == 0.95)]
 t2 = [["model features", "HNSW error<br/>(log2)", "HNSW + margin:<br/>hits, cost", "IVF-Flat error<br/>(log2)",
@@ -171,7 +194,7 @@ for m in ["none", "LID", "LID + size", "LID + size + hubness"]:
                f'{g("IVF-Flat", "model", "err"):.2f}',
                f'{int(g("IVF-Flat", "model + margin", "hits"))} / 6, {g("IVF-Flat", "model + margin", "cost"):.2f}×'])
 st.append(KeepTogether([tbl(t2, [1.55 * inch, 0.95 * inch, 1.25 * inch, 1.0 * inch, 1.25 * inch]),
-                        P("Table 1.  Held-out test, target recall@10 = 0.95. Error is the mean distance between the "
+                        P("Table 2.  Held-out test, target recall@10 = 0.95. Error is the mean distance between the "
                           "predicted and true setting in log2 units; 0.58 means within a factor of about 1.5.", CAP)]))
 
 st.append(P("3.4&nbsp;&nbsp;Code example", H3))
@@ -198,7 +221,7 @@ t3 = [["planned task", "planned", "actual status"],
       ["Analysis, final report, presentation", "weeks 12 to 14",
        "<b>Not started</b>, but the analysis and report pipeline already exists from the progress reports."]]
 st.append(KeepTogether([ltbl(t3, [2.2 * inch, 0.95 * inch, 3.35 * inch]),
-                        P("Table 2.  Original timeline against actual progress.", CAP)]))
+                        P("Table 3.  Original timeline against actual progress.", CAP)]))
 st.append(P("<b>Changes to the plan and why.</b>"))
 for head, body in EXTRA["changes"]:
     st.append(P(f"<i>{head}</i> {body}"))
@@ -222,7 +245,7 @@ t4 = [["challenge", "effect on the project", "what I did", "status"],
       ["Estimator saturates; synthetic LID tops out near 26", "High end of the model rests on two datasets",
        "Flagged in every report", "Open"]]
 st.append(KeepTogether([ltbl(t4, [1.95 * inch, 1.45 * inch, 2.0 * inch, 1.1 * inch], size=7.7),
-                        P("Table 3.  Major challenges from weeks 1 to 7.", CAP)]))
+                        P("Table 4.  Major challenges from weeks 1 to 7.", CAP)]))
 
 # 6 ---------------------------------------------------------------------------
 st.extend(h2("6.&nbsp;&nbsp;Current Project Status"))
@@ -241,7 +264,7 @@ t5 = [["weeks", "tasks", "milestone"],
       ["14", "Final presentation and repository clean-up with a one-command reproduction script.",
        "Presentation delivered"]]
 st.append(KeepTogether([ltbl(t5, [0.8 * inch, 4.0 * inch, 1.7 * inch]),
-                        P("Table 4.  Plan for weeks 8 to 14.", CAP)]))
+                        P("Table 5.  Plan for weeks 8 to 14.", CAP)]))
 
 
 def footer(c, d):

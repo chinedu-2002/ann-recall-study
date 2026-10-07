@@ -167,5 +167,54 @@ T["status"] = ("The measurement side is complete: 4,101 validated measurements c
  "latency. Still incomplete: the GloVe misses are unexplained, the model covers query settings but not build "
  "settings, oracle settings have no error bars yet, and the final report and presentation are not written.")
 
+# ---- background theory (added after Progress Report 2 feedback) ---------------
+T["theory"] = [
+ ("Recall and latency.", "For every query, exact brute-force search gives the true 10 nearest neighbors. "
+  "Recall@10 is the share of those 10 that the index actually returns, averaged over all queries: 1.0 is "
+  "perfect, and 0.335 means about two of every three true neighbors were missed. Latency is the time per "
+  "query on one CPU thread. Every setting studied here trades one for the other."),
+ ("IVF (inverted file index).", "When the index is built, k-means splits the collection into nlist cells "
+  "(100 by default, 1,024 in my main sweeps), each with a center, and every vector is filed under its nearest "
+  "center. To answer a query, the index compares it with all the centers and scans only the vectors in the "
+  "nprobe closest cells. A true neighbor is missed when it sits just across a cell border, in a cell that was "
+  "not scanned (Figure 1, left). Raising nprobe scans more cells, so recall rises and the time grows roughly in "
+  "step with the number of vectors scanned. FAISS uses nprobe = 1 by default. IVF-Flat keeps the full vectors; "
+  "IVF-PQ compresses each one into a short code, 8 bytes at the default settings (product quantization), which saves memory but makes every "
+  "distance approximate, so even scanning every cell cannot reach full recall."),
+ ("HNSW (hierarchical navigable small world graph).", "Every vector becomes a node linked to about M = 16 of "
+  "its near neighbors. A random few are also placed in sparser upper layers with longer links, like express "
+  "lanes. A search enters at the top layer, keeps stepping to whichever neighbor is closer to the query, drops "
+  "a layer when it cannot get closer, and repeats down to the bottom layer, which holds every vector (Figure 1, "
+  "right). There it keeps a list of the ef best candidates found so far and keeps expanding them until none of "
+  "their neighbors is closer. With a small ef the walk is fast but greedy and can settle in the wrong "
+  "neighborhood; a larger ef explores more of the graph, which raises recall and costs time. hnswlib's default "
+  "is ef = 10, and it silently raises ef to k whenever k is larger."),
+ ("The trade-off in numbers.", "Table 1 shows both settings on SIFT. Moving HNSW from the default ef = 10 to "
+  "ef = 48 lifts recall from 0.729 to 0.961 for about three times the query time. Moving IVF-Flat from nprobe = "
+  "1 to nprobe = 32 lifts it from 0.308 to 0.967 for about twelve times the time. Past that point each extra "
+  "bit of recall gets expensive, so the useful question is the smallest setting that reaches a target, which "
+  "this project calls the oracle setting."),
+ ("Local intrinsic dimensionality (LID).", "Vectors are stored in 25 to 784 dimensions, but real data rarely "
+  "uses all of them; handwritten digits vary along far fewer directions than their 784 pixels. LID estimates how "
+  "many dimensions the data effectively has around one point. I compute it from the distances to that point's "
+  "20 nearest neighbors with the Levina-Bickel maximum-likelihood estimator, LID = -1 / mean(ln(r<sub>i</sub> / "
+  "r<sub>20</sub>)) over i = 1 to 19. If the 20th neighbor is much farther away than the 1st, the space is "
+  "locally low-dimensional; if all 20 sit at nearly the same distance, it is high-dimensional. High LID hurts "
+  "both index types for the same reason: the true neighbors are barely closer than many near misses, so they "
+  "scatter over more IVF cells and the graph walk has more ways to turn the wrong way. That is why the setting "
+  "needed for a fixed recall grows with LID, and why LID is the main input to my model."),
+ ("Hubness.", "Hubness measures how unevenly points appear in other points' 10-nearest-neighbor lists. In "
+  "high-dimensional data a few hub points show up in many lists while most points appear in almost none; I "
+  "report the skew of those counts. Week 7 tests it as a second feature."),
+]
+
+import re
+def _bump(txt):
+    for a, b in [("Table 2", "Table 3"), ("Table 1", "Table 2"), ("Figure 3", "Figure 4"),
+                 ("Figure 2", "Figure 3"), ("Figure 1)", "Figure 2)")]:
+        txt = txt.replace(a, b)
+    return txt
+for key in ["gap_text", "fit_text", "heldout_text", "size_text", "plan_compare"]:
+    T[key] = _bump(T[key])
 json.dump(T, open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "midterm_text.json"), "w"), indent=1)
 print("ok")
